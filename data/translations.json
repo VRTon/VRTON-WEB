@@ -73,7 +73,8 @@
     "footer": {
       "description": "Transformando la realidad virtual en cambio social. Organización sin ánimo de lucro.",
       "quickLinks": "Enlaces Rápidos",
-      "follow": "Síguenos"
+      "follow": "Síguenos",
+      "copyright": "© 2025 VRTon - Todos los derechos reservados"
     },
     "colaboradores": {
       "title": "Nuestro Equipo",
@@ -223,7 +224,8 @@
     "footer": {
       "description": "Transforming virtual reality into social change. Non-profit organization.",
       "quickLinks": "Quick Links",
-      "follow": "Follow us"
+      "follow": "Follow us",
+      "copyright": "© 2025 VRTon - All rights reserved"
     },
     "colaboradores": {
       "title": "Our Team",

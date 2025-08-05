@@ -78,6 +78,17 @@
             "twitter": "",
             "instagram": ""
           }
+        },
+        {
+          "nombre": "Avadez",
+          "foto": "avadez.webp",
+          "rol": "FullStack Developer",
+          "rol_key": "fullstack_dev",
+          "social": {
+            "discord": "",
+            "twitter": "https://x.com/avadez_s",
+            "instagram": "https://instagram.com/avadez_arts_official"
+          }
         }
       ]
     },

@@ -475,6 +475,7 @@ nav ul li a.active:after {
     overflow: hidden;
     padding-top: var(--header-height);
     margin-top: 0;
+    box-sizing: border-box;
 }
 
 #background-video {

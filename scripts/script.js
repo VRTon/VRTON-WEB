@@ -12,14 +12,16 @@ const VRTon = {
     // Utilidad para debounce
     debounce: (func, delay)=>{
         let timeoutId;
+
         return function(...args) {
+
             clearTimeout(timeoutId);
             timeoutId = setTimeout(() => func.apply(this, args), delay);
         };
     },
     
     // Gestión del header con scroll
-    initHeaderScroll: function() {
+    initHeaderScroll: ()=>{
         const header = document.querySelector('header');
         if (!header) return;
         
