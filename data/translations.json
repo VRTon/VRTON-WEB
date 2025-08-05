@@ -81,7 +81,7 @@
       "meta": {
         "title": "Nuestro Equipo Multidisciplinario - Colaboradores VRTon | Profesionales en Realidad Virtual",
         "description": "Conoce al increíble equipo multidisciplinario de VRTon: desarrolladores, diseñadores 2D/3D, audiovisuales, marketing, moderadores y más profesionales comprometidos con la realidad virtual para causas sociales y la Teletón Chile."
-         },
+      },
       "filter_button": "Filtrar Departamentos",
       "departments_title": "Departamentos"
     },
@@ -298,5 +298,155 @@
       "dj": "DJ",
       "ingame_moderator": "InGame & Discord Moderator"
     }
+  },
+  "pt": {
+    "loading": {
+      "title": "Carregando VRTon",
+      "preparing": "Preparando experiência imersiva...",
+      "translations": "Carregando traduções...",
+      "components": "Carregando componentes...",
+      "countdown": "Iniciando contagem regressiva...",
+      "video": "Preparando vídeo...",
+      "finalizing": "Finalizando carregamento...",
+      "loadingTeam": "Carregando equipe",
+      "preparingTeam": "Preparando informações da equipe...",
+      "teams": "Carregando informações da equipe..."
+    },
+    "nav": {
+      "inicio": "Início",
+      "about": "Sobre Nós",
+      "faqs": "Perguntas Frequentes",
+      "contacto": "Contato",
+      "colaboradores": "Colaboradores"
+    },
+    "hero": {
+      "title": "VRTon",
+      "subtitle": "Transformando a realidade virtual <br> em mudança social",
+      "description": "Somos uma organização sem fins lucrativos dedicada a usar a tecnologia de realidade virtual para criar um impacto positivo na sociedade.",
+      "countdown": "Próximo evento VRTon 2025:",
+      "button": "Saiba mais"
+    },
+    "countdown": {
+      "days": "Dias",
+      "hours": "Horas",
+      "minutes": "Minutos",
+      "seconds": "Segundos"
+    },
+    "causa": {
+      "title": "O que é o VRTon",
+      "description1": "No VRTon, acreditamos que a tecnologia de realidade virtual tem o potencial de transformar a forma como enfrentamos os desafios sociais. Trabalhamos para desenvolver experiências imersivas que educam, inspiram e geram empatia.",
+      "description2": "",
+      "projects": []
+    },
+    "faqs": {
+      "title": "Perguntas Frequentes",
+      "questions": [
+        {
+          "question": "Quem e como pode participar do VRTon?",
+          "answer": "Qualquer pessoa ou comunidade que queira ajudar a organizar o VRTon é bem-vinda, desde que o faça sem fins lucrativos ou motivos ocultos. Se você estiver interessado em participar como voluntário, acesse nosso canal no Discord."
+        },
+        {
+          "question": "Para que serão usados os fundos arrecadados este ano? O que é o Teleton?",
+          "answer": "Pelo terceiro ano consecutivo, estaremos arrecadando fundos para o <b>Teleton Chile</b>.<br>O Teleton é uma campanha beneficente realizada em vários países para arrecadar fundos para ajudar pessoas com deficiência, principalmente por meio de centros de reabilitação e programas de inclusão.<br>No Chile, o Teleton é um evento beneficente anual televisado desde 1978. Foi a primeira teleton na Ibero-América, e seu formato foi replicado em outros países da região. Mais informações em <a href=\"https://www.teleton.cl/\">https://www.teleton.cl/</a>"
+        },
+        {
+          "question": "Isso é transparente? Para onde vai o dinheiro?",
+          "answer": "Para maximizar a transparência, todas as doações serão feitas através dos canais oficiais do Teleton, sem intermediários da nossa parte.<br>Para dúvidas sobre a própria transparência do Teleton, consulte: <a href=\"https://www.teleton.cl/preguntas-frecuentes-y-mitos-sobre-teleton/\">https://www.teleton.cl/preguntas-frecuentes-y-mitos-sobre-teleton/</a>"
+        },
+        {
+          "question": "Que tipo de atividades haverá no VRTon deste ano?",
+          "answer": "Planejamos uma ampla variedade de atividades, tanto dentro quanto fora do VRChat, desde jogos e role-playing até shows ao vivo com música e artistas! Uma programação completa será publicada próxima à data."
+        }
+      ]
+    },
+    "contacto": {
+      "title": "Contato",
+      "community": "Junte-se à nossa comunidade",
+      "description": "Interessado em participar, colaborar ou simplesmente saber mais sobre o VRTon? Junte-se ao nosso Discord e faça parte da nossa comunidade.",
+      "button": "Entrar no Discord",
+      "business": {
+        "title": "Colabore Conosco",
+        "description": "Se você representa uma empresa ou marca e gostaria de apoiar nossa causa, escreva para nós, adoraríamos conhecê-lo!",
+        "button": "ESCREVA PARA NÓS"
+      }
+    },
+    "footer": {
+      "description": "Transformando a realidade virtual em mudança social. Organização sem fins lucrativos.",
+      "quickLinks": "Links Rápidos",
+      "follow": "Siga-nos"
+    },
+    "colaboradores": {
+      "title": "Nossa Equipe",
+      "description": "Conheça as pessoas que tornam o VRTon possível. Uma equipe multidisciplinar de profissionais voluntários comprometidos em transformar a realidade virtual em uma ferramenta para a mudança social positiva.",
+      "meta": {
+        "title": "Nossa Equipe Multidisciplinar - Colaboradores do VRTon | Profissionais de Realidade Virtual",
+        "description": "Conheça a incrível equipe multidisciplinar do VRTon: desenvolvedores, designers 2D/3D, profissionais de audiovisual, marketing, moderadores e outros profissionais comprometidos com a realidade virtual para causas sociais e Teleton Chile."
+      },
+      "filter_button": "Filtrar Departamentos",
+      "departments_title": "Departamentos"
+    }
+  },
+  "teams": {
+    "direccion": {
+      "name": "Gestão",
+      "description": "Equipe responsável pela tomada de decisões estratégicas, planejamento e supervisão geral das operações do VRTon."
+    },
+    "desarrollo": {
+      "name": "Desenvolvimento",
+      "description": "Responsável pela criação de sites, aplicativos, bots e outras ferramentas usadas pelo VRTon."
+    },
+    "audiovisuales": {
+      "name": "Audiovisuais",
+      "description": "Fotógrafos, videomakers e criadores de conteúdo que dão vida às nossas visões através de efeitos visuais, áudio espacial e produções multimídia."
+    },
+    "diseno": {
+      "name": "Design 2D",
+      "description": "Nossa equipe criativa usa design 2D para criar interfaces, personagens, ambientes e elementos visuais que comunicam efetivamente nossa missão social."
+    },
+    "3d": {
+      "name": "Design 3D",
+      "description": "Nossa equipe criativa usa design 3D para criar modelos, personagens e ambientes que comunicam efetivamente nossa missão social."
+    },
+    "marketing": {
+      "name": "Marketing e Comunicação",
+      "description": "Equipe responsável por divulgar nossa missão, gerir nossas redes sociais e criar estratégias de comunicação que ampliam o impacto de nossos projetos sociais."
+    },
+    "mapmaking": {
+      "name": "Criação de Mapas",
+      "description": "Criadores dos nossos mundos virtuais. Esta equipe é responsável pelo design e construção de mapas e ambientes nas plataformas de realidade virtual, criando experiências imersivas para nossas causas sociais."
+    },
+    "eventos": {
+      "name": "Anfitriões e Atividades",
+      "description": "Arquitetos das nossas experiências virtuais. Esta equipe projeta, organiza e executa eventos, shows e experiências interativas que conectam nossa comunidade."
+    },
+    "dj": {
+      "name": "DJs e Shows",
+      "description": "Artistas que levam música e espetáculo às nossas experiências virtuais. Esta equipe é responsável pela criação de eventos musicais e shows ao vivo que entretêm e conectam a comunidade."
+    },
+    "moderacion": {
+      "name": "Moderação",
+      "description": "Nossa equipe de moderação é responsável por manter um ambiente seguro, inclusivo e respeitoso em todas as nossas plataformas e experiências em realidade virtual. Eles são os guardiões da comunidade."
+    }
+  },
+  "roles": {
+    "dev_lead_backend": "Líder de Desenvolvimento, Desenvolvedor BackEnd",
+    "fullstack_dev": "Desenvolvedor FullStack",
+    "audiovisual_lead": "Líder Audiovisual",
+    "video_editor": "Editor de Vídeo",
+    "photographer": "Fotógrafo",
+    "artist_2d": "Artista 2D",
+    "graphic_designer": "Designer Gráfico",
+    "lead_3d_artist": "Líder Artista 3D, Criador de Avatares, Criador de Recursos",
+    "asset_creator": "Criador de Recursos",
+    "avatar_creator": "Criador de Avatares",
+    "lead_marketing": "Líder de Marketing e Gerente de Comunidade",
+    "lead_networking": "Líder de Logística de Networking",
+    "lead_world_designer": "Líder de Design de Mundo",
+    "second_world_designer": "Segundo Designer de Mundo",
+    "modeler_3d": "Modelador 3D",
+    "lead_host": "Líder de Logística de Anfitriões",
+    "host": "Anfitrião",
+    "dj": "DJ",
+    "ingame_moderator": "Moderador InGame e Discord"
   }
 }

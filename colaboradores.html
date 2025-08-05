@@ -170,8 +170,8 @@
     <!-- Inline CSS Loading Fallback (eliminates external request) -->
     <script>
         // Inline CSS fallback to eliminate critical path dependency
-        (()=>{
-            const checkCSS=(href, timeout = 3000)=>{
+        (function(){
+            function checkCSS(href, timeout = 3000) {
                 const link = document.querySelector(`link[href*="${href}"]`);
                 if (!link) {
                     console.warn(`CSS fallback: No link found for ${href}`);
@@ -194,7 +194,7 @@
                 }, timeout);
             }
             
-            const createCSSFallback=(href)=>{
+            function createCSSFallback(href) {
                 // Special handling for Font Awesome
                 if (href.includes('font-awesome')) {
                     // Try alternative CDN
