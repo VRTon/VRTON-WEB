@@ -134,7 +134,7 @@
         .countdown-container{margin:2rem 0;width:100%;display:flex;flex-direction:column;align-items:center}
         .countdown-title{font-size:1.2rem;margin-bottom:1rem;color:rgba(255,255,255,0.9);text-align:center}
         .countdown-timer{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;width:100%}
-        .countdown-item{background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);border-radius:10px;padding:20px 15px;min-width:80px;text-align:center;flex:0 0 auto}
+        .countdown-item{background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:10px;padding:20px 15px;min-width:80px;text-align:center;flex:0 0 auto}
         .countdown-number{display:block;font-size:2rem;font-weight:700;color:var(--white)}
         .countdown-label{font-size:0.9rem;color:rgba(255,255,255,0.8);text-transform:uppercase;letter-spacing:1px}
         
@@ -205,8 +205,8 @@
     <!-- Inline CSS Loading Fallback (eliminates external request) -->
     <script>
         // Inline CSS fallback to eliminate critical path dependency
-        (function(){
-            function checkCSS(href, timeout = 3000) {
+        (()=>{
+            const checkCSS=(href, timeout = 3000)=>{
                 const link = document.querySelector(`link[href*="${href}"]`);
                 if (!link) {
                     return;
@@ -225,7 +225,7 @@
                 }, timeout);
             }
             
-            function createCSSFallback(href) {
+            const createCSSFallback=(href)=>{
                 // Special handling for Font Awesome
                 if (href.includes('font-awesome')) {
                     // Try alternative CDN
