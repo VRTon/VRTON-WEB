@@ -19,7 +19,7 @@ const VRTon = {
     },
     
     // Gestión del header con scroll
-    initHeaderScroll: ()=>{
+    initHeaderScroll: function() {
         const header = document.querySelector('header');
         if (!header) return;
         
