@@ -12,7 +12,9 @@ const VRTon = {
     // Utilidad para debounce
     debounce: (func, delay)=>{
         let timeoutId;
-        return (...args)=>{
+
+        return function(...args) {
+
             clearTimeout(timeoutId);
             timeoutId = setTimeout(() => func.apply(this, args), delay);
         };

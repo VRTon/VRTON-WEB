@@ -12,7 +12,7 @@
       "name": "Cadena",
       "description": "Cadena promocional de VRTon",
       "version": "1.0.0",
-      "downloadUrl": "https://github.com/VRTon/org.vrton.chain/releases/download/1.0.0/VRTONChain.unitypackage",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.chain/releases/download/2.0.0/VRTonChain.unitypackage",
       "imageUrl": "https://raw.githubusercontent.com/VRTon/org.vrton.chain/refs/heads/main/VRTonChain.png",
       "category": "Ropa"
     },
@@ -36,16 +36,16 @@
       "name": "Chocker",
       "description": "Chocker promocional de VRTon con efecto de particulas al chocarla.",
       "version": "1.0.0",
-      "downloadUrl": "https://github.com/VRTon/org.vrton.chocker/releases/download/1.0.0/VRTONBand.unitypackage",
-      "imageUrl": "https://raw.githubusercontent.com/VRTon/org.vrton.chocker/refs/heads/main/Chocker%20VRTon.png",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.chocker/releases/download/1.0.0/VRTonChocker.unitypackage",
+      "imageUrl": "https://raw.githubusercontent.com/VRTon/org.vrton.chocker/refs/heads/main/Choker.png",
       "category": "Ropa"
     },
     {
       "name": "Diadema",
       "description": "Diadema promocional de VRTon con efecto de particulas al chocarla.",
       "version": "1.0.0",
-      "downloadUrl": "https://github.com/VRTon/org.vrton.diadema/releases/download/1.0.0/VRTONBand.unitypackage",
-      "imageUrl": "https://raw.githubusercontent.com/VRTon/org.vrton.diadema/refs/heads/main/Diadema%20VRTon.png",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.diadema/releases/download/1.0.0/VRTonDiadema.unitypackage",
+      "imageUrl": "https://raw.githubusercontent.com/VRTon/org.vrton.diadema/refs/heads/main/Diadema.png",
       "category": "Ropa"
     }
   ]

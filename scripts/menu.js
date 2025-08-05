@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.getElementById('menu-toggle');
     const navMenu = document.getElementById('nav-menu');
 
-    //En el caso de no detectarse los elementos de menu o nav, se advierte en consola
+
+    //En el caso de no detectarse los elementos de menú o nav, se advierte en consola
+
     if (!menuToggle || !navMenu) {
         console.warn('No se encontraron elementos del menú móvil');
         return;
