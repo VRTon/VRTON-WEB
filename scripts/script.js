@@ -10,16 +10,16 @@ const VRTon = {
     },
     
     // Utilidad para debounce
-    debounce: function(func, delay) {
+    debounce: (func, delay)=>{
         let timeoutId;
-        return function (...args) {
+        return (...args)=>{
             clearTimeout(timeoutId);
             timeoutId = setTimeout(() => func.apply(this, args), delay);
         };
     },
     
     // Gestión del header con scroll
-    initHeaderScroll: function() {
+    initHeaderScroll: ()=>{
         const header = document.querySelector('header');
         if (!header) return;
         
@@ -32,7 +32,7 @@ const VRTon = {
     },
     
     // Navegación suave
-    initSmoothScrolling: function() {
+    initSmoothScrolling: ()=>{
         const navLinks = document.querySelectorAll('nav a[href^="#"], .btn[href^="#"]');
         
         navLinks.forEach(link => {
@@ -60,7 +60,7 @@ const VRTon = {
     },
     
     // Animaciones de entrada para elementos
-    initScrollAnimations: function() {
+    initScrollAnimations: ()=>{
         if (!('IntersectionObserver' in window)) return;
         
         const observerOptions = {
@@ -115,7 +115,7 @@ const VRTon = {
     },
     
     // Validación de email
-    isValidEmail: function(email) {
+    isValidEmail: (email)=>{
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     },

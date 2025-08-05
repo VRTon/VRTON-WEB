@@ -107,7 +107,7 @@
         .furality-hero p{font-size:1.2rem;max-width:800px;margin:0 auto;line-height:1.5;opacity:0.95}
         
         /* Navigation Critical Styles */
-        .furality-nav{background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);padding:20px 0;position:sticky;top:var(--header-height);z-index:100}
+        .furality-nav{background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:20px 0;position:sticky;top:var(--header-height);z-index:100}
         
         /* Main Container Critical Styles */
         .furality-container{min-height:60vh;padding:40px 0}
@@ -170,8 +170,8 @@
     <!-- Inline CSS Loading Fallback (eliminates external request) -->
     <script>
         // Inline CSS fallback to eliminate critical path dependency
-        (function(){
-            function checkCSS(href, timeout = 3000) {
+        (()=>{
+            const checkCSS=(href, timeout = 3000)=>{
                 const link = document.querySelector(`link[href*="${href}"]`);
                 if (!link) {
                     console.warn(`CSS fallback: No link found for ${href}`);
@@ -194,7 +194,7 @@
                 }, timeout);
             }
             
-            function createCSSFallback(href) {
+            const createCSSFallback=(href)=>{
                 // Special handling for Font Awesome
                 if (href.includes('font-awesome')) {
                     // Try alternative CDN
