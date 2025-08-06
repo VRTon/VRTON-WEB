@@ -74,7 +74,11 @@
       "description": "Transformando la realidad virtual en cambio social. Organización sin ánimo de lucro.",
       "quickLinks": "Enlaces Rápidos",
       "follow": "Síguenos",
-      "copyright": "© 2025 VRTon - Todos los derechos reservados"
+      "copyright": "© 2025 VRTon - Todos los derechos reservados",
+      "placeholder": {
+        "title": "Página en Construcción",
+        "text": "Estamos trabajando en esta sección. ¡Vuelve pronto para más información!"
+      }
     },
     "colaboradores": {
       "title": "Nuestro Equipo",
@@ -149,7 +153,9 @@
       "host": "Host",
       "dj": "DJ",
       "ingame_moderator": "Moderador InGame y Discord"
-    }
+    },
+    "terms": "Términos del Voluntariado",
+    "rules": "Reglas del Evento"
   },
   "en": {
     "loading": {
@@ -226,7 +232,12 @@
       "description": "Transforming virtual reality into social change. Non-profit organization.",
       "quickLinks": "Quick Links",
       "follow": "Follow us",
-      "copyright": "© 2025 VRTon - All rights reserved"
+      "copyright": "© 2025 VRTon - All rights reserved",
+      "placeholder": {
+        "title": "Page Under Construction",
+        "text": "We are working on this section. Come back soon for more information!"
+      }
+      
     },
     "colaboradores": {
       "title": "Our Team",
@@ -301,7 +312,9 @@
       "host": "Host",
       "dj": "DJ",
       "ingame_moderator": "InGame & Discord Moderator"
-    }
+    },
+    "terms": "Volunteering Terms",
+    "rules": "Event Rules"
   },
   "pt": {
     "loading": {
@@ -377,7 +390,11 @@
     "footer": {
       "description": "Transformando a realidade virtual em mudança social. Organização sem fins lucrativos.",
       "quickLinks": "Links Rápidos",
-      "follow": "Siga-nos"
+      "follow": "Siga-nos",
+      "placeholder": {
+        "title": "Página em Construção",
+        "text": "Estamos trabalhando nesta seção. Volte em breve para mais informações!"
+      }
     },
     "colaboradores": {
       "title": "Nossa Equipe",
@@ -453,6 +470,8 @@
       "host": "Anfitrião",
       "dj": "DJ",
       "ingame_moderator": "Moderador InGame e Discord"
-      }
+      },
+      "terms": "Termos do Voluntariado",
+      "rules": "Regras do Evento"
     }
 }
