@@ -344,13 +344,13 @@
       "lideres": [
         {
           "nombre": "Zulay",
-          "foto": "placeholder.webp",
+          "foto": "zulay.webp",
           "rol": "Lead Host Logistics",
           "rol_key": "lead_host",
           "social": {
             "discord": "",
             "twitter": "",
-            "instagram": ""
+            "instagram": "https://www.instagram.com/zulay.vr/"
           }
         }
       ],
