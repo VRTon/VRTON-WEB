@@ -1,0 +1,13 @@
+{
+    "cabezera":{
+        "Logo":"LogoVRTon.svg",
+        "Texto":"Usando la realidad virtual</br>para mejorar vidas."
+    },
+    "enlaces":[
+        {
+            "TextLink":"YouTube", 
+            "Logo":"YT.svg",
+            "link": "https://www.youtube.com/@VRTonOficial"
+        }
+    ]
+}
