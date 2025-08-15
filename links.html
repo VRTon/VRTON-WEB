@@ -563,8 +563,15 @@
     </script>
 </head>
 
-<body>
+<!--
+que conste que lo que estan a punto de ver 
+no me enorgullese, no escriban css en los html en casa. 
+atte. Avadez
+-->
+
+<body style="background-color: rgb(238, 62, 72);">
     <!-- Loading Screen -->
+    <!-- como no lo quieren ni con header ni footer, quito esta loading screen que no parece funcionar sin el header o el footer
     <div class="loading-screen" id="loading-screen">
         <div class="loading-logo">
             <img src="assets/icons/logo.webp" alt="VRTon Logo" style="width: 100%; height: 100%; object-fit: contain;">
@@ -573,34 +580,55 @@
         <div class="loading-text">Cargando VRTon</div>
         <div class="loading-subtext">Preparando experiencia inmersiva...</div>
     </div>
+-->
 
     <!-- Header placeholder for Live Server - will be replaced by components.js -->
-    <header id="header-placeholder"></header>
+    <!--<header id="header-placeholder"></header> aparentemente lo querian sin header-->
     <!-- Header se carga automáticamente vía JavaScript -->
+
 
     <!--aqui inicia el sitio de enlaces-->
     <div style="display: grid; place-items: center;">
-        <div class="business-card" style="margin: 15vh 5vh 3vh 5vh; padding: 1vh;">
-            <a href="https://www.instagram.com/vrtonof/" target="_blank" class="business-btn">Instagram <i
-                    class="fa-brands fa-instagram"></i></a>
+        <div style="display: grid; place-items: center; background-color: rgb(244, 91, 100); width: 70vh; border-radius: 3vh; margin: 2vh;">
+            <div style="background-color: #f4f7f9; height: 15vh; width: 15vh; display: grid; place-items: center; margin: 5vh 5vh 0vh 5vh; border-radius: 50vh;">
+                <img src="assets/icons/logo.webp" alt="" style="width: 13vh;">
+            </div>
+            <span style="margin-top: 1vh; color: #f4f7f9; font-size:x-large; font-weight: 700; ">VRTon</span>
+            <span style="margin-top: 0.5vh; margin-bottom: 1vh; color: #f4f7f9; text-align: center; font-size:medium;">
+                Serie de actividades y eventos para recaudar fondos </br>
+                en apoyo a la Teletón Chile.</br>
+                ¡Accede a nuestros enlaces oficiales!
+            </span>
+            <div class="business-card" style="margin: 1vh 5vh 3vh 5vh; padding: 1vh; width: 60vh; ">
+                <a href="https://www.instagram.com/vrtonof/" target="_blank" class="business-btn" style="font-weight: 700;">
+                    <span style="background-color: rgb(238, 62, 72); width: 5vh; height: 5vh; display: grid; place-items: center; border-radius: 2.5vh; position: relative; left: -17.5vh;"><i class="fa-brands fa-instagram" style="color: black;"></i></span>Instagram
+                </a>
+            </div>
+            <div class="business-card" style="margin: 3vh; padding: 1vh; width: 60vh;" >
+                <a href="https://x.com/vrtonof" target="_blank" class="business-btn" style="font-weight: 700;">
+                    <span style="background-color: rgb(238, 62, 72); width: 5vh; height: 5vh; display: grid; place-items: center; border-radius: 2.5vh; position: relative; left: -20vh;"><i class="fa-brands fa-twitter" style="color: rgb(29, 161, 242);"></i></span>Twitter
+                </a>
+            </div>
+            <div class="business-card" style="margin: 3vh; padding: 1vh; width: 60vh;">
+                <a href="https://www.youtube.com/@VRTonOficial" target="_blank" class="business-btn" style="font-weight: 700;">
+                    <span style="background-color: rgb(238, 62, 72); width: 5vh; height: 5vh; display: grid; place-items: center; border-radius: 2.5vh; position: relative; left: -18.6vh;"><i class="fa-brands fa-youtube" style="color: rgb(255, 0, 0);"></i></span>YouTube
+                </a>
+            </div>
+            <div class="business-card" style="margin: 3vh; padding: 1vh; width: 60vh;">
+                <a href="https://www.tiktok.com/@vrtonoficial" target="_blank" class="business-btn">
+                    <span style="background-color: rgb(238, 62, 72); width: 5vh; height: 5vh; display: grid; place-items: center; border-radius: 2.5vh; position: relative; left: -20vh;"><i class="fa-brands fa-tiktok" style="color: rgb(11, 6, 14);"></i></span> TikTok
+                </a>
+            </div>
+            <div class="business-card" style="margin: 3vh; margin-bottom: 8vh; padding: 1vh; width: 60vh;">
+                <a href="https://www.twitch.tv/vrtonof" target="_blank" class="business-btn">
+                    <span style="background-color: rgb(238, 62, 72); width: 5vh; height: 5vh; display: grid; place-items: center; border-radius: 2.5vh; position: relative; left: -20vh;"><i class="fa-brands fa-twitch" style="color: rgb(100, 65, 165);"></i></span>Twitch
+                </a>
+            </div>
         </div>
-        <div class="business-card" style="margin: 3vh; padding: 1vh;">
-            <a href="https://x.com/vrtonof" target="_blank" class="business-btn">Twitter <i class="fa-brands fa-twitter" style="color: rgb(29, 161, 242);"></i></a>
-        </div>
-        <div class="business-card" style="margin: 3vh; padding: 1vh;">
-            <a href="https://www.youtube.com/@VRTonOficial" target="_blank" class="business-btn">YouTube <i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div class="business-card" style="margin: 3vh; padding: 1vh;">
-            <a href="https://www.tiktok.com/@vrtonoficial" target="_blank" class="business-btn">TikTok <i class="fa-brands fa-tiktok" style="color: rgb(11, 6, 14);"></i></a>
-        </div>
-        <div class="business-card" style="margin: 3vh; padding: 1vh;">
-            <a href="https://www.twitch.tv/vrtonof" target="_blank" class="business-btn">Twitch <i class="fa-brands fa-twitch" ></i></a>
-        </div>
-
     </div>
 
     <!-- Footer placeholder - will be replaced by components.js -->
-    <footer id="footer-placeholder"></footer>
+    <!--<footer id="footer-placeholder"></footer> y aparentemente lo querian sin footer-->
 
     <!-- Ventana Mantenimiento -->
     <div class="modal-overlay" id="construction-modal">
