@@ -2412,7 +2412,6 @@ body.loaded section {
 }
 
 .spanLinks {
-    background-color: rgb(238, 62, 72);
     width: 5vh;
     height: 5vh;
     display: grid;
