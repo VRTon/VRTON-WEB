@@ -12,36 +12,50 @@
 
 :root {
     /* Colores primarios */
-    --primary-color: #e30613;        /* Rojo principal VRTon */
-    --secondary-color: #fd5c63;      /* Rojo coral derivado */
-    --accent-color: #ffcc00;         /* Amarillo de acento */
-    
+    --primary-color: #e30613;
+    /* Rojo principal VRTon */
+    --secondary-color: #fd5c63;
+    /* Rojo coral derivado */
+    --accent-color: #ffcc00;
+    /* Amarillo de acento */
+
     /* Colores neutros */
-    --text-color: #333333;           /* Texto principal */
-    --text-light: #666666;           /* Texto secundario */
-    --text-muted: #95a5a6;           /* Texto deshabilitado */
-    --light-color: #f4f7f9;          /* Fondo claro */
-    --white: #ffffff;                /* Blanco puro */
-    --dark-color: #2c3e50;           /* Azul oscuro para títulos */
-    
+    --text-color: #333333;
+    /* Texto principal */
+    --text-light: #666666;
+    /* Texto secundario */
+    --text-muted: #95a5a6;
+    /* Texto deshabilitado */
+    --light-color: #f4f7f9;
+    /* Fondo claro */
+    --white: #ffffff;
+    /* Blanco puro */
+    --dark-color: #2c3e50;
+    /* Azul oscuro para títulos */
+
     /* Colores de estado */
-    --success-color: #27ae60;        /* Verde éxito */
-    --warning-color: #f39c12;        /* Naranja advertencia */
-    --error-color: #e74c3c;          /* Rojo error */
-    --info-color: #3498db;           /* Azul información */
-    
+    --success-color: #27ae60;
+    /* Verde éxito */
+    --warning-color: #f39c12;
+    /* Naranja advertencia */
+    --error-color: #e74c3c;
+    /* Rojo error */
+    --info-color: #3498db;
+    /* Azul información */
+
     /* Colores especiales */
-    --discord-color: #5865F2;        /* Color oficial Discord */
+    --discord-color: #5865F2;
+    /* Color oficial Discord */
     --overlay-dark: rgba(44, 62, 80, 0.8);
     --overlay-primary: rgba(227, 6, 19, 0.8);
     --overlay-gradient: linear-gradient(135deg, var(--overlay-primary) 0%, rgba(253, 92, 99, 0.8) 100%);
-    
+
     /* Sombras */
     --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.08);
     --shadow-medium: 0 10px 20px rgba(0, 0, 0, 0.1);
     --shadow-heavy: 0 15px 30px rgba(0, 0, 0, 0.15);
     --shadow-card: 0 10px 20px rgba(0, 0, 0, 0.1);
-    
+
     /* Medidas y espaciado */
     --header-height: 80px;
     --header-height-mobile: 60px;
@@ -49,12 +63,12 @@
     --border-radius-small: 5px;
     --border-radius-large: 20px;
     --border-radius-round: 50%;
-    
+
     /* Transiciones */
     --transition-fast: all 0.2s ease;
     --transition-normal: all 0.3s ease;
     --transition-slow: all 0.5s ease;
-    
+
     /* Tipografía */
     --font-family-primary: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
     --font-family-fallback: 'Segoe UI Fallback', Arial, sans-serif;
@@ -89,7 +103,8 @@ body {
     font-size: var(--font-size-normal);
 }
 
-img, video {
+img,
+video {
     max-width: 100%;
     height: auto;
 }
@@ -344,17 +359,17 @@ nav ul li a.active:after {
     .navbar-right {
         gap: 10px;
     }
-    
+
     .language-selector {
         gap: 3px;
     }
-    
+
     .lang-btn {
         padding: 4px 8px;
         font-size: 11px;
         gap: 3px;
     }
-    
+
     .lang-btn img {
         width: 14px;
         height: 10px;
@@ -899,6 +914,7 @@ nav ul li a.active:after {
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
+
 /* ========================================
    🔗 REDES SOCIALES
    ======================================== */
@@ -929,6 +945,7 @@ nav ul li a.active:after {
     transform: translateY(-5px);
     box-shadow: var(--shadow-medium);
 }
+
 /* ========================================
    🦶 FOOTER
    ======================================== */
@@ -943,22 +960,24 @@ footer {
 footer .container {
     display: flex;
     flex-direction: column;
-    
+
     justify-content: center;
-    
+
     align-items: center;
     gap: 15px;
-    
+
 }
 
 footer p {
     margin: 0;
     color: #bdc3c7;
 }
+
 .social-media {
     display: flex;
     gap: 15px;
 }
+
 .footer-links a {
     color: #bdc3c7;
     text-decoration: none;
@@ -1009,24 +1028,24 @@ footer p {
     :root {
         --header-height: 70px;
     }
-    
+
     .cause-content {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
+
     .cause-image {
         order: -1;
     }
-    
+
     .hero h2 {
         font-size: 2.8rem;
     }
-    
+
     .hero-content h1 {
         font-size: 4rem;
     }
-    
+
     .section-title {
         font-size: 2.2rem;
         margin-bottom: 50px;
@@ -1039,14 +1058,14 @@ footer p {
         --header-height: var(--header-height-mobile);
         --font-size-hero: var(--font-size-hero-mobile);
     }
-    
+
     /* Header móvil */
     header {
         position: fixed;
         height: auto;
         padding: 0;
     }
-    
+
     header .container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -1054,11 +1073,11 @@ footer p {
         align-items: center;
         padding: 10px 20px;
     }
-    
+
     .logo {
         margin-right: auto;
     }
-    
+
     .menu-toggle {
         display: block;
         margin-left: 10px;
@@ -1068,7 +1087,9 @@ footer p {
     nav {
         width: 100%;
         order: 3;
-    }    nav ul {
+    }
+
+    nav ul {
         display: none;
         position: absolute;
         top: var(--header-height);
@@ -1081,15 +1102,15 @@ footer p {
         padding: 20px 0;
         z-index: 999;
     }
-    
+
     nav ul.active {
         display: flex;
     }
-    
+
     nav ul li {
         margin: 15px 0;
     }
-    
+
     /* Hero móvil */
     .hero-video,
     .hero {
@@ -1098,62 +1119,62 @@ footer p {
         padding-top: calc(var(--header-height) + 20px);
         padding-bottom: 60px;
     }
-    
+
     .hero-content h1 {
         font-size: 3.5rem;
     }
-    
+
     .hero-content h2 {
         font-size: 1.8rem;
     }
-    
+
     .hero h2 {
         font-size: 2.2rem;
     }
-    
+
     /* Colaboradores móvil */
-    
+
     .categoria-selector {
         font-size: 0.8rem;
         padding: 6px 12px;
     }
-    
+
     .colaborador-image {
         height: 200px;
     }
-    
+
     /* Discord móvil */
     .discord-container {
         grid-template-columns: 1fr;
         gap: 20px;
         margin: 30px auto;
     }
-    
+
     .discord-card {
         padding: 30px 20px;
     }
-    
+
     .discord-icon {
         font-size: 4rem;
     }
-    
+
     .discord-card h2 {
         font-size: 1.8rem;
     }
-    
+
     /* Business card móvil */
     .business-card {
         padding: 30px 20px;
     }
-    
+
     .business-icon {
         font-size: 4rem;
     }
-    
+
     .business-card h3 {
         font-size: 1.8rem;
     }
-    
+
     /* Countdown móvil */
     .countdown-timer {
         display: grid;
@@ -1162,45 +1183,45 @@ footer p {
         max-width: 250px;
         margin: 0 auto;
     }
-    
+
     .countdown-item {
         min-width: 70px;
         padding: 12px 8px;
     }
-    
+
     .countdown-number {
         font-size: 2rem;
     }
-    
+
     .countdown-label {
         font-size: 0.8rem;
     }
-    
+
     .countdown-title {
         font-size: 1.1rem;
         margin-bottom: 15px;
     }
-    
+
     /* Footer móvil */
     footer .container {
         flex-direction: column;
         text-align: center;
         gap: 20px;
     }
-    
+
     /* FAQs móvil */
     .faq-question {
         padding: 15px 20px;
     }
-    
+
     .faq-question h3 {
         font-size: var(--font-size-normal);
     }
-    
+
     .faq-answer {
         padding: 0 20px;
     }
-    
+
     .faq-item.active .faq-answer {
         padding: 0 20px 15px;
     }
@@ -1212,52 +1233,53 @@ footer p {
         width: 95%;
         padding: 0 15px;
     }
-    
+
     section {
         padding: 60px 0;
     }
-    
+
     .section-title {
         font-size: 2rem;
         margin-bottom: 40px;
     }
-    
+
     .hero-content h1 {
         font-size: 2.5rem;
     }
-    
+
     .hero-content h2 {
         font-size: 1.5rem;
     }
-    
+
     .hero h2 {
         font-size: 1.8rem;
     }
-    
+
     .btn {
         padding: 10px 20px;
         font-size: var(--font-size-small);
     }
-    
+
     .colaborador-image {
         height: 180px;
     }
-    
+
     .colaborador-info {
         padding: 15px;
     }
-    
+
     .colaborador-info h3 {
         font-size: 1.2rem;
     }
-    
+
     .discord-card {
         padding: 25px 15px;
     }
-    
+
     .discord-icon {
         font-size: 3.5rem;
     }
+
     .social-icon {
         width: 35px;
         height: 35px;
@@ -1274,6 +1296,7 @@ footer p {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1284,6 +1307,7 @@ footer p {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -1293,9 +1317,11 @@ footer p {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
+
     100% {
         transform: scale(1);
     }
@@ -1309,7 +1335,9 @@ footer p {
    🎯 CLASES DE UTILIDAD
    ======================================== */
 
-.transition { transition: var(--transition-normal); }
+.transition {
+    transition: var(--transition-normal);
+}
 
 /* ========================================
    🖨️ ESTILOS DE IMPRESIÓN
@@ -1322,6 +1350,7 @@ footer p {
         box-shadow: none !important;
         text-shadow: none !important;
     }
+
     header,
     footer,
     .menu-toggle,
@@ -1329,28 +1358,29 @@ footer p {
     .social-media {
         display: none !important;
     }
+
     body {
         font-size: 12pt;
         line-height: 1.4;
     }
-    
+
     .container {
         width: 100%;
         margin: 0;
         padding: 0;
     }
-    
+
     section {
         padding: 20px 0;
         margin: 0;
         page-break-inside: avoid;
     }
-    
+
     .section-title {
         font-size: 18pt;
         margin-bottom: 15px;
     }
-    
+
     .card {
         border: 1px solid #ddd;
         page-break-inside: avoid;
@@ -1399,9 +1429,12 @@ button:focus-visible {
 /* Efectos de partículas de fondo para construcción */
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-20px);
     }
@@ -1537,10 +1570,10 @@ button:focus-visible {
 
 /* Director/Líder del departamento - Estilo Furality */
 .furality-leader {
-    background: linear-gradient(135deg, 
-        rgba(227, 6, 19, 0.8) 0%, 
-        rgba(253, 92, 99, 0.8) 50%, 
-        rgba(227, 6, 19, 0.9) 100%);
+    background: linear-gradient(135deg,
+            rgba(227, 6, 19, 0.8) 0%,
+            rgba(253, 92, 99, 0.8) 50%,
+            rgba(227, 6, 19, 0.9) 100%);
     border-radius: 10px;
     padding: 18px;
     margin-bottom: 10px;
@@ -1560,9 +1593,9 @@ button:focus-visible {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, 
-        rgba(227, 6, 19, 0.1) 0%, 
-        rgba(253, 92, 99, 0.1) 100%);
+    background: linear-gradient(135deg,
+            rgba(227, 6, 19, 0.1) 0%,
+            rgba(253, 92, 99, 0.1) 100%);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -1687,9 +1720,9 @@ button:focus-visible {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, 
-        rgba(227, 6, 19, 0.1) 0%, 
-        rgba(253, 92, 99, 0.1) 100%);
+    background: linear-gradient(135deg,
+            rgba(227, 6, 19, 0.1) 0%,
+            rgba(253, 92, 99, 0.1) 100%);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -1758,34 +1791,34 @@ button:focus-visible {
         top: var(--header-height-mobile);
         padding: 8px 0;
     }
-    
+
     .furality-departments {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 12px;
     }
-    
+
     .furality-dept-btn {
         padding: 6px 12px;
         font-size: 0.85rem;
     }
-    
+
     .furality-dept-title {
         font-size: 1.7rem;
     }
-    
+
     .furality-leader {
         flex-direction: column;
         text-align: center;
         gap: 15px;
         padding: 15px;
     }
-    
+
     .furality-leader-photo {
         width: 70px;
         height: 70px;
     }
-    
+
     .furality-leader-social {
         margin: 0;
         justify-content: center;
@@ -1796,19 +1829,19 @@ button:focus-visible {
     .furality-container {
         padding: 12px 15px 20px;
     }
-    
+
     .furality-dept-title {
         font-size: 1.5rem;
     }
-    
+
     .furality-leader {
         padding: 12px;
     }
-    
+
     .furality-leader-name {
         font-size: 1.2rem;
     }
-    
+
     .furality-member {
         padding: 10px;
     }
@@ -1887,16 +1920,20 @@ button:focus-visible {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
 }
 
 @keyframes loadingPulse {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
         opacity: 1;
     }
+
     50% {
         transform: scale(1.05);
         opacity: 0.8;
@@ -1924,18 +1961,18 @@ body.loaded section {
         height: 80px;
         margin-bottom: 20px;
     }
-    
+
     .loading-spinner {
         width: 50px;
         height: 50px;
         margin-bottom: 15px;
     }
-    
+
     .loading-text {
         font-size: 16px;
         margin-bottom: 8px;
     }
-    
+
     .loading-subtext {
         font-size: 13px;
     }
@@ -1947,19 +1984,19 @@ body.loaded section {
         height: 60px;
         margin-bottom: 15px;
     }
-    
+
     .loading-spinner {
         width: 40px;
         height: 40px;
         border-width: 3px;
         margin-bottom: 12px;
     }
-    
+
     .loading-text {
         font-size: 14px;
         margin-bottom: 6px;
     }
-    
+
     .loading-subtext {
         font-size: 12px;
     }
@@ -2033,7 +2070,7 @@ body.loaded section {
 }
 
 @media (max-width: 1024px) or (orientation: portrait) {
-    
+
     .nav {
         display: none;
     }
@@ -2041,7 +2078,7 @@ body.loaded section {
     body {
         padding-top: var(--header-height);
     }
-    
+
 
     .menu-toggle {
         display: block;
@@ -2071,6 +2108,7 @@ body.loaded section {
         line-height: 1.4;
     }
 }
+
 /* Regla específica para móviles estrechos */
 @media (max-width: 400px) {
     .hero-content {
@@ -2089,6 +2127,7 @@ body.loaded section {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
+
 .furality-leaders .furality-leader {
     width: 100%;
 
@@ -2147,7 +2186,7 @@ body.loaded section {
     transform: scale(0.9);
     transition: transform 0.3s ease;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
@@ -2302,4 +2341,115 @@ body.loaded section {
     margin-top: 40px;
     font-size: 0.9rem;
     opacity: 0.8;
+}
+
+.mainStyleLinkPage {
+    display: grid;
+    place-items: center;
+}
+
+.liLinkPage {
+    list-style: none;
+    display: grid;
+    place-items: center;
+    background-color: rgb(244, 91, 100);
+    width: 70vh;
+    border-radius: 3vh;
+    margin: 2vh;
+    margin-left: 0;
+    padding-left: 0;
+    list-style-position: inside;
+    left: -3vh;
+
+}
+
+.ulCabezeraImagen {
+    background-color: #f4f7f9;
+    height: 15vh;
+    width: 15vh;
+    display: grid;
+    place-items: center;
+    margin: 5vh 5vh 0vh 5vh;
+    border-radius: 50vh;
+}
+
+.imgCabezeraImagen {
+    width: 13vh;
+}
+
+.ulTitleCabezera {
+    margin-top: 1vh;
+    color: #f4f7f9;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.ulTextoCabezera {
+    margin-top: 0.5vh;
+    margin-bottom: 1vh;
+    color: #f4f7f9;
+    text-align: center;
+    font-size: medium;
+}
+
+.ulInstagramLink {
+    margin: 1vh 5vh 3vh 5vh;
+    padding: 1vh;
+    width: 60vh;
+}
+
+.ulTwittYTTikTokLink {
+    margin: 3vh;
+    padding: 1vh;
+    width: 60vh;
+}
+
+.ulTwitchLink {
+    margin: 3vh;
+    margin-bottom: 8vh;
+    padding: 1vh;
+    width: 60vh;
+}
+
+.spanLinks {
+    background-color: rgb(238, 62, 72);
+    width: 5vh;
+    height: 5vh;
+    display: grid;
+    place-items: center;
+    border-radius: 2.5vh;
+    position: relative;
+}
+
+.spanLeftLinksA {
+    left: -20vh;
+}
+
+.spanLeftLinksB {
+    left: -17.5vh;
+}
+
+.spanLeftLinksC {
+    left: -18.6vh;
+    ;
+}
+
+.boldFontLinks {
+    font-weight: 700;
+}
+
+.retoqueIconBlack {
+    color: black;
+}
+
+.retoqueIconMorado {
+    color: rgb(100, 65, 165);
+}
+
+.retoqueIconRojo {
+    color: rgb(255, 0, 0);
+}
+
+.retoqueIconCeleste {
+    color: rgb(29, 161, 242);
 }
