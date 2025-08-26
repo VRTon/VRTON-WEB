@@ -8,6 +8,13 @@
         "instagram": "https://www.instagram.com/valenn.vrc/"
       }
     },
+    "ramses0418": {
+      "nombre": "Ramses0418",
+      "foto": "ramses0418.webp",
+      "social": {
+        "vrchat": "https://vrchat.com/home/user/usr_a623f860-4a18-4e36-91f2-ee6e6a7cf773"
+      }
+    },
     "maximohfoxy": {
       "nombre": "MaximohFoxy",
       "foto": "maximohfoxy.webp",
@@ -132,10 +139,11 @@
       "nombre": "Desarrollo",
       "descripcion": "Encargados de la creación de webs, aplicaciones bots y demás herramientas utilizadas por VRTon.",
       "lideres": [
-        { "id": "valenvrc", "rol": "Development Lead, BackEnd Developer", "rol_key": "dev_lead_backend" },
+        
         { "id": "maximohfoxy", "rol": "Development Lead, FullStack Developer", "rol_key": "dev_lead_fullstack" }
       ],
       "miembros": [
+        { "id": "valenvrc", "rol": "BackEnd Developer", "rol_key": "backend_dev" },
         { "id": "foxyctg21", "rol": "FullStack Developer", "rol_key": "fullstack_dev" },
         { "id": "pichujeff", "rol": "FullStack Developer", "rol_key": "fullstack_dev" },
         { "id": "avadez", "rol": "FullStack Developer", "rol_key": "fullstack_dev" }
@@ -169,10 +177,11 @@
       "nombre": "Diseño 3D",
       "descripcion": "Nuestro equipo creativo utiliza diseño 3D para crear modelos, personajes y entornos que comunican efectivamente nuestra misión social.",
       "lideres": [
-        { "id": "nantrop", "rol": "Lead 3D Artist, Avatar Creator, Asset Creator", "rol_key": "lead_3d_artist" }
+        { "id": "pichujeff", "rol": "Lead 3D Asset Creator", "rol_key": "lead_3d_assets" },
+        { "id": "nantrop", "rol": "Lead Avatar Creator", "rol_key": "lead_3d_avatars" }
       ],
       "miembros": [
-        { "id": "pichujeff", "rol": "Asset Creator", "rol_key": "asset_creator" },
+        { "id": "zulay", "rol": "Avatar Creator", "rol_key": "avatar_creator" }
         { "id": "jeffrythekiller", "rol": "Avatar Creator", "rol_key": "avatar_creator" },
         { "id": "lexter", "rol": "Asset Creator", "rol_key": "asset_creator" },
         { "id": "slime", "rol": "Asset Creator", "rol_key": "asset_creator" }
@@ -183,24 +192,19 @@
       "nombre": "Marketing y Comunicación",
       "descripcion": "El equipo encargado de difundir nuestra misión, gestionar nuestras redes sociales y crear estrategias de comunicación que amplíen el impacto de nuestros proyectos sociales.",
       "lideres": [
-        { "id": "lianro", "rol": "Lead Marketing & Community Manager", "rol_key": "lead_marketing" },
-        { "id": "jamirdg", "rol": "Lead Networking Logistics", "rol_key": "lead_networking" }
+        { "id": "lianro", "rol": "Lead Marketing & Community Manager", "rol_key": "lead_marketing" }
       ],
-      "miembros": [
-        { "id": "avadez", "rol": "Marketing & Assistant", "rol_key": "marketing" }
-      ]
+      "miembros": []
     },
     {
       "id": "mapmaking",
       "nombre": "Map Making",
       "descripcion": "Los creadores de nuestros mundos virtuales. Este equipo se encarga de diseñar y construir mapas y entornos en plataformas VR, creando experiencias inmersivas para nuestras causas sociales.",
       "lideres": [
-        { "id": "valenvrc", "rol": "Lead World Designer", "rol_key": "lead_world_designer" },
-        { "id": "3dmaster", "rol": "Second World Designer", "rol_key": "second_world_designer" }
+        { "id": "valenvrc", "rol": "World Technician", "rol_key": "lead_world_designer" },
+        { "id": "3dmaster", "rol": "World Designer", "rol_key": "second_world_designer" }
       ],
-      "miembros": [
-        { "id": "dannylasagna", "rol": "3D Modeler", "rol_key": "modeler_3d" }
-      ]
+      "miembros": []
     },
     {
       "id": "eventos",
@@ -223,7 +227,8 @@
       "lideres": [],
       "miembros": [
         { "id": "dannylasagna", "rol": "DJ", "rol_key": "dj" },
-        { "id": "jamirdg", "rol": "DJ", "rol_key": "dj" }
+        { "id": "jamirdg", "rol": "DJ", "rol_key": "dj" },
+        { "id": "ramses0418", "rol": "DJ", "rol_key": "dj" }
       ]
     },
     {
