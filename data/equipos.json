@@ -181,7 +181,7 @@
         { "id": "nantrop", "rol": "Lead Avatar Creator", "rol_key": "lead_3d_avatars" }
       ],
       "miembros": [
-        { "id": "zulay", "rol": "Avatar Creator", "rol_key": "avatar_creator" }
+        { "id": "zulay", "rol": "Avatar Creator", "rol_key": "avatar_creator" },
         { "id": "jeffrythekiller", "rol": "Avatar Creator", "rol_key": "avatar_creator" },
         { "id": "lexter", "rol": "Asset Creator", "rol_key": "asset_creator" },
         { "id": "slime", "rol": "Asset Creator", "rol_key": "asset_creator" }
