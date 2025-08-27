@@ -2,11 +2,39 @@
 <link rel="preload" href="/styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all">
 <noscript><link rel="stylesheet" href="/styles.min.css"></noscript>
 
-<!-- Font Awesome - Optimized loading with critical font preloading -->
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous" referrerpolicy="no-referrer">
-<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"></noscript>
+<!-- Font Awesome - Primary CDN with fallback -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==">
+
+<!-- Font Awesome Backup CDN -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if primary Font Awesome CSS loaded
+    let faLoaded = false;
+    const links = document.querySelectorAll('link[href*="font-awesome"]');
+    
+    for (let link of links) {
+        try {
+            if (link.sheet && link.sheet.cssRules) {
+                faLoaded = true;
+                break;
+            }
+        } catch (e) {
+            // Cross-origin error means CSS loaded but we can't access it
+            faLoaded = true;
+            break;
+        }
+    }
+    
+    if (!faLoaded) {
+        console.log('Primary Font Awesome CDN failed, loading backup');
+        const backupLink = document.createElement('link');
+        backupLink.rel = 'stylesheet';
+        backupLink.href = 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css';
+        backupLink.crossOrigin = 'anonymous';
+        document.head.appendChild(backupLink);
+    }
+});
+</script>
 
 <!-- Font Awesome performance optimizations -->
 <style>
@@ -24,12 +52,26 @@
     .fa-envelope::before { content: "📧"; }
     .fa-handshake::before { content: "🤝"; }
     .fa-vr-cardboard::before { content: "🥽"; }
+    .fa-instagram::before { content: "📷"; }
+    .fa-twitter::before { content: "🐦"; }
+    .fa-youtube::before { content: "📹"; }
+    .fa-tiktok::before { content: "🎵"; }
+    .fa-twitch::before { content: "📺"; }
+    .fa-home::before { content: "🏠"; }
+    .fa-link::before { content: "🔗"; }
     
     /* Enhanced fallback when Font Awesome completely fails */
     .fa-fallback .fa-discord::before { content: "💬"; font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif; }
     .fa-fallback .fa-envelope::before { content: "📧"; font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif; }
     .fa-fallback .fa-handshake::before { content: "🤝"; font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif; }
     .fa-fallback .fa-vr-cardboard::before { content: "🥽"; font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif; }
+    .fa-fallback .fa-instagram::before { content: "📷"; font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif; }
+    .fa-fallback .fa-twitter::before { content: "🐦"; font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif; }
+    .fa-fallback .fa-youtube::before { content: "📹"; font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif; }
+    .fa-fallback .fa-tiktok::before { content: "🎵"; font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif; }
+    .fa-fallback .fa-twitch::before { content: "📺"; font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif; }
+    .fa-fallback .fa-home::before { content: "🏠"; font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif; }
+    .fa-fallback .fa-link::before { content: "🔗"; font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif; }
     .fa-fallback .fas::before, .fa-fallback .fab::before, .fa-fallback .far::before { 
         font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif; 
     }
