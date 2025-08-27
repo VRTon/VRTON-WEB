@@ -90,6 +90,12 @@ class VideoOptimizer {
         // Otherwise, intersection observer will handle it
     }
     
+    // Check if browser supports WebM format
+    supportsWebM() {
+        const video = document.createElement('video');
+        return video.canPlayType('video/webm') !== '';
+    }
+    
     // Load the actual video
     loadVideo() {
         if (this.isLoaded || !this.video) return;
@@ -110,16 +116,28 @@ class VideoOptimizer {
             webmSrc = this.video.getAttribute('data-src-webm');
         }
         
-        // Load sources in order of preference
+        // Load sources in order of preference - only load one format at a time
         const sources = this.video.querySelectorAll('source');
+        
+        // Clear existing sources first
         sources.forEach(source => {
-            const sourceType = source.getAttribute('type');
-            if (sourceType === 'video/webm' && webmSrc) {
-                source.src = webmSrc;
-            } else if (sourceType === 'video/mp4' && videoSrc) {
-                source.src = videoSrc;
-            }
+            source.removeAttribute('src');
         });
+        
+        // Strategy: Try WebM first (if available and supported), then MP4
+        if (webmSrc && this.supportsWebM()) {
+            // Use WebM for better compression
+            const webmSource = Array.from(sources).find(s => s.getAttribute('type') === 'video/webm');
+            if (webmSource) {
+                webmSource.src = webmSrc;
+            }
+        } else if (videoSrc) {
+            // Use MP4 as fallback or primary on mobile
+            const mp4Source = Array.from(sources).find(s => s.getAttribute('type') === 'video/mp4');
+            if (mp4Source) {
+                mp4Source.src = videoSrc;
+            }
+        }
         
         // Rely solely on <source> elements for video loading
         // Removed fallback to video.src to prevent redundant network requests
