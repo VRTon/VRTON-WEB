@@ -84,5 +84,3 @@ markdown: kramdown
 highlighter: rouge
 
 # Ensure 404 page is processed
-keep_files:
-  - "404.html"
