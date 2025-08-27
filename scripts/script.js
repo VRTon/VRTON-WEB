@@ -137,13 +137,38 @@ function initializeConstructionModal() {
     });
 }
 
+// --- Inicialización del selector de idiomas ---
+function initializeLanguageSelector() {
+    const langButtons = document.querySelectorAll('.lang-btn');
+    
+    langButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const lang = button.getAttribute('data-lang');
+            
+            if (window.switchLanguage) {
+                window.switchLanguage(lang);
+            } else if (window.i18n && window.i18n.setLanguage) {
+                window.i18n.setLanguage(lang);
+            } else {
+                console.warn('Language system not ready yet');
+            }
+        });
+    });
+}
+
+// Make the function globally available
+window.initializeLanguageSelector = initializeLanguageSelector;
+
 // Inicializar cuando el DOM esté listo
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
         VRTon.init();
         initializeConstructionModal();
+        initializeLanguageSelector();
     });
 } else {
     VRTon.init();
     initializeConstructionModal();
+    initializeLanguageSelector();
 }
