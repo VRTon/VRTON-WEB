@@ -157,6 +157,10 @@
       "title": "Página en Construcción",
       "text1": "Estamos trabajando arduamente para crear una experiencia increíble.",
       "text2": "¡Gracias por tu paciencia! Regresa pronto para descubrir cómo estamos transformando vidas a través de la tecnología."
+    },
+    "links": {
+      "title": "VRTon",
+      "description": "Serie de actividades y eventos para recaudar fondos en apoyo a la Teletón Chile.<br>¡Accede a nuestros enlaces oficiales!"
     }
   },
   "en": {
@@ -253,6 +257,10 @@
       "title": "Page Under Construction",
       "text1": "We are working hard to create an amazing experience.",
       "text2": "Thank you for your patience! Check back soon to discover how we are transforming lives through technology."
+    },
+    "links": {
+      "title": "VRTon",
+      "description": "Series of activities and events to raise funds in support of Teletón Chile.<br>Access our official links!"
     },
     "teams": {
       "direccion": {
@@ -477,6 +485,10 @@
       "title": "Página em Construção",
       "text1": "Estamos trabalhando arduamente para criar uma experiência incrível.",
       "text2": "Obrigado pela sua paciência! Volte em breve para descobrir como estamos transformando vidas através da tecnologia."
+    },
+    "links": {
+      "title": "VRTon",
+      "description": "Série de atividades e eventos para arrecadar fundos em apoio ao Teletão Chile.<br>Acesse nossos links oficiais!"
     }
   }
 }

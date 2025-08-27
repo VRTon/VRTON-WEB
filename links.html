@@ -3,717 +3,209 @@ layout: default
 title: "Enlaces Oficiales VRTon - Redes Sociales y Comunidad VR | Síguenos"
 description: "Encuentra todos los enlaces oficiales de VRTon: Discord, Instagram, YouTube, TikTok, Twitch y más. Únete a nuestra comunidad de realidad virtual para causas solidarias."
 keywords: "enlaces VRTon, redes sociales VR, Discord VRChat, YouTube realidad virtual, Instagram VR, TikTok VRTon, Twitch streaming VR, comunidad solidaria, enlaces oficiales"
+robots: "index, follow"
 image: "/assets/icons/icon-512x512.webp"
 ---
 
-<!-- Include Critical CSS -->
-{% include critical-css.html %}
-
-<!-- Links content -->
-<!-- El contenido se mantiene igual que antes -->
-    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
-    <link rel="icon" type="image/webp" sizes="32x32" href="/assets/icons/favicon-32x32.webp">
-    <link rel="icon" type="image/webp" sizes="16x16" href="/assets/icons/favicon-16x16.webp">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.webp">
-    <link rel="manifest" href="/assets/site.webmanifest">
-    <meta name="theme-color" content="#e30613">
-
-    <!-- Critical CSS (inline) -->
-    <style>
-        /* Critical above-the-fold styles */
-        :root {
-            --primary-color: #e30613;
-            --secondary-color: #fd5c63;
-            --white: #ffffff;
-            --header-height: 80px;
-            --dark-color: #2c3e50;
-            --text-color: #333333;
-            --light-color: #f4f7f9;
-            --border-radius: 10px;
-            --transition-normal: all 0.3s ease;
-            --shadow-card: 0 10px 20px rgba(0, 0, 0, 0.1);
-            --font-size-medium: 1.1rem
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: var(--text-color);
-            background: var(--light-color);
-            /* Enhanced font rendering for better performance */
-            font-display: swap;
-            text-rendering: optimizeSpeed;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            font-synthesis: weight;
-        }
-
-        /* FOIT prevention - ensure text is always visible */
-        body.fonts-loading {
-            font-display: swap;
-        }
-
-        /* Font Awesome specific optimizations */
-        .fas,
-        .fab,
-        .far {
-            /* Prevent FOIT for icons */
-            font-display: swap;
-        }
-
-        /* Header Critical Styles */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: var(--white);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-            height: var(--header-height)
-        }
-
-        .container {
-            width: 85%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px
-        }
-
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100%;
-            flex-wrap: wrap
-        }
-
-        .logo {
-            height: 50px;
-            width: auto
-        }
-
-        .nav {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-            align-items: center
-        }
-
-        .nav a {
-            text-decoration: none;
-            color: var(--text-color);
-            font-weight: 500;
-            transition: color 0.3s ease
-        }
-
-        .nav a:hover {
-            color: var(--primary-color)
-        }
-
-        .language-selector {
-            position: relative
-        }
-
-        .language-btn {
-            background: none;
-            border: none;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            padding: 8px;
-            border-radius: 5px;
-            transition: background 0.3s ease
-        }
-
-        .language-btn:hover {
-            background: var(--light-color)
-        }
-
-        .mobile-menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: var(--text-color)
-        }
-
-        /* Hero Section Critical Styles */
-        .hero-video {
-            height: 100vh;
-            position: relative;
-            overflow: hidden;
-            margin-top: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center
-        }
-
-        #background-video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -2;
-            transition: opacity 0.5s ease
-        }
-
-        #background-video[poster] {
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat
-        }
-
-        .static-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            z-index: -2
-        }
-
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(227, 6, 19, 0.8) 0%, rgba(253, 92, 99, 0.8) 100%);
-            z-index: -1
-        }
-
-        .hero-content {
-            text-align: center;
-            color: var(--white);
-            z-index: 1;
-            width: 90%;
-            max-width: 800px;
-            padding: 2rem
-        }
-
-        .hero-content h1 {
-            font-size: 4rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
-        }
-
-        .hero-content h2 {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            font-weight: 300;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3)
-        }
-
-        /* Loading Screen Styles */
-        .loading-screen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            transition: opacity 0.8s ease, visibility 0.8s ease
-        }
-
-        .loading-screen.hidden {
-            opacity: 0;
-            visibility: hidden
-        }
-
-        .loading-logo {
-            width: 120px;
-            height: 120px;
-            margin-bottom: 30px;
-            animation: pulse 2s infinite
-        }
-
-        .loading-spinner {
-            width: 60px;
-            height: 60px;
-            border: 4px solid rgba(255, 255, 255, 0.3);
-            border-top: 4px solid white;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin-bottom: 20px
-        }
-
-        .loading-text {
-            color: white;
-            font-size: 18px;
-            font-weight: 500;
-            margin-bottom: 10px
-        }
-
-        .loading-subtext {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 14px
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg)
-            }
-
-            100% {
-                transform: rotate(360deg)
-            }
-        }
-
-        @keyframes pulse {
-
-            0%,
-            100% {
-                transform: scale(1);
-                opacity: 1
-            }
-
-            50% {
-                transform: scale(1.05);
-                opacity: 0.8
-            }
-        }
-
-        /* Countdown Critical Styles */
-        .countdown-container {
-            margin: 2rem 0;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center
-        }
-
-        .countdown-title {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: rgba(255, 255, 255, 0.9);
-            text-align: center
-        }
-
-        .countdown-timer {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-            width: 100%
-        }
-
-        .countdown-item {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-radius: 10px;
-            padding: 20px 15px;
-            min-width: 80px;
-            text-align: center;
-            flex: 0 0 auto
-        }
-
-        .countdown-number {
-            display: block;
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--white)
-        }
-
-        .countdown-label {
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.8);
-            text-transform: uppercase;
-            letter-spacing: 1px
-        }
-
-        /* Button Critical Style */
-        .btn {
-            display: inline-block;
-            background: var(--white);
-            color: var(--primary-color);
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: 600;
-            margin-top: 2rem;
-            transition: var(--transition-normal);
-            text-align: center
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2)
-        }
-
-        /* Hide main content while loading */
-        body.loading main,
-        body.loading .hero-video {
-            opacity: 0;
-            transition: opacity 0.5s ease
-        }
-
-        body.loaded main,
-        body.loaded .hero-video {
-            opacity: 1
-        }
-
-        /* Placeholder fallback styles */
-        .image-fallback {
-            width: 600px;
-            height: 400px;
-            background: linear-gradient(135deg, #e30613, #fd5c63);
-            color: white;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            border-radius: 10px;
-            font-weight: bold;
-            font-size: 1.5rem
-        }
-
-        .colaborador-image.placeholder-fallback {
-            background: linear-gradient(135deg, #e30613, #fd5c63);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            border-radius: 10px;
-            font-weight: bold;
-            font-size: 1.2rem
-        }
-
-        .colaborador-image.placeholder-fallback::after {
-            content: 'VRTon';
-        }
-
-        /* Mobile Critical Styles */
-        @media (max-width: 768px) {
-            .nav {
-                display: none
-            }
-
-            .mobile-menu-toggle {
-                display: block
-            }
-
-            .hero-content {
-                padding: 1rem
-            }
-
-            .hero-content h1 {
-                font-size: 2.5rem
-            }
-
-            .hero-content h2 {
-                font-size: 1.2rem
-            }
-
-            .countdown-timer {
-                gap: 10px
-            }
-
-            .countdown-item {
-                min-width: 70px;
-                padding: 15px 10px
-            }
-
-            .countdown-number {
-                font-size: 1.5rem
-            }
-
-            header .container {
-                justify-content: space-between
-            }
-        }
-    </style>
-
-    <!-- Non-critical CSS - Load asynchronously -->
-    <link rel="preload" href="styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all">
-    <noscript>
-        <link rel="stylesheet" href="styles.min.css">
-    </noscript>
-
-    <!-- Font Awesome - Optimized loading with critical font preloading -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.woff2"
-        as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-brands-400.woff2"
-        as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-            crossorigin="anonymous" referrerpolicy="no-referrer">
-    </noscript>
-
-    <!-- Font Awesome performance optimizations -->
-    <style>
-        /* Optimize Font Awesome rendering */
-        .fas,
-        .fab,
-        .far {
-            font-display: swap;
-            font-feature-settings: "liga" off;
-            text-rendering: optimizeSpeed;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        /* CSS-only fallback icons for critical icons */
-        .fa-discord::before {
-            content: "💬";
-        }
-
-        .fa-envelope::before {
-            content: "📧";
-        }
-
-        .fa-handshake::before {
-            content: "🤝";
-        }
-
-        .fa-vr-cardboard::before {
-            content: "🥽";
-        }
-
-        /* Enhanced fallback when Font Awesome completely fails */
-        .fa-fallback .fa-discord::before {
-            content: "💬";
-            font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif;
-        }
-
-        .fa-fallback .fa-envelope::before {
-            content: "📧";
-            font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif;
-        }
-
-        .fa-fallback .fa-handshake::before {
-            content: "🤝";
-            font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif;
-        }
-
-        .fa-fallback .fa-vr-cardboard::before {
-            content: "🥽";
-            font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif;
-        }
-
-        .fa-fallback .fas::before,
-        .fa-fallback .fab::before,
-        .fa-fallback .far::before {
-            font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif;
-        }
-    </style>
-
-    <!-- Inline CSS Loading Fallback (eliminates external request) -->
-    <script>
-        // Inline CSS fallback to eliminate critical path dependency
-        (() => {
-            const checkCSS = (href, timeout = 3000) => {
-                const link = document.querySelector(`link[href*="${href}"]`);
-                if (!link) {
-                    return;
-                }
-                let loaded = false;
-                link.onload = () => {
-                    loaded = true;
-                };
-                link.onerror = () => {
-                    createCSSFallback(href);
-                };
-                setTimeout(() => {
-                    if (!loaded) {
-                        createCSSFallback(href);
-                    }
-                }, timeout);
-            }
-
-            const createCSSFallback = (href) => {
-                // Special handling for Font Awesome
-                if (href.includes('font-awesome')) {
-                    // Try alternative CDN
-                    const fallback = document.createElement('link');
-                    fallback.rel = 'stylesheet';
-                    fallback.href = 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css';
-                    fallback.crossOrigin = 'anonymous';
-                    fallback.onerror = () => {
-                        // Apply CSS class to use emoji fallbacks
-                        document.documentElement.classList.add('fa-fallback');
-                    };
-                    document.head.appendChild(fallback);
-                } else {
-                    const fallback = document.createElement('link');
-                    fallback.rel = 'stylesheet';
-                    fallback.href = href;
-                    document.head.appendChild(fallback);
-                }
-            }
-
-            if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', () => {
-                    checkCSS('styles.min.css');
-                    checkCSS('font-awesome');
-                });
-            } else {
-                checkCSS('styles.min.css');
-                checkCSS('font-awesome');
-            }
-        })();
-    </script>
-</head>
-
-<body style="background-color: rgb(238, 62, 72);">
-    <!-- Loading Screen -->
-    <!-- como no lo quieren ni con header ni footer, quito esta loading screen que no parece funcionar sin el header o el footer
-    <div class="loading-screen" id="loading-screen">
-        <div class="loading-logo">
-            <img src="assets/icons/logo.webp" alt="VRTon Logo" style="width: 100%; height: 100%; object-fit: contain;">
-        </div>
-        <div class="loading-spinner"></div>
-        <div class="loading-text">Cargando VRTon</div>
-        <div class="loading-subtext">Preparando experiencia inmersiva...</div>
-    </div>
--->
-
-    <!-- Header placeholder for Live Server - will be replaced by components.js -->
-    <!--<header id="header-placeholder"></header> aparentemente lo querian sin header-->
-    <!-- Header se carga automáticamente vía JavaScript -->
-
-
-    <style>
-        
-    </style>
-    <!--aqui inicia el sitio de enlaces-->
-    <main class="mainStyleLinkPage">
-        <li class="liLinkPage">
-            <ul class="ulCabezeraImagen">
-                <img src="assets/icons/logo.webp" alt="" class="imgCabezeraImagen">
-            </ul>
-            <ul class="ulTitleCabezera">
-                VRTon
-            </ul>
-            <ul class="ulTextoCabezera">
-                Serie de actividades y eventos para recaudar fondos <br>
-                en apoyo a la Teletón Chile.<br>
+<!-- Hero Section -->
+<section class="furality-hero">
+    <div class="container">
+        <div class="links-header">
+            <img src="/assets/icons/logo.webp" alt="Logo VRTon" class="links-logo">
+            <h1 style="font-size: 3rem; margin-bottom: 15px; font-weight: 700;" data-i18n="links.title">VRTon</h1>
+            <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto; line-height: 1.5; opacity: 0.95;" data-i18n="links.description">
+                Serie de actividades y eventos para recaudar fondos en apoyo a la Teletón Chile.<br>
                 ¡Accede a nuestros enlaces oficiales!
-            </ul>
-            <ul class="business-card ulInstagramLink">
-                <a href="https://discord.gg/AR72D2nfpp" target="_blank" rel="noopener noreferrer"
-                    class="business-btn boldFontLinks">
-                    <span class="spanLinks spanLeftLinksB"><i
-                            class="fa-brands fa-instagram retoqueIconBlack"></i></span>Discord
-                </a>
-            </ul>
-            <ul class="business-card ulInstagramLink">
-                <a href="https://vrchat.com/home/group/grp_d66fc7e0-955b-42aa-9abb-372bc72c178f" target="_blank" rel="noopener noreferrer"
-                    class="business-btn boldFontLinks">
-                    <span class="spanLinks spanLeftLinksB"><i
-                            class="fa-brands fa-instagram retoqueIconBlack"></i></span>Grupo de VRChat
-                </a>
-            </ul>
-            <ul class="business-card ulInstagramLink">
-                <a href="https://www.instagram.com/vrtonof/" target="_blank" rel="noopener noreferrer"
-                    class="business-btn boldFontLinks">
-                    <span class="spanLinks spanLeftLinksB"><i
-                            class="fa-brands fa-instagram retoqueIconBlack"></i></span>Instagram
-                </a>
-            </ul>
-            <ul class="business-card ulTwittYTTikTokLink">
-                <a href="https://x.com/vrtonof" target="_blank" rel="noopener noreferrer"
-                    class="business-btn boldFontLinks">
-                    <span class="spanLinks spanLeftLinksA"><i
-                            class="fa-brands fa-twitter retoqueIconCeleste"></i></span>Twitter
-                </a>
-            </ul>
-            <ul class="business-card ulTwittYTTikTokLink">
-                <a href="https://www.youtube.com/@VRTonOficial" target="_blank" rel="noopener noreferrer"
-                    class="business-btn boldFontLinks">
-                    <span class="spanLinks spanLeftLinksC"><i
-                            class="fa-brands fa-youtube retoqueIconRojo"></i></span>YouTube
-                </a>
-            </ul>
-            <ul class="business-card ulTwittYTTikTokLink">
-                <a href="https://www.tiktok.com/@vrtonoficial" target="_blank" rel="noopener noreferrer"
-                    class="business-btn boldFontLinks">
-                    <span class="spanLinks spanLeftLinksA"><i class="fa-brands fa-tiktok retoqueIconBlack"></i></span>
-                    TikTok
-                </a>
-            </ul>
-            <ul class="business-card ulTwitchLink">
-                <a href="https://www.twitch.tv/vrtonof" target="_blank" rel="noopener noreferrer"
-                    class="business-btn boldFontLinks">
-                    <span class="spanLinks spanLeftLinksA"><i
-                            class="fa-brands fa-twitch retoqueIconMorado"></i></span>Twitch
-                </a>
-            </ul>
-        </li>
-    </main>
-
-    <!-- Footer placeholder - will be replaced by components.js -->
-    <!--<footer id="footer-placeholder"></footer> y aparentemente lo querian sin footer-->
-
-
-    <!-- Ventana Mantenimiento -->
-    <div class="modal-overlay" id="construction-modal">
-        <div class="modal-content construction-container"> <!--Añadimos la clase 'construction-container'-->
-            <button class="modal-close" aria-label="Cerrar">&times;</button>
-
-            <div class="logo">
-                <h1 data-i18n="maintenance.logo_title">VRTon</h1>
-            </div>
-
-            <h2 data-i18n="maintenance.title">Página en Construcción</h2>
-            <p data-i18n="maintenance.text1">Estamos trabajando arduamente para crear una experiencia increíble.</p>
-
-            <div class="progress-bar"></div>
-
-            <p data-i18n="maintenance.text2">¡Gracias por tu paciencia! Regresa pronto para descubrir cómo estamos
-                transformando vidas a través de la tecnología.</p>
-
-            <div class="social-icons">
-                <a href="https://x.com/vrtonof" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/vrtonof/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://discord.gg/kJudVebk" aria-label="Discord"><i class="fab fa-discord"></i></a>
-                <a href="https://www.youtube.com/@VRTonOficial" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.tiktok.com/@vrtonoficial" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-            </div>
-
-            <div class="gear gear1"><i class="fas fa-cog"></i></div>
-            <div class="gear gear2"><i class="fas fa-cog"></i></div>
-
-
-            <div class="footer-info">
-                <p data-i18n="footer.copyright">&copy; 2025 VRTon - Todos los derechos reservados</p>
-            </div>
+            </p>
         </div>
     </div>
+</section>
 
+<!-- Links Section -->
+<section class="links-section">
+    <div class="container">
+        <div class="links-grid">
+            <article class="link-card discord">
+                <a href="https://discord.gg/AR72D2nfpp" target="_blank" rel="noopener noreferrer" class="link-button">
+                    <span class="link-icon">
+                        <i class="fa-brands fa-discord" aria-hidden="true"></i>
+                    </span>
+                    <span class="link-text">Discord</span>
+                </a>
+            </article>
 
-    <!-- Critical JavaScript - Load immediately (optimized chain) -->
-    <script src="scripts/local-placeholder.js"></script>
-    <script src="scripts/performance.js"></script>
-    <script src="scripts/critical-path-optimizer.js"></script>
-    <script src="scripts/icon-optimizer.js"></script>
-    <script src="scripts/loading.js"></script>
+            <article class="link-card vrchat">
+                <a href="https://vrchat.com/home/group/grp_d66fc7e0-955b-42aa-9abb-372bc72c178f" target="_blank" rel="noopener noreferrer" class="link-button">
+                    <span class="link-icon">
+                        <i class="fas fa-vr-cardboard" aria-hidden="true"></i>
+                    </span>
+                    <span class="link-text">Grupo de VRChat</span>
+                </a>
+            </article>
 
-    <!-- Non-critical JavaScript - Load deferred -->
-    <!--<script src="scripts/components.js" defer></script>-->
-    <script src="scripts/i18n.js" defer></script>
-    <script src="scripts/script.js" defer></script>
-    <script src="scripts/menu.js" defer></script>
-</body>
+            <article class="link-card instagram">
+                <a href="https://www.instagram.com/vrtonof/" target="_blank" rel="noopener noreferrer" class="link-button">
+                    <span class="link-icon">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </span>
+                    <span class="link-text">Instagram</span>
+                </a>
+            </article>
 
-</html>
+            <article class="link-card twitter">
+                <a href="https://x.com/vrtonof" target="_blank" rel="noopener noreferrer" class="link-button">
+                    <span class="link-icon">
+                        <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                    </span>
+                    <span class="link-text">Twitter</span>
+                </a>
+            </article>
+
+            <article class="link-card youtube">
+                <a href="https://www.youtube.com/@VRTonOficial" target="_blank" rel="noopener noreferrer" class="link-button">
+                    <span class="link-icon">
+                        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                    </span>
+                    <span class="link-text">YouTube</span>
+                </a>
+            </article>
+
+            <article class="link-card tiktok">
+                <a href="https://www.tiktok.com/@vrtonoficial" target="_blank" rel="noopener noreferrer" class="link-button">
+                    <span class="link-icon">
+                        <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                    </span>
+                    <span class="link-text">TikTok</span>
+                </a>
+            </article>
+
+            <article class="link-card twitch">
+                <a href="https://www.twitch.tv/vrtonof" target="_blank" rel="noopener noreferrer" class="link-button">
+                    <span class="link-icon">
+                        <i class="fa-brands fa-twitch" aria-hidden="true"></i>
+                    </span>
+                    <span class="link-text">Twitch</span>
+                </a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Estilos específicos para la página de enlaces -->
+<style>
+.links-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.links-logo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(227, 6, 19, 0.3);
+}
+
+.links-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.link-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.link-button {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: #333;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.link-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+    width: 50px;
+    text-align: center;
+}
+
+.link-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Colores específicos por plataforma */
+.discord .link-icon { color: #5865F2; }
+.vrchat .link-icon { color: #00D4FF; }
+.instagram .link-icon { color: #E4405F; }
+.twitter .link-icon { color: #1DA1F2; }
+.youtube .link-icon { color: #FF0000; }
+.tiktok .link-icon { color: #000000; }
+.twitch .link-icon { color: #9146FF; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .links-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .links-logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .link-button {
+        padding: 1.25rem;
+    }
+    
+    .link-text {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .links-section {
+        padding: 2rem 0;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .link-button {
+        padding: 1rem;
+    }
+    
+    .link-icon {
+        font-size: 1.5rem;
+        margin-right: 0.75rem;
+        width: 40px;
+    }
+}
+</style>
