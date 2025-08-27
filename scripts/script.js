@@ -25,10 +25,10 @@ const VRTon = {
         const header = document.querySelector('header');
         if (!header) return;
         
-        const handleScroll = this.debounce(() => {
-            const scrolled = window.pageYOffset > this.config.headerScrollThreshold;
+        const handleScroll = VRTon.debounce(() => {
+            const scrolled = window.pageYOffset > VRTon.config.headerScrollThreshold;
             header.classList.toggle('scrolled', scrolled);
-        }, this.config.debounceDelay);
+        }, VRTon.config.debounceDelay);
         
         window.addEventListener('scroll', handleScroll, { passive: true });
     },
