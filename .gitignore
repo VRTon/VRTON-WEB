@@ -1,6 +1,9 @@
 # JetBrains IDEs
 .idea/
 
+# Jekyll build output
+_site/
+
 # Node modules (if you use Node.js in the future)
 node_modules/
 
