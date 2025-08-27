@@ -70,3 +70,19 @@ defaults:
       image: "/assets/icons/icon-512x512.webp"
       author: "VRTon"
       lang: "es"
+
+# GitHub Pages specific settings
+github: [metadata]
+
+# 404 Page Configuration
+404:
+  enabled: true
+  path: "/404.html"
+
+# Build settings for GitHub Pages
+markdown: kramdown
+highlighter: rouge
+
+# Ensure 404 page is processed
+keep_files:
+  - "404.html"

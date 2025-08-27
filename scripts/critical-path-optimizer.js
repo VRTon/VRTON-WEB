@@ -21,9 +21,9 @@ class CriticalPathOptimizer {
         this.criticalResources = new Set([
             'styles.min.css',
             'logo.webp',
-            'loading.js',
-            'performance.js',
-            'seo-enhancer.js'
+            'loading.min.js',
+            'performance.min.js',
+            'seo-enhancer.min.js'
         ]);
     }
 
@@ -70,8 +70,8 @@ class CriticalPathOptimizer {
                 { href: '/assets/icons/logo.webp', as: 'image', type: 'image/webp', fetchpriority: 'high' },
                 { href: 'https://flagcdn.com/w20/es.png', as: 'image', type: 'image/png' },
                 { href: 'https://flagcdn.com/w20/us.png', as: 'image', type: 'image/png' },
-                { href: '/styles.min.css', as: 'style' },
-                { href: '/scripts/loading.js', as: 'script' }
+                { href: '/assets/css/styles.min.css', as: 'style' },
+                { href: '/scripts/loading.min.js', as: 'script' }
             ],
             // Prefetch non-critical but important assets
             prefetch: [

@@ -103,56 +103,6 @@ body {
     font-size: var(--font-size-normal);
 }
 
-/* ========================================
-   📝 TIPOGRAFÍA BASE
-   ======================================== */
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-family-primary);
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    color: var(--dark-color);
-}
-
-h1 {
-    font-size: var(--font-size-hero);
-}
-
-h2 {
-    font-size: var(--font-size-xlarge);
-}
-
-h3 {
-    font-size: var(--font-size-large);
-}
-
-h4 {
-    font-size: var(--font-size-medium);
-}
-
-h5 {
-    font-size: var(--font-size-normal);
-}
-
-h6 {
-    font-size: var(--font-size-small);
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: var(--font-size-hero-mobile);
-    }
-    
-    h2 {
-        font-size: var(--font-size-large);
-    }
-    
-    h3 {
-        font-size: var(--font-size-medium);
-    }
-}
-
 img,
 video {
     max-width: 100%;

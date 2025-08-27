@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /404.html
 title: "404 - Página no encontrada | VRTon - Realidad Virtual para Causas Solidarias"
 description: "Página no encontrada - VRTon. La página que buscas no existe. Explora nuestras secciones sobre realidad virtual para causas solidarias y Teletón Chile."
 robots: "noindex, nofollow"
@@ -8,40 +9,29 @@ image: "/assets/icons/icon-512x512.webp"
 
 <!-- Estilos específicos para página 404 -->
 <style>
-        :root {
-            --primary-color: #e30613;
-            --secondary-color: #fd5c63;
-            --white: #ffffff;
-            --text-color: #333;
-            --light-color: #f4f7f9;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            color: var(--white);
-            min-height: 100vh;
+        /* Ensure main content area takes full height and centers the error */
+        main {
+            min-height: calc(100vh - var(--header-height, 80px) - var(--footer-height, 100px));
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
             padding: 20px;
         }
         
         .error-container {
-            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
             padding: 40px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 20px;
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 100%;
         }
         
         .error-code {
@@ -68,55 +58,12 @@ image: "/assets/icons/icon-512x512.webp"
             opacity: 0.9;
         }
         
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: var(--white);
-            color: var(--primary-color);
-            padding: 15px 30px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-        
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-            background: #f8f9fa;
-        }
-        
-        .btn i {
-            font-size: 1.2rem;
-        }
-        
-        .links {
-            margin-top: 30px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            justify-content: center;
-        }
-        
-        .link {
-            color: var(--white);
-            text-decoration: none;
-            padding: 8px 16px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 25px;
-            transition: all 0.3s ease;
-            font-size: 0.9rem;
-        }
-        
-        .link:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-2px);
-        }
-        
         @media (max-width: 768px) {
+            main {
+                min-height: calc(100vh - var(--header-height, 70px) - var(--footer-height, 80px));
+                padding: 15px;
+            }
+            
             .error-code {
                 font-size: 6rem;
             }
@@ -135,6 +82,11 @@ image: "/assets/icons/icon-512x512.webp"
         }
         
         @media (max-width: 480px) {
+            main {
+                min-height: calc(100vh - var(--header-height, 60px) - var(--footer-height, 70px));
+                padding: 10px;
+            }
+            
             .error-code {
                 font-size: 4.5rem;
             }
@@ -143,17 +95,12 @@ image: "/assets/icons/icon-512x512.webp"
                 font-size: 1.5rem;
             }
             
-            .links {
-                flex-direction: column;
-                align-items: center;
+            .error-container {
+                padding: 20px 15px;
             }
         }
     </style>
-    
-    <!-- Font Awesome para iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
-</head>
-<body>
+
     <div class="error-container">
         <div class="error-code">404</div>
         <h1 class="error-title">Página no encontrada</h1>
@@ -161,31 +108,8 @@ image: "/assets/icons/icon-512x512.webp"
             Lo sentimos, la página que buscas no existe o ha sido movida. 
             Pero no te preocupes, puedes explorar otras secciones de VRTon.
         </p>
-        
         <a href="/" class="btn" aria-label="Volver al inicio">
             <i class="fas fa-home" aria-hidden="true"></i>
             Volver al inicio
         </a>
-        
-        <div class="links">
-            <a href="/colaboradores/" class="link">Nuestro Equipo</a>
-            <a href="/#contacto" class="link">Contacto</a>
-            <a href="https://discord.gg/gSCsPKTsVJ" class="link" target="_blank" rel="noopener noreferrer">Discord</a>
-        </div>
     </div>
-    
-    <!-- Script simple para redirección automática opcional -->
-    <script>
-        // Opcional: redirigir automáticamente después de 10 segundos
-        // setTimeout(() => {
-        //     window.location.href = '/';
-        // }, 10000);
-        
-        // Analytics para páginas 404 (si tienes Google Analytics)
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'page_view', {
-                page_title: '404 - Page Not Found',
-                page_location: window.location.href
-            });
-        }
-    </script>
