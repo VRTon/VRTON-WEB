@@ -1,0 +1,60 @@
+User-agent: *
+Allow: /
+
+# Páginas principales permitidas
+Allow: /
+Allow: /index.html
+Allow: /colaboradores.html
+
+# Assets y recursos permitidos
+Allow: /assets/
+Allow: /styles.css
+Allow: /styles.min.css
+Allow: /scripts/
+Allow: /*.js
+Allow: /*.css
+Allow: /*.webp
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.svg
+Allow: /*.mp4
+Allow: /*.webm
+
+# Archivos especiales permitidos
+Allow: /sitemap.xml
+Allow: /robots.txt
+Allow: /CNAME
+
+# Bloquear archivos no públicos
+Disallow: /maintenance.html
+Disallow: /*.tmp
+Disallow: /.*
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.idea/
+Disallow: /.vscode/
+Disallow: /package*.json
+Disallow: /README.md
+Disallow: /LICENSE
+Disallow: /CONTRIBUTING.md
+Disallow: /*.ps1
+
+# Sitemap principal
+Sitemap: https://vrton.org/sitemap.xml
+
+# Tiempo de rastreo (solicitar 1 segundo entre requests)
+Crawl-delay: 1
+
+# User-agents específicos
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2

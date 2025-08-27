@@ -1,323 +1,38 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Cache Control - Disable all browser caching -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Conoce al increíble equipo multidisciplinario de VRTon: desarrolladores, diseñadores 2D/3D, audiovisuales, marketing, moderadores y más profesionales comprometidos con la realidad virtual para causas solidarias y la Teletón Chile." data-i18n-content="colaboradores.meta.description">
-    <meta name="keywords" content="equipo VRTon, colaboradores VR, profesionales realidad virtual, desarrolladores VR, diseñadores 3D, moderadores VRChat, audiovisuales VR, marketing digital, community managers, Teletón Chile, voluntarios, organizadores eventos VR">
-    <meta name="author" content="VRTon">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-    <meta name="geo.region" content="CL">
-    <meta name="geo.country" content="Chile">
-    <meta name="distribution" content="global">
-    
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://vrton.org/colaboradores.html">
-    <meta property="og:title" content="Nuestro Equipo Multidisciplinario - Colaboradores VRTon | Profesionales en Realidad Virtual" data-i18n-content="colaboradores.meta.title">
-    <meta property="og:description" content="Conoce a los profesionales que hacen posible VRTon: desarrolladores, diseñadores, audiovisuales, marketing y moderadores comprometidos con el cambio social a través de la realidad virtual." data-i18n-content="colaboradores.meta.description">
-    <meta property="og:image" content="https://vrton.org/assets/icons/icon-512x512.webp">
-    <meta property="og:image:alt" content="Equipo de colaboradores de VRTon - Profesionales en Realidad Virtual">
-    <meta property="og:site_name" content="VRTon">
-    <meta property="og:locale" content="es_ES">
-    <meta property="og:locale:alternate" content="en_US">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Nuestro Equipo Multidisciplinario - Colaboradores VRTon | Profesionales en Realidad Virtual" data-i18n-content="colaboradores.meta.title">
-    <meta property="twitter:description" content="Conoce a los profesionales que hacen posible VRTon: desarrolladores, diseñadores, audiovisuales y moderadores comprometidos con el cambio social." data-i18n-content="colaboradores.meta.description">
-    <meta property="twitter:image" content="https://vrton.org/assets/icons/icon-512x512.webp">
-    <meta property="twitter:image:alt" content="Equipo de colaboradores de VRTon - Profesionales en Realidad Virtual">
-    <meta property="twitter:site" content="@vrtonof">
-    <meta property="twitter:creator" content="@vrtonof">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://vrton.org/colaboradores.html">
-    
-    <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
-    <link rel="icon" type="image/webp" sizes="32x32" href="/assets/icons/favicon-32x32.webp">
-    <link rel="icon" type="image/webp" sizes="16x16" href="/assets/icons/favicon-16x16.webp">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.webp">
-    <link rel="manifest" href="/assets/site.webmanifest">
-    <meta name="theme-color" content="#e30613">
-    
-    <!-- Preconnect to external domains (CRITICAL - up to 80ms LCP savings) -->
-    <link rel="preconnect" href="https://flagcdn.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    
-    <!-- Preload critical flag images for language selector -->
-    <link rel="preload" href="https://flagcdn.com/w20/es.png" as="image" type="image/png">
-    <link rel="preload" href="https://flagcdn.com/w20/us.png" as="image" type="image/png">
-    <link rel="preload" href="assets/icons/logo.webp" as="image" type="image/webp" fetchpriority="high">
-    
-        <title data-i18n="colaboradores.meta.title">Nuestro Equipo Multidisciplinario - Colaboradores VRTon | Profesionales en Realidad Virtual</title>
-    
-    <!-- Critical CSS (inline) -->
-    <style>
-        /* Critical above-the-fold styles */
-        :root{--primary-color:#e30613;--secondary-color:#fd5c63;--white:#ffffff;--header-height:80px;--dark-color:#2c3e50;--text-color:#333333;--light-color:#f4f7f9;--border-radius:10px;--transition-normal:all 0.3s ease;--shadow-card:0 10px 20px rgba(0,0,0,0.1);--font-size-medium:1.1rem}
-        *{margin:0;padding:0;box-sizing:border-box}
-        body{
-            font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
-            color:var(--text-color);
-            background:var(--light-color);
-            /* Enhanced font rendering for better performance */
-            font-display: swap;
-            text-rendering: optimizeSpeed;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            font-synthesis: none;
-        }
-        
-        /* FOIT prevention - ensure text is always visible */
-        body.fonts-loading {
-            font-display: swap;
-        }
-        
-        /* Font Awesome specific optimizations */
-        .fas, .fab, .far {
-            /* Prevent FOIT for icons */
-            font-display: swap;
-        }
-        
-        /* Header Critical Styles */
-        header{position:fixed;top:0;left:0;width:100%;background:var(--white);box-shadow:0 2px 10px rgba(0,0,0,0.1);z-index:1000;height:var(--header-height)}
-        .container{width:85%;max-width:1200px;margin:0 auto;padding:0 20px}
-        header .container{display:flex;justify-content:space-between;align-items:center;height:100%;flex-wrap:wrap}
-        .logo{height:50px;width:auto}
-        .nav{display:flex;list-style:none;gap:2rem;align-items:center}
-        .nav a{text-decoration:none;color:var(--text-color);font-weight:500;transition:color 0.3s ease}
-        .nav a:hover{color:var(--primary-color)}
-        .language-selector{position:relative}
-        .language-btn{background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:5px;padding:8px;border-radius:5px;transition:background 0.3s ease}
-        .language-btn:hover{background:var(--light-color)}
-        .mobile-menu-toggle{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--text-color)}
-        
-        /* Hero Section Critical Styles */
-        .furality-hero{padding:120px 0 60px;background:linear-gradient(135deg,var(--primary-color) 0%,var(--secondary-color) 100%);color:var(--white);text-align:center}
-        .furality-hero h1{font-size:3rem;margin-bottom:15px;font-weight:700;text-shadow:2px 2px 4px rgba(0,0,0,0.3)}
-        .furality-hero p{font-size:1.2rem;max-width:800px;margin:0 auto;line-height:1.5;opacity:0.95}
-        
-        /* Navigation Critical Styles */
-        .furality-nav{background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:20px 0;position:sticky;top:var(--header-height);z-index:100}
-        
-        /* Main Container Critical Styles */
-        .furality-container{min-height:60vh;padding:40px 0}
-        
-        /* Loading Screen Styles */
-        .loading-screen{position:fixed;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,var(--primary-color) 0%,var(--secondary-color) 100%);display:flex;flex-direction:column;justify-content:center;align-items:center;z-index:9999;transition:opacity 0.8s ease,visibility 0.8s ease}
-        .loading-screen.hidden{opacity:0;visibility:hidden}
-        .loading-logo{width:120px;height:120px;margin-bottom:30px;animation:pulse 2s infinite}
-        .loading-spinner{width:60px;height:60px;border:4px solid rgba(255,255,255,0.3);border-top:4px solid white;border-radius:50%;animation:spin 1s linear infinite;margin-bottom:20px}
-        .loading-text{color:white;font-size:18px;font-weight:500;margin-bottom:10px}
-        .loading-subtext{color:rgba(255,255,255,0.8);font-size:14px}
-        @keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
-        @keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.05);opacity:0.8}}
-        
-        /* Hide main content while loading */
-        body.loading main,body.loading .furality-hero{opacity:0;transition:opacity 0.5s ease}
-        body.loaded main,body.loaded .furality-hero{opacity:1}
-        
-        /* Mobile Critical Styles */
-        @media (max-width: 768px) {
-            .nav{display:none}
-            .mobile-menu-toggle{display:block}
-            .furality-hero{padding:100px 20px 40px}
-            .furality-hero h1{font-size:2.5rem}
-            .furality-hero p{font-size:1.1rem}
-            header .container{justify-content:space-between}
-        }
-    </style>
-    
-    <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all">
-  <noscript><link rel="stylesheet" href="styles.min.css"></noscript>
-    
-    <!-- Font Awesome - Optimized loading with critical font preloading -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"></noscript>
-    
-    <!-- Font Awesome performance optimizations -->
-    <style>
-        /* CSS-only fallback icons for critical icons */
-        .fa-discord::before { content: "💬"; }
-        .fa-envelope::before { content: "📧"; }
-        .fa-handshake::before { content: "🤝"; }
-        .fa-vr-cardboard::before { content: "🥽"; }
-        .fa-spinner::before { content: "⏳"; }
-        
-        /* Enhanced fallback when Font Awesome completely fails */
-        .fa-fallback .fa-discord::before { content: "💬"; font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif; }
-        .fa-fallback .fa-envelope::before { content: "📧"; font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif; }
-        .fa-fallback .fa-handshake::before { content: "🤝"; font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif; }
-        .fa-fallback .fa-vr-cardboard::before { content: "🥽"; font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif; }
-        .fa-fallback .fa-spinner::before { content: "⏳"; font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif; }
-        .fa-fallback .fas::before, .fa-fallback .fab::before, .fa-fallback .far::before { 
-            font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", serif; 
-        }
-    </style>
-    
-    <!-- Inline CSS Loading Fallback (eliminates external request) -->
-    <script>
-        // Inline CSS fallback to eliminate critical path dependency
-        (function(){
-            function checkCSS(href, timeout = 3000) {
-                const link = document.querySelector(`link[href*="${href}"]`);
-                if (!link) {
-                    console.warn(`CSS fallback: No link found for ${href}`);
-                    return;
-                }
-                let loaded = false;
-                link.onload = () => {
-                    loaded = true;
-                    console.log(`CSS loaded successfully: ${href}`);
-                };
-                link.onerror = () => {
-                    console.warn(`CSS failed to load: ${href}`);
-                    createCSSFallback(href);
-                };
-                setTimeout(() => {
-                    if (!loaded) {
-                        console.warn(`CSS timeout: ${href}`);
-                        createCSSFallback(href);
-                    }
-                }, timeout);
-            }
-            
-            function createCSSFallback(href) {
-                // Special handling for Font Awesome
-                if (href.includes('font-awesome')) {
-                    // Try alternative CDN
-                    const fallback = document.createElement('link');
-                    fallback.rel = 'stylesheet';
-                    fallback.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css';
-                    fallback.crossOrigin = 'anonymous';
-                    fallback.onerror = () => {
-                        console.error('Font Awesome fallback also failed, using emoji fallbacks');
-                        // Apply CSS class to use emoji fallbacks
-                        document.documentElement.classList.add('fa-fallback');
-                    };
-                    document.head.appendChild(fallback);
-                } else {
-                    const fallback = document.createElement('link');
-                    fallback.rel = 'stylesheet';
-                    fallback.href = href;
-                    fallback.onerror = () => {
-                        console.error(`CSS fallback also failed for: ${href}`);
-                    };
-                    document.head.appendChild(fallback);
-                }
-            }
-            
-            if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', () => {
-                    checkCSS('styles.min.css');
-                    checkCSS('font-awesome');
-                });
-            } else {
-                checkCSS('styles.min.css');
-                checkCSS('font-awesome');
-            }
-        })();
-    </script>
+---
+layout: default
+title: "Nuestro Equipo Multidisciplinario - Colaboradores VRTon | Profesionales en Realidad Virtual"
+description: "Conoce al increíble equipo multidisciplinario de VRTon: desarrolladores, diseñadores 2D/3D, audiovisuales, marketing, moderadores y más profesionales comprometidos con la realidad virtual para causas solidarias y la Teletón Chile."
+keywords: "equipo VRTon, colaboradores VR, profesionales realidad virtual, desarrolladores VR, diseñadores 3D, moderadores VRChat, audiovisuales VR, marketing digital, community managers, Teletón Chile, voluntarios, organizadores eventos VR"
+image: "/assets/icons/icon-512x512.webp"
+---
 
-</head>
-<body class="loading">
-    <!-- Loading Screen -->
-    <div class="loading-screen" id="loading-screen">
-        <div class="loading-logo">
-            <img src="assets/icons/logo.webp" alt="VRTon Logo" style="width: 100%; height: 100%; object-fit: contain;">
-        </div>
-        <div class="loading-spinner"></div>
-        <div class="loading-text">Cargando Equipo</div>
-        <div class="loading-subtext">Preparando información del equipo...</div>
+<!-- Include Critical CSS for colaboradores page -->
+{% include critical-css.html %}
+
+<!-- Hero Section -->
+<section class="furality-hero">
+    <div class="container">
+        <h1 style="font-size: 3rem; margin-bottom: 15px; font-weight: 700;" data-i18n="colaboradores.title">Nuestro Equipo</h1>
+        <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto; line-height: 1.5; opacity: 0.95;" data-i18n="colaboradores.description">
+            Conoce a las personas que hacen posible VRTon. Un equipo multidisciplinario de profesionales voluntarios comprometidos con transformar la realidad virtual en una herramienta de mejore la calidad de vida de muchos.
+        </p>
     </div>
+</section>
 
-    <!-- Header placeholder for Live Server - will be replaced by components.js -->
-    <header id="header-placeholder" style="display: none;"></header>
-    <!-- Header se carga automáticamente vía JavaScript -->
+<!-- Navegación de Equipos -->
+<nav class="furality-nav" id="team-navigation">
+    <!-- El contenido se genera dinámicamente -->
+</nav>
 
-    <!-- Hero Section estilo Furality -->
-    <section class="furality-hero">
-        <div class="container">
-            <h1 style="font-size: 3rem; margin-bottom: 15px; font-weight: 700;" data-i18n="colaboradores.title">Nuestro Equipo</h1>
-            <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto; line-height: 1.5; opacity: 0.95;" data-i18n="colaboradores.description">
-                Conoce a las personas que hacen posible VRTon. Un equipo multidisciplinario de profesionales voluntarios comprometidos con transformar la realidad virtual en una herramienta de mejore la calidad de vida de muchos.
-            </p>
-        </div>
-    </section>
-
-    
-    <!-- Navegación de Equipos estilo Furality -->
-    <nav class="furality-nav" id="team-navigation">
-        <!-- El contenido se genera dinámicamente -->
-    </nav>
-
-    <!-- Contenedor de Equipos estilo Furality -->
-    <main class="furality-container" id="teams-container">
-        <!-- Las secciones de equipos se generan dinámicamente -->
-        <div style="text-align: center; padding: 60px 20px;">
-            <div style="display: inline-block; padding: 20px;">
-                <i class="fas fa-spinner fa-spin" style="font-size: 2rem; color: var(--white); margin-bottom: 20px;"></i>
-                <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem;" data-i18n="loading.teams">Cargando información del equipo...</p>
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer placeholder - will be replaced by components.js -->
-    <footer id="footer-placeholder"></footer>
-    <!-- Ventana Mantenimiento -->
-    <div class="modal-overlay" id="construction-modal">
-        <div class="modal-content construction-container"> <!-- Añadimos la clase 'construction-container' -->
-            <button class="modal-close" aria-label="Cerrar">&times;</button>
-    
-            <div class="logo">
-                <h1 data-i18n="maintenance.logo_title">VRTon</h1>
-            </div>
-    
-            <h2 data-i18n="maintenance.title">Página en Construcción</h2>
-            <p data-i18n="maintenance.text1">Estamos trabajando arduamente para crear una experiencia increíble.</p>
-    
-            <div class="progress-bar"></div>
-    
-            <p data-i18n="maintenance.text2">¡Gracias por tu paciencia! Regresa pronto para descubrir cómo estamos
-                transformando vidas a través de la tecnología.</p>
-    
-            <div class="social-icons">
-                <a href="https://x.com/vrtonof" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/vrtonof/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://discord.gg/kJudVebk" aria-label="Discord"><i class="fab fa-discord"></i></a>
-                <a href="https://www.youtube.com/@VRTonOficial" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.tiktok.com/@vrtonoficial" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-            </div>
-    
-            <div class="gear gear1"><i class="fas fa-cog"></i></div>
-            <div class="gear gear2"><i class="fas fa-cog"></i></div>
-    
-            <div class="footer-info">
-                <p data-i18n="footer.copyright">&copy; 2025 VRTon - Todos los derechos reservados</p>
-            </div>
+<!-- Contenedor de Equipos -->
+<main class="furality-container" id="teams-container">
+    <!-- Las secciones de equipos se generan dinámicamente -->
+    <div style="text-align: center; padding: 60px 20px;">
+        <div style="display: inline-block; padding: 20px;">
+            <i class="fas fa-spinner fa-spin" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+            <p style="color: var(--text-color); font-size: 1.1rem;" data-i18n="loading.teams">Cargando información del equipo...</p>
         </div>
     </div>
-    <!-- Scripts -->
-    <script src="scripts/performance.js"></script>
-    <script src="scripts/icon-optimizer.js"></script>
-    <script src="scripts/seo-enhancer.js"></script>
-    <script src="scripts/loading.js"></script>
-    <script src="scripts/i18n.js" defer></script>
-    <script src="scripts/components.js" defer></script>
-    <script src="scripts/script.js" defer></script>
-    <script src="scripts/menu.js" defer></script>
-    <script src="scripts/equipos.js" defer></script>
-</body>
-</html>
+</main>
+
+<script src="/scripts/equipos.js" defer></script>
