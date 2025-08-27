@@ -4,6 +4,7 @@ class I18n {
         this.currentLanguage = localStorage.getItem('vrton-language') || 'es';
         this.translations = {};
         this.isInitialized = false;
+        this.lastTranslatedLanguage = null;
         this.init();
     }
 
@@ -35,6 +36,12 @@ class I18n {
 
     setLanguage(lang) {
         if (this.translations[lang]) {
+            // Chequear si el idioma es el mismo que el actual
+            if (this.currentLanguage === lang && this.lastTranslatedLanguage === lang) {
+                console.log('Language is already set to:', lang);
+                return;
+            }
+            
             this.currentLanguage = lang;
             localStorage.setItem('vrton-language', lang);
             this.updateContent();
@@ -63,6 +70,14 @@ class I18n {
     }
 
     updateContent() {
+        // Chequear si ya se tradujo a este idioma para evitar traducciones innecesarias
+        if (this.lastTranslatedLanguage === this.currentLanguage) {
+            console.log('Content already translated to:', this.currentLanguage);
+            return;
+        }
+
+        console.log('Translating content to:', this.currentLanguage);
+
         // Actualizar todos los elementos con data-i18n
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
@@ -89,11 +104,21 @@ class I18n {
             }
         }
 
-        // Generar FAQs dinámicamente
+        // Generar FAQs dinámicamente solo si hay contenedor de FAQ en la página
         this.generateFAQs();
         
         // Actualizar meta tags para SEO
         this.updateMetaTags();
+
+        // Marcar que se completó la traducción para este idioma
+        this.lastTranslatedLanguage = this.currentLanguage;
+        console.log('Translation completed for:', this.currentLanguage);
+    }
+    
+    // Método para forzar una nueva traducción (útil cuando se cargan nuevos elementos dinámicamente)
+    forceUpdateContent() {
+        this.lastTranslatedLanguage = null;
+        this.updateContent();
     }
 
     updateElement(selector, key) {
@@ -110,30 +135,31 @@ class I18n {
 
     generateFAQs() {
         const faqContainer = document.querySelector('.faq-container');
-        if (faqContainer) {
-            const faqs = this.getText('faqs.questions');
-            if (Array.isArray(faqs) && faqs.length > 0) {
-                faqContainer.innerHTML = faqs.map((faq, index) => `
-                    <div class="faq-item" itemscope itemtype="https://schema.org/Question">
-                        <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq${index + 1}">
-                            <h3 itemprop="name">${faq.question}</h3>
-                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
-                        </div>
-                        <div class="faq-answer" id="faq${index + 1}" itemscope itemtype="https://schema.org/Answer">
-                            <div itemprop="text">
-                                <p>${faq.answer}</p>
-                            </div>
+        if (!faqContainer) {
+            // No hay contenedor de FAQ en esta página, salir silenciosamente
+            return;
+        }
+
+        const faqs = this.getText('faqs.questions');
+        if (Array.isArray(faqs) && faqs.length > 0) {
+            faqContainer.innerHTML = faqs.map((faq, index) => `
+                <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq${index + 1}">
+                        <h3 itemprop="name">${faq.question}</h3>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="faq-answer" id="faq${index + 1}" itemscope itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>${faq.answer}</p>
                         </div>
                     </div>
-                `).join('');
-                
-                // Reinicializar funcionalidad de FAQs
-                this.initializeFAQs();
-            } else {
-                console.warn('No FAQ questions found in translations');
-            }
+                </div>
+            `).join('');
+            
+            // Reinicializar funcionalidad de FAQs
+            this.initializeFAQs();
         } else {
-            console.warn('FAQ container not found in page');
+            console.warn('No FAQ questions found in translations');
         }
     }
 
