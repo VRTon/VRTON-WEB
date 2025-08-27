@@ -182,7 +182,7 @@ class VideoOptimizer {
     
     // Notify loading manager that video is ready
     notifyVideoReady() {
-        if (window.loadingManager) {
+        if (window.loadingManager && typeof window.loadingManager.markReady === 'function') {
             window.loadingManager.markReady('video');
         }
         

@@ -188,6 +188,19 @@ class SimpleLoadingManager {
         console.log('🔧 Force completing loading...');
         this.completeLoading();
     }
+    
+    // Compatibility methods for old loading system
+    markReady(state) {
+        console.log(`📋 markReady called for: ${state} (compatibility mode)`);
+        // In simple mode, we don't use states, so just ignore
+        return true;
+    }
+    
+    // Compatibility method for old loading system
+    isReady(state) {
+        console.log(`📋 isReady called for: ${state} (compatibility mode)`);
+        return true; // Always return true in simple mode
+    }
 }
 
 // =============================================================================
