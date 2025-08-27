@@ -47,6 +47,14 @@
       "downloadUrl": "https://github.com/VRTon/org.vrton.diadema/releases/download/1.0.0/VRTonDiadema.unitypackage",
       "imageUrl": "https://raw.githubusercontent.com/VRTon/org.vrton.diadema/refs/heads/main/Diadema.png",
       "category": "Ropa"
+    },
+    {
+      "name": "Mesa VRTON2025",
+      "description": "Mesa promocional de VRTon usada para exponer articulos",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.MesaVrton2025/releases/download/1.0.0/MesaVRTON.unitypackage",
+      "imageUrl": "https://cdn.discordapp.com/attachments/1382142012735750244/1410370686978887783/image.png?ex=68b0c58f&is=68af740f&hm=ad534f55555b511a72cd72a45afeadd5c0a1b7abbe1e4fe53df0e1ed94cf306a&",
+      "category": "Ropa"
     }
   ]
 }
