@@ -453,7 +453,8 @@ nav ul li a.active:after {
     padding: 0 20px;
 }
 
-.hero-content h1 {
+.hero-content h1,
+.hero-title-font {
     font-size: 5rem;
     font-weight: 800;
     margin-bottom: 20px;
@@ -468,13 +469,6 @@ nav ul li a.active:after {
     max-width: 200px;
     height: auto;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
-}
-
-.hero-title-font {
-    font-size: 5rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-content h2 {
@@ -498,7 +492,7 @@ nav ul li a.active:after {
     text-align: center;
     max-width: 600px;
     width: 100%;
-    display: contents;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -526,9 +520,7 @@ nav ul li a.active:after {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: var(--border-radius);
     padding: 15px 10px;
-    width: 100px !important;
-    min-width: 100px !important;
-    max-width: 100px !important;
+    width: 100px;
     text-align: center;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     flex-shrink: 0;
@@ -893,13 +885,11 @@ nav ul li a.active:after {
 
 .faqs {
     background-color: var(--light-color);
-    margin-top: 0.5rem;
+    margin-top: calc(0.5rem - 80px);
     margin-bottom: 0.5rem;
-    padding-top: 0.5rem;
+    padding-top: calc(0.5rem + 80px);
     padding-bottom: 0.5rem;
     position: relative;
-    padding-top: calc(0.5rem + 80px);
-    margin-top: calc(0.5rem - 80px);
 }
 
 .faq-container {
@@ -1179,10 +1169,7 @@ footer p {
         padding-bottom: 60px;
     }
 
-    .hero-content h1 {
-        font-size: 3.5rem;
-    }
-
+    .hero-content h1,
     .hero-title-font {
         font-size: 3.5rem;
     }
