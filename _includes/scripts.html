@@ -13,5 +13,20 @@
 <script src="/scripts/i18n.js" defer></script>
 <script src="/scripts/countdown.js" defer></script>
 <script src="/scripts/script.js" defer></script>
-<script src="/scripts/faq.js" defer></script>
+<!-- FAQ script is loaded conditionally only on pages that have FAQ elements -->
+<!-- This prevents unnecessary script loading on pages like colaboradores.html -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if page has FAQ elements
+    if (document.querySelector('.faq-container') || document.querySelector('.faq-item')) {
+        const faqScript = document.createElement('script');
+        faqScript.src = '/scripts/faq.js';
+        faqScript.defer = true;
+        document.head.appendChild(faqScript);
+        console.log('FAQ script loaded conditionally');
+    } else {
+        console.log('No FAQ elements found, skipping FAQ script');
+    }
+});
+</script>
 <script src="/scripts/menu.js" defer></script>

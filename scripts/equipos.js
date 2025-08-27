@@ -157,7 +157,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const teamSection = crearSeccionEquipo(equipo);
             container.appendChild(teamSection);
         });
-        if (window.i18n) {
+        if (window.i18n && typeof window.i18n.forceUpdateContent === 'function') {
+            // Forzar actualización ya que se generaron nuevos elementos dinámicamente
+            window.i18n.forceUpdateContent();
+        } else if (window.i18n && typeof window.i18n.updateContent === 'function') {
+            // Fallback para compatibilidad
             window.i18n.updateContent();
         }
     }

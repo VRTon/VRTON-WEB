@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('FAQs encontradas:', faqItems.length);
 
     if (faqItems.length === 0) {
-        console.warn('No se encontraron elementos FAQ en la página');
+        console.log('No se encontraron elementos FAQ en la página - Script FAQ finalizando');
         return;
     }
 
