@@ -3,9 +3,15 @@
 
 # Site settings
 title: "VRTon - Realidad Virtual para Causas Solidarias"
-description: "Organización sin ánimo de lucro que utiliza realidad virtual para crear impacto social positivo"
+description: "Organización sin ánimo de lucro que utiliza realidad virtual para crear impacto social positivo. Apoyamos la Teletón Chile 2025. Únete a nuestra comunidad VR solidaria."
 url: "https://vrton.org"
 baseurl: ""
+
+# Keywords for SEO
+keywords: "realidad virtual, VR, organización sin lucro, cambio social, educación inmersiva, terapias VR, tecnología social, impacto positivo, causas solidarias, Teletón Chile, VRChat, eventos solidarios, recaudación fondos, discapacidad, rehabilitación, VRTon 2025"
+
+# Open Graph default image
+image: "/assets/icons/icon-512x512.webp"
 
 # Permalink structure (removes .html)
 permalink: pretty
@@ -37,6 +43,14 @@ collections_dir: collections
 # SEO settings
 lang: es
 author: VRTon
+locale: es_ES
+
+# Twitter settings
+twitter:
+  username: vrtonof
+  card: summary_large_image
+
+# Social media profiles
 social:
   name: VRTon
   links:
@@ -45,3 +59,14 @@ social:
     - https://www.youtube.com/@VRTonOficial
     - https://discord.gg/gSCsPKTsVJ
     - https://www.tiktok.com/@vrtonoficial
+    - https://www.twitch.tv/vrtonof
+
+# Default values for all pages
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      image: "/assets/icons/icon-512x512.webp"
+      author: "VRTon"
+      lang: "es"
