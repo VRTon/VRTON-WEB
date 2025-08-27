@@ -29,8 +29,11 @@ lang: es
     <div class="hero-overlay"></div>
     <div class="container">
         <div class="hero-content">
-            <h1 data-i18n="hero.title"></h1>
-            <h2 data-i18n="hero.subtitle" data-i18n-html></h2>
+            <!-- <div class="hero-logo">
+                <img src="/assets/icons/icon-512x512.webp" alt="VRTon Logo" width="250" height="250">
+            </div> -->
+            <h1 data-i18n="hero.title" data-i18n-html class="hero-title-font"></h1>
+            <h2 data-i18n="hero.subtitle" data-i18n-html class="hero-title-font"></h2>
             <div class="countdown-container">
                 <div class="countdown-title" data-i18n="hero.countdown"></div>
                 <div class="countdown-timer" id="countdown-timer">
@@ -52,7 +55,9 @@ lang: es
                     </div>
                 </div>
             </div>
-            <a href="#about" class="btn" aria-label="Conocer más sobre nuestra causa" data-i18n="hero.button"></a>
+            <div class="hero-button-container">
+                <a href="#about" class="btn btn-hero" aria-label="Conocer más sobre nuestra causa" data-i18n="hero.button"></a>
+            </div>
         </div>
     </div>
 </section>
