@@ -153,7 +153,7 @@
       ],
       "miembros": [
         { "id": "jamirdg", "rol": "Director AudioVisual", "rol_key": "av_director" },
-        { "id": "iza", "rol": "Editor de Video", "rol_key": "video_editor" },
+        { "id": "iza42", "rol": "Editor de Video", "rol_key": "video_editor" },
         { "id": "dantalion", "rol": "Editor de Video", "rol_key": "video_editor" },
         { "id": "lianro", "rol": "Fotografa", "rol_key": "photographer" }
       ]
