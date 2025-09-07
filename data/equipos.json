@@ -111,6 +111,11 @@
       "nombre": "Ryu Aotsuki",
       "foto": "ryu-aotsuki.webp",
       "social": {}
+    },
+    "iza42": {
+      "nombre": "Iza42",
+      "foto": "iza42.webp",
+      "social": {}
     }
   },
   "equipos": [
@@ -136,7 +141,7 @@
       "miembros": [
         { "id": "valenvrc", "rol": "BackEnd Developer", "rol_key": "backend_dev" },
         { "id": "foxyctg21", "rol": "FullStack Developer", "rol_key": "fullstack_dev" },
-        { "id": "pichujeff", "rol": "FullStack Developer", "rol_key": "fullstack_dev" },
+        { "id": "pichujeff", "rol": "FullStack Developer", "rol_key": "fullstack_dev" }
       ]
     },
     {
@@ -147,6 +152,8 @@
         { "id": "foxyctg21", "rol": "Lider de AudioVisuales", "rol_key": "audiovisual_lead" }
       ],
       "miembros": [
+        { "id": "jamirdg", "rol": "Director AudioVisual", "rol_key": "av_director" },
+        { "id": "iza", "rol": "Editor de Video", "rol_key": "video_editor" },
         { "id": "dantalion", "rol": "Editor de Video", "rol_key": "video_editor" },
         { "id": "lianro", "rol": "Fotografa", "rol_key": "photographer" }
       ]
