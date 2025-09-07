@@ -150,7 +150,8 @@
       "lead_host": "Líder de Logística de Hosts",
       "host": "Host",
       "dj": "DJ",
-      "ingame_moderator": "Moderador InGame y Discord"
+      "ingame_moderator": "Moderador InGame y Discord",
+      "av_director": "Director Audiovisual"
     },
     "maintenance": {
       "logo_title": "VRTon",
@@ -324,7 +325,8 @@
       "lead_host": "Lead Host Logistics",
       "host": "Host",
       "dj": "DJ",
-      "ingame_moderator": "InGame & Discord Moderator"
+      "ingame_moderator": "InGame & Discord Moderator",
+      "av_director": "Audiovisual Director"
     }
   },
   "pt": {
@@ -478,7 +480,8 @@
       "lead_host": "Líder de Logística de Anfitriões",
       "host": "Anfitrião",
       "dj": "DJ",
-      "ingame_moderator": "Moderador InGame e Discord"
+      "ingame_moderator": "Moderador InGame e Discord",
+      "av_director": "Diretor Audiovisual"
     },
     "maintenance": {
       "logo_title": "VRTon",
