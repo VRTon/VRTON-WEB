@@ -130,13 +130,12 @@
       "nombre": "Desarrollo",
       "descripcion": "Encargados de la creación de webs, aplicaciones bots y demás herramientas utilizadas por VRTon.",
       "lideres": [
-        
         { "id": "maximohfoxy", "rol": "Development Lead, FullStack Developer", "rol_key": "dev_lead_fullstack" }
       ],
       "miembros": [
         { "id": "valenvrc", "rol": "BackEnd Developer", "rol_key": "backend_dev" },
         { "id": "foxyctg21", "rol": "FullStack Developer", "rol_key": "fullstack_dev" },
-        { "id": "pichujeff", "rol": "FullStack Developer", "rol_key": "fullstack_dev" },
+        { "id": "pichujeff", "rol": "FullStack Developer", "rol_key": "fullstack_dev" }
       ]
     },
     {
