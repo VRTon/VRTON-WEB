@@ -76,7 +76,7 @@ class CriticalPathOptimizer {
             // Prefetch non-critical but important assets
             prefetch: [
                 // Video prefetch removed - handled by video-optimizer.js for smart loading
-                { href: '/scripts/i18n.js', as: 'script' }
+                { href: '/scripts/i18n-v3.js', as: 'script' }
             ]
         };
 

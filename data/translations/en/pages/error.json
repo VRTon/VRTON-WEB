@@ -1,0 +1,19 @@
+{
+  "error": {
+    "title": "Page not found",
+    "code": "404",
+    "message": "Sorry, the page you're looking for doesn't exist",
+    "description": "The URL you entered doesn't match any page on our website",
+    "suggestions": {
+      "title": "Suggestions",
+      "home": "Go to home",
+      "colaboradores": "View collaborators",
+      "links": "Useful links",
+      "contact": "Contact support"
+    },
+    "search": {
+      "placeholder": "Search the site...",
+      "button": "Search"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "eventRules": {
+    "title": "VRTon Event Rules",
+    "subtitle": "Guidelines for participants",
+    "lastUpdated": "Last updated: January 15, 2025",
+    "sections": {
+      "general": {
+        "title": "General Rules",
+        "content": {
+          "participation": "Voluntary and free participation",
+          "age": "Minimum age 16 years",
+          "supervision": "Minors require adult supervision",
+          "equipment": "Responsible use of VR equipment",
+          "respect": "Respect towards other participants and organization"
+        }
+      },
+      "safety": {
+        "title": "Safety",
+        "content": {
+          "health": "Health status declaration required",
+          "conditions": "Do not participate with dizziness, fatigue or discomfort",
+          "breaks": "Mandatory breaks every 30 minutes",
+          "supervision": "Constant supervision during VR use",
+          "emergency": "Emergency procedures available"
+        }
+      },
+      "conduct": {
+        "title": "Code of Conduct",
+        "content": {
+          "respect": "Respectful treatment towards everyone",
+          "language": "Appropriate language at all times",
+          "disruption": "Disruptive behavior prohibited",
+          "property": "Care of equipment and spaces",
+          "cooperation": "Collaboration with staff and volunteers"
+        }
+      },
+      "privacy": {
+        "title": "Privacy and Data",
+        "content": {
+          "consent": "Consent for recording and photography",
+          "data": "Personal data protection",
+          "sharing": "Information sharing policy",
+          "rights": "Participant rights",
+          "contact": "Contact for privacy inquiries"
+        }
+      }
+    },
+    "acceptance": {
+      "title": "Terms Acceptance",
+      "content": "By participating in the VRTon event, I agree to comply with all established rules",
+      "date": "Acceptance date",
+      "signature": "Participant signature"
+    }
+  }
+}

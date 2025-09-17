@@ -1,0 +1,23 @@
+{
+  "legal": {
+    "lastUpdated": "Última atualização:",
+    "tableOfContents": "Sumário",
+    "backToTop": "Voltar ao início",
+    "print": "Imprimir documento",
+    "download": "Baixar PDF",
+    "contact": "Contato",
+    "questions": "Tem dúvidas?",
+    "support": "Entre em contato para mais informações",
+    "acceptance": {
+      "title": "Aceitação dos Termos",
+      "required": "A aceitação destes termos é obrigatória para continuar",
+      "checkbox": "Li e aceito os termos estabelecidos",
+      "button": "Aceitar termos"
+    },
+    "navigation": {
+      "previous": "Anterior",
+      "next": "Próximo",
+      "sections": "Seções"
+    }
+  }
+}

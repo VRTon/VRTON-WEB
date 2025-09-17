@@ -1,0 +1,110 @@
+{
+  "termsVolunteer": {
+    "title": "Volunteer Terms and Conditions",
+    "subtitle": "Learn about the conditions to be part of the VRTon team",
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "content": "Welcome to VRTon, a non-profit organization dedicated to using virtual reality technology to create a positive impact on society. These terms and conditions establish the foundation for your participation as a volunteer in our projects and events."
+      },
+      "purpose": {
+        "title": "Purpose and Mission",
+        "content": "VRTon's main objective is to organize charitable events using virtual reality as a tool to raise awareness and funds for important social causes, especially in support of Teletón Chile."
+      },
+      "volunteer_definition": {
+        "title": "Volunteer Definition",
+        "content": "A VRTon volunteer is any person who, freely and without receiving financial compensation, dedicates part of their time and skills to contribute to achieving the organization's objectives."
+      },
+      "requirements": {
+        "title": "Requirements to be a Volunteer",
+        "subtitle": "To be part of the VRTon team as a volunteer, you must meet the following requirements:",
+        "items": [
+          "Be over 16 years old or have parental authorization",
+          "Have stable internet access and necessary devices for assigned tasks",
+          "Commit to respecting VRTon's values and principles",
+          "Demonstrate time availability according to role responsibilities",
+          "Maintain professional and respectful conduct in all organization spaces"
+        ]
+      },
+      "responsibilities": {
+        "title": "Volunteer Responsibilities",
+        "items": [
+          "Complete assigned tasks within established deadlines",
+          "Actively participate in scheduled meetings and activities",
+          "Maintain confidentiality of sensitive organization information",
+          "Represent VRTon with dignity in all contexts",
+          "Communicate any issues or limitations in a timely manner",
+          "Follow guidelines and protocols established by each department"
+        ]
+      },
+      "rights": {
+        "title": "Volunteer Rights",
+        "items": [
+          "Receive necessary guidance and training to perform their role",
+          "Be treated with respect and dignity by all organization members",
+          "Have access to relevant information about projects they participate in",
+          "Express constructive opinions and suggestions",
+          "Request department or role changes based on availability",
+          "Receive recognition for their contribution to the organization"
+        ]
+      },
+      "departments": {
+        "title": "Departments and Roles",
+        "content": "VRTon is organized into different departments, each with specific responsibilities:",
+        "list": [
+          "Management: Strategic decision-making and general supervision",
+          "Development: Creation of applications, websites, and technical tools",
+          "Audiovisuals: Multimedia content production and streaming",
+          "2D/3D Design: Creation of visual elements and modeling",
+          "Marketing: Promotion, communication, and social media management",
+          "Mapmaking: Design and construction of virtual worlds",
+          "Events & Host: Organization and hosting of activities",
+          "DJs & Shows: Musical entertainment and performances",
+          "Moderation: Maintaining order in digital spaces"
+        ]
+      },
+      "conduct": {
+        "title": "Code of Conduct",
+        "content": "All volunteers must adhere to the following code of conduct:",
+        "items": [
+          "Maintain professional and respectful behavior",
+          "Do not discriminate based on race, gender, sexual orientation, religion, or nationality",
+          "Avoid conflicts of interest that may compromise VRTon's mission",
+          "Do not use position at VRTon for personal benefit",
+          "Respect intellectual property and organization resources",
+          "Comply with digital platform usage policies"
+        ]
+      },
+      "termination": {
+        "title": "Termination of Volunteering",
+        "content": "Volunteering may end for the following reasons:",
+        "reasons": [
+          "Voluntary resignation of the collaborator",
+          "Serious breach of assigned responsibilities",
+          "Violation of the code of conduct",
+          "Prolonged inactivity without justification",
+          "Organizational restructuring",
+          "Completion of specific project or event"
+        ],
+        "process": "In case of termination, an orderly transition of responsibilities will be carried out and constructive feedback will be provided."
+      },
+      "confidentiality": {
+        "title": "Confidentiality and Privacy",
+        "items": [
+          "Volunteers commit to maintaining confidentiality of sensitive information",
+          "Not sharing personal data of other members without authorization",
+          "Protecting strategic information of the organization",
+          "Respecting privacy in virtual spaces and communications"
+        ]
+      },
+      "modifications": {
+        "title": "Modifications to these Terms",
+        "content": "VRTon reserves the right to modify these terms and conditions. Modifications will be communicated through official organization channels at least 15 days in advance."
+      },
+      "contact": {
+        "title": "Contact and Inquiries",
+        "content": "For inquiries about these terms and conditions or the volunteering process, you can contact us through our official Discord server or established communication channels."
+      }
+    }
+  }
+}

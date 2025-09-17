@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "inicio": "Home",
+    "about": "About Us",
+    "faqs": "FAQs",
+    "contacto": "Contact",
+    "colaboradores": "Collaborators"
+  },
+  "footer": {
+    "description": "Transforming virtual reality into social change. Non-profit organization.",
+    "quickLinks": "Quick Links",
+    "follow": "Follow Us",
+    "copyright": "© 2025 VRTon - All rights reserved",
+    "terms": "Volunteer Terms",
+    "rules": "Event Rules"
+  },
+  "contacto": {
+    "title": "Contact",
+    "community": "Join our community",
+    "description": "Interested in participating, collaborating, or simply learning more about VRTon? Join our Discord and become part of our community.",
+    "button": "Join Discord",
+    "business": {
+      "title": "Collaborate with Us",
+      "description": "If you represent a company or brand and would like to support our cause, write to us, we would love to meet you!",
+      "button": "WRITE TO US"
+    }
+  },
+  "maintenance": {
+    "logo_title": "VRTon",
+    "title": "Page Under Construction",
+    "text1": "We are working hard to create an amazing experience.",
+    "text2": "Thank you for your patience! Check back soon to discover how we are transforming lives through technology."
+  },
+  "legal": {
+    "lastUpdated": "Last updated:",
+    "tableOfContents": "Table of Contents",
+    "backToTop": "Back to top",
+    "print": "Print document",
+    "share": "Share"
+  }
+}

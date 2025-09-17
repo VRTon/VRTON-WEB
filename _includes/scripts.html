@@ -5,9 +5,11 @@
 <script src="/scripts/loading.min.js"></script>
 <script src="/scripts/video-optimizer.min.js"></script>
 
-<!-- Non-critical JavaScript - Load deferred -->
-<!-- <script src="/scripts/components.js" defer></script> No longer needed with Jekyll includes -->
-<script src="/scripts/i18n.min.js" defer></script>
+<!-- Translation System - Load before i18n for compatibility -->
+<script src="/scripts/modular-translations.js"></script>
+
+<!-- Enhanced I18n System V3 -->
+<script src="/scripts/i18n-v3.js" defer></script>
 <script src="/scripts/countdown.min.js" defer></script>
 <script src="/scripts/script.min.js" defer></script>
 <!-- FAQ script is loaded conditionally only on pages that have FAQ elements -->

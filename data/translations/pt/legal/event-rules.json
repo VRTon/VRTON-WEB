@@ -1,0 +1,55 @@
+{
+  "eventRules": {
+    "title": "Regras do Evento VRTon",
+    "subtitle": "Diretrizes para participantes",
+    "lastUpdated": "Última atualização: 15 de janeiro de 2025",
+    "sections": {
+      "general": {
+        "title": "Regras Gerais",
+        "content": {
+          "participation": "Participação voluntária e gratuita",
+          "age": "Idade mínima 16 anos",
+          "supervision": "Menores requerem supervisão de adulto",
+          "equipment": "Uso responsável do equipamento VR",
+          "respect": "Respeito a outros participantes e organização"
+        }
+      },
+      "safety": {
+        "title": "Segurança",
+        "content": {
+          "health": "Declaração de estado de saúde requerida",
+          "conditions": "Não participar com tonturas, fadiga ou mal-estar",
+          "breaks": "Pausas obrigatórias a cada 30 minutos",
+          "supervision": "Supervisão constante durante uso de VR",
+          "emergency": "Procedimentos de emergência disponíveis"
+        }
+      },
+      "conduct": {
+        "title": "Código de Conduta",
+        "content": {
+          "respect": "Tratamento respeitoso a todos",
+          "language": "Linguagem apropriada em todos os momentos",
+          "disruption": "Comportamento disruptivo proibido",
+          "property": "Cuidado com equipamentos e espaços",
+          "cooperation": "Colaboração com staff e voluntários"
+        }
+      },
+      "privacy": {
+        "title": "Privacidade e Dados",
+        "content": {
+          "consent": "Consentimento para gravação e fotografia",
+          "data": "Proteção de dados pessoais",
+          "sharing": "Política de compartilhamento de informações",
+          "rights": "Direitos do participante",
+          "contact": "Contato para consultas de privacidade"
+        }
+      }
+    },
+    "acceptance": {
+      "title": "Aceitação dos Termos",
+      "content": "Ao participar do evento VRTon, aceito cumprir com todas as regras estabelecidas",
+      "date": "Data de aceitação",
+      "signature": "Assinatura do participante"
+    }
+  }
+}

@@ -67,7 +67,7 @@ docker-compose up --build
 ├── _layouts/            # Plantillas de página
 │   └── default.html
 ├── scripts/             # JavaScript del sitio
-│   ├── i18n.js         # Sistema de traducción
+│   ├── i18n-v3.js      # Sistema de traducción (v3)
 │   ├── equipos.js      # Gestión de equipos
 │   ├── faq.js          # Preguntas frecuentes
 │   └── ...

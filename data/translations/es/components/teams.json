@@ -1,0 +1,69 @@
+{
+  "teams": {
+    "direccion": {
+      "name": "Dirección",
+      "description": "Equipo encargado de la toma de decisiones estratégicas, planificación y supervisión general de las operaciones de VRTon."
+    },
+    "desarrollo": {
+      "name": "Desarrollo",
+      "description": "Encargados de la creación de webs, aplicaciones, bots y demás herramientas utilizadas por VRTon."
+    },
+    "audiovisuales": {
+      "name": "Audiovisuales",
+      "description": "El equipo creativo utiliza diseño audiovisual para crear contenido multimedia que comunique efectivamente nuestra misión social."
+    },
+    "2d": {
+      "name": "Diseño 2D",
+      "description": "Nuestro equipo creativo utiliza diseño 2D para crear interfaces, personajes, ambientes y elementos visuales que comunican efectivamente nuestra misión social."
+    },
+    "3d": {
+      "name": "Diseño 3D",
+      "description": "Nuestro equipo creativo utiliza diseño 3D para crear modelos, personajes y ambientes que comunican efectivamente nuestra misión social."
+    },
+    "marketing": {
+      "name": "Marketing y Comunicación",
+      "description": "El equipo encargado de difundir nuestra misión, gestionar nuestras redes sociales y crear estrategias de comunicación que amplifiquen el impacto de nuestros proyectos sociales."
+    },
+    "mapmaking": {
+      "name": "Map Making",
+      "description": "Los creadores de nuestros mundos virtuales. Este equipo se encarga de diseñar y construir mapas y ambientes en plataformas VR, creando experiencias inmersivas para nuestras causas sociales."
+    },
+    "eventos": {
+      "name": "Host y Actividades",
+      "description": "Los arquitectos de nuestras experiencias virtuales. Este equipo diseña, organiza y ejecuta eventos, shows y experiencias interactivas que conectan a nuestra comunidad."
+    },
+    "dj": {
+      "name": "DJs y Shows",
+      "description": "Los artistas que llevan música y espectáculo a nuestras experiencias virtuales. Este equipo se encarga de crear eventos musicales y shows en vivo que entretienen y conectan a nuestra comunidad."
+    },
+    "moderacion": {
+      "name": "Moderación",
+      "description": "Los guardianes de nuestros espacios virtuales. Este equipo mantiene un ambiente seguro y positivo en nuestras plataformas, asegurando que todos puedan participar cómodamente en nuestras actividades benéficas."
+    }
+  },
+  "roles": {
+    "founder": "Fundador",
+    "co_founder": "Co-Fundador",
+    "director": "Director",
+    "lead_developer": "Líder de Desarrollo",
+    "developer": "Desarrollador",
+    "lead_audiovisual": "Líder de Audiovisuales",
+    "audiovisual_producer": "Productor Audiovisual",
+    "video_editor": "Editor de Video",
+    "lead_2d_designer": "Líder de Diseño 2D",
+    "2d_designer": "Diseñador 2D",
+    "lead_3d_designer": "Líder de Diseño 3D",
+    "3d_designer": "Diseñador 3D",
+    "lead_marketing": "Líder de Marketing",
+    "marketing_specialist": "Especialista en Marketing",
+    "community_manager": "Community Manager",
+    "social_media_manager": "Social Media Manager",
+    "lead_world_designer": "Líder de Diseño de Mundo",
+    "second_world_designer": "Segundo Diseñador de Mundo",
+    "modeler_3d": "Modelador 3D",
+    "lead_host": "Líder de Logística de Hosts",
+    "host": "Host",
+    "dj": "DJ",
+    "ingame_moderator": "Moderador InGame y Discord"
+  }
+}

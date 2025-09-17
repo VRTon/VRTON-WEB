@@ -1,0 +1,23 @@
+{
+  "maintenance": {
+    "title": "Under construction",
+    "subtitle": "We're working to improve your experience",
+    "message": "Our website is being updated to offer you the best possible experience",
+    "features": {
+      "title": "Meanwhile, discover what we're preparing",
+      "vr_experiences": "New virtual reality experiences",
+      "social_impact": "Greater social impact",
+      "accessibility": "Better accessibility",
+      "performance": "Optimized performance"
+    },
+    "eta": {
+      "title": "Estimated time",
+      "message": "We'll be back soon",
+      "contact": "Need to contact us urgently?"
+    },
+    "social": {
+      "title": "Follow us on social media",
+      "message": "Stay up to date with the latest news"
+    }
+  }
+}

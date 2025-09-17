@@ -1,0 +1,23 @@
+{
+  "faqs": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "question": "Who and how can participate in VRTon?",
+        "answer": "Any person or community that wants to help organize VRTon is welcome, always respecting the fact of doing so without profit motives or hidden agendas. If you are interested in participating as a volunteer, go to our discord channel."
+      },
+      {
+        "question": "What will the funds raised this year be for? What is Teletón?",
+        "answer": "For the third consecutive year we will be raising funds for <b>Teletón Chile</b>.<br>Teletón is a charitable campaign held in several countries with the objective of raising funds to help people with disabilities, mainly through rehabilitation centers and inclusion programs.<br>In Chile, Teletón is an annual televised charity event that has been held since 1978. It was the first telethon in Ibero-America and its format has been replicated in other countries in the region. More information at <a href=\"https://www.teleton.cl/\">https://www.teleton.cl/</a>"
+      },
+      {
+        "question": "Is this transparent? Where does the money go?",
+        "answer": "To maximize transparency, all donations will be made through Teleton's official means, without any intermediary on our part.<br>For questions regarding the transparency of Teleton itself, go to: <a href=\"https://www.teleton.cl/preguntas-frecuentes-y-mitos-sobre-teleton/\">https://www.teleton.cl/preguntas-frecuentes-y-mitos-sobre-teleton/</a>"
+      },
+      {
+        "question": "What kind of activities will there be in this year's VRTon?",
+        "answer": "We have planned a wide range of activities inside and outside VRChat, from games and roleplay to live shows with music and artists! A complete itinerary will be published closer to the date."
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "coc": {
+    "title": "Codigo de Conducta VRTon 2025",
+    "subtitle": "Reglas y Normas del Evento",
+    "sections": {
+      "introduction": {
+        "title": "📘 Codigo de Conducta de VRTon",
+        "content": "El Codigo de Conducta de VRTon busca asegurar un entorno seguro, inclusivo y respetuoso en todas nuestras instancias (VRChat, Discord, web y redes sociales).",
+        "moderation": "Si bien se detallan normas y ejemplos de comportamientos no permitidos, la determinacion final de que contenido o conducta se considera apta o inapropiada corresponde unicamente al equipo de moderacion y administracion de VRTon.",
+        "scope": "Las siguientes normas aplican tanto a acciones y conductas como a contenido compartido en cualquier forma: avatares, imagenes de perfil, banners, emojis, stickers, items, sonidos, animaciones o cualquier otro recurso digital.",
+        "compliance": "Asimismo, todos los participantes deben cumplir con los Terminos y Condiciones de VRTon, ademas de los Terminos de Servicio y Normas de las plataformas utilizadas."
+      },
+      "contentRestrictions": {
+        "title": "1. Restricciones de Contenido",
+        "sexual": {
+          "title": "🚫 Contenido sexual o explicito",
+          "avatars": "Avatares desnudos, con genitales visibles o ropas excesivamente reveladoras.",
+          "erp": "ERP, gestos, conversaciones o conductas sexuales o sugerentes.",
+          "media": "Imagenes de perfil, banners, stickers o emojis con contenido NSFW."
+        },
+        "disturbing": {
+          "title": "🚫 Contenido perturbador",
+          "gore": "Gore, violencia grafica o terror extremo.",
+          "selfHarm": "Apologia del suicidio o la autolesion."
+        },
+        "disruptive": {
+          "title": "🚫 Contenido disruptivo o troll",
+          "avatars": "Avatares con sonidos excesivos, particulas invasivas o shaders que dificulten la experiencia de los demas.",
+          "behavior": "Actitudes destinadas a molestar, interrumpir o sabotear actividades."
+        },
+        "harmful": {
+          "title": "🚫 Discurso danino",
+          "hate": "Expresiones de odio, racismo, xenofobia, homofobia, transfobia, sexismo o cualquier forma de discriminacion.",
+          "politics": "Conversaciones de caracter politico o religioso.",
+          "attacks": "Comentarios que busquen desestimar o atacar a VRTon, Teleton Chile, comunidades asociadas o participantes."
+        }
+      },
+      "prohibitedActions": {
+        "title": "2. Acciones Prohibidas",
+        "intro": "Ademas del contenido, se prohiben las siguientes conductas en todos los espacios de VRTon:",
+        "spam": {
+          "title": "2.1 Spam y publicidad no autorizada",
+          "commercial": "Enviar enlaces a paginas de compra/venta, concursos, recaudaciones o similares sin aprobacion del staff.",
+          "invites": "Compartir invitaciones a otros servidores de Discord, redes sociales o comunidades externas sin autorizacion.",
+          "portals": "Abrir \"portales\" hacia otras instancias en VRChat con fines de desvio de usuarios.",
+          "events": "Spam de invitaciones a grupos, eventos o instancias ajenas a VRTon."
+        },
+        "impersonation": {
+          "title": "2.2 Suplantacion de identidad",
+          "users": "Hacerse pasar por otros usuarios u organizaciones.",
+          "staff": "Fingir ser parte del staff o del voluntariado virtual de VRTon."
+        },
+        "information": {
+          "title": "2.3 Divulgacion de informacion",
+          "personal": "Compartir informacion personal (propia o ajena) sin consentimiento.",
+          "false": "Difundir informacion falsa, rumores o desinformacion con intencion de danar."
+        },
+        "illegal": {
+          "title": "2.4 Actividades ilegales",
+          "fraud": "Estafas, enganos o intentos de fraude.",
+          "piracy": "Distribucion o promocion de contenido obtenido de forma ilegal (\"ripeo\" de assets, avatares, mundos u otros recursos).",
+          "other": "Cualquier otra actividad ilicita que infrinja leyes locales o internacionales."
+        },
+        "harassment": {
+          "title": "2.5 Conductas de acoso o violencia",
+          "general": "Acoso, amenazas, hostigamiento o persecucion hacia cualquier persona.",
+          "intimidation": "Intimidacion verbal, gestual o mediante avatares/animaciones."
+        },
+        "disruption": {
+          "title": "2.6 Interrupcion de actividades",
+          "events": "Molestar deliberadamente durante presentaciones, shows, charlas o actividades comunitarias.",
+          "audio": "Gritos, spam de voz, sonidos repetitivos o invasivos.",
+          "avatars": "Uso de avatares ofensivos, molestos o con efectos destinados a interrumpir.",
+          "exploits": "Uso de clientes modificados u otro recurso destinado a explotar los sistemas del evento para beneficio propio o disrupcion de la experiencia de los demas."
+        }
+      }
+    }
+  }
+}

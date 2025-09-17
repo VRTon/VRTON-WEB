@@ -13,7 +13,7 @@
     <!-- Styles -->
     {% include styles.html %}
 </head>
-<body class="loading">
+<body class="loading"{% if page.translation_modules %} data-translation-modules="{{ page.translation_modules | join: ',' }}"{% endif %}>
     <!-- Loading Screen -->
     {% include loading.html %}
 
@@ -33,5 +33,13 @@
 
     <!-- Scripts -->
     {% include scripts.html %}
+    
+    <!-- Page-specific translation initialization -->
+    {% if page.translation_modules %}
+    <script>
+        // Especificar módulos de traducción para esta página
+        window.requiredTranslationModules = {{ page.translation_modules | jsonify }};
+    </script>
+    {% endif %}
 </body>
 </html>

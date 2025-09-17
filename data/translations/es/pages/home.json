@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "title": "VRTon",
+    "subtitle": "Usando la realidad virtual <br> para mejorar vidas.",
+    "description": "Somos una organización sin ánimo de lucro dedicada a utilizar la tecnología de realidad virtual para crear un impacto positivo en la sociedad.",
+    "countdown": "Próximo evento VRTon 2025:",
+    "button": "Conoce más"
+  },
+  "causa": {
+    "title": "Sobre nosotros",
+    "description1": "VRTon es una iniciativa colaborativa que reúne a personas y comunidades apasionadas por la realidad virtual para transformar la manera en que ayudamos a los demás. Nuestro objetivo es crear experiencias inmersivas que eduquen, inspiren y despierten empatía, conectando corazones a través de la tecnología.",
+    "description2": "Además de desarrollar estas vivencias, organizamos eventos y actividades solidarias que buscan recaudar fondos y generar un impacto real en diversas causas benéficas, llevando la innovación al servicio de quienes más lo necesitan.",
+    "projects": []
+  }
+}

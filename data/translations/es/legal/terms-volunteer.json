@@ -1,0 +1,110 @@
+{
+  "termsVolunteer": {
+    "title": "Términos y Condiciones de Voluntariado",
+    "subtitle": "Conoce las condiciones para formar parte del equipo VRTon",
+    "sections": {
+      "introduction": {
+        "title": "Introducción",
+        "content": "Bienvenido a VRTon, una organización sin ánimo de lucro dedicada a utilizar la tecnología de realidad virtual para crear un impacto positivo en la sociedad. Estos términos y condiciones establecen las bases para tu participación como voluntario en nuestros proyectos y eventos."
+      },
+      "purpose": {
+        "title": "Propósito y Misión",
+        "content": "VRTon tiene como objetivo principal organizar eventos benéficos utilizando la realidad virtual como herramienta para generar conciencia y recaudar fondos para causas sociales importantes, especialmente en apoyo a la Teletón Chile."
+      },
+      "volunteer_definition": {
+        "title": "Definición de Voluntario",
+        "content": "Un voluntario de VRTon es toda persona que, de forma libre y sin recibir compensación económica, dedica parte de su tiempo y habilidades para contribuir al logro de los objetivos de la organización."
+      },
+      "requirements": {
+        "title": "Requisitos para Ser Voluntario",
+        "subtitle": "Para formar parte del equipo VRTon como voluntario, debes cumplir con los siguientes requisitos:",
+        "items": [
+          "Ser mayor de 16 años o contar con autorización parental",
+          "Tener acceso a internet estable y dispositivos necesarios para las tareas asignadas",
+          "Comprometerse a respetar los valores y principios de VRTon",
+          "Demostrar disponibilidad de tiempo acorde a las responsabilidades del rol",
+          "Mantener una conducta profesional y respetuosa en todos los espacios de la organización"
+        ]
+      },
+      "responsibilities": {
+        "title": "Responsabilidades del Voluntario",
+        "items": [
+          "Cumplir con las tareas asignadas dentro de los plazos establecidos",
+          "Participar activamente en las reuniones y actividades programadas",
+          "Mantener la confidencialidad de información sensible de la organización",
+          "Representar dignamente a VRTon en todos los contextos",
+          "Comunicar de manera oportuna cualquier inconveniente o limitación",
+          "Seguir las directrices y protocolos establecidos por cada departamento"
+        ]
+      },
+      "rights": {
+        "title": "Derechos del Voluntario",
+        "items": [
+          "Recibir orientación y capacitación necesaria para desempeñar su rol",
+          "Ser tratado con respeto y dignidad por todos los miembros de la organización",
+          "Tener acceso a información relevante sobre los proyectos en los que participa",
+          "Expresar opiniones y sugerencias constructivas",
+          "Solicitar cambio de departamento o rol según disponibilidad",
+          "Recibir reconocimiento por su contribución a la organización"
+        ]
+      },
+      "departments": {
+        "title": "Departamentos y Roles",
+        "content": "VRTon está organizado en diferentes departamentos, cada uno con responsabilidades específicas:",
+        "list": [
+          "Dirección: Toma de decisiones estratégicas y supervisión general",
+          "Desarrollo: Creación de aplicaciones, sitios web y herramientas técnicas",
+          "Audiovisuales: Producción de contenido multimedia y transmisiones",
+          "Diseño 2D/3D: Creación de elementos visuales y modelado",
+          "Marketing: Promoción, comunicación y gestión de redes sociales",
+          "Mapmaking: Diseño y construcción de mundos virtuales",
+          "Eventos y Host: Organización y conducción de actividades",
+          "DJs y Shows: Entretenimiento musical y espectáculos",
+          "Moderación: Mantenimiento del orden en espacios digitales"
+        ]
+      },
+      "conduct": {
+        "title": "Código de Conducta",
+        "content": "Todos los voluntarios deben adherirse al siguiente código de conducta:",
+        "items": [
+          "Mantener un comportamiento profesional y respetuoso",
+          "No discriminar por razones de raza, género, orientación sexual, religión o nacionalidad",
+          "Evitar conflictos de interés que puedan comprometer la misión de VRTon",
+          "No utilizar la posición en VRTon para beneficio personal",
+          "Respetar la propiedad intelectual y los recursos de la organización",
+          "Cumplir con las políticas de uso de plataformas digitales"
+        ]
+      },
+      "termination": {
+        "title": "Terminación del Voluntariado",
+        "content": "El voluntariado puede terminar por las siguientes razones:",
+        "reasons": [
+          "Renuncia voluntaria del colaborador",
+          "Incumplimiento grave de las responsabilidades asignadas",
+          "Violación del código de conducta",
+          "Inactividad prolongada sin justificación",
+          "Reestructuración organizacional",
+          "Finalización del proyecto o evento específico"
+        ],
+        "process": "En caso de terminación, se realizará una transición ordenada de responsabilidades y se proporcionará retroalimentación constructiva."
+      },
+      "confidentiality": {
+        "title": "Confidencialidad y Privacidad",
+        "items": [
+          "Los voluntarios se comprometen a mantener la confidencialidad de información sensible",
+          "No compartir datos personales de otros miembros sin autorización",
+          "Proteger información estratégica de la organización",
+          "Respetar la privacidad en espacios virtuales y comunicaciones"
+        ]
+      },
+      "modifications": {
+        "title": "Modificaciones a estos Términos",
+        "content": "VRTon se reserva el derecho de modificar estos términos y condiciones. Las modificaciones se comunicarán a través de los canales oficiales de la organización con al menos 15 días de anticipación."
+      },
+      "contact": {
+        "title": "Contacto y Consultas",
+        "content": "Para consultas sobre estos términos y condiciones o el proceso de voluntariado, puedes contactarnos a través de nuestro servidor de Discord oficial o los canales de comunicación establecidos."
+      }
+    }
+  }
+}

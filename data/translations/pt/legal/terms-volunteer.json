@@ -1,0 +1,110 @@
+{
+  "termsVolunteer": {
+    "title": "Termos e Condições de Voluntariado",
+    "subtitle": "Conheça as condições para fazer parte da equipe VRTon",
+    "sections": {
+      "introduction": {
+        "title": "Introdução",
+        "content": "Bem-vindo ao VRTon, uma organização sem fins lucrativos dedicada a usar a tecnologia de realidade virtual para criar um impacto positivo na sociedade. Estes termos e condições estabelecem a base para sua participação como voluntário em nossos projetos e eventos."
+      },
+      "purpose": {
+        "title": "Propósito e Missão",
+        "content": "O principal objetivo do VRTon é organizar eventos beneficentes usando a realidade virtual como ferramenta para gerar consciência e arrecadar fundos para causas sociais importantes, especialmente em apoio ao Teletão Chile."
+      },
+      "volunteer_definition": {
+        "title": "Definição de Voluntário",
+        "content": "Um voluntário do VRTon é qualquer pessoa que, livremente e sem receber compensação financeira, dedica parte de seu tempo e habilidades para contribuir com o alcance dos objetivos da organização."
+      },
+      "requirements": {
+        "title": "Requisitos para ser Voluntário",
+        "subtitle": "Para fazer parte da equipe VRTon como voluntário, você deve atender aos seguintes requisitos:",
+        "items": [
+          "Ter mais de 16 anos ou ter autorização dos pais",
+          "Ter acesso estável à internet e dispositivos necessários para as tarefas atribuídas",
+          "Comprometer-se a respeitar os valores e princípios do VRTon",
+          "Demonstrar disponibilidade de tempo de acordo com as responsabilidades do cargo",
+          "Manter conduta profissional e respeitosa em todos os espaços da organização"
+        ]
+      },
+      "responsibilities": {
+        "title": "Responsabilidades do Voluntário",
+        "items": [
+          "Completar tarefas atribuídas dentro dos prazos estabelecidos",
+          "Participar ativamente de reuniões e atividades programadas",
+          "Manter a confidencialidade de informações sensíveis da organização",
+          "Representar o VRTon com dignidade em todos os contextos",
+          "Comunicar quaisquer problemas ou limitações de forma oportuna",
+          "Seguir diretrizes e protocolos estabelecidos por cada departamento"
+        ]
+      },
+      "rights": {
+        "title": "Direitos do Voluntário",
+        "items": [
+          "Receber orientação e treinamento necessários para desempenhar seu papel",
+          "Ser tratado com respeito e dignidade por todos os membros da organização",
+          "Ter acesso a informações relevantes sobre projetos em que participa",
+          "Expressar opiniões e sugestões construtivas",
+          "Solicitar mudança de departamento ou papel baseado na disponibilidade",
+          "Receber reconhecimento por sua contribuição à organização"
+        ]
+      },
+      "departments": {
+        "title": "Departamentos e Funções",
+        "content": "VRTon está organizado em diferentes departamentos, cada um com responsabilidades específicas:",
+        "list": [
+          "Direção: Tomada de decisões estratégicas e supervisão geral",
+          "Desenvolvimento: Criação de aplicações, sites e ferramentas técnicas",
+          "Audiovisuais: Produção de conteúdo multimídia e transmissões",
+          "Design 2D/3D: Criação de elementos visuais e modelagem",
+          "Marketing: Promoção, comunicação e gestão de redes sociais",
+          "Mapmaking: Design e construção de mundos virtuais",
+          "Eventos e Host: Organização e condução de atividades",
+          "DJs e Shows: Entretenimento musical e espetáculos",
+          "Moderação: Manutenção da ordem em espaços digitais"
+        ]
+      },
+      "conduct": {
+        "title": "Código de Conduta",
+        "content": "Todos os voluntários devem aderir ao seguinte código de conduta:",
+        "items": [
+          "Manter comportamento profissional e respeitoso",
+          "Não discriminar com base em raça, gênero, orientação sexual, religião ou nacionalidade",
+          "Evitar conflitos de interesse que possam comprometer a missão do VRTon",
+          "Não usar a posição no VRTon para benefício pessoal",
+          "Respeitar a propriedade intelectual e os recursos da organização",
+          "Cumprir as políticas de uso de plataformas digitais"
+        ]
+      },
+      "termination": {
+        "title": "Término do Voluntariado",
+        "content": "O voluntariado pode terminar pelas seguintes razões:",
+        "reasons": [
+          "Renúncia voluntária do colaborador",
+          "Violação grave das responsabilidades atribuídas",
+          "Violação do código de conduta",
+          "Inatividade prolongada sem justificativa",
+          "Reestruturação organizacional",
+          "Conclusão de projeto ou evento específico"
+        ],
+        "process": "Em caso de término, será realizada uma transição ordenada de responsabilidades e será fornecido feedback construtivo."
+      },
+      "confidentiality": {
+        "title": "Confidencialidade e Privacidade",
+        "items": [
+          "Voluntários se comprometem a manter a confidencialidade de informações sensíveis",
+          "Não compartilhar dados pessoais de outros membros sem autorização",
+          "Proteger informações estratégicas da organização",
+          "Respeitar a privacidade em espaços virtuais e comunicações"
+        ]
+      },
+      "modifications": {
+        "title": "Modificações a estes Termos",
+        "content": "VRTon se reserva o direito de modificar estes termos e condições. As modificações serão comunicadas através dos canais oficiais da organização com pelo menos 15 dias de antecedência."
+      },
+      "contact": {
+        "title": "Contato e Consultas",
+        "content": "Para consultas sobre estes termos e condições ou o processo de voluntariado, você pode nos contactar através do nosso servidor oficial do Discord ou canais de comunicação estabelecidos."
+      }
+    }
+  }
+}
