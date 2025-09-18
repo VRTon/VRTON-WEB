@@ -47,7 +47,9 @@
     "pichujeff": {
       "nombre": "PichuJeff",
       "foto": "pichujef.webp",
-      "social": {}
+      "social": {
+        "github": "https://github.com/TheBroElectronic"
+      }
     },
     "lianro": {
       "nombre": "Lian Ro",
@@ -186,6 +188,11 @@
       "nombre": "Joaco22",
       "foto": "joaco22.webp",
       "social": {}
+    },
+    "clandestino" : {
+      "nombre": "Clandestino",
+      "foto": "clandestino.webp",
+      "social": {}
     }
   },
   "equipos": [
@@ -318,7 +325,8 @@
       "miembros": [
         { "id": "valenvrc", "rol": "Moderador InGame y Discord", "rol_key": "ingame_moderator" },
         { "id": "zorrocl", "rol": "Moderador InGame y Discord", "rol_key": "ingame_moderator" },
-        { "id": "duckis", "rol": "Moderador InGame y Discord", "rol_key": "ingame_moderator" }
+        { "id": "duckis", "rol": "Moderador InGame y Discord", "rol_key": "ingame_moderator" },
+        { "id": "clandestino", "rol": "Moderador InGame", "rol_key": "ingame_moderator" }
       ]
     },
     {
@@ -327,7 +335,7 @@
       "descripcion": "El equipo encargado de traducir y adaptar nuestros contenidos a diferentes idiomas y culturas, asegurando que nuestro mensaje llegue a una audiencia global.",
       "lideres": [],
       "miembros": [
-        { "id": "haze", "rol": "English Translator", "rol_key": "english_translator" }
+        { "id": "haze", "rol": "English Translator", "rol_key": "english_translator" },
       ]
     }
   ]

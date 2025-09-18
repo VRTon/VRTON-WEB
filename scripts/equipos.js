@@ -100,11 +100,27 @@ document.addEventListener('DOMContentLoaded', () => {
     function generarBotonesSociales(social) {
         if (!social) return '';
         const redes = [];
-        if (social.discord && social.discord.trim() !== '') { redes.push(`<a href="${social.discord}" class="furality-social-btn" title="Discord" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>`); }
-        if (social.twitter && social.twitter.trim() !== '') { redes.push(`<a href="${social.twitter}" class="furality-social-btn" title="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>`); }
-        if (social.telegram && social.telegram.trim() !== '') { redes.push(`<a href="${social.telegram}" class="furality-social-btn" title="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>`); }
-        if (social.vrchat && social.vrchat.trim() !== '') { redes.push(`<a href="${social.vrchat}" class="furality-social-btn" title="VRChat" target="_blank" rel="noopener noreferrer"><i class="fas fa-vr-cardboard"></i></a>`); }
-        if (social.instagram && social.instagram.trim() !== '') { redes.push(`<a href="${social.instagram}" class="furality-social-btn" title="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>`); }
+        if (social.discord && social.discord.trim() !== '') {
+            redes.push(`<a href="${social.discord}" class="furality-social-btn" title="Discord" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>`);
+        }
+        if (social.twitter && social.twitter.trim() !== '') {
+            redes.push(`<a href="${social.twitter}" class="furality-social-btn" title="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>`);
+        }
+        if (social.telegram && social.telegram.trim() !== '') {
+            redes.push(`<a href="${social.telegram}" class="furality-social-btn" title="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>`);
+        }
+        if (social.vrchat && social.vrchat.trim() !== '') {
+            redes.push(`<a href="${social.vrchat}" class="furality-social-btn" title="VRChat" target="_blank" rel="noopener noreferrer"><i class="fas fa-vr-cardboard"></i></a>`);
+        }
+        if (social.instagram && social.instagram.trim() !== '') {
+            redes.push(`<a href="${social.instagram}" class="furality-social-btn" title="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>`);
+        }
+        if (social.github && social.github.trim() !== '') {
+            redes.push(`<a href="${social.github}" class="furality-social-btn" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>`);
+        }
+        if (social.other && social.other.trim() !== '') {
+            redes.push(`<a href="${social.other}" class="furality-social-btn" title="Enlace" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i></a>`);
+        }
         return redes.join('');
     }
 
