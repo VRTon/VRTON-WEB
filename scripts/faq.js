@@ -4,71 +4,81 @@
  * Carga dinámicamente las FAQ y maneja la funcionalidad de acordeón
  */
 
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('🔄 Inicializando sistema de FAQs V2.0...');
+// Función principal para inicializar FAQs
+async function initializeFAQs() {
+    try {
+        console.log('🔄 Inicializando sistema de FAQs V2.0...');
+        console.log('🔍 Estado inicial - window.i18nV3:', !!window.i18nV3);
+        console.log('🔍 Estado inicial - modular system:', !!window.ModularTranslations);
 
-    // Función principal para inicializar FAQs
-    async function initializeFAQs() {
-        try {
-            // Buscar contenedor de FAQs
-            const faqContainer = document.querySelector('.faq-container');
-            if (!faqContainer) {
-                console.log('No se encontró contenedor .faq-container - FAQ no disponible en esta página');
-                return;
-            }
+        // Buscar contenedor de FAQs
+        const faqContainer = document.querySelector('.faq-container');
+        if (!faqContainer) {
+            console.log('No se encontró contenedor .faq-container - FAQ no disponible en esta página');
+            return;
+        }
 
-            console.log('📍 Contenedor FAQ encontrado, cargando preguntas...');
+        console.log('📍 Contenedor FAQ encontrado, cargando preguntas...');
 
-            // Esperar a que el sistema de traducciones esté listo
-            await waitForTranslationSystem();
+        // Esperar a que el sistema de traducciones esté listo
+        await waitForTranslationSystem();
 
-            // Cargar las FAQs desde traducciones
-            const faqData = await loadFAQData();
-            
-            if (!faqData || !faqData.questions || faqData.questions.length === 0) {
-                console.warn('⚠️ No se encontraron preguntas FAQ en las traducciones');
-                faqContainer.innerHTML = '<p class="no-faqs">No hay preguntas frecuentes disponibles.</p>';
-                return;
-            }
+        console.log('🔍 Después de esperar - window.i18nV3:', !!window.i18nV3);
+        console.log('🔍 Después de esperar - i18nV3.isInitialized:', window.i18nV3?.isInitialized);
+        console.log('🔍 Después de esperar - i18nV3.translations keys:', window.i18nV3?.translations ? Object.keys(window.i18nV3.translations).length : 0);
 
-            // Generar HTML para las FAQs
-            generateFAQHTML(faqContainer, faqData.questions);
+        // Cargar las FAQs desde traducciones
+        const faqData = await loadFAQData();
+        
+        if (!faqData || !faqData.questions || faqData.questions.length === 0) {
+            console.warn('⚠️ No se encontraron preguntas FAQ en las traducciones');
+            faqContainer.innerHTML = '<p class="no-faqs">No hay preguntas frecuentes disponibles.</p>';
+            return;
+        }
 
-            // Configurar funcionalidad de acordeón
-            setupAccordionFunctionality();
+        // Generar HTML para las FAQs
+        generateFAQHTML(faqContainer, faqData.questions);
 
-            console.log(`✅ Sistema de FAQs inicializado con ${faqData.questions.length} preguntas`);
+        // Configurar funcionalidad de acordeón
+        setupAccordionFunctionality();
 
-        } catch (error) {
-            console.error('❌ Error inicializando FAQs:', error);
-            const faqContainer = document.querySelector('.faq-container');
-            if (faqContainer) {
-                faqContainer.innerHTML = '<p class="error-faqs">Error cargando preguntas frecuentes.</p>';
-            }
+        console.log(`✅ Sistema de FAQs inicializado con ${faqData.questions.length} preguntas`);
+
+    } catch (error) {
+        console.error('❌ Error inicializando FAQs:', error);
+        const faqContainer = document.querySelector('.faq-container');
+        if (faqContainer) {
+            faqContainer.innerHTML = '<p class="error-faqs">Error cargando preguntas frecuentes.</p>';
         }
     }
+}
 
-    // Esperar a que el sistema de traducciones esté disponible
-    function waitForTranslationSystem() {
-        return new Promise((resolve) => {
-            const checkSystem = () => {
-                // Verificar si hay sistema i18n V3 disponible
-                if (window.i18nV3 && window.i18nV3.isInitialized) {
-                    resolve();
-                } else {
-                    setTimeout(checkSystem, 100);
-                }
-            };
+// Esperar a que el sistema de traducciones esté disponible
+function waitForTranslationSystem() {
+    return new Promise((resolve) => {
+        let attempts = 0;
+        const maxAttempts = 100; // 10 segundos
+        
+        const checkSystem = () => {
+            attempts++;
+            console.log(`🔍 Intentando acceder al sistema i18n (intento ${attempts}/${maxAttempts})`);
             
-            checkSystem();
-            
-            // Timeout después de 10 segundos
-            setTimeout(() => {
-                console.warn('⚠️ Sistema de traducciones no disponible, usando datos por defecto');
+            // Verificar si hay sistema i18n V3 disponible
+            if (window.i18nV3 && window.i18nV3.isInitialized) {
+                console.log('✅ Sistema i18nV3 encontrado y inicializado');
                 resolve();
-            }, 10000);
-        });
-    }
+            } else if (attempts >= maxAttempts) {
+                console.warn('⚠️ Sistema de traducciones no disponible después de 10 segundos, usando datos por defecto');
+                resolve();
+            } else {
+                console.log(`⏳ Sistema i18n no disponible aún (intento ${attempts}). i18nV3 exists: ${!!window.i18nV3}, initialized: ${window.i18nV3?.isInitialized}`);
+                setTimeout(checkSystem, 100);
+            }
+        };
+        
+        checkSystem();
+    });
+}
 
     // Cargar datos de FAQ desde el sistema de traducciones
     async function loadFAQData() {
@@ -78,12 +88,40 @@ document.addEventListener('DOMContentLoaded', function() {
                 const title = await window.i18nV3.t('faqs.title', 'Preguntas Frecuentes');
                 const translations = window.i18nV3.translations;
                 
-                // Buscar preguntas en traducciones
-                const faqsData = translations['faqs.questions'] || 
-                               (translations.faqs && translations.faqs.questions);
+                console.log('🔍 Todas las claves de traducción disponibles:', Object.keys(translations));
+                console.log('🔍 Claves que contienen "faqs":', Object.keys(translations).filter(k => k.includes('faqs')));
                 
-                if (faqsData) {
+                // Buscar preguntas en traducciones usando diferentes estructuras posibles
+                let faqsData = null;
+                
+                // Opción 1: Acceso directo a faqs.questions (debería funcionar después del flatten)
+                if (translations['faqs.questions']) {
+                    faqsData = translations['faqs.questions'];
+                    console.log('✅ FAQ encontrado en estructura plana (faqs.questions):', faqsData);
+                }
+                // Opción 2: Intentar acceder mediante el sistema modular directamente
+                else {
+                    try {
+                        if (window.i18nV3.modularSystem) {
+                            const moduleTranslations = await window.i18nV3.modularSystem.loadTranslations(['pages/faqs']);
+                            console.log('🔍 Traducciones directas del módulo faqs:', moduleTranslations);
+                            
+                            if (moduleTranslations && moduleTranslations.faqs && moduleTranslations.faqs.questions) {
+                                faqsData = moduleTranslations.faqs.questions;
+                                console.log('✅ FAQ encontrado en módulo directo:', faqsData);
+                            }
+                        }
+                    } catch (moduleError) {
+                        console.warn('⚠️ Error accediendo al módulo directamente:', moduleError);
+                    }
+                }
+                
+                if (faqsData && Array.isArray(faqsData) && faqsData.length > 0) {
+                    console.log(`📋 Datos FAQ cargados exitosamente: ${faqsData.length} preguntas`);
                     return { title, questions: faqsData };
+                } else {
+                    console.warn('⚠️ FAQ data no encontrado o no es válido:', faqsData);
+                    console.log('🔍 Estructura de translations completa:', translations);
                 }
             }
             
@@ -92,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return getDefaultFAQData();
             
         } catch (error) {
-            console.warn('⚠️ Error cargando FAQ desde traducciones:', error);
+            console.error('❌ Error cargando FAQ desde traducciones:', error);
             return getDefaultFAQData();
         }
     }
@@ -112,21 +150,84 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Generar HTML para las FAQs
     function generateFAQHTML(container, questions) {
-        const faqHTML = questions.map((faq, index) => `
+        const faqHTML = questions.map((faq, index) => {
+            // Sanitizar y procesar el contenido HTML de la respuesta
+            const sanitizedAnswer = sanitizeFAQHTML(faq.answer);
+            
+            return `
             <div class="faq-item" data-faq-index="${index}">
                 <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-${index}">
-                    <h3>${faq.question}</h3>
+                    <h3>${escapeHTML(faq.question)}</h3>
                     <span class="faq-toggle" aria-hidden="true">+</span>
                 </div>
                 <div class="faq-answer" id="faq-answer-${index}" role="region" aria-labelledby="faq-question-${index}">
                     <div class="faq-content">
-                        ${faq.answer}
+                        ${sanitizedAnswer}
                     </div>
                 </div>
             </div>
-        `).join('');
+        `}).join('');
 
         container.innerHTML = faqHTML;
+    }
+
+    // Función para sanitizar HTML en FAQ (reutiliza la lógica del sistema de traducciones)
+    function sanitizeFAQHTML(html) {
+        if (typeof html !== 'string') return html;
+        
+        // Lista de tags permitidos en FAQ
+        const allowedTags = ['br', 'b', 'strong', 'i', 'em', 'a', 'span'];
+        const allowedAttributes = ['href', 'target', 'rel', 'class'];
+        
+        // Crear un elemento temporal para parsear el HTML
+        const temp = document.createElement('div');
+        temp.innerHTML = html;
+        
+        // Función recursiva para limpiar elementos
+        const cleanElement = (element) => {
+            const children = Array.from(element.children);
+            
+            children.forEach(child => {
+                const tagName = child.tagName.toLowerCase();
+                
+                // Si el tag no está permitido, reemplazar con su contenido de texto
+                if (!allowedTags.includes(tagName)) {
+                    const textNode = document.createTextNode(child.textContent);
+                    child.parentNode.replaceChild(textNode, child);
+                    return;
+                }
+                
+                // Limpiar atributos no permitidos
+                const attributes = Array.from(child.attributes);
+                attributes.forEach(attr => {
+                    if (!allowedAttributes.includes(attr.name.toLowerCase())) {
+                        child.removeAttribute(attr.name);
+                    }
+                });
+                
+                // Agregar rel="noopener noreferrer" a enlaces externos
+                if (tagName === 'a' && child.hasAttribute('href')) {
+                    const href = child.getAttribute('href');
+                    if (href.startsWith('http')) {
+                        child.setAttribute('target', '_blank');
+                        child.setAttribute('rel', 'noopener noreferrer');
+                    }
+                }
+                
+                // Recursivamente limpiar elementos hijos
+                cleanElement(child);
+            });
+        };
+        
+        cleanElement(temp);
+        return temp.innerHTML;
+    }
+
+    // Función para escapar HTML en texto plano
+    function escapeHTML(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
     }
 
     // Configurar funcionalidad de acordeón
@@ -186,14 +287,32 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Inicializar FAQs
+// Auto-inicializar cuando el DOM esté listo
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeFAQs);
+} else {
+    // DOM ya está listo
     initializeFAQs();
+}
 
-    // Re-inicializar si cambia el idioma
-    if (window.i18nV3) {
-        window.i18nV3.addObserver((newLanguage) => {
-            console.log(`🔄 Idioma cambiado a ${newLanguage}, recargando FAQs...`);
-            setTimeout(initializeFAQs, 500); // Pequeño delay para que carguen las traducciones
-        });
-    }
-});
+// También escuchar el evento de i18n ready
+if (typeof window.onI18nReady === 'undefined') {
+    window.onI18nReady = initializeFAQs;
+} else {
+    // Si ya existe, encadenar
+    const originalCallback = window.onI18nReady;
+    window.onI18nReady = function() {
+        if (typeof originalCallback === 'function') {
+            originalCallback();
+        }
+        initializeFAQs();
+    };
+}
+
+// Re-inicializar si cambia el idioma
+if (window.i18nV3) {
+    window.i18nV3.addObserver((newLanguage) => {
+        console.log(`🔄 Idioma cambiado a ${newLanguage}, recargando FAQs...`);
+        setTimeout(initializeFAQs, 500); // Pequeño delay para que carguen las traducciones
+    });
+}

@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check if page has FAQ elements
     if (document.querySelector('.faq-container') || document.querySelector('.faq-item')) {
         const faqScript = document.createElement('script');
-        faqScript.src = '/scripts/faq.min.js';
+        faqScript.src = '/scripts/faq.js'; // Using non-minified for debugging
         faqScript.defer = true;
         document.head.appendChild(faqScript);
         console.log('FAQ script loaded conditionally');

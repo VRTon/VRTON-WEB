@@ -151,7 +151,10 @@ class I18nSystemV3 {
             const value = nested[key];
             const newKey = prefix ? `${prefix}.${key}` : key;
             
-            if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
+            // Preservar arrays y no intentar aplanarlos
+            if (Array.isArray(value)) {
+                flattened[newKey] = value;
+            } else if (typeof value === 'object' && value !== null) {
                 Object.assign(flattened, this.flattenTranslations(value, newKey));
             } else {
                 flattened[newKey] = value;
