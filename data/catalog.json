@@ -54,7 +54,23 @@
       "version": "1.0.0",
       "downloadUrl": "https://github.com/VRTon/org.vrton.MesaVrton2025/releases/download/1.0.0/MesaVRTON.unitypackage",
       "imageUrl": "https://cdn.discordapp.com/attachments/1382142012735750244/1410370686978887783/image.png?ex=68b0c58f&is=68af740f&hm=ad534f55555b511a72cd72a45afeadd5c0a1b7abbe1e4fe53df0e1ed94cf306a&",
-      "category": "Ropa"
+      "category": "Objetos"
+    },
+    {
+      "name": "Taza con cafe",
+      "description": "Taza promocional de la VRTon 2025, con sistema de liquidos",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.Taza/releases/download/1.0.0/TazaVRTON.unitypackage",
+      "imageUrl": "https://media.discordapp.net/attachments/1382142012735750244/1410371324316225726/image.png?ex=68bf46a7&is=68bdf527&hm=056374ebe02c5616ba2a230a3747af62fc410f38ce47b21eaa16b59b013321cb&=&format=webp&quality=lossless",
+      "category": "Objetos"
+    },
+    {
+      "name": "Cartel de mano",
+      "description": "Cartel promocional de VRTon",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.CartelVrton/releases/download/1.0.0/cartelVrton.unitypackage",
+      "imageUrl": "https://media.discordapp.net/attachments/1382142012735750244/1414415851309891605/image.png?ex=68bf7ce9&is=68be2b69&hm=2bb8ccaafa08882a6e0380298ef0f01d823feebeff773a1e5b629275771fa33d&=&format=webp&quality=lossless",
+      "category": "Objetos"
     }
   ]
 }
