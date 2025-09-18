@@ -39,6 +39,10 @@
     "moderacion": {
       "name": "Moderation",
       "description": "The guardians of our virtual spaces. This team maintains a safe and positive environment on our platforms, ensuring everyone can participate comfortably in our charitable activities."
+    },
+    "translation": {
+      "name": "Translation",
+      "description": "The team responsible for translating and adapting our content to different languages and cultures, ensuring our message reaches a global audience."
     }
   },
   "roles": {
@@ -79,6 +83,7 @@
     "stream_director": "Streaming Director",
     "fullstack_dev": "Fullstack Developer",
     "frontend_dev": "Frontend Developer",
-    "backend_dev": "Backend Developer"
+    "backend_dev": "Backend Developer",
+    "dev_lead_fullstack": "Development Lead"
   }
 }

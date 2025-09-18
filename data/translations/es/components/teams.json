@@ -39,6 +39,10 @@
     "moderacion": {
       "name": "Moderación",
       "description": "Los guardianes de nuestros espacios virtuales. Este equipo mantiene un ambiente seguro y positivo en nuestras plataformas, asegurando que todos puedan participar cómodamente en nuestras actividades benéficas."
+    },
+    "translation": {
+      "name": "Traducción",
+      "description": "El equipo encargado de traducir y adaptar nuestros contenidos a diferentes idiomas y culturas, asegurando que nuestro mensaje llegue a una audiencia global."
     }
   },
   "roles": {
@@ -79,6 +83,7 @@
     "stream_director": "Director de Streaming",
     "fullstack_dev": "Desarrollador Fullstack",
     "frontend_dev": "Desarrollador Frontend",
-    "backend_dev": "Desarrollador Backend"
+    "backend_dev": "Desarrollador Backend",
+    "dev_lead_fullstack": "Líder de Desarrollo"
   }
 }
