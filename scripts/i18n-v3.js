@@ -259,11 +259,82 @@ class I18nSystemV3 {
             } else if (element.hasAttribute('alt')) {
                 element.alt = translation;
             } else {
-                element.textContent = translation;
+                // Detectar si la traducción contiene HTML y usar innerHTML o textContent apropiadamente
+                if (this.containsHTML(translation)) {
+                    element.innerHTML = this.sanitizeHTML(translation);
+                } else {
+                    element.textContent = translation;
+                }
             }
         }
         
         console.log(`✨ Updated ${elements.length} translation elements`);
+    }
+
+    /**
+     * Detecta si el texto contiene HTML válido
+     */
+    containsHTML(text) {
+        if (typeof text !== 'string') return false;
+        
+        // Buscar tags HTML comunes usados en traducciones
+        const htmlPattern = /<(br|b|strong|i|em|a|span|div|p)(\s[^>]*)?>/i;
+        return htmlPattern.test(text);
+    }
+
+    /**
+     * Sanitiza HTML permitiendo solo tags seguros
+     */
+    sanitizeHTML(html) {
+        if (typeof html !== 'string') return html;
+        
+        // Lista de tags permitidos en traducciones
+        const allowedTags = ['br', 'b', 'strong', 'i', 'em', 'a', 'span'];
+        const allowedAttributes = ['href', 'target', 'rel', 'class'];
+        
+        // Crear un elemento temporal para parsear el HTML
+        const temp = document.createElement('div');
+        temp.innerHTML = html;
+        
+        // Función recursiva para limpiar elementos
+        const cleanElement = (element) => {
+            // Obtener todos los elementos hijos
+            const children = Array.from(element.children);
+            
+            children.forEach(child => {
+                const tagName = child.tagName.toLowerCase();
+                
+                // Si el tag no está permitido, reemplazar con su contenido de texto
+                if (!allowedTags.includes(tagName)) {
+                    const textNode = document.createTextNode(child.textContent);
+                    child.parentNode.replaceChild(textNode, child);
+                    return;
+                }
+                
+                // Limpiar atributos no permitidos
+                const attributes = Array.from(child.attributes);
+                attributes.forEach(attr => {
+                    if (!allowedAttributes.includes(attr.name.toLowerCase())) {
+                        child.removeAttribute(attr.name);
+                    }
+                });
+                
+                // Agregar rel="noopener noreferrer" a enlaces externos
+                if (tagName === 'a' && child.hasAttribute('href')) {
+                    const href = child.getAttribute('href');
+                    if (href.startsWith('http')) {
+                        child.setAttribute('target', '_blank');
+                        child.setAttribute('rel', 'noopener noreferrer');
+                    }
+                }
+                
+                // Recursivamente limpiar elementos hijos
+                cleanElement(child);
+            });
+        };
+        
+        cleanElement(temp);
+        return temp.innerHTML;
     }
 
     /**
