@@ -64,6 +64,21 @@
     "lead_host": "Lead Host Logistics",
     "host": "Host",
     "dj": "DJ",
-    "ingame_moderator": "InGame and Discord Moderator"
+    "ingame_moderator": "InGame and Discord Moderator",
+    "singer": "Singer",
+    "networking_logistics": "Networking Logistics",
+    "english_translator": "English Translator",
+    "avatar_creator": "Avatar Creator",
+    "asset_creator": "Asset Creator",
+    "lead_3d_assets": "Lead 3D Assets",
+    "lead_3d_avatars": "Lead 3D Avatars",
+    "graphic_designer": "Graphic Designer",
+    "artist_2d": "2D Artist",
+    "photographer": "Photographer",
+    "audiovisual_lead": "Lead Audiovisual",
+    "stream_director": "Streaming Director",
+    "fullstack_dev": "Fullstack Developer",
+    "frontend_dev": "Frontend Developer",
+    "backend_dev": "Backend Developer"
   }
 }

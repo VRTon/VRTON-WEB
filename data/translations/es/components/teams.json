@@ -64,6 +64,21 @@
     "lead_host": "Líder de Logística de Hosts",
     "host": "Host",
     "dj": "DJ",
-    "ingame_moderator": "Moderador InGame y Discord"
+    "ingame_moderator": "Moderador InGame y Discord",
+    "singer": "Cantante",
+    "networking_logistics": "Logística de Networking",
+    "english_translator": "Traductor de Inglés",
+    "avatar_creator": "Creador de Avatares",
+    "asset_creator": "Creador de Assets",
+    "lead_3d_assets": "Líder de Creación de Assets 3D",
+    "lead_3d_avatars": "Líder de Creación de Avatares",
+    "graphic_designer": "Diseñador Gráfico",
+    "artist_2d": "Artista 2D",
+    "photographer": "Fotógrafo",
+    "audiovisual_lead": "Líder de Audiovisuales",
+    "stream_director": "Director de Streaming",
+    "fullstack_dev": "Desarrollador Fullstack",
+    "frontend_dev": "Desarrollador Frontend",
+    "backend_dev": "Desarrollador Backend"
   }
 }
