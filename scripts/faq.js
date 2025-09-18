@@ -35,6 +35,7 @@ async function initializeFAQs() {
             faqContainer.innerHTML = '<p class="no-faqs">No hay preguntas frecuentes disponibles.</p>';
             return;
         }
+    }
 
         // Generar HTML para las FAQs
         generateFAQHTML(faqContainer, faqData.questions);
