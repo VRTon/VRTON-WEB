@@ -49,15 +49,6 @@
       "foto": "pichujef.webp",
       "social": {}
     },
-    "avadez": {
-      "nombre": "Avadez",
-      "foto": "avadez.webp",
-      "social": {
-        "twitter": "https://x.com/avadez_s",
-        "instagram": "https://instagram.com/avadez_arts_official",
-        "vrchat": "https://vrchat.com/home/user/usr_d82ddde3-e179-4de7-9758-8d62d8fd9f51"
-      }
-    },
     "lianro": {
       "nombre": "Lian Ro",
       "foto": "lian.webp",
@@ -145,8 +136,7 @@
       "miembros": [
         { "id": "valenvrc", "rol": "BackEnd Developer", "rol_key": "backend_dev" },
         { "id": "foxyctg21", "rol": "FullStack Developer", "rol_key": "fullstack_dev" },
-        { "id": "pichujeff", "rol": "FullStack Developer", "rol_key": "fullstack_dev" },
-        { "id": "avadez", "rol": "FullStack Developer", "rol_key": "fullstack_dev" }
+        { "id": "pichujeff", "rol": "FullStack Developer", "rol_key": "fullstack_dev" }
       ]
     },
     {
