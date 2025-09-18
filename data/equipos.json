@@ -335,7 +335,7 @@
       "descripcion": "El equipo encargado de traducir y adaptar nuestros contenidos a diferentes idiomas y culturas, asegurando que nuestro mensaje llegue a una audiencia global.",
       "lideres": [],
       "miembros": [
-        { "id": "haze", "rol": "English Translator", "rol_key": "english_translator" },
+        { "id": "haze", "rol": "English Translator", "rol_key": "english_translator" }
       ]
     }
   ]
