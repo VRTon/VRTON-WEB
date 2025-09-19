@@ -71,6 +71,14 @@
       "downloadUrl": "https://github.com/VRTon/org.vrton.CartelVrton/releases/download/1.0.0/cartelVrton.unitypackage",
       "imageUrl": "https://media.discordapp.net/attachments/1382142012735750244/1414415851309891605/image.png?ex=68bf7ce9&is=68be2b69&hm=2bb8ccaafa08882a6e0380298ef0f01d823feebeff773a1e5b629275771fa33d&=&format=webp&quality=lossless",
       "category": "Objetos"
+    },
+    {
+      "name": "Gorra de teleton",
+      "description": "Gorra promocional de VRTon",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.hat/releases/download/1.0.0/VRTonHat1.0.0.unitypackage",
+      "imageUrl": "https://cdn.discordapp.com/attachments/1382142012735750244/1403913919323443200/image.png?ex=68cd5b79&is=68cc09f9&hm=9a1af0259837e574ff01529a5eee269e700c81c9cb240a726ff1dbf014086de2&",
+      "category": "Objetos"
     }
   ]
 }
