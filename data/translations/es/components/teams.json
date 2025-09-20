@@ -46,8 +46,6 @@
     }
   },
   "roles": {
-    "founder": "Fundador",
-    "co_founder": "Co-Fundador",
     "director": "Director",
     "lead_developer": "Líder de Desarrollo",
     "developer": "Desarrollador",
@@ -62,8 +60,8 @@
     "marketing_specialist": "Especialista en Marketing",
     "community_manager": "Community Manager",
     "social_media_manager": "Social Media Manager",
-    "lead_world_designer": "Líder de Diseño de Mundo",
-    "second_world_designer": "Segundo Diseñador de Mundo",
+    "lead_world_designer": "Técnico de Mundo",
+    "second_world_designer": "Diseñador de Mundo",
     "modeler_3d": "Modelador 3D",
     "lead_host": "Líder de Logística de Hosts",
     "host": "Host",

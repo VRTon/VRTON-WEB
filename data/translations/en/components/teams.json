@@ -46,8 +46,6 @@
     }
   },
   "roles": {
-    "founder": "Founder",
-    "co_founder": "Co-Founder",
     "director": "Director",
     "lead_developer": "Lead Developer",
     "developer": "Developer",
@@ -62,7 +60,7 @@
     "marketing_specialist": "Marketing Specialist",
     "community_manager": "Community Manager",
     "social_media_manager": "Social Media Manager",
-    "lead_world_designer": "Lead World Designer",
+    "lead_world_designer": "Lead World Technician",
     "second_world_designer": "Second World Designer",
     "modeler_3d": "3D Modeler",
     "lead_host": "Lead Host Logistics",
@@ -74,8 +72,8 @@
     "english_translator": "English Translator",
     "avatar_creator": "Avatar Creator",
     "asset_creator": "Asset Creator",
-    "lead_3d_assets": "Lead 3D Assets",
-    "lead_3d_avatars": "Lead 3D Avatars",
+    "lead_3d_assets": "Lead Asset Creator",
+    "lead_3d_avatars": "Lead Avatar Creator",
     "graphic_designer": "Graphic Designer",
     "artist_2d": "2D Artist",
     "photographer": "Photographer",
