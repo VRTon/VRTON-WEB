@@ -407,23 +407,55 @@ layout: default
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Generate Table of Contents
-    if (document.getElementById('tableOfContents')) {
-        generateTableOfContents();
-    }
+    // Sidebar toggle functionality
+    setupSidebarToggle();
     
     // Back to top functionality
     setupBackToTop();
-    
-    // Sidebar toggle functionality
-    setupSidebarToggle();
     
     // Smooth scroll for anchor links
     setupSmoothScroll();
     
     // Active link highlighting
     setupActiveHighlighting();
+    
+    // Initialize table of contents when i18n is ready
+    if (typeof window.onI18nReady === 'undefined') {
+        window.onI18nReady = initializeLegalDocument;
+    } else {
+        const originalCallback = window.onI18nReady;
+        window.onI18nReady = function() {
+            if (typeof originalCallback === 'function') {
+                originalCallback();
+            }
+            initializeLegalDocument();
+        };
+    }
+    
+    // If i18n is already ready, initialize immediately
+    if (window.isI18nReady && window.isI18nReady()) {
+        initializeLegalDocument();
+    }
+    
+    // Add observer for language changes
+    if (window.i18nV3) {
+        window.i18nV3.addObserver((language) => {
+            console.log(`🔄 Language changed to ${language}, regenerating table of contents...`);
+            setTimeout(() => {
+                if (document.getElementById('tableOfContents')) {
+                    generateTableOfContents();
+                }
+            }, 500); // Wait for translations to be applied
+        });
+    }
 });
+
+function initializeLegalDocument() {
+    // Generate Table of Contents after translations are loaded
+    if (document.getElementById('tableOfContents')) {
+        generateTableOfContents();
+    }
+}
 
 function generateTableOfContents() {
     const tocContent = document.getElementById('tocContent');
@@ -438,7 +470,16 @@ function generateTableOfContents() {
     headings.forEach((heading, index) => {
         const level = parseInt(heading.tagName.charAt(1));
         const id = heading.id || `heading-${index}`;
-        const text = heading.textContent;
+        
+        // Get translated text content
+        let text = heading.textContent;
+        const i18nKey = heading.getAttribute('data-i18n');
+        if (i18nKey && window.i18nV3 && window.i18nV3.translations) {
+            const translatedText = window.i18nV3.translations[i18nKey];
+            if (translatedText) {
+                text = translatedText;
+            }
+        }
         
         if (!heading.id) {
             heading.id = id;
