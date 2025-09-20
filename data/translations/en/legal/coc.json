@@ -13,23 +13,23 @@
       "contentRestrictions": {
         "title": "1. Content Restrictions",
         "sexual": {
-          "title": "🚫 Sexual or explicit content",
+          "title": "1.1 Sexual or explicit content",
           "avatars": "Nude avatars, with visible genitals or excessively revealing clothing.",
           "erp": "ERP, gestures, conversations or sexual or suggestive conduct.",
           "media": "Profile pictures, banners, stickers or emojis with NSFW content."
         },
         "disturbing": {
-          "title": "🚫 Disturbing content",
+          "title": "1.2 Disturbing content",
           "gore": "Gore, graphic violence or extreme terror.",
           "selfHarm": "Apology for suicide or self-harm."
         },
         "disruptive": {
-          "title": "🚫 Disruptive or troll content",
+          "title": "1.3 Disruptive or troll content",
           "avatars": "Avatars with excessive sounds, invasive particles or shaders that hinder the experience of others.",
           "behavior": "Attitudes intended to annoy, interrupt or sabotage activities."
         },
         "harmful": {
-          "title": "🚫 Harmful speech",
+          "title": "1.4 Harmful speech",
           "hate": "Expressions of hate, racism, xenophobia, homophobia, transphobia, sexism or any form of discrimination.",
           "politics": "Political or religious conversations.",
           "attacks": "Comments that seek to dismiss or attack VRTon, Teleton Chile, associated communities or participants."
