@@ -52,7 +52,7 @@ class I18nSystemV3 {
      * Valida si el idioma está soportado
      */
     isValidLanguage(lang) {
-        return ['es', 'en', 'pt'].includes(lang);
+        return ['es', 'en'].includes(lang);
     }
 
     /**
