@@ -202,9 +202,9 @@
       "descripcion": "Equipo encargado de la toma de decisiones estratégicas, planificación y supervisión general de las operaciones de VRTon.",
       "lideres": [],
       "miembros": [
-        { "id": "dantalion", "rol": "" },
-        { "id": "valenvrc", "rol": "" },
-        { "id": "3dmaster", "rol": "" }
+        { "id": "dantalion", "rol": "", "rol_key": "director" },
+        { "id": "valenvrc", "rol": "", "rol_key": "director" },
+        { "id": "3dmaster", "rol": "", "rol_key": "director" }
       ]
     },
     {
@@ -213,11 +213,10 @@
       "descripcion": "Encargados de la creación de webs, aplicaciones bots y demás herramientas utilizadas por VRTon.",
       "lideres": [
         
-        { "id": "maximohfoxy", "rol": "Development Lead, FullStack Developer", "rol_key": "dev_lead_fullstack" }
+        { "id": "maximohfoxy", "rol": "Development Lead", "rol_key": "lead_developer" }
       ],
       "miembros": [
         { "id": "valenvrc", "rol": "BackEnd Developer", "rol_key": "backend_dev" },
-        { "id": "foxyctg21", "rol": "FullStack Developer", "rol_key": "fullstack_dev" },
         { "id": "pichujeff", "rol": "FullStack Developer", "rol_key": "fullstack_dev" }
       ]
     },
@@ -226,7 +225,7 @@
       "nombre": "AudioVisuales",
       "descripcion": "Fotografos, Videografos y creadores de contenido que dan vida a nuestras visiones mediante efectos visuales, audio espacial y producciones multimedia.",
       "lideres": [
-        { "id": "foxyctg21", "rol": "Lider de AudioVisuales", "rol_key": "audiovisual_lead" }
+        { "id": "foxyctg21", "rol": "Lider de AudioVisuales", "rol_key": "lead_audiovisual" }
       ],
       "miembros": [
         { "id": "jamirdg", "rol": "Director de Stream", "rol_key": "stream_director" },
@@ -242,7 +241,7 @@
       "descripcion": "Nuestro equipo creativo utiliza diseño 2D para crear interfaces, personajes, entornos y elementos visuales que comunican efectivamente nuestra misión social.",
       "lideres": [],
       "miembros": [
-        { "id": "jeffrythekiller", "rol": "Artista 2D", "rol_key": "artist_2d" },
+        { "id": "jeffrythekiller", "rol": "Artista 2D", "rol_key": "2d_artist" },
         { "id": "dannylasagna", "rol": "Diseñador Gráfico", "rol_key": "graphic_designer" },
         { "id": "bonnieck", "rol": "Diseñador Gráfico", "rol_key": "graphic_designer" },
         { "id": "joaco22", "rol": "Diseñador Gráfico", "rol_key": "graphic_designer" },
@@ -269,10 +268,10 @@
       "nombre": "Marketing y Comunicación",
       "descripcion": "El equipo encargado de difundir nuestra misión, gestionar nuestras redes sociales y crear estrategias de comunicación que amplíen el impacto de nuestros proyectos sociales.",
       "lideres": [
-        { "id": "lianro", "rol": "Lead Marketing & Community Manager", "rol_key": "lead_marketing" }
+        { "id": "lianro", "rol": "Lead Marketing & Community Manager", "rol_key": "community_manager" }
       ],
       "miembros": [
-        { "id": "duckis", "rol": "Networking Logistics", "rol_key": "networking_logistics" }
+        { "id": "duckis", "rol": "Networking Logistics", "rol_key": "outreach_coordinator" }
       ]
     },
     {
@@ -280,8 +279,8 @@
       "nombre": "Map Making",
       "descripcion": "Los creadores de nuestros mundos virtuales. Este equipo se encarga de diseñar y construir mapas y entornos en plataformas VR, creando experiencias inmersivas para nuestras causas sociales.",
       "lideres": [
-        { "id": "valenvrc", "rol": "World Technician", "rol_key": "lead_world_designer" },
-        { "id": "3dmaster", "rol": "World Designer", "rol_key": "second_world_designer" }
+        { "id": "3dmaster", "rol": "World Designer", "rol_key": "lead_world_designer" },
+        { "id": "valenvrc", "rol": "World Technician", "rol_key": "lead_world_technician" }
       ],
       "miembros": []
     },
@@ -321,11 +320,12 @@
       "id": "moderacion",
       "nombre": "Moderación",
       "descripcion": "Nuestro equipo de moderación se encarga de mantener un ambiente seguro, inclusivo y respetuoso en todas nuestras plataformas y experiencias VR. Son los guardianes de nuestra comunidad.",
-      "lideres": [],
+      "lideres": [
+        { "id": "valenvrc", "rol": "Lider de Moderacion", "rol_key": "lead_moderation" }
+      ],
       "miembros": [
-        { "id": "valenvrc", "rol": "Moderador InGame y Discord", "rol_key": "ingame_moderator" },
-        { "id": "zorrocl", "rol": "Moderador InGame y Discord", "rol_key": "ingame_moderator" },
-        { "id": "duckis", "rol": "Moderador InGame y Discord", "rol_key": "ingame_moderator" },
+        { "id": "zorrocl", "rol": "Moderador InGame", "rol_key": "ingame_moderator" },
+        { "id": "duckis", "rol": "Moderador InGame", "rol_key": "ingame_moderator" },
         { "id": "clandestino", "rol": "Moderador InGame", "rol_key": "ingame_moderator" }
       ]
     },
