@@ -68,37 +68,30 @@ docker-compose up --build
 ├── _layouts/            # Plantillas de página
 │   └── default.html
 ├── scripts/             # JavaScript del sitio
-│   ├── i18n-v3.js      # Sistema de traducción (v3)
+│   ├── i18n-v3.js      # Sistema de traducción
 │   ├── equipos.js      # Gestión de equipos
 │   ├── faq.js          # Preguntas frecuentes
 │   └── ...
 ├── assets/             # Recursos estáticos
 │   ├── icons/
-│   ├── colaboradores/
+│   ├── colaboradores/  # Imagenes de los colaboradores
+│   ├── css             # Estilos
 │   └── ...
 ├── data/               # Datos del sitio
-│   ├── translations.json
-│   ├── equipos.json
-│   └── catalog.json
+│   ├── translations/
+│   ├── equipos.json    # Datos de los colaboradores
+│   └── catalog.json    # Utilizado por el sistema de descarga de assets
 ├── docker-compose.yml  # Configuración de Docker
 └── README.md
 ```
-
-## 🌐 Tecnologías
-
-- **Jekyll** - Generador de sitios estáticos
-- **GitHub Pages** - Hosting automático
-- **Docker** - Entorno de desarrollo
-- **JavaScript** - Interactividad del sitio
-- **CSS** - Estilos y diseño responsive
 
 ## 📝 Notas de Desarrollo
 
 ### Sistema de Traducción (i18n)
 
-- Los textos se gestionan en `data/translations.json`
+- Los textos se gestionan en `data/translations/{lang_key}/...`
 - Usa atributos `data-i18n` en HTML para elementos traducibles
-- Carga condicional de scripts según el contenido de la página
+- Especificar archivo de traduccion en el front matter como `translation_modules`
 
 ### GitHub Pages
 
