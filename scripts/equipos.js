@@ -208,9 +208,18 @@ document.addEventListener('DOMContentLoaded', () => {
             return ''; // Si no se encuentra la persona, no se crea la tarjeta
         }
 
-        const rol = personaRef.rol;
         const rol_key = personaRef.rol_key;
-        const rolTraducible = rol_key ? `data-i18n="roles.${rol_key}"` : '';
+        
+        // Procesar múltiples rol_key separadas por comas
+        let rolesHTML = '';
+        if (rol_key) {
+            const rolKeys = rol_key.split(',').map(key => key.trim());
+            const roleElements = rolKeys.map(key => 
+                `<span data-i18n="roles.${key}">${key}</span>`
+            );
+            rolesHTML = roleElements.join(', ');
+        }
+        
         const cardClass = isLeader ? 'furality-leader' : 'furality-member';
         const photoClass = isLeader ? 'furality-leader-photo' : 'furality-member-photo';
         const infoClass = isLeader ? 'furality-leader-info' : 'furality-member-info';
@@ -228,7 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div class="${infoClass}">
                     <div class="${nameClass}">${personaData.nombre}</div>
-                    <div class="${roleClass}" ${rolTraducible}>${rol}</div>
+                    <div class="${roleClass}">${rolesHTML}</div>
                 </div>
                 <div class="${socialClass}">
                     ${generarBotonesSociales(personaData.social)}
