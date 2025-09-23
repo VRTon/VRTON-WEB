@@ -4,7 +4,7 @@
       "name": "Lapizera",
       "description": "Una lapizera para dibujar.",
       "version": "1.0.0",
-      "downloadUrl": "https://github.com/VRTon/org.vrton.lapicera/releases/download/1.1.1/VrtonPen.unitypackage",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.lapicera/releases/download/1.1.1/Lapiz.VRTON.unitypackage",
       "imageUrl": "https://raw.githubusercontent.com/VRTon/org.vrton.lapicera/refs/heads/main/Lapicera%20Jef.png",
       "category": "Juguetes"
     },
@@ -20,7 +20,7 @@
       "name": "Pulsera",
       "description": "Pulsera promocional de VRTon con efecto de particulas al chocarla.",
       "version": "1.0.0",
-      "downloadUrl": "https://github.com/VRTon/org.vrton.pulsera/releases/download/1.0.1/Pulsera.PC.QUEST.VRTON.unitypackage",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.pulsera/releases/download/1.0.2/PulseraVRTON.unitypackage",
       "imageUrl": "https://raw.githubusercontent.com/VRTon/org.vrton.pulsera/refs/heads/main/Pulsera%20VRTon.png",
       "category": "Ropa"
     },
@@ -36,7 +36,7 @@
       "name": "Chocker",
       "description": "Chocker promocional de VRTon con efecto de particulas al chocarla.",
       "version": "1.0.0",
-      "downloadUrl": "https://github.com/VRTon/org.vrton.chocker/releases/download/1.0.0/VRTonChocker.unitypackage",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.chocker/releases/download/1.0.1/ChokerVRTON.unitypackage",
       "imageUrl": "https://raw.githubusercontent.com/VRTon/org.vrton.chocker/refs/heads/main/Choker.png",
       "category": "Ropa"
     },
