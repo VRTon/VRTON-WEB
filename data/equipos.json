@@ -132,7 +132,9 @@
     "abstered": {
       "nombre": "Abstered",
       "foto": "abstered.webp",
-      "social": {}
+      "social": {
+        "other": "https://www.artstation.com/abstered"
+      }
     },
     "miggi": {
       "nombre": "Miggi",
