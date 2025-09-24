@@ -1520,18 +1520,18 @@ footer p {
     }
 }
 
-/* Mobile furality-hero styles */
+/* Mobile vrton-hero styles */
 @media screen and (max-width: 768px) {
-    .furality-hero {
+    .vrton-hero {
         padding-top: calc(var(--header-height-mobile) + 30px);
         padding-bottom: 30px;
     }
     
-    .furality-hero h1 {
+    .vrton-hero h1 {
         font-size: 2.5rem;
     }
     
-    .furality-hero p {
+    .vrton-hero p {
         font-size: 1rem;
         padding: 0 20px;
     }
@@ -1591,21 +1591,17 @@ button:focus-visible {
 }
 
 /* ========================================
-   🌟 PÁGINA DE EQUIPOS - ESTILO FURALITY CON COLORES VRTON
+   🌟 PÁGINA DE EQUIPOS
    ======================================== */
 
-/* Contenedor principal con fondo oscuro estilo Furality */
-
-/* section of furality */
-
-.furality-body {
+.vrton-body {
     background: linear-gradient(135deg, white, #f0f0f0);
     min-height: 100vh;
     color: var(--white);
 }
 
 /* Hero section adaptado */
-.furality-hero {
+.vrton-hero {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     padding: 60px 0 40px;
     padding-top: calc(var(--header-height) + 40px);
@@ -1613,7 +1609,7 @@ button:focus-visible {
     color: var(--white);
 }
 
-.furality-hero h1 {
+.vrton-hero h1 {
     color: var(--white);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     margin-bottom: 15px;
@@ -1621,7 +1617,7 @@ button:focus-visible {
     font-weight: 700;
 }
 
-.furality-hero p {
+.vrton-hero p {
     color: var(--white);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     font-size: 1.2rem;
@@ -1631,8 +1627,8 @@ button:focus-visible {
     opacity: 0.95;
 }
 
-/* Navegación de departamentos estilo Furality */
-.furality-nav {
+/* Navegación de departamentos*/
+.vrton-nav {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     backdrop-filter: blur(10px);
     border-bottom: 2px solid rgba(227, 6, 19, 0.3);
@@ -1642,7 +1638,7 @@ button:focus-visible {
     z-index: 100;
 }
 
-.furality-nav h2 {
+.vrton-nav h2 {
     color: var(--white);
     font-size: 1.5rem;
     margin-bottom: 8px;
@@ -1650,7 +1646,7 @@ button:focus-visible {
     text-align: center;
 }
 
-.furality-departments {
+.vrton-departments {
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -1660,12 +1656,12 @@ button:focus-visible {
     padding: 0 20px;
 }
 
-.furality-department {
+.vrton-department {
     padding: 0px;
     margin: 1px;
 }
 
-.furality-dept-btn {
+.vrton-dept-btn {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -1681,20 +1677,20 @@ button:focus-visible {
     text-decoration: none;
 }
 
-.furality-dept-btn:hover,
-.furality-dept-btn.active {
+.vrton-dept-btn:hover,
+.vrton-dept-btn.active {
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(227, 6, 19, 0.4);
     border-color: rgba(255, 255, 255, 0.3);
 }
 
-.furality-dept-btn i {
+.vrton-dept-btn i {
     font-size: 1.1rem;
 }
 
 /* Contenedor principal de equipos */
-.furality-container {
+.vrton-container {
     max-width: 1200px;
     margin: 0 auto;
     min-height: auto;
@@ -1702,17 +1698,17 @@ button:focus-visible {
 }
 
 /* Sección de departamento */
-.furality-department {
+.vrton-department {
     margin-bottom: 10px;
     scroll-margin-top: 120px;
 }
 
-.furality-department:last-child {
+.vrton-department:last-child {
     margin-bottom: 5px;
 }
 
 /* Título del departamento */
-.furality-dept-title {
+.vrton-dept-title {
     font-size: 2rem;
     color: black;
     margin-bottom: 15px;
@@ -1721,7 +1717,7 @@ button:focus-visible {
 }
 
 /* Descripción del departamento */
-.furality-dept-description {
+.vrton-dept-description {
     font-size: 1rem;
     color: #666666;
     margin-bottom: 20px;
@@ -1731,15 +1727,15 @@ button:focus-visible {
 }
 
 /* Contenedor de líderes */
-.furality-leaders {
+.vrton-leaders {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 15px;
 }
 
-/* Director/Líder del departamento - Estilo Furality */
-.furality-leader {
+/* Director/Líder del departamento */
+.vrton-leader {
     background: linear-gradient(135deg,
             rgba(227, 6, 19, 0.8) 0%,
             rgba(253, 92, 99, 0.8) 50%,
@@ -1756,7 +1752,7 @@ button:focus-visible {
     overflow: hidden;
 }
 
-.furality-leader::before {
+.vrton-leader::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1770,17 +1766,17 @@ button:focus-visible {
     transition: opacity 0.3s ease;
 }
 
-.furality-leader:hover::before {
+.vrton-leader:hover::before {
     opacity: 1;
 }
 
-.furality-leader:hover {
+.vrton-leader:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 35px rgba(227, 6, 19, 0.4);
     border-color: rgba(255, 255, 255, 0.3);
 }
 
-.furality-leader-photo {
+.vrton-leader-photo {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -1791,7 +1787,7 @@ button:focus-visible {
     z-index: 1;
 }
 
-.furality-leader-photo img {
+.vrton-leader-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1799,26 +1795,26 @@ button:focus-visible {
     transition: opacity 0.3s ease;
 }
 
-.furality-leader-info {
+.vrton-leader-info {
     flex: 1;
     position: relative;
     z-index: 1;
 }
 
-.furality-leader-name {
+.vrton-leader-name {
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--white);
     margin-bottom: 3px;
 }
 
-.furality-leader-role {
+.vrton-leader-role {
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.9);
     font-weight: 500;
 }
 
-.furality-leader-social {
+.vrton-leader-social {
     display: flex;
     gap: 12px;
     margin-left: auto;
@@ -1826,7 +1822,7 @@ button:focus-visible {
     z-index: 1;
 }
 
-.furality-social-btn {
+.vrton-social-btn {
     width: 32px;
     height: 32px;
     background: rgba(255, 255, 255, 0.2);
@@ -1840,13 +1836,13 @@ button:focus-visible {
     font-size: 0.9rem;
 }
 
-.furality-social-btn:hover {
+.vrton-social-btn:hover {
     background: rgba(255, 255, 255, 0.3);
     transform: translateY(-2px);
 }
 
-/* Lista de miembros estilo Furality */
-.furality-members {
+/* Lista de miembros estilo*/
+.vrton-members {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
@@ -1854,20 +1850,20 @@ button:focus-visible {
 
 /* Responsive para miembros */
 @media (max-width: 992px) {
-    .furality-members {
+    .vrton-members {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
     }
 }
 
 @media (max-width: 480px) {
-    .furality-members {
+    .vrton-members {
         grid-template-columns: 1fr;
         gap: 10px;
     }
 }
 
-.furality-member {
+.vrton-member {
     background: var(--secondary-color);
     border-radius: 8px;
     padding: 15px;
@@ -1883,7 +1879,7 @@ button:focus-visible {
     min-height: 140px;
 }
 
-.furality-member::before {
+.vrton-member::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1897,17 +1893,17 @@ button:focus-visible {
     transition: opacity 0.3s ease;
 }
 
-.furality-member:hover {
+.vrton-member:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 35px rgba(227, 6, 19, 0.4);
     border-color: rgba(255, 255, 255, 0.3);
 }
 
-.furality-member:hover::before {
+.vrton-member:hover::before {
     opacity: 1;
 }
 
-.furality-member-photo {
+.vrton-member-photo {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -1916,7 +1912,7 @@ button:focus-visible {
     flex-shrink: 0;
 }
 
-.furality-member-photo img {
+.vrton-member-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1924,24 +1920,24 @@ button:focus-visible {
     transition: opacity 0.3s ease;
 }
 
-.furality-member-info {
+.vrton-member-info {
     text-align: center;
 }
 
-.furality-member-name {
+.vrton-member-name {
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--white);
     margin-bottom: 2px;
 }
 
-.furality-member-role {
+.vrton-member-role {
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.8);
     font-weight: 400;
 }
 
-.furality-member-social {
+.vrton-member-social {
     display: flex;
     gap: 6px;
     position: relative;
@@ -1949,7 +1945,7 @@ button:focus-visible {
     justify-content: center;
 }
 
-.furality-member-social .furality-social-btn {
+.vrton-member-social .vrton-social-btn {
     width: 28px;
     height: 28px;
     font-size: 0.8rem;
@@ -1957,62 +1953,62 @@ button:focus-visible {
 
 /* Responsive Design */
 @media (max-width: 992px) {
-    .furality-nav {
+    .vrton-nav {
         top: var(--header-height-mobile);
         padding: 8px 0;
     }
 
-    .furality-departments {
+    .vrton-departments {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 12px;
     }
 
-    .furality-dept-btn {
+    .vrton-dept-btn {
         padding: 6px 12px;
         font-size: 0.85rem;
     }
 
-    .furality-dept-title {
+    .vrton-dept-title {
         font-size: 1.7rem;
     }
 
-    .furality-leader {
+    .vrton-leader {
         flex-direction: column;
         text-align: center;
         gap: 15px;
         padding: 15px;
     }
 
-    .furality-leader-photo {
+    .vrton-leader-photo {
         width: 70px;
         height: 70px;
     }
 
-    .furality-leader-social {
+    .vrton-leader-social {
         margin: 0;
         justify-content: center;
     }
 }
 
 @media (max-width: 480px) {
-    .furality-container {
+    .vrton-container {
         padding: 12px 15px 20px;
     }
 
-    .furality-dept-title {
+    .vrton-dept-title {
         font-size: 1.5rem;
     }
 
-    .furality-leader {
+    .vrton-leader {
         padding: 12px;
     }
 
-    .furality-leader-name {
+    .vrton-leader-name {
         font-size: 1.2rem;
     }
 
-    .furality-member {
+    .vrton-member {
         padding: 10px;
     }
 }
@@ -2173,7 +2169,7 @@ body.loaded section {
 }
 
 /* == Estilos para Filtro de Colaboradores Móvil == */
-.furality-filter-toggle {
+.vrton-filter-toggle {
     display: none;
     width: 100%;
     padding: 12px 20px;
@@ -2189,11 +2185,11 @@ body.loaded section {
     text-align: center;
 }
 
-.furality-filter-toggle i {
+.vrton-filter-toggle i {
     margin-right: 10px;
 }
 
-.furality-filter-toggle:hover {
+.vrton-filter-toggle:hover {
     background-color: #c00511;
 }
 
@@ -2201,27 +2197,27 @@ body.loaded section {
 
 
 
-    .furality-filter-toggle {
+    .vrton-filter-toggle {
         display: block;
     }
 
-    .furality-departments-wrapper {
+    .vrton-departments-wrapper {
         display: none;
         padding: 20px;
         background-color: rgba(0, 0, 0, 0.1);
         border-radius: var(--border-radius);
     }
 
-    .furality-departments-wrapper.active {
+    .vrton-departments-wrapper.active {
         display: block;
     }
 
-    .furality-nav h2 {
+    .vrton-nav h2 {
         text-align: center;
         margin-bottom: 15px;
     }
 
-    .furality-departments {
+    .vrton-departments {
         flex-direction: column;
         gap: 10px;
     }
@@ -2292,13 +2288,13 @@ body.loaded section {
 }
 
 /* == Estilos para el Panel de Co-Líderes == */
-.furality-leaders {
+.vrton-leaders {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
-.furality-leaders .furality-leader {
+.vrton-leaders .vrton-leader {
     width: 100%;
 
 }

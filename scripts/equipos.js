@@ -1,10 +1,10 @@
-// Script para la nueva página de equipos estilo Furality con colores VRTon
+// Script para la nueva página de equipos estilo vrton con colores VRTon
 document.addEventListener('DOMContentLoaded', () => {
     let colaboradoresMap = null; // Directorio de todos los colaboradores
     let equiposList = null; // Lista de equipos
 
-    // Aplicar estilo Furality al body
-    document.body.classList.add('furality-body');
+    // Aplicar estilo vrton al body
+    document.body.classList.add('vrton-body');
 
     // Cargar datos de equipos desde JSON
     async function cargarDatos() {
@@ -101,43 +101,43 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!social) return '';
         const redes = [];
         if (social.discord && social.discord.trim() !== '') {
-            redes.push(`<a href="${social.discord}" class="furality-social-btn" title="Discord" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>`);
+            redes.push(`<a href="${social.discord}" class="vrton-social-btn" title="Discord" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>`);
         }
         if (social.twitter && social.twitter.trim() !== '') {
-            redes.push(`<a href="${social.twitter}" class="furality-social-btn" title="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>`);
+            redes.push(`<a href="${social.twitter}" class="vrton-social-btn" title="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>`);
         }
         if (social.telegram && social.telegram.trim() !== '') {
-            redes.push(`<a href="${social.telegram}" class="furality-social-btn" title="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>`);
+            redes.push(`<a href="${social.telegram}" class="vrton-social-btn" title="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>`);
         }
         if (social.vrchat && social.vrchat.trim() !== '') {
-            redes.push(`<a href="${social.vrchat}" class="furality-social-btn" title="VRChat" target="_blank" rel="noopener noreferrer"><i class="fas fa-vr-cardboard"></i></a>`);
+            redes.push(`<a href="${social.vrchat}" class="vrton-social-btn" title="VRChat" target="_blank" rel="noopener noreferrer"><i class="fas fa-vr-cardboard"></i></a>`);
         }
         if (social.instagram && social.instagram.trim() !== '') {
-            redes.push(`<a href="${social.instagram}" class="furality-social-btn" title="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>`);
+            redes.push(`<a href="${social.instagram}" class="vrton-social-btn" title="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>`);
         }
         if (social.github && social.github.trim() !== '') {
-            redes.push(`<a href="${social.github}" class="furality-social-btn" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>`);
+            redes.push(`<a href="${social.github}" class="vrton-social-btn" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>`);
         }
         if (social.other && social.other.trim() !== '') {
-            redes.push(`<a href="${social.other}" class="furality-social-btn" title="Enlace" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i></a>`);
+            redes.push(`<a href="${social.other}" class="vrton-social-btn" title="Enlace" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i></a>`);
         }
         return redes.join('');
     }
 
-    // Renderizar navegación estilo Furality
+    // Renderizar navegación estilo vrton
     function renderizarNavegacion() {
         const navegacionContainer = document.getElementById('team-navigation');
-        navegacionContainer.className = 'furality-nav';
+        navegacionContainer.className = 'vrton-nav';
         navegacionContainer.innerHTML = `
-            <button id="toggle-filters-btn" class="furality-filter-toggle">
+            <button id="toggle-filters-btn" class="vrton-filter-toggle">
                 <i class="fas fa-filter"></i>
                 <span data-i18n="colaboradores.filter_button">Filtrar Departamentos</span>
             </button>
-            <div class="furality-departments-wrapper">
+            <div class="vrton-departments-wrapper">
                 <h2 data-i18n="colaboradores.departments_title">Departamentos</h2>
-                <div class="furality-departments">
+                <div class="vrton-departments">
                     ${equiposList.map(equipo => `
-                        <a href="#team-${equipo.id}" class="furality-dept-btn" data-team="${equipo.id}">
+                        <a href="#team-${equipo.id}" class="vrton-dept-btn" data-team="${equipo.id}">
                             <i class="${iconosDepartamentos[equipo.id] || 'fas fa-users'}"></i>
                             <span data-i18n="teams.${equipo.id}.name">${equipo.nombre}</span>
                         </a>
@@ -146,13 +146,13 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
         const toggleBtn = document.getElementById('toggle-filters-btn');
-        const departmentsWrapper = navegacionContainer.querySelector('.furality-departments-wrapper');
+        const departmentsWrapper = navegacionContainer.querySelector('.vrton-departments-wrapper');
         toggleBtn.addEventListener('click', () => {
             departmentsWrapper.classList.toggle('active');
             const isExpanded = departmentsWrapper.classList.contains('active');
             toggleBtn.setAttribute('aria-expanded', isExpanded);
         });
-        document.querySelectorAll('.furality-dept-btn').forEach(btn => {
+        document.querySelectorAll('.vrton-dept-btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
                 const teamId = btn.getAttribute('data-team');
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Renderizar equipos estilo Furality
+    // Renderizar equipos estilo vrton
     function renderizarEquipos() {
         const container = document.getElementById('teams-container');
         container.innerHTML = '';
@@ -182,18 +182,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Crear sección individual de equipo estilo Furality
+    // Crear sección individual de equipo estilo vrton
     function crearSeccionEquipo(equipo) {
         const section = document.createElement('section');
-        section.className = 'furality-department';
+        section.className = 'vrton-department';
         section.id = `team-${equipo.id}`;
         section.innerHTML = `
-            <h2 class="furality-dept-title" data-i18n="teams.${equipo.id}.name">${equipo.nombre}</h2>
-            <p class="furality-dept-description" data-i18n="teams.${equipo.id}.description">${equipo.descripcion}</p>
-            <div class="furality-leaders">
+            <h2 class="vrton-dept-title" data-i18n="teams.${equipo.id}.name">${equipo.nombre}</h2>
+            <p class="vrton-dept-description" data-i18n="teams.${equipo.id}.description">${equipo.descripcion}</p>
+            <div class="vrton-leaders">
                 ${equipo.lideres.map(liderRef => crearTarjetaPersona(liderRef, true)).join('')}
             </div>
-            <div class="furality-members">
+            <div class="vrton-members">
                 ${equipo.miembros.map(miembroRef => crearTarjetaPersona(miembroRef, false)).join('')}
             </div>
         `;
@@ -220,12 +220,12 @@ document.addEventListener('DOMContentLoaded', () => {
             rolesHTML = roleElements.join(', ');
         }
         
-        const cardClass = isLeader ? 'furality-leader' : 'furality-member';
-        const photoClass = isLeader ? 'furality-leader-photo' : 'furality-member-photo';
-        const infoClass = isLeader ? 'furality-leader-info' : 'furality-member-info';
-        const nameClass = isLeader ? 'furality-leader-name' : 'furality-member-name';
-        const roleClass = isLeader ? 'furality-leader-role' : 'furality-member-role';
-        const socialClass = isLeader ? 'furality-leader-social' : 'furality-member-social';
+        const cardClass = isLeader ? 'vrton-leader' : 'vrton-member';
+        const photoClass = isLeader ? 'vrton-leader-photo' : 'vrton-member-photo';
+        const infoClass = isLeader ? 'vrton-leader-info' : 'vrton-member-info';
+        const nameClass = isLeader ? 'vrton-leader-name' : 'vrton-member-name';
+        const roleClass = isLeader ? 'vrton-leader-role' : 'vrton-member-role';
+        const socialClass = isLeader ? 'vrton-leader-social' : 'vrton-member-social';
 
         return `
             <div class="${cardClass}">
@@ -256,14 +256,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }, { threshold: 0.3, rootMargin: '-140px 0px -50% 0px' });
-        document.querySelectorAll('.furality-department').forEach(section => {
+        document.querySelectorAll('.vrton-department').forEach(section => {
             observer.observe(section);
         });
     }
 
     // Actualizar botón activo
     function updateActiveButton(activeTeamId) {
-        document.querySelectorAll('.furality-dept-btn').forEach(button => {
+        document.querySelectorAll('.vrton-dept-btn').forEach(button => {
             button.classList.remove('active');
             if (button.getAttribute('data-team') === activeTeamId) {
                 button.classList.add('active');
@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (targetSection) {
             requestAnimationFrame(() => {
                 const header = document.querySelector('header');
-                const nav = document.querySelector('.furality-nav');
+                const nav = document.querySelector('.vrton-nav');
                 const headerHeight = header ? header.offsetHeight : 80;
                 const navHeight = nav ? nav.offsetHeight : 60;
                 const targetPosition = targetSection.offsetTop;
@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mostrar error si no se pueden cargar los datos
     function mostrarError() {
         const container = document.getElementById('teams-container');
-        container.className = 'furality-container';
+        container.className = 'vrton-container';
         container.innerHTML = `<div style="text-align: center; padding: 60px 20px;"><h2 style="color: var(--white); margin-bottom: 20px;"><i class="fas fa-exclamation-triangle"></i> Error al cargar equipos</h2><p style="color: rgba(255,255,255,0.8); font-size: 1.1rem;">No se pudieron cargar los datos de los equipos. Por favor, inténtalo más tarde.</p></div>`;
     }
 
@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }, { threshold: 0.1 });
-        document.querySelectorAll('.furality-member').forEach(member => {
+        document.querySelectorAll('.vrton-member').forEach(member => {
             member.style.opacity = '0';
             member.style.transform = 'translateY(20px)';
             member.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -323,5 +323,5 @@ document.addEventListener('DOMContentLoaded', () => {
     
     inicializar();
 
-    console.log('Script de equipos Furality cargado correctamente');
+    console.log('Script de equipos vrton cargado correctamente');
 });
