@@ -181,11 +181,6 @@
       "foto": "javi2633.webp",
       "social": {}
     },
-    "duckis" : {
-      "nombre": "Duckis",
-      "foto": "duckis.webp",
-      "social": {}
-    },
     "joaco22" : {
       "nombre": "Joaco22",
       "foto": "joaco22.webp",
@@ -194,6 +189,11 @@
     "clandestino" : {
       "nombre": "Clandestino",
       "foto": "clandestino.webp",
+      "social": {}
+    },
+    "madkodin" : {
+      "nombre": "MadKodin",
+      "foto": "madkodin.webp",
       "social": {}
     }
   },
@@ -272,7 +272,7 @@
         { "id": "lianro", "rol_key": "community_manager" }
       ],
       "miembros": [
-        { "id": "duckis", "rol_key": "outreach_coordinator" }
+        { "id": "zulay", "rol_key": "outreach_coordinator" }
       ]
     },
     {
@@ -302,7 +302,8 @@
         { "id": "loquito", "rol_key": "host" },
         { "id": "nilein", "rol_key": "host" },
         { "id": "juliothanos", "rol_key": "host" },
-        { "id": "javi2633", "rol_key": "host" }
+        { "id": "javi2633", "rol_key": "host" },
+        { "id": "madkodin", "rol_key": "host" }
       ]
     },
     {
@@ -326,7 +327,6 @@
       ],
       "miembros": [
         { "id": "zorrocl", "rol_key": "ingame_moderator" },
-        { "id": "duckis", "rol_key": "ingame_moderator" },
         { "id": "clandestino", "rol_key": "ingame_moderator" }
       ]
     },
