@@ -408,6 +408,72 @@ nav ul li a.active:after {
     padding: 10px;
 }
 
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dropdown-toggle i {
+    font-size: 0.8em;
+    transition: var(--transition-normal);
+}
+
+.dropdown:hover .dropdown-toggle i {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--white);
+    box-shadow: var(--shadow-medium);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 160px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1001;
+    margin-top: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+    text-shadow: none;
+    transition: var(--transition-normal);
+    border-radius: 0;
+}
+
+.dropdown-menu li a:after {
+    display: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+}
+
 /* ========================================
    🦸 SECCIÓN HERO
    ======================================== */
@@ -1207,6 +1273,45 @@ footer p {
 
     nav ul li {
         margin: 15px 0;
+    }
+
+    /* Dropdown móvil */
+    .dropdown-menu {
+        position: static;
+        opacity: 0;
+        visibility: hidden;
+        transform: none;
+        box-shadow: none;
+        background: var(--light-color);
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .dropdown-menu.mobile-active {
+        opacity: 1;
+        visibility: visible;
+        max-height: 200px;
+        margin: 10px 0 0 0;
+    }
+
+    .dropdown-toggle i {
+        display: inline-block;
+        font-size: 0.8em;
+        transition: var(--transition-normal);
+    }
+
+    .dropdown:hover .dropdown-toggle i,
+    .dropdown-menu.mobile-active ~ .dropdown-toggle i {
+        transform: rotate(180deg);
+    }
+
+    .dropdown-menu li a {
+        padding: 8px 20px;
+        border-radius: 0;
     }
 
     /* Hero móvil */

@@ -157,8 +157,37 @@ function initializeLanguageSelector() {
     });
 }
 
-// Make the function globally available
+// --- Inicialización del dropdown de navegación ---
+function initializeDropdownMenu() {
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    
+    dropdownToggles.forEach(toggle => {
+        const dropdown = toggle.closest('.dropdown');
+        const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+        
+        if (!dropdownMenu) return;
+        
+        // Para móviles, hacer click en el toggle expande/colapsa el menú
+        toggle.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('mobile-active');
+            }
+        });
+        
+        // Para desktop, funciona con hover (ya manejado por CSS)
+        // Cerrar dropdown al hacer click fuera
+        document.addEventListener('click', (e) => {
+            if (!dropdown.contains(e.target)) {
+                dropdownMenu.classList.remove('mobile-active');
+            }
+        });
+    });
+}
+
+// Make the functions globally available
 window.initializeLanguageSelector = initializeLanguageSelector;
+window.initializeDropdownMenu = initializeDropdownMenu;
 
 // Inicializar cuando el DOM esté listo
 if (document.readyState === 'loading') {
@@ -166,9 +195,11 @@ if (document.readyState === 'loading') {
         VRTon.init();
         initializeConstructionModal();
         initializeLanguageSelector();
+        initializeDropdownMenu();
     });
 } else {
     VRTon.init();
     initializeConstructionModal();
     initializeLanguageSelector();
+    initializeDropdownMenu();
 }
