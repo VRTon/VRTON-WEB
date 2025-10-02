@@ -1,0 +1,52 @@
+{
+    "assets": {
+        "title": "Colección de Assets VRTon",
+        "guide": {
+            "title": "Instalación y Requerimientos",
+            "step1": "Agrega el repositorio de Assets VRTon a tu VCC e impórtalo en tu proyecto",
+            "step2": "Usa la interfaz integrada en VRTon/Assets para importar tus assets, o descarga el archivo .unitypackage manualmente más abajo",
+            "step3": "Encontrarás el asset en Assets/!VRTon2025/[nombre_del_asset], sigue las instrucciones",
+            "note": "¡Todos los assets fueron probados usando Unity 2022.3.22f1 y sdk 3.8.2!",
+            "note2": "Los assets requieren tanto poyomi toon como vrcfury, estos deberían instalarse automáticamente al importar el paquete."
+        },
+        "vpm": {
+            "title": "Lista de Paquetes VCC",
+            "description": "Agrega nuestro repositorio a tu VRChat Creator Companion para instalar y gestionar fácilmente los assets de VRTon.",
+            "copy": "Copiar",
+            "addToVcc": "Agregar a VCC"
+        },
+        "catalog": {
+            "title": "Assets VRTon",
+            "description": "Explora y descarga assets individuales de VRTon para tus proyectos de VRChat"
+        },
+        "filter": {
+            "all": "Todos",
+            "clothing": "Ropa",
+            "toys": "Juguetes",
+            "objects": "Objetos"
+        },
+        "help": {
+            "title": "Cómo agregar esta lista a tu VCC",
+            "intro": "Para agregar esta lista a tu VCC (VRChat Creator Companion), haz lo siguiente:",
+            "step1": "Abre tu VCC y ve a Configuración",
+            "step2": "Haz clic en la pestaña \"Paquetes\"",
+            "step3": "Haz clic en \"Agregar Repositorio\"",
+            "step4": "En el campo que aparece - pega la URL mostrada arriba",
+            "step5": "Haz clic en \"Agregar\"",
+            "step6": "Revisa la información del repositorio y haz clic en \"Entiendo\"",
+            "step7": "Ve a cualquiera de tus proyectos para ver los paquetes de la lista recién agregada"
+        },
+        "errors": {
+            "loadFailed": "Error al cargar el catálogo de assets",
+            "helpMessage": "Por favor recarga la página o contacta con soporte si el problema persiste."
+        },
+        "download": {
+            "button": "Descargar",
+            "tracking": "Descarga iniciada"
+        },
+        "noAssets": {
+            "message": "No se encontraron assets en esta categoría.",
+            "allCategories": "No hay assets disponibles en este momento."
+        }
+    }
+}

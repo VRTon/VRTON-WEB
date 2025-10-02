@@ -33,6 +33,11 @@
         "description": "Página de enlaces",
         "path": "/links.html"
       },
+      "pages/assets": {
+        "description": "Página de recursos y assets de VRTon",
+        "path": "/resources/assets/",
+        "aliases": ["/assets/", "/resources/assets/index.html"]
+      },
       "components/loading": {
         "description": "Pantalla de carga y contador",
         "loadWhen": "loading screen detected"

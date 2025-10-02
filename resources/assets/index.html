@@ -1,0 +1,128 @@
+---
+layout: default
+title: "VRTon Assets - Recursos VPM para VRChat | Packages Oficiales VCC"
+description: "Accede a nuestra colección de assets y recursos para VRChat mediante VCC (VRChat Creator Companion). Instala fácilmente nuestros packages oficiales desarrollados para la comunidad VRTon."
+keywords: "VRTon assets, VRChat packages, VPM repository, VCC integration, VRChat Creator Companion, Unity packages, VRChat SDK, 3D models, shaders, scripts, VRChat world assets, avatar components, VRTon resources, open source VR"
+image: "/assets/icons/icon-512x512.webp"
+lang: es
+translation_modules: ["common", "pages/assets"]
+---
+
+<div class="vpm-assets-page">
+    <div class="container">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1 class="page-title" data-i18n="assets.title">VRTon Assets Collection</h1>
+            <div class="installation-guide">
+                <h3 class="guide-title" data-i18n="assets.guide.title">Instrucciones de Instalación</h3>
+                <div class="compatibility-note">
+                    <i class="fas fa-info-circle"></i>
+                    <span data-i18n="assets.guide.note2">Los assets requieren tanto poyomi toon como vrcfury, estos deberían instalarse automáticamente al importar el paquete.</span>
+                </div>
+                <br>
+                <div class="instruction-section">
+                    <ol class="instruction-list">
+                        <li data-i18n="assets.guide.step1">Descarga el archivo <code>.unitypackage</code></li>
+                        <li data-i18n="assets.guide.step2">Abre tu proyecto en Unity</li>
+                        <li data-i18n="assets.guide.step3">Importa con <strong>Assets → Import Package</strong></li>
+                        <li data-i18n="assets.guide.step4">Sigue las instrucciones del README incluido</li>
+                    </ol>
+                </div>
+                <br>
+                <div class="compatibility-note">
+                    <i class="fas fa-info-circle"></i>
+                    <span data-i18n="assets.guide.note">Todos los assets son compatibles con VRChat y han sido probados con las últimas versiones del SDK.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- VPM Package Listing -->
+        <div class="vpm-listing">
+            <!-- Listing Header -->
+            <div class="listing-header">
+                <div class="listing-info">
+                    <h2 data-i18n="assets.vpm.title">VCC Package Listing</h2>
+                    <p class="listing-description" data-i18n="assets.vpm.description">
+                        Add our repository to your VRChat Creator Companion to easily install and manage VRTon assets.
+                    </p>
+                </div>
+                
+                <!-- Add to VCC Section -->
+                <div class="add-to-vcc-block">
+                    <div class="vcc-url-section">
+                        <input type="text" id="vccUrlField" class="vcc-url-field" readonly 
+                               value="https://vrton.org/resources/assets/vpm-listing.json" 
+                               aria-label="VCC Repository URL">
+                        <button id="vccUrlFieldCopy" class="btn btn-secondary">
+                            <i class="fas fa-copy"></i>
+                            <span data-i18n="assets.vpm.copy">Copy</span>
+                        </button>
+                        <button id="urlBarHelp" class="btn btn-outline" title="How to add to VCC">
+                            <i class="fas fa-question-circle"></i>
+                        </button>
+                    </div>
+                    <button id="vccAddRepoButton" class="btn btn-primary">
+                        <i class="fas fa-plus"></i>
+                        <span data-i18n="assets.vpm.addToVcc">Add to VCC</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assets Catalog -->
+        <div class="assets-catalog">
+            <div class="catalog-header">
+                <h2 data-i18n="assets.catalog.title">VRTon Assets</h2>
+                <p class="catalog-description" data-i18n="assets.catalog.description">
+                    Browse and download individual VRTon assets for your VRChat projects
+                </p>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <button class="category-btn active" data-category="all" data-i18n="assets.filter.all">All</button>
+                <button class="category-btn" data-category="Ropa" data-i18n="assets.filter.clothing">Clothing</button>
+                <button class="category-btn" data-category="Juguetes" data-i18n="assets.filter.toys">Toys</button>
+                <button class="category-btn" data-category="Objetos" data-i18n="assets.filter.objects">Objects</button>
+            </div>
+
+            <!-- Assets Grid -->
+            <div id="assetsGrid" class="assets-grid">
+                <!-- Asset cards will be loaded dynamically -->
+            </div>
+        </div>
+
+        <!-- Help Modal -->
+        <div id="addListingToVccHelp" class="modal" hidden>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 data-i18n="assets.help.title">How to add this listing to your VCC</h3>
+                    <button id="addListingToVccHelpClose" class="modal-close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p data-i18n="assets.help.intro">To add this listing to your VCC (VRChat Creator Companion), do the following:</p>
+                    <ol class="help-steps">
+                        <li data-i18n="assets.help.step1">Open your VCC and go to Settings</li>
+                        <li data-i18n="assets.help.step2">Click the "Packages" tab</li>
+                        <li data-i18n="assets.help.step3">Click "Add Repository"</li>
+                        <li data-i18n="assets.help.step4">In the field that appears - paste the url displayed above</li>
+                        <li data-i18n="assets.help.step5">Click "Add"</li>
+                        <li data-i18n="assets.help.step6">Check the repository info and click "I Understand"</li>
+                        <li data-i18n="assets.help.step7">Go to any of your projects to see the packages from the newly added listing</li>
+                    </ol>
+                    <div class="help-footer">
+                        <p>You can read more about Package Listings 
+                           <a href="https://vcc.docs.vrchat.com" target="_blank" rel="noopener">on the VCC docs</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<script src="/scripts/vpm-assets.js"></script>
