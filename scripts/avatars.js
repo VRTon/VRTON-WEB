@@ -85,7 +85,7 @@ class AvatarsPage {
         if (!container) return;
         
         // Hide loading spinner
-        const loadingSpinner = container.querySelector('.loading-spinner');
+        const loadingSpinner = container.querySelector('.avatars-loading');
         if (loadingSpinner) {
             loadingSpinner.style.display = 'none';
         }

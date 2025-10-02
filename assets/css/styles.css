@@ -3964,17 +3964,18 @@ body.loaded section {
     font-weight: 500;
 }
 
-/* Loading and No Results */
-.loading-spinner {
+/* Avatars Loading */
+.avatars-loading {
     text-align: center;
     padding: 60px 20px;
     color: var(--text-secondary);
 }
 
-.loading-spinner i {
+.avatars-loading i {
     font-size: 2rem;
     margin-bottom: 15px;
     color: var(--primary-color);
+    display: block;
 }
 
 /* Responsive Design */
