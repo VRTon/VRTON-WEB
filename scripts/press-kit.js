@@ -31,13 +31,7 @@ class PressKitManager {
             });
         });
 
-        // Download buttons
-        document.addEventListener('click', (e) => {
-            if (e.target.closest('.download-btn')) {
-                const assetType = e.target.closest('.download-btn').dataset.asset;
-                this.downloadAsset(assetType);
-            }
-        });
+
 
         // Bulk download
         const bulkDownloadBtn = document.getElementById('bulkDownloadBtn');
@@ -157,11 +151,6 @@ class PressKitManager {
                     <div class="asset-formats">
                         ${asset.formats ? asset.formats.map(format => `<span class="format-tag">${format}</span>`).join('') : `<span class="format-tag">${asset.format}</span>`}
                     </div>
-                    <div class="asset-actions">
-                        <button class="btn btn-primary download-btn" data-asset="${asset.id}">
-                            <i class="fas fa-download"></i> <span data-i18n="pressKit.download">Download</span>
-                        </button>
-                    </div>
                 </div>
             </div>
         `).join('');
@@ -195,11 +184,6 @@ class PressKitManager {
                     <h3 class="poster-title">${poster.title}</h3>
                     <div class="asset-formats">
                         <span class="format-tag">${poster.format}</span>
-                    </div>
-                    <div class="asset-actions">
-                        <button class="btn btn-primary download-btn" data-asset="${poster.id}">
-                            <i class="fas fa-download"></i> <span data-i18n="pressKit.download">Download</span>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -264,23 +248,11 @@ class PressKitManager {
 
 
 
-    downloadAsset(assetType) {
-        // Simulate download
-        this.showNotification(`Downloading ${assetType} assets...`, 'info');
-        
-        // In a real implementation, this would create a ZIP file or direct download
-        setTimeout(() => {
-            this.showNotification(`${assetType} assets downloaded successfully!`, 'success');
-        }, 1500);
-    }
-
     downloadBulkAssets() {
-        this.showNotification('Preparing complete press kit download...', 'info');
-        
-        // Simulate bulk download preparation
-        setTimeout(() => {
-            this.showNotification('Complete press kit downloaded successfully!', 'success');
-        }, 2000);
+        // Direct download without notifications
+        if (this.assets.bulkDownload && this.assets.bulkDownload.downloadUrl) {
+            window.location.href = this.assets.bulkDownload.downloadUrl;
+        }
     }
 
     showAssetPreview(card) {
@@ -334,81 +306,17 @@ class PressKitManager {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-        
-        this.showNotification('Download started!', 'success');
     }
 
     async copyToClipboard(text) {
         try {
             await navigator.clipboard.writeText(text);
-            this.showNotification('Link copied to clipboard!', 'success');
         } catch (err) {
             console.error('Failed to copy:', err);
-            this.showNotification('Failed to copy link', 'error');
         }
     }
 
-    showNotification(message, type = 'info') {
-        // Create notification element
-        const notification = document.createElement('div');
-        notification.className = `notification notification-${type}`;
-        notification.innerHTML = `
-            <i class="fas fa-${type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle'}"></i>
-            <span>${message}</span>
-        `;
 
-        // Add to page
-        document.body.appendChild(notification);
-
-        // Add styles if not already present
-        if (!document.querySelector('#notification-styles')) {
-            const styles = document.createElement('style');
-            styles.id = 'notification-styles';
-            styles.textContent = `
-                .notification {
-                    position: fixed;
-                    top: 100px;
-                    right: 20px;
-                    background: var(--white);
-                    padding: 15px 20px;
-                    border-radius: var(--border-radius);
-                    box-shadow: var(--shadow-medium);
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    z-index: 10000;
-                    transform: translateX(100%);
-                    transition: transform 0.3s ease;
-                    border-left: 4px solid var(--info-color);
-                }
-                .notification.notification-success {
-                    border-left-color: var(--success-color);
-                    color: var(--success-color);
-                }
-                .notification.notification-error {
-                    border-left-color: var(--error-color);
-                    color: var(--error-color);
-                }
-                .notification.show {
-                    transform: translateX(0);
-                }
-            `;
-            document.head.appendChild(styles);
-        }
-
-        // Show notification
-        setTimeout(() => notification.classList.add('show'), 100);
-
-        // Hide and remove after 3 seconds
-        setTimeout(() => {
-            notification.classList.remove('show');
-            setTimeout(() => {
-                if (notification.parentNode) {
-                    notification.parentNode.removeChild(notification);
-                }
-            }, 300);
-        }, 3000);
-    }
 
     showError() {
         const grids = ['postersGrid', 'stickersGrid'];
