@@ -59,24 +59,7 @@
             "format": "PNG"
         }
     ],
-    "stickers": [
-        {
-            "id": 1,
-            "name": "VRTon Logo Sticker",
-            "type": "vrchat-sticker",
-            "image": "/assets/icons/logo.webp",
-            "downloadUrl": "/assets/press-kit/stickers/logo-sticker.webp",
-            "dimensions": "128x128"
-        },
-        {
-            "id": 2,
-            "name": "VRTon Icon Sticker",
-            "type": "vrchat-emoji",
-            "image": "/assets/icons/icon-512x512.webp",
-            "downloadUrl": "/assets/press-kit/stickers/icon-sticker.webp",
-            "dimensions": "512x512"
-        }
-    ],
+    "stickers": [],
     "bulkDownload": {
         "title": "Complete VRTon Press Kit",
         "description": "Get the complete VRTon press kit in a single ZIP file containing all logos, posters, and stickers.",
