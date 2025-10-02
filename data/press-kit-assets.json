@@ -3,24 +3,32 @@
         {
             "id": 1,
             "title": "Oficial Logo",
-            "image": "/assets/press-kit/logos/logo.png",
-            "downloadUrl": "/assets/press-kit/logos/logo.png",
+            "image": "/assets/press-kit/logos/Logo.png",
+            "downloadUrl": "/assets/press-kit/logos/Logo.png",
             "dimensions": "1024x1024",
             "format": "PNG"
         },
         {
             "id": 2,
             "title": "Monochrome Logo",
-            "image": "/assets/press-kit/logos/logo-monochrome.png",
-            "downloadUrl": "/assets/press-kit/logos/logo-monochrome.png",
+            "image": "/assets/press-kit/logos/LogoMonochrome.png",
+            "downloadUrl": "/assets/press-kit/logos/LogoMonochrome.png",
             "dimensions": "1024x1024",
             "format": "PNG"
         },
         {
             "id": 3,
-            "title": "Logo Alternative",
-            "image": "/assets/press-kit/logos/logo-alternative.png",
-            "downloadUrl": "/assets/press-kit/logos/logo-alternative.png",
+            "title": "Logo Con Fondo",
+            "image": "/assets/press-kit/logos/LogoBG.png",
+            "downloadUrl": "/assets/press-kit/logos/LogoBG.png",
+            "dimensions": "1024x1024",
+            "format": "PNG"
+        },
+        {
+            "id": 4,
+            "title": "Logo Con Fondo Alternativo",
+            "image": "/assets/press-kit/logos/LogoBGAlt.png",
+            "downloadUrl": "/assets/press-kit/logos/LogoBGAlt.png",
             "dimensions": "1024x1024",
             "format": "PNG"
         }
