@@ -1,0 +1,140 @@
+{
+    "avatars": [
+        {
+            "id": "furry1",
+            "name": "Madi",
+            "description": "VRTon Furry Avatar Female",
+            "creator": "Nantrop & Jeffry",
+            "image": "https://api.vrchat.cloud/api/1/image/file_f48afa92-4470-4fd3-a024-31255ed3e16c/1/512",
+            "vrchatUrl": "https://vrchat.com/home/avatar/avtr_decf262a-7ca5-48ec-9e81-28ba04eaa910",
+            "status": "public",
+            "assets": [
+                {
+                    "name": "Deira Base",
+                    "url": "https://marivr.gumroad.com/l/Deira"
+                },
+                {
+                    "name": "Smol Bundle",
+                    "url": "https://silentdreams.gumroad.com/l/smolbundle"
+                },
+                {
+                    "name": "Deira Shorts",
+                    "url": "https://voidvrc.gumroad.com/l/bffex"
+                }
+            ],
+            "tags": [
+                "vrton",
+                "furry",
+                "teleton",
+                "charity",
+                "female"
+            ]
+        },
+        {
+            "id": "furry2",
+            "name": "Aiden",
+            "description": "VRTon Furry Avatar Male",
+            "creator": "Nantrop & Jeffry",
+            "image": "https://api.vrchat.cloud/api/1/image/file_e14d1cb7-ab15-41a8-a030-81aa8e1b277e/1/512",
+            "vrchatUrl": "https://vrchat.com/home/avatar/avtr_46d1653f-3557-43dc-a089-262787b73987",
+            "status": "public",
+            "assets": [
+                {
+                    "name": "Deira Base",
+                    "url": "https://marivr.gumroad.com/l/Deira"
+                },
+                {
+                    "name": "Smol Bundle",
+                    "url": "https://silentdreams.gumroad.com/l/smolbundle"
+                },
+                {
+                    "name": "Deira Shorts",
+                    "url": "https://voidvrc.gumroad.com/l/bffex"
+                }
+            ],
+            "tags": [
+                "vrton",
+                "furry",
+                "teleton",
+                "charity",
+                "male"
+            ]
+        },
+        {
+            "id": "human1",
+            "name": "ARI",
+            "description": "ARI",
+            "creator": "Zulay",
+            "image": "https://api.vrchat.cloud/api/1/image/file_0ab94320-83fb-46e1-8fbf-4a5245d3ca6b/1/512",
+            "vrchatUrl": "https://vrchat.com/home/avatar/avtr_e3d63d24-e8a9-4955-956f-fc7379cef9dd",
+            "status": "public",
+            "assets": [
+                {
+                    "name": "VRBASE EGIRL",
+                    "url": "https://zinpia.sellfy.store/p/vrbase-egirl/"
+                },
+                {
+                    "name": "Above-knee prosthetic",
+                    "url": "https://gmsboxvr.com/b/CHPmD"
+                },
+                {
+                    "name": "Baby Tee RE",
+                    "url": "https://payhip.com/b/J8QZY"
+                },
+                {
+                    "name": "Una's Messy Hair",
+                    "url": "https://saikura.com/b/dsm0h"
+                },
+                {
+                    "name": "denim shorts",
+                    "url": "https://yespleasety.gumroad.com/l/YPT_ShortsV2"
+                },
+                {
+                    "name": "Shoes",
+                    "url": "https://payhip.com/b/qZ4rf"
+                }
+            ],
+            "tags": []
+        },
+        {
+            "id": "human2",
+            "name": "Adonis",
+            "description": "Adonis",
+            "creator": "Zulay",
+            "image": "https://api.vrchat.cloud/api/1/image/file_a898b9da-1c5b-430b-8d66-c50f33904c4b/1/512",
+            "vrchatUrl": "https://vrchat.com/home/avatar/avtr_0089f514-62dc-4546-ac9f-515687cc1d1d",
+            "status": "public",
+            "assets": [
+                {
+                    "name": "Akii Base",
+                    "url": "https://akiravr.gumroad.com/l/Akiibase"
+                },
+                {
+                    "name": "23Mink's Male Head",
+                    "url": "https://23mink.gumroad.com/l/MaleHeadUpdate"
+                },
+                {
+                    "name": "Loose Cargo Pants",
+                    "url": "https://payhip.com/b/5i9SH"
+                },
+                {
+                    "name": "Mechanical Cyber Robot arm",
+                    "url": "https://cupkake.store/products/mechanical-cyber-robot-arm-3d-model-assetcommercial-license"
+                },
+                {
+                    "name": "Xin's Hair",
+                    "url": "https://payhip.com/b/pOmrk"
+                },
+                {
+                    "name": "men's T-shirt",
+                    "url": "https://3amsnack.gumroad.com/l/czwty"
+                },
+                {
+                    "name": "Shoes",
+                    "url": "https://payhip.com/b/qZ4rf"
+                }
+            ],
+            "tags": []
+        }
+    ]
+}

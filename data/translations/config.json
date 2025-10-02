@@ -38,6 +38,11 @@
         "path": "/resources/assets/",
         "aliases": ["/assets/", "/resources/assets/index.html"]
       },
+      "pages/avatars": {
+        "description": "Página de colección de avatares VRTon",
+        "path": "/resources/avatars/",
+        "aliases": ["/avatars/", "/resources/avatars/index.html"]
+      },
       "components/loading": {
         "description": "Pantalla de carga y contador",
         "loadWhen": "loading screen detected"

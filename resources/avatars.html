@@ -1,0 +1,32 @@
+---
+layout: default
+title: "VRTon Avatars - Colección de Avatares VRChat | Avatares Públicos VRTon"
+description: "Descubre nuestra colección de avatares públicos para VRChat creados por la comunidad VRTon. Cada avatar incluye información del creador y assets utilizados."
+keywords: "VRTon avatars, VRChat avatars, avatar collection, public avatars, VRChat avatar world, avatar creator, VR avatars, VRTon community avatars, VRChat avatar assets"
+image: "/assets/icons/icon-512x512.webp"
+lang: es
+translation_modules: ["common", "pages/avatars"]
+---
+
+<div class="avatars-page">
+    <div class="container">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1 class="page-title" data-i18n="avatars.title">VRTon Avatar Collection</h1>
+            <p class="page-description" data-i18n="avatars.description">
+                Discover our collection of public VRChat avatars created by the VRTon community. Click on any avatar to visit its VRChat world page.
+            </p>
+        </div>
+
+        <!-- Avatars Grid -->
+        <div id="avatarsContainer" class="avatars-container">
+            <!-- Avatar cards will be loaded dynamically -->
+            <div class="loading-spinner">
+                <i class="fas fa-spinner fa-spin"></i>
+                <span data-i18n="avatars.loading">Loading avatars...</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/scripts/avatars.js"></script>
