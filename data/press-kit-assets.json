@@ -1,0 +1,80 @@
+{
+    "brandAssets": [
+        {
+            "id": 1,
+            "title": "Oficial Logo",
+            "image": "/assets/press-kit/logos/logo.png",
+            "downloadUrl": "/assets/press-kit/logos/logo.png",
+            "dimensions": "1024x1024",
+            "format": "PNG"
+        },
+        {
+            "id": 2,
+            "title": "Monochrome Logo",
+            "image": "/assets/press-kit/logos/logo-monochrome.png",
+            "downloadUrl": "/assets/press-kit/logos/logo-monochrome.png",
+            "dimensions": "1024x1024",
+            "format": "PNG"
+        },
+        {
+            "id": 3,
+            "title": "Logo Alternative",
+            "image": "/assets/press-kit/logos/logo-alternative.png",
+            "downloadUrl": "/assets/press-kit/logos/logo-alternative.png",
+            "dimensions": "1024x1024",
+            "format": "PNG"
+        }
+    ],
+    "worldPosters": [
+        {
+            "id": 1,
+            "title": "Horizontal Poster",
+            "image": "/assets/press-kit/posters/horizontal.png",
+            "downloadUrl": "/assets/press-kit/posters/horizontal.png",
+            "dimensions": "2048x1024",
+            "format": "PNG"
+        },
+        {
+            "id": 2,
+            "title": "Vertical Poster",
+            "image": "/assets/press-kit/posters/vertical.png",
+            "downloadUrl": "/assets/press-kit/posters/vertical.png",
+            "dimensions": "1024x2048",
+            "format": "PNG"
+        },
+        {
+            "id": 3,
+            "title": "Square Poster",
+            "image": "/assets/press-kit/posters/square.png",
+            "downloadUrl": "/assets/press-kit/posters/square.png",
+            "dimensions": "1024x1024",
+            "format": "PNG"
+        }
+    ],
+    "stickers": [
+        {
+            "id": 1,
+            "name": "VRTon Logo Sticker",
+            "type": "vrchat-sticker",
+            "image": "/assets/icons/logo.webp",
+            "downloadUrl": "/assets/press-kit/stickers/logo-sticker.webp",
+            "dimensions": "128x128"
+        },
+        {
+            "id": 2,
+            "name": "VRTon Icon Sticker",
+            "type": "vrchat-emoji",
+            "image": "/assets/icons/icon-512x512.webp",
+            "downloadUrl": "/assets/press-kit/stickers/icon-sticker.webp",
+            "dimensions": "512x512"
+        }
+    ],
+    "bulkDownload": {
+        "title": "Complete VRTon Press Kit",
+        "description": "Get the complete VRTon press kit in a single ZIP file containing all logos, posters, and stickers.",
+        "size": "~25 MB",
+        "formats": "Multiple formats included",
+        "downloadUrl": "/assets/press-kit/vrton-complete-press-kit.zip",
+        "lastUpdated": "2025-10-02"
+    }
+}

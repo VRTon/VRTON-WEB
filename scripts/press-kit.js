@@ -5,17 +5,14 @@
 
 class PressKitManager {
     constructor() {
-        this.currentSocialCategory = 'banners';
         this.currentStickerFilter = 'all';
         this.assets = {
+            brandAssets: [],
             posters: [],
-            social: {
-                banners: [],
-                profile: [],
-                stories: []
-            },
-            stickers: []
+            stickers: [],
+            bulkDownload: null
         };
+        this.dataUrl = '/data/press-kit-assets.json';
         this.init();
     }
 
@@ -26,14 +23,6 @@ class PressKitManager {
     }
 
     setupEventListeners() {
-        // Social media category tabs
-        const categoryTabs = document.querySelectorAll('.category-tab');
-        categoryTabs.forEach(tab => {
-            tab.addEventListener('click', (e) => {
-                this.switchSocialCategory(e.target.dataset.category);
-            });
-        });
-
         // Sticker filter buttons
         const filterBtns = document.querySelectorAll('.filter-btn');
         filterBtns.forEach(btn => {
@@ -60,8 +49,8 @@ class PressKitManager {
 
         // Asset preview clicks
         document.addEventListener('click', (e) => {
-            if (e.target.closest('.poster-card, .social-asset-card, .sticker-card, .asset-card')) {
-                const card = e.target.closest('.poster-card, .social-asset-card, .sticker-card, .asset-card');
+            if (e.target.closest('.poster-card, .sticker-card, .asset-card')) {
+                const card = e.target.closest('.poster-card, .sticker-card, .asset-card');
                 this.showAssetPreview(card);
             }
         });
@@ -111,91 +100,78 @@ class PressKitManager {
 
     async loadAssets() {
         try {
-            // Load sample data for demonstration
-            this.loadSampleAssets();
+            console.log('Loading assets from:', this.dataUrl);
+            
+            // Load data from JSON file
+            const response = await fetch(this.dataUrl);
+            console.log('Response status:', response.status);
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            console.log('Loaded data:', data);
+            
+            // Map data to internal structure
+            this.assets.brandAssets = data.brandAssets || [];
+            this.assets.posters = data.worldPosters || [];
+            this.assets.stickers = data.stickers || [];
+            this.assets.bulkDownload = data.bulkDownload || null;
+            
+            console.log('Mapped assets:', this.assets);
+            
+            // Render all sections
+            this.renderBrandAssets();
             this.renderPosters();
-            this.renderSocialAssets();
             this.renderStickers();
+            this.updateBulkDownload();
+            
+            console.log('Assets loaded and rendered successfully');
         } catch (error) {
             console.error('Error loading press kit assets:', error);
+            console.error('Error details:', error.message);
             this.showError();
         }
     }
 
-    loadSampleAssets() {
-        // Sample world posters
-        this.assets.posters = [
-            {
-                id: 1,
-                title: 'VRTon Community Hub',
-                world: 'Community World',
-                image: '/assets/comunidad.webp',
-                downloadUrl: '/assets/press-kit/posters/community-hub-poster.webp'
-            }
-        ];
 
-        // Sample social media assets
-        this.assets.social.banners = [
-            {
-                id: 1,
-                name: 'VRTon Banner 1920x1080',
-                dimensions: '1920x1080',
-                image: '/assets/icons/logo.webp',
-                downloadUrl: '/assets/press-kit/social/banner-1920x1080.webp'
-            },
-            {
-                id: 2,
-                name: 'VRTon Banner 1200x630',
-                dimensions: '1200x630',
-                image: '/assets/icons/logo.webp',
-                downloadUrl: '/assets/press-kit/social/banner-1200x630.webp'
-            }
-        ];
 
-        this.assets.social.profile = [
-            {
-                id: 3,
-                name: 'Profile Picture 512x512',
-                dimensions: '512x512',
-                image: '/assets/icons/icon-512x512.webp',
-                downloadUrl: '/assets/icons/icon-512x512.webp'
-            },
-            {
-                id: 4,
-                name: 'Profile Picture 192x192',
-                dimensions: '192x192',
-                image: '/assets/icons/icon-192x192.webp',
-                downloadUrl: '/assets/icons/icon-192x192.webp'
-            }
-        ];
+    renderBrandAssets() {
+        const container = document.querySelector('.brand-assets .assets-grid');
+        if (!container) return;
 
-        this.assets.social.stories = [
-            {
-                id: 5,
-                name: 'Instagram Story Template',
-                dimensions: '1080x1920',
-                image: '/assets/icons/logo.webp',
-                downloadUrl: '/assets/press-kit/social/story-template.webp'
-            }
-        ];
+        if (this.assets.brandAssets.length === 0) {
+            return; // Keep existing static HTML if no dynamic assets
+        }
 
-        // Sample stickers
-        this.assets.stickers = [
-            {
-                id: 1,
-                name: 'VRTon Logo Sticker',
-                platform: 'discord',
-                image: '/assets/icons/logo.webp',
-                downloadUrl: '/assets/press-kit/stickers/logo-sticker.webp'
-            },
-            {
-                id: 2,
-                name: 'VRTon Icon Sticker',
-                platform: 'telegram',
-                image: '/assets/icons/icon-512x512.webp',
-                downloadUrl: '/assets/press-kit/stickers/icon-sticker.webp'
-            }
-        ];
+        // Keep existing static HTML and add dynamic assets
+        const existingAssets = container.innerHTML;
+        const dynamicAssets = this.assets.brandAssets.map(asset => `
+            <div class="asset-card" data-asset-id="${asset.id}" data-asset-type="brand">
+                <div class="asset-preview">
+                    <img src="${asset.image}" alt="${asset.name || asset.title}" class="asset-image" onerror="this.src='/assets/colaboradores/placeholder.webp'">
+                </div>
+                <div class="asset-info">
+                    <h3 class="asset-name">${asset.name || asset.title}</h3>
+                    <div class="asset-formats">
+                        ${asset.formats ? asset.formats.map(format => `<span class="format-tag">${format}</span>`).join('') : `<span class="format-tag">${asset.format}</span>`}
+                    </div>
+                    <div class="asset-actions">
+                        <button class="btn btn-primary download-btn" data-asset="${asset.id}">
+                            <i class="fas fa-download"></i> <span data-i18n="pressKit.download">Download</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+
+        // Add dynamic assets after existing ones
+        if (existingAssets.includes('asset-card')) {
+            container.innerHTML = existingAssets + dynamicAssets;
+        } else {
+            container.innerHTML = dynamicAssets;
+        }
     }
 
     renderPosters() {
@@ -214,37 +190,17 @@ class PressKitManager {
 
         container.innerHTML = this.assets.posters.map(poster => `
             <div class="poster-card" data-asset-id="${poster.id}" data-asset-type="poster">
-                <img src="${poster.image}" alt="${poster.title}" class="poster-image">
+                <img src="${poster.image}" alt="${poster.title}" class="poster-image" onerror="this.src='/assets/colaboradores/placeholder.webp'">
                 <div class="poster-info">
                     <h3 class="poster-title">${poster.title}</h3>
-                    <p class="poster-world">${poster.world}</p>
-                </div>
-            </div>
-        `).join('');
-    }
-
-    renderSocialAssets() {
-        const container = document.getElementById('socialAssetsGrid');
-        if (!container) return;
-
-        const assets = this.assets.social[this.currentSocialCategory] || [];
-
-        if (assets.length === 0) {
-            container.innerHTML = `
-                <div class="loading-placeholder">
-                    <i class="fas fa-images"></i>
-                    <span>No ${this.currentSocialCategory} available yet</span>
-                </div>
-            `;
-            return;
-        }
-
-        container.innerHTML = assets.map(asset => `
-            <div class="social-asset-card" data-asset-id="${asset.id}" data-asset-type="social">
-                <img src="${asset.image}" alt="${asset.name}" class="social-asset-image">
-                <div class="social-asset-info">
-                    <h3 class="social-asset-name">${asset.name}</h3>
-                    <p class="social-asset-dimensions">${asset.dimensions}</p>
+                    <div class="asset-formats">
+                        <span class="format-tag">${poster.format}</span>
+                    </div>
+                    <div class="asset-actions">
+                        <button class="btn btn-primary download-btn" data-asset="${poster.id}">
+                            <i class="fas fa-download"></i> <span data-i18n="pressKit.download">Download</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         `).join('');
@@ -257,7 +213,7 @@ class PressKitManager {
         let filteredStickers = this.assets.stickers;
         if (this.currentStickerFilter !== 'all') {
             filteredStickers = this.assets.stickers.filter(sticker => 
-                sticker.platform === this.currentStickerFilter
+                sticker.type === this.currentStickerFilter
             );
         }
 
@@ -273,21 +229,9 @@ class PressKitManager {
 
         container.innerHTML = filteredStickers.map(sticker => `
             <div class="sticker-card" data-asset-id="${sticker.id}" data-asset-type="sticker">
-                <img src="${sticker.image}" alt="${sticker.name}" class="sticker-image">
+                <img src="${sticker.image}" alt="${sticker.name}" class="sticker-image" onerror="this.src='/assets/colaboradores/placeholder.webp'">
             </div>
         `).join('');
-    }
-
-    switchSocialCategory(category) {
-        this.currentSocialCategory = category;
-        
-        // Update active tab
-        document.querySelectorAll('.category-tab').forEach(tab => {
-            tab.classList.remove('active');
-        });
-        document.querySelector(`[data-category="${category}"]`).classList.add('active');
-        
-        this.renderSocialAssets();
     }
 
     filterStickers(filter) {
@@ -301,6 +245,24 @@ class PressKitManager {
         
         this.renderStickers();
     }
+
+    updateBulkDownload() {
+        if (!this.assets.bulkDownload) return;
+
+        const titleElement = document.querySelector('.bulk-title');
+        const descriptionElement = document.querySelector('.bulk-description');
+        const sizeElement = document.querySelector('.bulk-size');
+        const formatsElement = document.querySelector('.bulk-formats');
+        const downloadBtn = document.getElementById('bulkDownloadBtn');
+
+        if (titleElement) titleElement.textContent = this.assets.bulkDownload.title;
+        if (descriptionElement) descriptionElement.textContent = this.assets.bulkDownload.description;
+        if (sizeElement) sizeElement.textContent = this.assets.bulkDownload.size;
+        if (formatsElement) formatsElement.textContent = this.assets.bulkDownload.formats;
+        if (downloadBtn) downloadBtn.dataset.downloadUrl = this.assets.bulkDownload.downloadUrl;
+    }
+
+
 
     downloadAsset(assetType) {
         // Simulate download
@@ -331,16 +293,11 @@ class PressKitManager {
             case 'poster':
                 asset = this.assets.posters.find(p => p.id === assetId);
                 break;
-            case 'social':
-                const socialAssets = [
-                    ...this.assets.social.banners,
-                    ...this.assets.social.profile,
-                    ...this.assets.social.stories
-                ];
-                asset = socialAssets.find(s => s.id === assetId);
-                break;
             case 'sticker':
                 asset = this.assets.stickers.find(s => s.id === assetId);
+                break;
+            case 'brand':
+                asset = this.assets.brandAssets.find(b => b.id === assetId);
                 break;
         }
 
@@ -348,8 +305,10 @@ class PressKitManager {
 
         // Update modal content
         document.getElementById('previewTitle').textContent = asset.title || asset.name;
-        document.getElementById('previewImage').src = asset.image;
-        document.getElementById('previewImage').alt = asset.title || asset.name;
+        const previewImage = document.getElementById('previewImage');
+        previewImage.src = asset.image;
+        previewImage.alt = asset.title || asset.name;
+        previewImage.onerror = function() { this.src = '/assets/colaboradores/placeholder.webp'; };
 
         // Store download URL for modal buttons
         document.getElementById('previewDownloadBtn').dataset.downloadUrl = asset.downloadUrl;
@@ -452,7 +411,7 @@ class PressKitManager {
     }
 
     showError() {
-        const grids = ['postersGrid', 'socialAssetsGrid', 'stickersGrid'];
+        const grids = ['postersGrid', 'stickersGrid'];
         grids.forEach(gridId => {
             const container = document.getElementById(gridId);
             if (container) {

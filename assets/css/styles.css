@@ -4080,6 +4080,8 @@ body.loaded section {
     color: var(--white);
 }
 
+
+
 /* Brand Assets Styles */
 .brand-assets .assets-grid {
     display: grid;
@@ -4226,97 +4228,6 @@ body.loaded section {
     margin-bottom: 5px;
 }
 
-.poster-world {
-    color: var(--text-light);
-    font-size: var(--font-size-small);
-}
-
-/* Social Media Assets Styles */
-.social-categories {
-    padding: 0;
-}
-
-.category-tabs {
-    display: flex;
-    justify-content: center;
-    background: var(--light-color);
-    margin: 0;
-    gap: 0;
-}
-
-.category-tab {
-    background: none;
-    border: none;
-    padding: 15px 25px;
-    color: var(--text-color);
-    font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition-normal);
-    border-bottom: 3px solid transparent;
-    font-size: var(--font-size-normal);
-}
-
-.category-tab:hover {
-    background: rgba(227, 6, 19, 0.1);
-    color: var(--primary-color);
-}
-
-.category-tab.active {
-    background: var(--primary-color);
-    color: var(--white);
-    border-bottom-color: var(--secondary-color);
-}
-
-.category-content {
-    padding: 30px;
-}
-
-.social-assets-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.social-asset-card {
-    background: var(--white);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-light);
-    overflow: hidden;
-    transition: var(--transition-normal);
-    cursor: pointer;
-}
-
-.social-asset-card:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-medium);
-}
-
-.social-asset-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: var(--transition-normal);
-}
-
-.social-asset-card:hover .social-asset-image {
-    transform: scale(1.05);
-}
-
-.social-asset-info {
-    padding: 15px;
-}
-
-.social-asset-name {
-    font-size: var(--font-size-normal);
-    font-weight: 600;
-    color: var(--dark-color);
-    margin-bottom: 5px;
-}
-
-.social-asset-dimensions {
-    color: var(--text-light);
-    font-size: var(--font-size-small);
-}
 
 /* Stickers & Emojis Styles */
 .stickers-categories {
@@ -4564,6 +4475,8 @@ body.loaded section {
         font-size: 1.5rem;
     }
     
+
+    
     .brand-assets .assets-grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -4574,24 +4487,6 @@ body.loaded section {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
         padding: 20px;
-    }
-    
-    .category-tabs {
-        flex-direction: column;
-    }
-    
-    .category-tab {
-        padding: 12px 20px;
-        text-align: center;
-    }
-    
-    .category-content {
-        padding: 20px;
-    }
-    
-    .social-assets-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 15px;
     }
     
     .stickers-grid {
