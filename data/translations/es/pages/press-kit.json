@@ -5,17 +5,10 @@
     "download": "Descargar",
     "copyLink": "Copiar Enlace",
     "loading": "Cargando recursos...",
+    "noPosters": "Aún no hay pósters disponibles",
     "brand": {
       "title": "Assets de Marca",
-      "description": "Logos oficiales de VRTon y elementos de marca en varios formatos y tamaños.",
-      "logo": {
-        "main": "Logo VRTon",
-        "description": "Logo oficial de VRTon en alta resolución"
-      },
-      "icon": {
-        "main": "Icono VRTon",
-        "description": "Icono de app y favicon en múltiples tamaños"
-      }
+      "description": "Logos oficiales de VRTon y elementos de marca en varios formatos y tamaños."
     },
     "posters": {
       "title": "Pósters de Mundos",
@@ -27,9 +20,12 @@
     },
     "filter": {
       "all": "Todos",
-      "discord": "Discord",
-      "telegram": "Telegram",
-      "general": "General"
+      "stickers": "Stickers",
+      "emojis": "Emojis",
+      "vrchat-sticker": "Stickers VRChat",
+      "vrchat-emoji": "Emojis VRChat",
+      "discord-sticker": "Stickers Discord",
+      "discord-emoji": "Emojis Discord"
     },
     "guidelines": {
       "title": "Guías de Uso",

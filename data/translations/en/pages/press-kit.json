@@ -5,17 +5,10 @@
     "download": "Download",
     "copyLink": "Copy Link",
     "loading": "Loading assets...",
+    "noPosters": "No posters available yet",
     "brand": {
       "title": "Brand Assets",
-      "description": "Official VRTon logos and brand elements in various formats and sizes.",
-      "logo": {
-        "main": "VRTon Logo",
-        "description": "Official VRTon logo in high resolution"
-      },
-      "icon": {
-        "main": "VRTon Icon",
-        "description": "App icon and favicon in multiple sizes"
-      }
+      "description": "Official VRTon logos and brand elements in various formats and sizes."
     },
     "posters": {
       "title": "World Posters",
@@ -27,9 +20,12 @@
     },
     "filter": {
       "all": "All",
-      "discord": "Discord",
-      "telegram": "Telegram",
-      "general": "General"
+      "stickers": "Stickers",
+      "emojis": "Emojis",
+      "vrchat-sticker": "VRChat Stickers",
+      "vrchat-emoji": "VRChat Emojis",
+      "discord-sticker": "Discord Stickers",
+      "discord-emoji": "Discord Emojis"
     },
     "guidelines": {
       "title": "Usage Guidelines",
