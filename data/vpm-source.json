@@ -1,0 +1,26 @@
+{
+    "name":"VRTon Listing",
+    "id":"org.vrton.listing",
+    "url":"https://vrton.org/data/vpm-listing.json",
+    "author":{
+        "email":"vrtonoficial@gmail.com",
+        "name":"VRTon",
+        "url":"https://vrton.org/"
+    },
+    "description":"VCC Package Listing for VRTon assets.",
+    "infoLink":{
+        "url":"https://vrton.org",
+        "text":"Visit VRTon Website"
+    },
+    "bannerUrl":"banner.png",
+    "githubRepos":[],
+    "packages":[
+        {
+            "name":"org.vrton.assets2025",
+            "releases":[
+                "https://github.com/VRTon/ASSETS2025/releases/download/2.0.1/ASSETS2025.zip",
+                "https://github.com/VRTon/ASSETS2025/releases/download/2.0.2/org.vrton.assets2025.zip"
+            ]
+        }
+    ]
+}

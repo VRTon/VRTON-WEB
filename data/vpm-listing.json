@@ -1,0 +1,48 @@
+{
+  "name": "VRTon Listing",
+  "author": "VRTon",
+  "url": "https://vrton.org/data/vpm-listing.json",
+  "id": "org.vrton.listing",
+  "packages": {
+    "org.vrton.assets2025": {
+      "versions": {
+        "2.0.1": {
+          "name": "org.vrton.assets2025",
+          "displayName": "ASSETS2025",
+          "version": "2.0.1",
+          "description": "ASSETS2025",
+          "vpmDependencies": {
+            "com.poiyomi.toon": "^9.2.67",
+            "com.vrcfury.vrcfury": "^1.1241.0"
+          },
+          "author": {
+            "name": "VRTon",
+            "email": "vrtonoficial@gmail.com",
+            "url": "https://vrton.org/"
+          },
+          "hideInEditor": false,
+          "zipSHA256": "8c161be82720dac4edd64d062184ebb2c465ffd7845e287e889ee47c63a5c78b",
+          "url": "https://github.com/VRTon/ASSETS2025/releases/download/2.0.1/ASSETS2025.zip"
+        },
+        "2.0.2": {
+          "name": "org.vrton.assets2025",
+          "displayName": "ASSETS2025",
+          "version": "2.0.2",
+          "description": "ASSETS2025",
+          "vpmDependencies": {
+            "com.poiyomi.toon": "^9.2.67",
+            "com.vrcfury.vrcfury": "^1.1241.0"
+          },
+          "author": {
+            "name": "VRTon",
+            "email": "vrtonoficial@gmail.com",
+            "url": "https://vrton.org/"
+          },
+          "hideInEditor": false,
+          "zipSHA256": "2c81d045e6c80c1da711903b9119b0c880ce863b21e1ae58663d34c83d2b59ae",
+          "url": "https://github.com/VRTon/ASSETS2025/releases/download/2.0.2/org.vrton.assets2025.zip"
+        }
+      }
+    }
+  }
+}

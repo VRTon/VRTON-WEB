@@ -8,7 +8,7 @@
 // VPM Assets Configuration
 const VPMAssets = {
     config: {
-        listingUrl: 'https://vrton.org/resources/assets/vpm-listing.json',
+        listingUrl: 'https://vrton.org/data/vpm-listing.json',
         vccProtocol: 'vcc://vpm/addRepo?url=',
         catalogUrl: '/data/catalog.json'
     },
