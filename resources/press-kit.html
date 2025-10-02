@@ -1,0 +1,257 @@
+---
+layout: default
+title: "VRTon Press Kit - Material Promocional y Gráfico | Recursos 2D VRTon"
+description: "Accede a nuestro kit de prensa oficial con material promocional, pósters de mundos, assets para redes sociales, stickers y emojis de VRTon. Recursos gráficos listos para descargar."
+keywords: "VRTon press kit, material promocional, pósters VRChat, redes sociales, stickers VRTon, emojis, recursos gráficos, brand assets, promotional material, social media assets"
+image: "/assets/icons/icon-512x512.webp"
+lang: es
+translation_modules: ["common", "pages/press-kit"]
+---
+
+<div class="press-kit-page">
+    <div class="container">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1 class="page-title" data-i18n="pressKit.title">VRTon Press Kit</h1>
+            <p class="page-description" data-i18n="pressKit.description">
+                Official promotional materials, world posters, social media assets, stickers, and emojis for VRTon community use.
+            </p>
+        </div>
+
+        <!-- Brand Assets Section -->
+        <div class="press-section brand-assets">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="pressKit.brand.title">Brand Assets</h2>
+                <p class="section-description" data-i18n="pressKit.brand.description">
+                    Official VRTon logos and brand elements in various formats and sizes.
+                </p>
+            </div>
+            
+            <div class="assets-grid">
+                <div class="asset-card logo-card">
+                    <div class="asset-preview">
+                        <img src="/assets/icons/logo.webp" alt="VRTon Logo" class="asset-image">
+                    </div>
+                    <div class="asset-info">
+                        <h3 class="asset-name" data-i18n="pressKit.brand.logo.main">VRTon Logo</h3>
+                        <p class="asset-description" data-i18n="pressKit.brand.logo.description">
+                            Official VRTon logo in high resolution
+                        </p>
+                        <div class="asset-formats">
+                            <span class="format-tag">WEBP</span>
+                            <span class="format-tag">PNG</span>
+                            <span class="format-tag">SVG</span>
+                        </div>
+                        <div class="asset-actions">
+                            <button class="btn btn-primary download-btn" data-asset="logo" data-i18n="pressKit.download">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="asset-card icon-card">
+                    <div class="asset-preview">
+                        <img src="/assets/icons/icon-512x512.webp" alt="VRTon Icon" class="asset-image">
+                    </div>
+                    <div class="asset-info">
+                        <h3 class="asset-name" data-i18n="pressKit.brand.icon.main">VRTon Icon</h3>
+                        <p class="asset-description" data-i18n="pressKit.brand.icon.description">
+                            App icon and favicon in multiple sizes
+                        </p>
+                        <div class="asset-formats">
+                            <span class="format-tag">WEBP</span>
+                            <span class="format-tag">ICO</span>
+                            <span class="format-tag">PNG</span>
+                        </div>
+                        <div class="asset-actions">
+                            <button class="btn btn-primary download-btn" data-asset="icons" data-i18n="pressKit.download">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- World Posters Section -->
+        <div class="press-section world-posters">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="pressKit.posters.title">World Posters</h2>
+                <p class="section-description" data-i18n="pressKit.posters.description">
+                    Promotional posters for VRTon worlds and events.
+                </p>
+            </div>
+            
+            <div class="posters-grid" id="postersGrid">
+                <!-- Posters will be loaded dynamically -->
+                <div class="loading-placeholder">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <span data-i18n="pressKit.loading">Loading assets...</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Assets -->
+        <div class="press-section social-media">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="pressKit.social.title">Social Media Assets</h2>
+                <p class="section-description" data-i18n="pressKit.social.description">
+                    Ready-to-use graphics for social media platforms and community content.
+                </p>
+            </div>
+
+            <div class="social-categories">
+                <div class="category-tabs">
+                    <button class="category-tab active" data-category="banners" data-i18n="pressKit.social.banners">
+                        Banners
+                    </button>
+                    <button class="category-tab" data-category="profile" data-i18n="pressKit.social.profile">
+                        Profile Graphics
+                    </button>
+                    <button class="category-tab" data-category="stories" data-i18n="pressKit.social.stories">
+                        Stories & Posts
+                    </button>
+                </div>
+
+                <div class="category-content">
+                    <div class="social-assets-grid" id="socialAssetsGrid">
+                        <!-- Social media assets will be loaded dynamically -->
+                        <div class="loading-placeholder">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <span data-i18n="pressKit.loading">Loading assets...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stickers & Emojis Section -->
+        <div class="press-section stickers-emojis">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="pressKit.stickers.title">Stickers & Emojis</h2>
+                <p class="section-description" data-i18n="pressKit.stickers.description">
+                    Fun stickers and emojis for Discord, Telegram, and other platforms.
+                </p>
+            </div>
+
+            <div class="stickers-categories">
+                <div class="category-filter">
+                    <button class="filter-btn active" data-filter="all" data-i18n="pressKit.filter.all">All</button>
+                    <button class="filter-btn" data-filter="discord" data-i18n="pressKit.filter.discord">Discord</button>
+                    <button class="filter-btn" data-filter="telegram" data-i18n="pressKit.filter.telegram">Telegram</button>
+                    <button class="filter-btn" data-filter="general" data-i18n="pressKit.filter.general">General</button>
+                </div>
+
+                <div class="stickers-grid" id="stickersGrid">
+                    <!-- Stickers will be loaded dynamically -->
+                    <div class="loading-placeholder">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <span data-i18n="pressKit.loading">Loading assets...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Usage Guidelines -->
+        <div class="press-section usage-guidelines">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="pressKit.guidelines.title">Usage Guidelines</h2>
+            </div>
+            
+            <div class="guidelines-content">
+                <div class="guideline-card">
+                    <div class="guideline-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="guideline-text">
+                        <h3 data-i18n="pressKit.guidelines.allowed.title">Allowed Uses</h3>
+                        <ul data-i18n="pressKit.guidelines.allowed.list">
+                            <li>Community content and fan art</li>
+                            <li>Social media posts about VRTon</li>
+                            <li>Event promotion and community activities</li>
+                            <li>Educational content about VRChat</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="guideline-card">
+                    <div class="guideline-icon">
+                        <i class="fas fa-times-circle"></i>
+                    </div>
+                    <div class="guideline-text">
+                        <h3 data-i18n="pressKit.guidelines.prohibited.title">Prohibited Uses</h3>
+                        <ul data-i18n="pressKit.guidelines.prohibited.list">
+                            <li>Commercial use without permission</li>
+                            <li>Modification of official logos</li>
+                            <li>Use in inappropriate or harmful content</li>
+                            <li>Impersonation of official VRTon accounts</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="guideline-card full-width">
+                    <div class="guideline-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <div class="guideline-text">
+                        <h3 data-i18n="pressKit.guidelines.contact.title">Questions?</h3>
+                        <p data-i18n="pressKit.guidelines.contact.text">
+                            If you have questions about using these materials or need additional assets, 
+                            please contact us through our official Discord server.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bulk Download -->
+        <div class="press-section bulk-download">
+            <div class="bulk-download-card">
+                <div class="bulk-download-content">
+                    <h3 class="bulk-title" data-i18n="pressKit.bulk.title">Download All Assets</h3>
+                    <p class="bulk-description" data-i18n="pressKit.bulk.description">
+                        Get the complete VRTon press kit in a single ZIP file containing all logos, posters, 
+                        social media assets, and stickers.
+                    </p>
+                    <div class="bulk-info">
+                        <span class="bulk-size" data-i18n="pressKit.bulk.size">~25 MB</span>
+                        <span class="bulk-formats" data-i18n="pressKit.bulk.formats">Multiple formats included</span>
+                    </div>
+                </div>
+                <div class="bulk-download-action">
+                    <button class="btn btn-primary btn-large" id="bulkDownloadBtn" data-i18n="pressKit.bulk.download">
+                        <i class="fas fa-download"></i> Download Complete Kit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Asset Preview Modal -->
+<div id="assetPreviewModal" class="modal" hidden>
+    <div class="modal-content large">
+        <div class="modal-header">
+            <h3 id="previewTitle">Asset Preview</h3>
+            <button id="previewModalClose" class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="preview-container">
+                <img id="previewImage" src="" alt="Asset Preview" class="preview-image">
+            </div>
+            <div class="preview-actions">
+                <button class="btn btn-primary" id="previewDownloadBtn">
+                    <i class="fas fa-download"></i> <span data-i18n="pressKit.download">Download</span>
+                </button>
+                <button class="btn btn-secondary" id="previewCopyBtn">
+                    <i class="fas fa-copy"></i> <span data-i18n="pressKit.copyLink">Copy Link</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/scripts/press-kit.js"></script>
