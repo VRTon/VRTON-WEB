@@ -1,220 +1,183 @@
 ---
 layout: default
-title: "VRTon - Página en Construcción | Realidad Virtual para Causas Solidarias"
-description: "VRTon - Página en construcción. Estamos trabajando en una experiencia increíble de realidad virtual para causas solidarias. Pronto regresaremos con el nuevo sitio web."
-keywords: "VRTon, construcción, mantenimiento, realidad virtual, causas solidarias, coming soon, próximamente"
+title: "VRTon - Página en Mantenimiento | Realidad Virtual para Causas Solidarias"
+description: "VRTon está temporalmente en mantenimiento. Estamos mejorando nuestros servicios de realidad virtual para causas solidarias. Regresaremos pronto."
+keywords: "VRTon, mantenimiento, realidad virtual, causas solidarias, coming soon, próximamente"
 robots: "noindex, nofollow"
 image: "/assets/icons/icon-512x512.webp"
 translation_modules: ["common", "pages/maintenance"]
 ---
 
-<!-- Maintenance page content stays the same -->
-        :root {
-            --primary-color: #e30613;
-            --secondary-color: #fd5c63;
-            --accent-color: #ffcc00;
-            --text-color: #333;
-            --light-color: #f4f7f9;
-            --dark-color: #2c3e50;
-        }
+<div class="maintenance-page">
+    <div class="container">
+        <div class="maintenance-content">
+            <!-- VRTon Logo -->
+            <div class="maintenance-logo">
+                <img src="/assets/icons/logo.webp" alt="VRTon Logo" width="120" height="120">
+            </div>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+            <!-- Main Message -->
+            <div class="maintenance-message">
+                <h1 class="maintenance-title" data-i18n="maintenance.title">
+                    Estamos en Mantenimiento
+                </h1>
+                <p class="maintenance-description" data-i18n="maintenance.description">
+                    Estamos trabajando para mejorar tu experiencia. Nuestro sitio web estará disponible nuevamente muy pronto.
+                </p>
+            </div>
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            color: white;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-        }
+            <!-- Status Information -->
+            <div class="maintenance-status">
+                <div class="status-item">
+                    <i class="fas fa-tools"></i>
+                    <span data-i18n="maintenance.status">Actualizando sistemas</span>
+                </div>
+                <div class="estimated-time">
+                    <i class="fas fa-clock"></i>
+                    <span data-i18n="maintenance.estimated">Tiempo estimado: 30 minutos</span>
+                </div>
+            </div>
 
-        .construction-container {
-            max-width: 800px;
-            padding: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px); /* Para Safari */
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-            position: relative;
-        }
+            <!-- Contact Information -->
+            <div class="maintenance-contact">
+                <p data-i18n="maintenance.contact.text">
+                    ¿Necesitas ayuda urgente? Contáctanos:
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:contacto@vrton.org" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>contacto@vrton.org</span>
+                    </a>
+                    <a href="https://discord.gg/vrton" class="contact-link" target="_blank" rel="noopener">
+                        <i class="fab fa-discord"></i>
+                        <span>Discord</span>
+                    </a>
+                </div>
+            </div>
 
-        .logo {
-            margin-bottom: 30px;
-        }
-
-        .logo h1 {
-            font-size: 5rem;
-            font-weight: 800;
-            color: white;
-            text-shadow: 3px 3px 0 var(--accent-color);
-            letter-spacing: 2px;
-        }
-
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 1.6;
-        }
-
-        .progress-bar {
-            height: 10px;
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 5px;
-            margin-bottom: 30px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .progress-bar::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 30%;
-            background-color: var(--accent-color);
-            border-radius: 5px;
-            animation: progress 3s infinite alternate;
-        }
-
-        @keyframes progress {
-            0% {
-                width: 5%;
-            }
-            100% {
-                width: 95%;
-            }
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 40px;
-        }
-
-        .social-icons a {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.2);
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            font-size: 1.5rem;
-            transition: all 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            background-color: var(--accent-color);
-            transform: translateY(-5px);
-        }
-
-        .gear {
-            position: absolute;
-            color: rgba(255, 255, 255, 0.2);
-            animation: spin 10s linear infinite;
-        }
-
-        .gear1 {
-            top: 20px;
-            right: 20px;
-            font-size: 4rem;
-            animation-duration: 10s;
-        }
-
-        .gear2 {
-            bottom: 20px;
-            left: 20px;
-            font-size: 3rem;
-            animation-duration: 15s;
-            animation-direction: reverse;
-        }
-
-        .footer-info {
-            margin-top: 40px;
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .logo h1 {
-                font-size: 3.5rem;
-            }
-
-            h2 {
-                font-size: 1.5rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-        }
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <div class="construction-container">
-        <div class="logo">
-            <h1>VRTon</h1>
-        </div>
-
-        <h2 data-i18n="maintenance.title">Página en Construcción</h2>
-
-        <p data-i18n="maintenance.text">Estamos trabajando arduamente para crear una experiencia increíble. ¡Gracias por tu paciencia! Regresa pronto para descubrir cómo estamos transformando vidas a través de la tecnología.</p>
-
-        <div class="progress-bar"></div>
-
-        <div class="social-icons">
-            <a href="https://x.com/vrtonof" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/vrtonof/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://discord.gg/kJudVebk" aria-label="Discord"><i class="fab fa-discord"></i></a>
-            <a href="https://www.youtube.com/@VRTonOficial" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.tiktok.com/@vrtonoficial" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-        </div>
-
-        <div class="gear gear1">
-            <i class="fas fa-cog"></i>
-        </div>
-
-        <div class="gear gear2">
-            <i class="fas fa-cog"></i>
-        </div>
-
-        <div class="footer-info">
-            <p>&copy; 2025 VRTon - Todos los derechos reservados</p>
         </div>
     </div>
-        <script src="scripts/i18n-v3.js" defer></script>
-        <script src="scripts/components.js" defer></script>
-    </body>
-    </html>
+</div>
+
+<style>
+.maintenance-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--white);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.maintenance-content {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-radius);
+    padding: 60px 40px;
+    box-shadow: var(--shadow-large);
+    margin: auto;
+}
+
+.maintenance-logo {
+    margin-bottom: 40px;
+}
+
+.maintenance-logo img {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.maintenance-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.maintenance-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.maintenance-status {
+    margin-bottom: 40px;
+}
+
+.status-item, .estimated-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.status-item i, .estimated-time i {
+    color: var(--accent-color);
+}
+
+.maintenance-contact {
+    margin-bottom: 40px;
+}
+
+.maintenance-contact p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--white);
+    text-decoration: none;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-small);
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .maintenance-content {
+        padding: 40px 20px;
+    }
+    
+    .maintenance-title {
+        font-size: 2rem;
+    }
+    
+    .maintenance-description {
+        font-size: 1rem;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-link {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+}
+</style>

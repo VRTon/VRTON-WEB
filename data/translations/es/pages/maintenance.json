@@ -1,23 +1,12 @@
 {
   "maintenance": {
-    "title": "Página en construcción",
-    "subtitle": "Estamos trabajando para mejorar tu experiencia",
-    "message": "Nuestro sitio web está siendo actualizado para ofrecerte la mejor experiencia posible",
-    "features": {
-      "title": "Mientras tanto, descubre lo que estamos preparando",
-      "vr_experiences": "Nuevas experiencias de realidad virtual",
-      "social_impact": "Mayor impacto social",
-      "accessibility": "Mejor accesibilidad",
-      "performance": "Rendimiento optimizado"
+    "title": "Estamos en Mantenimiento",
+    "description": "Estamos trabajando para mejorar tu experiencia. Nuestro sitio web estará disponible nuevamente muy pronto.",
+    "status": "Actualizando sistemas",
+    "estimated": "Tiempo estimado: 30 minutos",
+    "contact": {
+      "text": "¿Necesitas ayuda urgente? Contáctanos:"
     },
-    "eta": {
-      "title": "Tiempo estimado",
-      "message": "Estaremos de vuelta pronto",
-      "contact": "¿Necesitas contactarnos urgentemente?"
-    },
-    "social": {
-      "title": "Síguenos en redes sociales",
-      "message": "Mantente al día con las últimas novedades"
-    }
+    "loading": "Cargando..."
   }
 }
