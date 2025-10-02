@@ -287,7 +287,13 @@ const VPMAssets = {
             console.error('Failed to copy URL:', error);
             // Fallback for older browsers
             urlField.select();
-            document.execCommand('copy');
+            const originalText = copyButton.innerHTML;
+            copyButton.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Unable to copy. Please copy manually.';
+            copyButton.style.background = 'var(--error-color)';
+            setTimeout(() => {
+                copyButton.innerHTML = originalText;
+                copyButton.style.background = '';
+            }, 4000);
         }
     },
 
