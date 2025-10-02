@@ -35,6 +35,7 @@ exclude:
   - package.json
   - package-lock.json
   - "*.ps1"
+  - data/vpm-listing.json
 
 # Include files
 include:
