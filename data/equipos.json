@@ -195,6 +195,46 @@
       "nombre": "MadKodin",
       "foto": "madkodin.webp",
       "social": {}
+    },
+    "gohan" : {
+      "nombre": "GohanBeatbox",
+      "foto": "gohan.webp",
+      "social": {}
+    },
+    "bellastrange" : {
+      "nombre": "BellaStrange",
+      "foto": "bellastrange.webp",
+      "social": {}
+    },
+    "kunniin"  : {
+      "nombre": "Kunniin",
+      "foto": "kunniin.webp",
+      "social": {}
+    },
+    "draksuki"  : {
+      "nombre": "DraksukiWolfy",
+      "foto": "draksuki.webp",
+      "social": {}
+    },
+    "blaky"  : {
+      "nombre": "Blaky",
+      "foto": "blaky.webp",
+      "social": {}
+    },
+    "andrac"  : {
+      "nombre": "Andrac",
+      "foto": "andrac.webp",
+      "social": {}
+    },
+    "vittallirycsvt"  : {
+      "nombre": "VittalLirycsVT",
+      "foto": "vittallirycsvt.webp",
+      "social": {}
+    },
+    "kemono"  : {
+      "nombre": "Kemono",
+      "foto": "kemono.webp",
+      "social": {}
     }
   },
   "equipos": [
@@ -218,7 +258,9 @@
       ],
       "miembros": [
         { "id": "valenvrc", "rol_key": "backend_dev" },
-        { "id": "pichujeff", "rol_key": "fullstack_dev" }
+        { "id": "pichujeff", "rol_key": "fullstack_dev" },
+        { "id": "blaky", "rol_key": "fullstack_dev" },
+        { "id": "andrac", "rol_key": "frontend_dev" }
       ]
     },
     {
@@ -246,7 +288,10 @@
         { "id": "dannylasagna", "rol_key": "graphic_designer" },
         { "id": "bonnieck", "rol_key": "graphic_designer" },
         { "id": "joaco22", "rol_key": "graphic_designer" },
-        { "id": "trout", "rol_key": "graphic_designer" }
+        { "id": "trout", "rol_key": "graphic_designer" },
+        { "id": "draksuki", "rol_key": "graphic_designer" },
+        { "id": "kunniin", "rol_key": "graphic_designer" },
+        { "id": "vittallirycsvt", "rol_key": "graphic_designer" }
       ]
     },
     {
@@ -254,14 +299,15 @@
       "nombre": "Diseño 3D",
       "descripcion": "Nuestro equipo creativo utiliza diseño 3D para crear modelos, personajes y entornos que comunican efectivamente nuestra misión social.",
       "lideres": [
-        { "id": "pichujeff", "rol_key": "lead_3d_assets" },
-        { "id": "nantrop", "rol_key": "lead_3d_avatars" }
+        { "id": "pichujeff", "rol_key": "lead_3d_assets" }
       ],
       "miembros": [
         { "id": "zulay", "rol_key": "avatar_creator" },
         { "id": "jeffrythekiller", "rol_key": "avatar_creator" },
+        { "id": "nantrop", "rol_key": "avatar_creator" },
         { "id": "slime", "rol_key": "asset_creator" },
-        { "id": "abstered", "rol_key": "asset_creator" }
+        { "id": "abstered", "rol_key": "asset_creator" },
+        { "id": "bellastrange", "rol_key": "asset_creator" }
       ]
     },
     {
@@ -272,7 +318,8 @@
         { "id": "lianro", "rol_key": "community_manager" }
       ],
       "miembros": [
-        { "id": "zulay", "rol_key": "outreach_coordinator" }
+        { "id": "zulay", "rol_key": "outreach_coordinator" },
+        { "id": "gohan", "rol_key": "outreach_coordinator" }
       ]
     },
     {
@@ -303,7 +350,8 @@
         { "id": "nilein", "rol_key": "host" },
         { "id": "juliothanos", "rol_key": "host" },
         { "id": "javi2633", "rol_key": "host" },
-        { "id": "madkodin", "rol_key": "host" }
+        { "id": "madkodin", "rol_key": "host" },
+        { "id": "draksuki", "rol_key": "host" }
       ]
     },
     {
@@ -327,7 +375,9 @@
       ],
       "miembros": [
         { "id": "zorrocl", "rol_key": "ingame_moderator" },
-        { "id": "clandestino", "rol_key": "ingame_moderator" }
+        { "id": "clandestino", "rol_key": "ingame_moderator" },
+        { "id": "vittallirycsvt", "rol_key": "ingame_moderator" },
+        { "id": "kemono", "rol_key": "ingame_moderator" }
       ]
     },
     {
