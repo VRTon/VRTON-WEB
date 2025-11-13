@@ -56,9 +56,16 @@
         "is_special": true
       },
       {
-        "id": "conteo1",
-        "time": "01:00",
-        "date": "2025-11-29",
+        "id": "talk-teleton",
+        "time": "23:00",
+        "date": "2025-11-28",
+        "duration": 60,
+        "is_special": false
+      },
+      {
+        "id": "show-singer1",
+        "time": "24:00",
+        "date": "2025-11-28",
         "duration": 60,
         "is_special": false
       },
@@ -66,102 +73,88 @@
         "id": "djset1",
         "time": "02:00",
         "date": "2025-11-29",
-        "duration": 120,
+        "duration": 60,
         "is_special": false
       },
       {
         "id": "djset2",
-        "time": "04:00",
+        "time": "03:00",
         "date": "2025-11-29",
         "duration": 60,
         "is_special": false
       },
       {
         "id": "djset3",
-        "time": "05:00",
+        "time": "04:00",
         "date": "2025-11-29",
         "duration": 60,
         "is_special": false
       },
       {
         "id": "djset4",
+        "time": "05:00",
+        "date": "2025-11-29",
+        "duration": 60,
+        "is_special": false
+      },
+      {
+        "id": "djset5",
         "time": "06:00",
         "date": "2025-11-29",
         "duration": 60,
         "is_special": false
       },
       {
-        "id": "conteo2",
-        "time": "07:00",
+        "id": "talk-medic",
+        "time": "10:00",
         "date": "2025-11-29",
         "duration": 60,
         "is_special": false
       },
       {
-        "id": "conteo3",
+        "id": "games-coliseo",
         "time": "13:00",
         "date": "2025-11-29",
         "duration": 60,
         "is_special": false
       },
       {
-        "id": "games1",
-        "time": "14:00",
-        "date": "2025-11-29",
-        "duration": 60,
-        "is_special": false
-      },
-      {
-        "id": "workshop1",
+        "id": "talk-guide",
         "time": "15:00",
         "date": "2025-11-29",
         "duration": 60,
         "is_special": false
       },
       {
-        "id": "games2",
+        "id": "games-zumbaton",
         "time": "16:00",
         "date": "2025-11-29",
         "duration": 60,
         "is_special": false
       },
       {
-        "id": "games3",
+        "id": "games-triatlon",
         "time": "17:00",
         "date": "2025-11-29",
         "duration": 60,
         "is_special": false
       },
       {
-        "id": "games4",
+        "id": "games-race",
         "time": "18:00",
         "date": "2025-11-29",
-        "duration": 30,
-        "is_special": false
-      },
-      {
-        "id": "conteo4",
-        "time": "18:30",
-        "date": "2025-11-29",
-        "duration": 30,
-        "is_special": false
-      },
-      {
-        "id": "shows1",
-        "time": "19:00",
-        "date": "2025-11-29",
         "duration": 60,
         "is_special": false
       },
       {
-        "id": "conteo5",
-        "time": "21:00",
+        "id": "show-singer2",
+        "time": "20:00",
         "date": "2025-11-29",
-        "duration": 60,
+        "duration": 30,
         "is_special": false
       },
       {
-        "id": "shows2",
+        "id": "rifa",
         "time": "22:00",
         "date": "2025-11-29",
         "duration": 60,
@@ -181,13 +174,6 @@
         "time": "16:00",
         "date": "2025-11-29",
         "duration": 120,
-        "is_special": false
-      },
-      {
-        "id": "charity_stream",
-        "time": "19:00",
-        "date": "2025-11-29",
-        "duration": 180,
         "is_special": false
       }
     ]

@@ -25,69 +25,61 @@
         "name": "Ceremonia de Apertura",
         "description": "Bienvenida oficial al evento VRTon con presentaciones de los organizadores y visión general del programa."
       },
-      "conteo1": {
-        "name": "Conteo 1",
-        "description": "Primera sesión de conteo de fondos recaudados durante el evento."
-      },
       "djset1": {
-        "name": "Ramses B2B JamirDG",
-        "description": "Genero Libre"
+        "name": "DJ O'Leafer",
+        "description": "???"
       },
       "djset2": {
-        "name": "DJ Alvarozzzzz",
-        "description": "Genero Libre"
+        "name": "DJ Ramses0418",
+        "description": "???"
       },
       "djset3": {
-        "name": "???",
+        "name": "DJ JamirDG",
         "description": "???"
       },
       "djset4": {
-        "name": "???",
+        "name": "DJ Alvarozzzzz",
         "description": "???"
       },
-      "conteo2": {
-        "name": "Conteo 2",
-        "description": "Segunda sesión de conteo de fondos recaudados durante la noche."
+      "djset5": {
+        "name": "DJ DannyLasagna",
+        "description": "???"
       },
-      "conteo3": {
-        "name": "Conteo 3",
-        "description": "Tercera sesión de conteo de fondos, actualización del mediodía."
+      "talk-teleton": {
+        "name": "Charla sobre la Teletón",
+        "description": "DannySmile nos da una charla sobre como Teleton ayuda a cambiar las vidas de muchas personas en Chile."
       },
-      "games1": {
-        "name": "Coliseo",
-        "description": "Roleplay y PVP estilo coliseo romano hosteado por los Corceles Negros!"
+      "talk-medic": {
+        "name": "Charla Medica",
+        "description": "Médicos y kinesiólogos del instituto teleton aysen nos hablan sobre la rehabilitación y el impacto de la teleton en la salud."
       },
-      "workshop1": {
+      "talk-guide": {
         "name": "Visita Guiada",
         "description": "DannySmile nos hace una visita guiada al instituto teleton aysen, explicando sus distintas areas y su valor IRL."
       },
-      "games2": {
-        "name": "Zumbaton",
-        "description": "Ven a mover tus caderas al ritmo de la zumbaton, a cargo del equipo de host en colaboracion con profesores del instituto."
+      "games-coliseo": {
+        "name": "Rol de Coliseo",
+        "description": "Unete al Culto de los Secretos y los Corceles Negros en una experiencia de rol inmersiva."
       },
-      "games3": {
-        "name": "Carrera de Sillas",
+      "games-zumbaton": {
+        "name": "Zumbaton",
+        "description": "Clase de zumba y baile para todos los asistentes, impartida por el equipo de host en colaboración con profesores del instituto."
+      },
+      "games-triatlon": {
+        "name": "Triatlón Virtual",
+        "description": "Participa en una serie de juegos y competencias y gana trofeos para el mapa!"
+      },
+      "games-race": {
+        "name": "Carrera de Sillas de Rueda",
         "description": "¿Quien dice que no se puede competir en sillas de ruedas? ¡Demuestra tu habilidad y velocidad!"
       },
-      "games4": {
+      "show-singer1": {
         "name": "Cantante en Vivo",
-        "description": "Gianma nos deleita con su voz, incluyendo una adaptacion del himno teleton de este año!"
-      },
-      "conteo4": {
-        "name": "Conteo 4",
-        "description": "Cuarto conteo de fondos, preparación para la recta final."
-      },
-      "shows1": {
-        "name": "Espectáculos 1",
         "description": "Primera sesión de espectáculos y presentaciones artísticas de la comunidad."
       },
-      "conteo5": {
-        "name": "Conteo 5",
-        "description": "Quinto conteo de fondos, penúltima actualización antes del cierre."
-      },
-      "shows2": {
-        "name": "Espectáculos Finales",
-        "description": "Espectáculos especiales de cierre con las mejores presentaciones del evento."
+      "show-singer2": {
+        "name": "Show en vivo de Gianma",
+        "description": "Cantante en vivo de Salsa y música latina."
       },
       "closing_ceremony": {
         "name": "Ceremonia de Clausura",
@@ -95,11 +87,11 @@
       },
       "maid_cafe": {
         "name": "Maid Café",
-        "description": "Experiencia temática de café con servicio estilo maid para relajarse durante el evento."
+        "description": "El Mononita cafe nos abre sus puertas en un espacio temático de Maid Café para que todos los asistentes puedan disfrutar de deliciosas bebidas y postres en un ambiente acogedor y divertido."
       },
-      "charity_stream": {
-        "name": "Stream Benéfico",
-        "description": "Transmisión en vivo especial con actividades y donaciones para la Teletón Chile."
+      "after_party": {
+        "name": "After Party",
+        "description": "Fiesta posterior al evento principal con música, baile y socialización para todos los asistentes."
       }
     },
     "loading": "Cargando itinerario..."

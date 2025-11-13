@@ -1,7 +1,7 @@
 {
   "schedule": {
     "title": "Event Schedule",
-    "description": "Check out the complete VRTon activities program. Discover workshops, virtual reality demonstrations, technical talks and special events for Teletón Chile.",
+    "description": "Check out the complete VRTon activities program. Discover workshops, virtual reality demonstrations, technical talks, and special events for Teletón Chile.",
     "current_time": "Current Time",
     "main_activity": "Main Activity",
     "second_activity": "Secondary Activity",
@@ -11,8 +11,8 @@
     "special_event": "Special Event",
     "duration": "Duration: {{minutes}} minutes",
     "sections": {
-      "day1": "Day 1 - Thursday, November 28th",
-      "day2": "Day 2 - Friday, November 29th",
+      "day1": "Day 1 - Thursday, November 28",
+      "day2": "Day 2 - Friday, November 29",
       "opening": "Opening",
       "djs": "DJs",
       "spain": "Spain",
@@ -23,83 +23,75 @@
     "activities": {
       "opening": {
         "name": "Opening Ceremony",
-        "description": "Official welcome to VRTon event with organizer presentations and program overview."
-      },
-      "conteo1": {
-        "name": "Count 1",
-        "description": "First session of counting funds raised during the event."
+        "description": "Official welcome to the VRTon event with organizer presentations and program overview."
       },
       "djset1": {
-        "name": "DJ Set 1",
-        "description": "Musical session with DJ to maintain the festive atmosphere during the early morning."
+        "name": "DJ O'Leafer",
+        "description": "???"
       },
       "djset2": {
-        "name": "DJ Set 2",
-        "description": "Second musical session with DJ to accompany night participants."
+        "name": "DJ Ramses0418",
+        "description": "???"
       },
       "djset3": {
-        "name": "DJ Set 3",
-        "description": "Third musical session to keep energy up during the early hours of the day."
+        "name": "DJ JamirDG",
+        "description": "???"
       },
       "djset4": {
-        "name": "DJ Set 4",
-        "description": "Fourth musical session to accompany participants as they wake up."
+        "name": "DJ Alvarozzzzz",
+        "description": "???"
       },
-      "conteo2": {
-        "name": "Count 2",
-        "description": "Second session of counting funds raised during the night."
+      "djset5": {
+        "name": "DJ DannyLasagna",
+        "description": "???"
       },
-      "conteo3": {
-        "name": "Count 3",
-        "description": "Third counting session, midday fundraising update."
+      "talk-teleton": {
+        "name": "Talk about Teletón",
+        "description": "DannySmile gives us a talk about how Teletón helps change the lives of many people in Chile."
       },
-      "games1": {
-        "name": "Community Games 1",
-        "description": "First session of games and interactive activities with the community."
+      "talk-medic": {
+        "name": "Medical Talk",
+        "description": "Doctors and physiotherapists from the Teletón Aysén Institute talk to us about rehabilitation and the impact of Teletón on health."
       },
-      "workshop1": {
-        "name": "VR Development Workshop",
-        "description": "Learn the fundamentals of virtual reality development with Unity and professional tools."
+      "talk-guide": {
+        "name": "Guided Tour",
+        "description": "DannySmile gives us a guided tour of the Teletón Aysén Institute, explaining its different areas and its IRL value."
       },
-      "games2": {
-        "name": "Community Games 2",
-        "description": "Second session of games and fun competitions among participants."
+      "games-coliseo": {
+        "name": "Coliseum Roleplay",
+        "description": "Join the Cult of Secrets and the Black Steeds in an immersive roleplay experience."
       },
-      "games3": {
-        "name": "Community Games 3",
-        "description": "Third session of group games and participation activities."
+      "games-zumbaton": {
+        "name": "Zumbaton",
+        "description": "Zumba and dance class for all attendees, led by the host team in collaboration with institute instructors."
       },
-      "games4": {
-        "name": "Community Games 4",
-        "description": "Fourth and final games session before the final count."
+      "games-triatlon": {
+        "name": "Virtual Triathlon",
+        "description": "Participate in a series of games and competitions and win trophies for the map!"
       },
-      "conteo4": {
-        "name": "Count 4",
-        "description": "Fourth fund count, preparation for the final stretch."
+      "games-race": {
+        "name": "Wheelchair Race",
+        "description": "Who says you can't compete in wheelchairs? Show your skill and speed!"
       },
-      "shows1": {
-        "name": "Shows 1",
-        "description": "First session of shows and artistic presentations from the community."
+      "show-singer1": {
+        "name": "Live Singer",
+        "description": "First session of shows and artistic performances from the community."
       },
-      "conteo5": {
-        "name": "Count 5",
-        "description": "Fifth fund count, penultimate update before closing."
-      },
-      "shows2": {
-        "name": "Final Shows",
-        "description": "Special closing shows with the best presentations of the event."
+      "show-singer2": {
+        "name": "Gianma Live Show",
+        "description": "Live Salsa and Latin music singer."
       },
       "closing_ceremony": {
         "name": "Closing Ceremony",
-        "description": "Official event closure with acknowledgments, final fundraising results and next steps."
+        "description": "Official event closing with acknowledgments, final fundraising results, and next steps."
       },
       "maid_cafe": {
-        "name": "Maid Cafe",
-        "description": "Themed cafe experience with maid-style service to relax during the event."
+        "name": "Maid Café",
+        "description": "The Mononita cafe opens its doors in a Maid Café themed space so all attendees can enjoy delicious drinks and desserts in a cozy and fun atmosphere."
       },
-      "charity_stream": {
-        "name": "Charity Stream",
-        "description": "Special live streaming with activities and donations for Teletón Chile."
+      "after_party": {
+        "name": "After Party",
+        "description": "Post-event party with music, dancing, and socializing for all attendees."
       }
     },
     "loading": "Loading schedule..."
