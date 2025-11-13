@@ -81,6 +81,10 @@
         "name": "Gianma Live Show",
         "description": "Live Salsa and Latin music singer."
       },
+      "rifa": {
+        "name": "Raffle",
+        "description": "Raffle of prizes and gifts among event attendees to encourage participation and enthusiasm."
+      },
       "closing_ceremony": {
         "name": "Closing Ceremony",
         "description": "Official event closing with acknowledgments, final fundraising results, and next steps."

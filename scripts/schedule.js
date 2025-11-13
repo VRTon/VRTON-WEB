@@ -21,9 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             scheduleData = await scheduleResponse.json();
 
-            // Get current language and load translations
-            const currentLang = getCurrentLanguage();
-            translations = await getTranslations(['common', 'pages/schedule'], currentLang);
+            await loadTranslations();
 
             if (window.performanceMonitor) {
                 window.performanceMonitor.mark('schedule-data-loaded');
@@ -36,41 +34,36 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Get current language from URL, localStorage, or browser settings
-    function getCurrentLanguage() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const urlLang = urlParams.get('lang');
-        
-        if (urlLang && ['es', 'en'].includes(urlLang)) {
-            return urlLang;
+    // Load or reload translations
+    async function loadTranslations() {
+        // Use global translation system if available
+        if (window.ModularTranslations) {
+            translations = await window.ModularTranslations.loadTranslations(['common', 'pages/schedule']);
+        } else if (window.translationSystem) {
+            translations = await window.translationSystem.loadTranslations(['common', 'pages/schedule']);
+        } else {
+            console.warn('Global translation system not available, translations may not work');
+            translations = {};
         }
-        
-        const storedLang = localStorage.getItem('language');
-        if (storedLang && ['es', 'en'].includes(storedLang)) {
-            return storedLang;
-        }
-        
-        const browserLang = navigator.language.substring(0, 2);
-        return ['es', 'en'].includes(browserLang) ? browserLang : 'es';
     }
 
-    // Get translations (simplified version - assumes translations are available)
-    async function getTranslations(modules, lang) {
-        const translations = {};
-        
-        for (const module of modules) {
-            try {
-                const response = await fetch(`/data/translations/${lang}/${module}.json`);
-                if (response.ok) {
-                    const moduleTranslations = await response.json();
-                    Object.assign(translations, moduleTranslations);
-                }
-            } catch (error) {
-                console.warn(`Could not load translations for ${module}:`, error);
-            }
+    // Listen for language changes
+    function setupLanguageChangeListener() {
+        const translationSystem = window.ModularTranslations || window.translationSystem;
+        if (translationSystem && translationSystem.onLanguageChange) {
+            translationSystem.onLanguageChange(async (newLanguage) => {
+                console.log(`Language changed to ${newLanguage}, reloading schedule...`);
+                await loadTranslations();
+                renderSchedule();
+            });
         }
-        
-        return translations;
+
+        // Also listen for custom language change events
+        window.addEventListener('languageChanged', async (event) => {
+            console.log(`Language changed event received: ${event.detail?.language}`);
+            await loadTranslations();
+            renderSchedule();
+        });
     }
 
     // Render the complete schedule
@@ -335,38 +328,53 @@ document.addEventListener('DOMContentLoaded', () => {
         const nameKey = `schedule.activities.${activity.id}.name`;
         const descriptionKey = `schedule.activities.${activity.id}.description`;
         
-        const name = getTranslation(nameKey) || activity.id;
-        const description = getTranslation(descriptionKey) || '';
+        const name = getTranslation(nameKey);
+        const description = getTranslation(descriptionKey);
+        
+        const displayName = name || activity.id;
+        const displayDescription = description || '';
         const duration = activity.duration;
         const isSpecial = activity.is_special || false;
         
         const durationText = getTranslation('schedule.duration')?.replace('{{minutes}}', duration) || `Duración: ${duration} minutos`;
+        const specialEventText = getTranslation('schedule.special_event') || 'Evento Especial';
         
         return `
             <div class="activity-card ${isSpecial ? 'special' : ''}" 
                  data-activity-id="${activity.id}" 
                  data-duration="${duration}">
-                <h4>${name}</h4>
-                <p>${description}</p>
+                <h4>${displayName}</h4>
+                <p>${displayDescription}</p>
                 <div class="activity-duration">${durationText}</div>
-                ${isSpecial ? '<div class="special-badge"><i class="fas fa-star"></i> ' + (getTranslation('schedule.special_event') || 'Evento Especial') + '</div>' : ''}
+                ${isSpecial ? '<div class="special-badge"><i class="fas fa-star"></i> ' + specialEventText + '</div>' : ''}
             </div>
         `;
     }
 
     // Generate empty activity cell
     function generateEmptyActivity() {
+        const noActivitiesText = getTranslation('schedule.no_activities') || 'Sin actividades programadas';
         return `
             <div class="no-activity">
-                ${getTranslation('schedule.no_activities') || 'Sin actividades programadas'}
+                ${noActivitiesText}
             </div>
         `;
     }
 
     // Get translation by key
     function getTranslation(key) {
-        if (!translations || !key) return null;
+        if (!translations || !key) {
+            return null;
+        }
         
+        // Use global translation system's getNestedValue if available
+        const translationSystem = window.ModularTranslations || window.translationSystem;
+        if (translationSystem && translationSystem.getNestedValue) {
+            const value = translationSystem.getNestedValue(translations, key);
+            return value || null;
+        }
+        
+        // Fallback to manual navigation
         const keys = key.split('.');
         let value = translations;
         
@@ -449,6 +457,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize
     loadData();
+    setupLanguageChangeListener();
 });
 
 // CSS for error message and special badge

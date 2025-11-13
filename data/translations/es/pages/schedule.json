@@ -81,6 +81,10 @@
         "name": "Show en vivo de Gianma",
         "description": "Cantante en vivo de Salsa y música latina."
       },
+      "rifa": {
+        "name": "Rifa",
+        "description": "Sorteo de premios y regalos entre los asistentes al evento para fomentar la participación y el entusiasmo."
+      },
       "closing_ceremony": {
         "name": "Ceremonia de Clausura",
         "description": "Cierre oficial del evento con agradecimientos, resultados finales de recaudación y próximos pasos."
