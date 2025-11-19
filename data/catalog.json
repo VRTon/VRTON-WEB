@@ -79,6 +79,14 @@
       "downloadUrl": "https://github.com/VRTon/org.vrton.hat/releases/download/1.0.1/GorraVRTON.unitypackage",
       "imageUrl": "https://raw.githubusercontent.com/VRTon/org.vrton.hat/refs/heads/main/gorra.png",
       "category": "Objetos"
+    },
+    {
+      "name": "LLavero corazon teleton",
+      "description": "LLavero promocional en forma de corazon <3",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.CorazonLLaero/releases/download/1.0.0/Corazon.Teleton.llavero.unitypackage",
+      "imageUrl": "https://github.com/VRTon/org.vrton.CorazonLLaero/blob/main/image.png",
+      "category": "Objetos"
     }
   ]
 }
