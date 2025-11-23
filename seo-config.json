@@ -55,14 +55,14 @@
       "sameAs": [
         "https://x.com/vrtonof",
         "https://www.instagram.com/vrtonof/",
-        "https://discord.gg/gSCsPKTsVJ",
+        "https://discord.gg/AR72D2nfpp",
         "https://www.youtube.com/@VRTonOficial",
         "https://www.tiktok.com/@vrtonoficial"
       ],
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "customer support",
-        "url": "https://discord.gg/gSCsPKTsVJ",
+        "url": "https://discord.gg/AR72D2nfpp",
         "availableLanguage": ["Spanish", "English"]
       },
       "areaServed": {
