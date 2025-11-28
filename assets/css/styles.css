@@ -1337,9 +1337,9 @@ footer p {
     color: var(--text-color);
 }
 
-    .vcc-url-field:focus {
-        outline: 2px solid var(--accent-color);
-    }
+.vcc-url-field:focus {
+    outline: 2px solid var(--accent-color);
+}
 
 /* Assets Catalog Styles */
 .assets-catalog {
@@ -1630,38 +1630,38 @@ footer p {
     .vpm-assets-page {
         padding-top: calc(var(--header-height-mobile) + 20px);
     }
-    
+
     .page-header {
         padding: 30px 15px;
     }
-    
+
     .page-title {
         font-size: 2rem;
         margin-bottom: 20px;
     }
-    
+
     .guide-title {
         font-size: 1.2rem;
         margin-bottom: 20px;
     }
-    
+
     .requirements-grid {
         grid-template-columns: 1fr;
         gap: 20px;
         margin-bottom: 20px;
     }
-    
+
     .requirement-section,
     .instruction-section {
         padding: 15px;
     }
-    
+
     .requirement-section h4,
     .instruction-section h4 {
         font-size: var(--font-size-normal);
         margin-bottom: 10px;
     }
-    
+
     .compatibility-note {
         padding: 12px;
         font-size: 0.8rem;
@@ -1669,83 +1669,83 @@ footer p {
         text-align: center;
         gap: 8px;
     }
-    
+
     .listing-header {
         flex-direction: column;
         align-items: stretch;
         text-align: center;
         padding: 25px 20px;
     }
-    
+
     .add-to-vcc-block {
         justify-content: center;
         flex-direction: column;
     }
-    
+
     .vcc-url-section {
         flex-direction: column;
         gap: 10px;
     }
-    
+
     .vcc-url-field {
         min-width: auto;
         width: 100%;
     }
-    
+
     .catalog-header {
         padding: 30px 20px 15px;
     }
-    
+
     .catalog-header h2 {
         font-size: 1.5rem;
     }
-    
+
     .category-filter {
         padding: 15px 20px;
         gap: 8px;
     }
-    
+
     .category-btn {
         padding: 8px 16px;
         font-size: 0.8rem;
     }
-    
+
     .assets-grid {
         grid-template-columns: 1fr;
         gap: 20px;
         padding: 20px;
     }
-    
+
     .asset-content {
         padding: 15px;
     }
-    
+
     .asset-header {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
-    
+
     .asset-version {
         margin-left: 0;
     }
-    
+
     .asset-footer {
         flex-direction: column;
         gap: 15px;
         align-items: stretch;
     }
-    
+
     .asset-download {
         justify-content: center;
         width: 100%;
     }
-    
+
     .modal-content {
         margin: 20px;
         width: calc(100% - 40px);
     }
-    
+
     .modal-header,
     .modal-body {
         padding: 20px;
@@ -1882,7 +1882,7 @@ footer p {
     }
 
     .dropdown:hover .dropdown-toggle i,
-    .dropdown-menu.mobile-active ~ .dropdown-toggle i {
+    .dropdown-menu.mobile-active~.dropdown-toggle i {
         transform: rotate(180deg);
     }
 
@@ -2208,11 +2208,11 @@ footer p {
         padding-top: calc(var(--header-height-mobile) + 30px);
         padding-bottom: 30px;
     }
-    
+
     .vrton-hero h1 {
         font-size: 2.5rem;
     }
-    
+
     .vrton-hero p {
         font-size: 1rem;
         padding: 0 20px;
@@ -3332,7 +3332,7 @@ body.loaded section {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     position: relative;
     z-index: 1;
 }
@@ -3365,7 +3365,7 @@ body.loaded section {
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .legal-toc {
@@ -3661,49 +3661,49 @@ body.loaded section {
     .legal-title {
         font-size: 2rem;
     }
-    
+
     .legal-subtitle {
         font-size: 1rem;
     }
-    
+
     .legal-header {
         padding: 3rem 0 2rem;
     }
-    
+
     .legal-content {
         padding: 2rem 0;
     }
-    
+
     .legal-article {
         font-size: 1rem;
         line-height: 1.7;
     }
-    
+
     .legal-article h2 {
         font-size: 1.5rem;
         margin: 2.5rem 0 1rem;
     }
-    
+
     .legal-article h3 {
         font-size: 1.2rem;
         margin: 2rem 0 0.75rem;
     }
-    
+
     .legal-article h4 {
         font-size: 1.1rem;
         margin: 1.5rem 0 0.5rem;
     }
-    
+
     .toc-list {
         grid-template-columns: 1fr;
     }
-    
+
     .toc-toggle {
         position: relative;
         margin-top: 1rem;
         width: 100%;
     }
-    
+
     .legal-section,
     .legal-warning,
     .legal-important,
@@ -3712,7 +3712,7 @@ body.loaded section {
         border-radius: 0;
         border-left-width: 4px;
     }
-    
+
     .back-to-top {
         bottom: 1rem;
         right: 1rem;
@@ -3725,19 +3725,19 @@ body.loaded section {
     .legal-header {
         padding: 2rem 0 1.5rem;
     }
-    
+
     .legal-title {
         font-size: 1.6rem;
     }
-    
+
     .legal-article {
         font-size: 0.95rem;
     }
-    
+
     .legal-article h2 {
         font-size: 1.3rem;
     }
-    
+
     .legal-article h3 {
         font-size: 1.1rem;
     }
@@ -3985,35 +3985,35 @@ body.loaded section {
         padding-top: calc(var(--header-height-mobile) + 20px);
         padding-bottom: 40px;
     }
-    
+
     .page-title {
         font-size: 2rem;
     }
-    
+
     .avatar-card-content {
         grid-template-columns: 1fr;
         grid-template-rows: 200px 1fr;
     }
-    
+
     .avatar-image {
         order: 1;
     }
-    
+
     .avatar-info {
         order: 2;
         padding: 20px;
     }
-    
+
     .avatar-name {
         font-size: 1.5rem;
     }
-    
+
     .avatar-actions {
         flex-direction: column;
         gap: 15px;
         align-items: stretch;
     }
-    
+
     .vrchat-link {
         justify-content: center;
     }
@@ -4023,15 +4023,15 @@ body.loaded section {
     .avatar-info {
         padding: 15px;
     }
-    
+
     .avatar-name {
         font-size: 1.3rem;
     }
-    
+
     .assets-list {
         gap: 5px;
     }
-    
+
     .asset-tag {
         font-size: 0.8rem;
         padding: 3px 8px;
@@ -4468,61 +4468,61 @@ body.loaded section {
     .press-kit-page {
         padding-top: calc(var(--header-height-mobile) + 20px);
     }
-    
+
     .section-header {
         padding: 30px 20px 15px;
     }
-    
+
     .section-title {
         font-size: 1.5rem;
     }
-    
 
-    
+
+
     .brand-assets .assets-grid {
         grid-template-columns: 1fr;
         gap: 20px;
         padding: 20px;
     }
-    
+
     .posters-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
         padding: 20px;
     }
-    
+
     .stickers-grid {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         gap: 10px;
     }
-    
+
     .guidelines-content {
         grid-template-columns: 1fr;
         gap: 20px;
         padding: 20px;
     }
-    
+
     .guideline-card {
         padding: 20px;
         flex-direction: column;
         text-align: center;
     }
-    
+
     .bulk-download-card {
         flex-direction: column;
         text-align: center;
         padding: 30px 20px;
     }
-    
+
     .bulk-info {
         justify-content: center;
     }
-    
+
     .modal-content.large {
         margin: 20px;
         width: calc(100% - 40px);
     }
-    
+
     .preview-actions {
         flex-direction: column;
         align-items: stretch;
@@ -4533,33 +4533,150 @@ body.loaded section {
     .section-title {
         font-size: 1.3rem;
     }
-    
+
     .asset-info {
         padding: 15px;
     }
-    
+
     .poster-info {
         padding: 12px;
     }
-    
+
     .category-content {
         padding: 15px;
     }
-    
+
     .stickers-categories {
         padding: 20px;
     }
-    
+
     .filter-btn {
         padding: 8px 16px;
         font-size: 0.8rem;
     }
-    
+
     .bulk-title {
         font-size: 1.5rem;
     }
-    
+
     .bulk-description {
         font-size: var(--font-size-normal);
+    }
+}
+
+/* Estilos para el mensaje de evento iniciado */
+#event-info-container {
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    max-width: 950px;
+    /* Increased from 800px */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#event-info-container h2 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(227, 6, 19, 0.5);
+}
+
+#event-info-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.event-buttons-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    /* Reduced from 15px */
+}
+
+.redirect-button {
+    padding: 10px 20px;
+    /* Reduced from 12px 24px */
+    font-size: 0.95rem;
+    /* Slightly reduced */
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.redirect-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Colores específicos por plataforma */
+.btn-vrchat {
+    background-color: #064e6a;
+    /* VRChat Blue-ish */
+}
+
+.btn-vrchat:hover {
+    background-color: #096b91;
+}
+
+.btn-twitch {
+    background-color: #9146FF;
+    /* Twitch Purple */
+}
+
+.btn-twitch:hover {
+    background-color: #a970ff;
+}
+
+.btn-youtube {
+    background-color: #FF0000;
+    /* YouTube Red */
+}
+
+.btn-youtube:hover {
+    background-color: #ff4d4d;
+}
+
+.btn-twitter {
+    background-color: #1DA1F2;
+    /* Twitter Blue */
+}
+
+.btn-twitter:hover {
+    background-color: #4db5f5;
+}
+
+.btn-tiktok {
+    background-color: #000000;
+    /* TikTok Black */
+    border: 1px solid #333;
+}
+
+.btn-tiktok:hover {
+    background-color: #222;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

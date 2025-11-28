@@ -89,6 +89,10 @@
         "name": "Gianma Live Show",
         "description": "Live Salsa and Latin music singer."
       },
+      "show-singer3": {
+        "name": "Live Singer",
+        "description": "Second session of shows and artistic performances from the community."
+      },
       "rifa": {
         "name": "Raffle",
         "description": "Raffle of prizes and gifts among event attendees to encourage participation and enthusiasm."

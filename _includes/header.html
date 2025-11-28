@@ -1,45 +1,48 @@
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="/" aria-label="Ir a la página principal de VRTon">
-                    <img src="/assets/icons/logo.webp" alt="Logo de VRTon - Organización de Realidad Virtual" width="50" height="50">
-                </a>
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="/" aria-label="Ir a la página principal de VRTon">
+                <img src="/assets/icons/logo.webp" alt="Logo de VRTon - Organización de Realidad Virtual" width="50"
+                    height="50">
+            </a>
+        </div>
+        <nav role="navigation" aria-label="Navegación principal">
+            <ul class="nav" id="nav-menu">
+                <li><a href="/" data-i18n="nav.inicio">Inicio</a></li>
+                <li><a href="/#about" data-i18n="nav.about">Sobre Nosotros</a></li>
+                <li><a href="/#faqs" data-i18n="nav.faqs">Preguntas Frecuentes</a></li>
+                <li><a href="/#contacto" data-i18n="nav.contacto">Contacto</a></li>
+                <li><a href="/schedule/" data-i18n="nav.schedule">Itinerario</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-i18n="nav.recursos" aria-haspopup="true"
+                        aria-expanded="false">
+                        Recursos
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/resources/assets/" data-i18n="nav.assets" role="menuitem">Assets</a></li>
+                        <li><a href="/resources/avatars/" data-i18n="nav.avatars" role="menuitem">Avatars</a></li>
+                        <li><a href="/resources/press-kit/" data-i18n="nav.presskit" role="menuitem">Press Kit</a></li>
+                    </ul>
+                </li>
+                <li><a href="/colaboradores/" data-i18n="nav.colaboradores">Colaboradores</a></li>
+                <!-- <li><a href="/schedule/" data-i18n="nav.schedule">Itinerario</a></li> -->
+            </ul>
+        </nav>
+        <div class="navbar-right">
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="es" aria-label="Cambiar a español">
+                    <img src="https://flagcdn.com/w20/es.png" alt="Español" width="16" height="12">
+                    ES
+                </button>
+                <button class="lang-btn" data-lang="en" aria-label="Switch to English">
+                    <img src="https://flagcdn.com/w20/us.png" alt="English" width="16" height="12">
+                    EN
+                </button>
             </div>
-            <nav role="navigation" aria-label="Navegación principal">
-                <ul class="nav" id="nav-menu">
-                    <li><a href="/" data-i18n="nav.inicio">Inicio</a></li>
-                    <li><a href="/#about" data-i18n="nav.about">Sobre Nosotros</a></li>
-                    <li><a href="/#faqs" data-i18n="nav.faqs">Preguntas Frecuentes</a></li>
-                    <li><a href="/#contacto" data-i18n="nav.contacto">Contacto</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-i18n="nav.recursos" aria-haspopup="true" aria-expanded="false">
-                            Recursos
-                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
-                        </a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="/resources/assets/" data-i18n="nav.assets" role="menuitem">Assets</a></li>
-                            <li><a href="/resources/avatars/" data-i18n="nav.avatars" role="menuitem">Avatars</a></li>
-                            <li><a href="/resources/press-kit/" data-i18n="nav.presskit" role="menuitem">Press Kit</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/colaboradores/" data-i18n="nav.colaboradores">Colaboradores</a></li>
-                    <!-- <li><a href="/schedule/" data-i18n="nav.schedule">Itinerario</a></li> -->
-                </ul>
-            </nav>
-            <div class="navbar-right">
-                <div class="language-selector">
-                    <button class="lang-btn active" data-lang="es" aria-label="Cambiar a español">
-                        <img src="https://flagcdn.com/w20/es.png" alt="Español" width="16" height="12">
-                        ES
-                    </button>
-                    <button class="lang-btn" data-lang="en" aria-label="Switch to English">
-                        <img src="https://flagcdn.com/w20/us.png" alt="English" width="16" height="12">
-                        EN
-                    </button>
-                </div>
-                <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" role="button" tabindex="0">
-                    <i class="fas fa-bars" aria-hidden="true"></i>
-                </div>
+            <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" role="button" tabindex="0">
+                <i class="fas fa-bars" aria-hidden="true"></i>
             </div>
         </div>
-    </header>
+    </div>
+</header>

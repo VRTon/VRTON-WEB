@@ -9,7 +9,7 @@ class CountdownTimer {
             minutes: document.getElementById('minutes'),
             seconds: document.getElementById('seconds')
         };
-        
+
         this.init();
     }
 
@@ -22,7 +22,7 @@ class CountdownTimer {
 
         // Actualizar inmediatamente
         this.updateCountdown();
-        
+
         // Actualizar cada segundo
         this.interval = setInterval(() => {
             this.updateCountdown();
@@ -54,11 +54,11 @@ class CountdownTimer {
 
     animateNumber(element, newValue) {
         const currentValue = parseInt(element.textContent) || 0;
-        
+
         if (currentValue !== newValue) {
             element.style.transform = 'scale(1.1)';
             element.style.color = 'var(--accent-color)';
-            
+
             setTimeout(() => {
                 element.textContent = newValue.toString().padStart(2, '0');
                 element.style.transform = 'scale(1)';
@@ -69,15 +69,16 @@ class CountdownTimer {
 
     showEventCompleted() {
         clearInterval(this.interval);
-        
-        const container = document.querySelector('.countdown-timer');
-        if (container) {
-            container.innerHTML = `
-                <div class="event-completed">
-                    <i class="fas fa-party-horn"></i>
-                    <span>¡El evento ha comenzado!</span>
-                </div>
-            `;
+
+        const timerElement = document.getElementById('countdown-timer');
+        const titleElement = document.querySelector('.countdown-title');
+        const eventInfoContainer = document.getElementById('event-info-container');
+
+        if (timerElement) timerElement.style.display = 'none';
+        if (titleElement) titleElement.style.display = 'none';
+
+        if (eventInfoContainer) {
+            eventInfoContainer.style.display = 'block';
         }
     }
 
@@ -94,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         if (document.getElementById('countdown-timer')) {
             window.countdownTimer = new CountdownTimer();
-            
+
             // Notificar que el countdown está listo
             if (window.onCountdownReady) {
                 window.onCountdownReady();

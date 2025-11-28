@@ -33,7 +33,7 @@
         "background_color": "#00aa00"
       },
       {
-        "id": "5", 
+        "id": "5",
         "name_key": "schedule.sections.closing",
         "start_datetime": "2025-11-29T23:00:00-03:00",
         "end_datetime": "2025-11-29T23:59:59-03:00",
@@ -66,6 +66,13 @@
         "id": "show-singer1",
         "time": "24:00",
         "date": "2025-11-28",
+        "duration": 60,
+        "is_special": false
+      },
+      {
+        "id": "show-singer3",
+        "time": "01:00",
+        "date": "2025-11-29",
         "duration": 60,
         "is_special": false
       },

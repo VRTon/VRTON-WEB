@@ -89,6 +89,10 @@
         "name": "Show en vivo de Gianma",
         "description": "Cantante en vivo de Salsa y música latina."
       },
+      "show-singer3": {
+        "name": "Cantante en Vivo",
+        "description": "Segunda sesión de espectáculos y presentaciones artísticas de la comunidad."
+      },
       "rifa": {
         "name": "Rifa",
         "description": "Sorteo de premios y regalos entre los asistentes al evento para fomentar la participación y el entusiasmo."

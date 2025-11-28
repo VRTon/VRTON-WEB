@@ -1,8 +1,11 @@
 ---
 layout: default
 title: "VRTon - Realidad Virtual para Causas Solidarias | Apoyamos Teletón Chile 2025"
-description: "Organización sin ánimo de lucro que transforma la realidad virtual en cambio social. Únete a VRTon 2025 y ayuda a recaudar fondos para la Teletón Chile a través de eventos inmersivos en VR."
-keywords: "realidad virtual, VR, organización sin lucro, cambio social, educación inmersiva, terapias VR, tecnología social, impacto positivo, causas solidarias, Teletón Chile, VRChat, eventos solidarios, recaudación fondos, discapacidad, rehabilitación, VRTon 2025"
+description: "Organización sin ánimo de lucro que transforma la realidad virtual en cambio social. Únete a VRTon 2025 y
+ayuda a recaudar fondos para la Teletón Chile a través de eventos inmersivos en VR."
+keywords: "realidad virtual, VR, organización sin lucro, cambio social, educación inmersiva, terapias VR, tecnología
+social, impacto positivo, causas solidarias, Teletón Chile, VRChat, eventos solidarios, recaudación fondos,
+discapacidad, rehabilitación, VRTon 2025"
 image: "/assets/icons/icon-512x512.webp"
 lang: es
 translation_modules: ["common", "pages/home", "pages/faqs", "components/loading"]
@@ -10,18 +13,9 @@ translation_modules: ["common", "pages/home", "pages/faqs", "components/loading"
 
 <!-- Sección Hero con Video de Fondo -->
 <section class="hero-video" id="home">
-    <video 
-        autoplay 
-        loop 
-        muted 
-        playsinline 
-        preload="none" 
-        poster="assets/icons/icon-512x512.webp"
-        aria-label="Video de fondo de VRTon" 
-        id="background-video"
-        data-src-webm="assets/fondo.webm"
-        data-src-mp4="assets/fondo-optimized.mp4"
-        data-src-mobile="assets/fondo-mobile.mp4">
+    <video autoplay loop muted playsinline preload="none" poster="assets/icons/icon-512x512.webp"
+        aria-label="Video de fondo de VRTon" id="background-video" data-src-webm="assets/fondo.webm"
+        data-src-mp4="assets/fondo-optimized.mp4" data-src-mobile="assets/fondo-mobile.mp4">
         <!-- Sources will be dynamically added by video-optimizer.js -->
         <source type="video/webm">
         <source type="video/mp4">
@@ -56,8 +50,27 @@ translation_modules: ["common", "pages/home", "pages/faqs", "components/loading"
                     </div>
                 </div>
             </div>
+            <!-- Contenedor que aparecerá cuando el evento empiece -->
+            <div id="event-info-container" style="display: none;">
+                <h2 data-i18n="event_completed.message">¡El evento ha comenzado!</h2>
+                <p data-i18n="event_completed.description">Accede a nuestros canales en vivo y al mundo:</p>
+                <div class="event-buttons-row">
+                    <button
+                        onclick="window.location.href='https://vrchat.com/home/group/grp_d66fc7e0-955b-42aa-9abb-372bc72c178f'"
+                        class="redirect-button btn-vrchat">VRChat Group</button>
+                    <button onclick="window.location.href='https://www.twitch.tv/vrtonof'"
+                        class="redirect-button btn-twitch">Twitch</button>
+                    <button onclick="window.location.href='https://www.youtube.com/@VRTonOficial'"
+                        class="redirect-button btn-youtube">YouTube</button>
+                    <button onclick="window.location.href='https://x.com/vrtonof'"
+                        class="redirect-button btn-twitter">Twitter</button>
+                    <button onclick="window.location.href='https://www.tiktok.com/@vrtonoficial'"
+                        class="redirect-button btn-tiktok">TikTok</button>
+                </div>
+            </div>
             <div class="hero-button-container">
-                <a href="#about" class="btn btn-hero" aria-label="Conocer más sobre nuestra causa" data-i18n="hero.button"></a>
+                <a href="#about" class="btn btn-hero" aria-label="Conocer más sobre nuestra causa"
+                    data-i18n="hero.button"></a>
             </div>
         </div>
     </div>
@@ -76,13 +89,11 @@ translation_modules: ["common", "pages/home", "pages/faqs", "components/loading"
                 </ul>
             </div>
             <div class="cause-image">
-                <img src="/assets/comunidad.webp" 
-                     alt="Impacto positivo de la realidad virtual en comunidades" 
-                     loading="lazy"
-                     width="600" 
-                     height="400"
-                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                <div class="image-fallback" style="display:none; width:600px; height:400px; background:linear-gradient(135deg, #e30613, #fd5c63); color:white; align-items:center; justify-content:center; text-align:center; border-radius:10px;">
+                <img src="/assets/comunidad.webp" alt="Impacto positivo de la realidad virtual en comunidades"
+                    loading="lazy" width="600" height="400"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="image-fallback"
+                    style="display:none; width:600px; height:400px; background:linear-gradient(135deg, #e30613, #fd5c63); color:white; align-items:center; justify-content:center; text-align:center; border-radius:10px;">
                     <div>
                         <i class="fas fa-vr-cardboard" style="font-size:3rem; margin-bottom:1rem;"></i>
                         <br>
@@ -112,25 +123,23 @@ translation_modules: ["common", "pages/home", "pages/faqs", "components/loading"
             <div class="discord-card" itemscope itemtype="https://schema.org/ContactPoint">
                 <i class="fab fa-discord discord-icon" aria-hidden="true"></i>
                 <h3 data-i18n="contacto.community">Únete a nuestra comunidad</h3>
-                <p data-i18n="contacto.description">Somos una comunidad activa y en crecimiento. ¡Conéctate con nosotros a través de Discord!</p>
-                <a href="https://discord.gg/AR72D2nfpp" 
-                   class="btn discord-btn" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   aria-label="Unirse al servidor de Discord de VRTon"
-                   itemprop="url">
-                    <i class="fab fa-discord" aria-hidden="true"></i> <span data-i18n="contacto.button">Unirse a Discord</span>
+                <p data-i18n="contacto.description">Somos una comunidad activa y en crecimiento. ¡Conéctate con nosotros
+                    a través de Discord!</p>
+                <a href="https://discord.gg/AR72D2nfpp" class="btn discord-btn" target="_blank"
+                    rel="noopener noreferrer" aria-label="Unirse al servidor de Discord de VRTon" itemprop="url">
+                    <i class="fab fa-discord" aria-hidden="true"></i> <span data-i18n="contacto.button">Unirse a
+                        Discord</span>
                 </a>
             </div>
             <div class="business-card" itemscope itemtype="https://schema.org/ContactPoint">
                 <i class="fas fa-handshake business-icon" aria-hidden="true"></i>
                 <h3 data-i18n="contacto.business.title">Colaboraciones Empresariales</h3>
-                <p data-i18n="contacto.business.description">¿Eres una empresa o marca interesada en colaborar con VRTon? Contáctanos para explorar oportunidades de patrocinio y colaboración.</p>
-                <a href="mailto:vrtonoficial@gmail.com?subject=¡Hola! Me gustaría colaborar con VRTon&body=¡Hola equipo de VRTon!%0A%0AMe encanta lo que hacen y me gustaría explorar formas de colaborar y apoyar su causa.%0A%0A¿Podemos conversar sobre posibles maneras de trabajar juntos?%0A%0A¡Saludos!" 
-                   class="business-btn" 
-                   aria-label="Enviar email para colaboraciones empresariales"
-                   itemprop="url">
-                    <i class="fas fa-envelope" aria-hidden="true"></i> <span data-i18n="contacto.business.button">Escríbenos</span>
+                <p data-i18n="contacto.business.description">¿Eres una empresa o marca interesada en colaborar con
+                    VRTon? Contáctanos para explorar oportunidades de patrocinio y colaboración.</p>
+                <a href="mailto:vrtonoficial@gmail.com?subject=¡Hola! Me gustaría colaborar con VRTon&body=¡Hola equipo de VRTon!%0A%0AMe encanta lo que hacen y me gustaría explorar formas de colaborar y apoyar su causa.%0A%0A¿Podemos conversar sobre posibles maneras de trabajar juntos?%0A%0A¡Saludos!"
+                    class="business-btn" aria-label="Enviar email para colaboraciones empresariales" itemprop="url">
+                    <i class="fas fa-envelope" aria-hidden="true"></i> <span
+                        data-i18n="contacto.business.button">Escríbenos</span>
                 </a>
             </div>
         </div>

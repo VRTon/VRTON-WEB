@@ -11,5 +11,15 @@
     "description1": "VRTon es una iniciativa colaborativa que reúne a personas y comunidades apasionadas por la realidad virtual para transformar la manera en que ayudamos a los demás. Nuestro objetivo es crear experiencias inmersivas que eduquen, inspiren y despierten empatía, conectando corazones a través de la tecnología.",
     "description2": "Además de desarrollar estas vivencias, organizamos eventos y actividades solidarias que buscan recaudar fondos y generar un impacto real en diversas causas benéficas, llevando la innovación al servicio de quienes más lo necesitan.",
     "projects": []
+  },
+  "countdown": {
+    "days": "Días",
+    "hours": "Horas",
+    "minutes": "Minutos",
+    "seconds": "Segundos"
+  },
+  "event_completed": {
+    "message": "¡El evento ha comenzado!",
+    "description": "Accede a nuestros canales en vivo y al mundo:"
   }
 }

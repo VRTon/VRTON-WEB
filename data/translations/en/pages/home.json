@@ -11,5 +11,15 @@
     "description1": "At VRTon, we believe that virtual reality technology has the potential to transform the way we address social challenges. We work to develop immersive experiences that educate, inspire, and generate empathy.",
     "description2": "In addition to developing these experiences, we organize charitable events and activities that seek to raise funds and make a real impact on various social causes, bringing innovation to serve those who need it most.",
     "projects": []
+  },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds"
+  },
+  "event_completed": {
+    "message": "The event has started!",
+    "description": "Access our live channels and the world:"
   }
 }
