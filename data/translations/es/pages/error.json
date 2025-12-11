@@ -1,0 +1,19 @@
+{
+  "error": {
+    "title": "Página no encontrada",
+    "code": "404",
+    "message": "Lo sentimos, la página que buscas no existe",
+    "description": "La URL que has introducido no corresponde a ninguna página de nuestro sitio web",
+    "suggestions": {
+      "title": "Sugerencias",
+      "home": "Ir al inicio",
+      "colaboradores": "Ver colaboradores",
+      "links": "Enlaces útiles",
+      "contact": "Contactar soporte"
+    },
+    "search": {
+      "placeholder": "Buscar en el sitio...",
+      "button": "Buscar"
+    }
+  }
+}

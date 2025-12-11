@@ -1,0 +1,12 @@
+{
+  "maintenance": {
+    "title": "We're Under Maintenance",
+    "description": "We're working to improve your experience. Our website will be available again very soon.",
+    "status": "Updating systems",
+    "estimated": "Estimated time: 30 minutes",
+    "contact": {
+      "text": "Need urgent help? Contact us:"
+    },
+    "loading": "Loading..."
+  }
+}

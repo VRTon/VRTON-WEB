@@ -1,0 +1,19 @@
+{
+    "avatars": {
+        "title": "VRTon Avatar Collection",
+        "description": "Discover our collection of public VRChat avatars created by the VRTon community. Click on any avatar to visit its VRChat world page.",
+        "loading": "Loading avatars...",
+        "card": {
+            "createdBy": "by",
+            "assetsUsed": "Assets Used:",
+            "viewInVRChat": "View in VRChat",
+            "publicStatus": "Public",
+            "privateStatus": "Private"
+        },
+        "error": {
+            "title": "Error Loading Avatars",
+            "message": "Sorry, we couldn't load the avatar collection. Please try refreshing the page.",
+            "refresh": "Refresh Page"
+        }
+    }
+}

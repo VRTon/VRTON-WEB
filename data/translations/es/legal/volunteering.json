@@ -1,0 +1,83 @@
+{
+  "volunteering": {
+    "title": "Términos de Voluntariado y Colaboración VRTon 2025",
+    "subtitle": "Conoce las condiciones para formar parte del equipo VRTon",
+    "sections": {
+      "intro": {
+        "title": "📘 Términos del Voluntariado en VRTon",
+        "content": "El objetivo de estos términos es establecer un marco claro y transparente para quienes deseen colaborar, ya sea de forma individual o en representación de comunidades."
+      },
+      "general": {
+        "title": "1. Disposiciones Generales",
+        "subsections": {
+          "nature": {
+            "title": "1.1. Naturaleza del voluntariado",
+            "content1": "Todos los puestos de trabajo en VRTon son de carácter voluntario y no implican compensación económica.",
+            "content2": "La participación es libre y cada persona o comunidad podrá colaborar en la medida de sus posibilidades y disponibilidad."
+          },
+          "recognition": {
+            "title": "1.2. Reconocimiento y límites",
+            "content1": "Se otorgarán los créditos correspondientes a toda persona o comunidad que realice aportes, independientemente de su magnitud.",
+            "content2": "No está permitido utilizar la condición de voluntario o de comunidad colaboradora como medio de autopromoción personal o de proyectos externos no relacionados con VRTon."
+          },
+          "ownership": {
+            "title": "1.3. Propiedad de recursos creados",
+            "content": "Todos los recursos creados para VRTon (incluyendo assets, mundos, gráficos, comisiones, presentaciones u otros) podrán ser utilizados sin restricción en eventos actuales y futuros, incluso si el creador o la comunidad responsable deja de formar parte del proyecto."
+          },
+          "communication": {
+            "title": "1.4. Comunicación oficial",
+            "content1": "El servidor de Discord de VRTon será el principal medio de comunicación.",
+            "content2": "Se espera que los voluntarios revisen con frecuencia los canales asignados para estar al tanto de novedades, tareas y responsabilidades."
+          },
+          "sanctions": {
+            "title": "1.5. Sanciones",
+            "content": "VRTon se reserva el derecho de remover usuarios o comunidades que se mantengan inactivos o que incumplan los presentes términos, el Código de Conducta o los Términos y Condiciones de VRTon."
+          }
+        }
+      },
+      "individual": {
+        "title": "2. Voluntariado Individual",
+        "subsections": {
+          "teams": {
+            "title": "2.1. Equipos de trabajo",
+            "content1": "El voluntariado individual se integra directamente en los equipos de trabajo oficiales de VRTon, los cuales pueden consultarse en la página de colaboradores: vrton.org/colaboradores.",
+            "content2": "Cada voluntario podrá sumarse al equipo que mejor se ajuste a sus habilidades e intereses, en coordinación con la organización.",
+            "content3": "Se procurará que cada voluntario participe en un máximo de dos equipos de trabajo simultáneamente, aunque podrán hacerse excepciones en casos justificados."
+          },
+          "commitment": {
+            "title": "2.2. Compromiso esperado",
+            "content1": "Cumplir con las responsabilidades asumidas en la medida de sus posibilidades.",
+            "content2": "Mantener una comunicación abierta y respetuosa con los equipos de trabajo.",
+            "content3": "Notificar por los canales correspondientes en caso de ausentarse o no poder cumplir con los plazos estipulados."
+          },
+          "leadership": {
+            "title": "2.3. Estructura de liderazgo",
+            "content1": "Cada equipo contará con un líder designado directamente por el equipo directivo de VRTon, quien será el principal punto de contacto ante cualquier situación.",
+            "content2": "Si el problema involucra al propio líder, los voluntarios deberán comunicarse directamente con el equipo directivo de VRTon.",
+            "content3": "Cada persona podrá liderar un solo equipo a la vez, sin excepciones."
+          }
+        }
+      },
+      "community": {
+        "title": "3. Voluntariado por Comunidades",
+        "subsections": {
+          "modalities": {
+            "title": "3.1. Modalidades de participación",
+            "intro": "Las comunidades que deseen colaborar con VRTon pueden hacerlo a través de:",
+            "activities": "Organización de actividades: coordinar y realizar una actividad dentro del evento principal.",
+            "donations": "Colectas y donaciones: organizar recaudaciones internas y presentar la donación grupal durante el evento.",
+            "creative": "Aportes creativos: donar assets, comisiones, u otros elementos para la Rifa Solidaria o actividades relacionadas.",
+            "outreach": "Difusión: ayudar a publicitar la VRTon y tender puentes con más usuarios y comunidades.",
+            "other": "Otras iniciativas: proponer formas alternativas de colaboración no contempladas en estos términos, previa aprobación del equipo de VRTon."
+          },
+          "responsibilities": {
+            "title": "3.2. Responsabilidades de las comunidades voluntarias",
+            "content1": "Designar al menos un representante oficial para mantener comunicación con el staff de VRTon.",
+            "content2": "Cumplir con los plazos y requisitos acordados para las actividades o aportes propuestos.",
+            "content3": "Garantizar que sus aportes respeten los Términos y Condiciones, el Código de Conducta y las leyes aplicables."
+          }
+        }
+      }
+    }
+  }
+}

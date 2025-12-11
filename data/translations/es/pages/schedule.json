@@ -1,0 +1,115 @@
+{
+  "schedule": {
+    "title": "Itinerario del Evento",
+    "description": "Consulta el programa completo de actividades de VRTon. Descubre talleres, demostraciones de realidad virtual, charlas técnicas y eventos especiales para la Teletón Chile.",
+    "current_time": "Hora actual",
+    "main_activity": "Actividad Principal",
+    "second_activity": "Actividad Secundaria",
+    "time": "Hora",
+    "section": "Sección",
+    "no_activities": "Sin actividades programadas",
+    "special_event": "Evento Especial",
+    "duration": "Duración: {{minutes}} minutos",
+    "filters": {
+      "section": "Sección",
+      "all_sections": "Todas las secciones",
+      "view_mode": "Modo de vista",
+      "view_full": "Completo",
+      "view_main": "Principal",
+      "view_secondary": "Secundaria"
+    },
+    "sections": {
+      "day1": "Día 1 - Jueves 28 de Noviembre",
+      "day2": "Día 2 - Viernes 29 de Noviembre",
+      "opening": "Apertura",
+      "djs": "DJs",
+      "spain": "España",
+      "latam": "Latam",
+      "closing": "Cierre",
+      "after": "After"
+    },
+    "activities": {
+      "opening": {
+        "name": "Ceremonia de Apertura",
+        "description": "Bienvenida oficial al evento VRTon con presentaciones de los organizadores y visión general del programa."
+      },
+      "djset1": {
+        "name": "DJ O'Leafer",
+        "description": "???"
+      },
+      "djset2": {
+        "name": "DJ Ramses0418",
+        "description": "???"
+      },
+      "djset3": {
+        "name": "DJ JamirDG",
+        "description": "???"
+      },
+      "djset4": {
+        "name": "DJ Alvarozzzzz",
+        "description": "???"
+      },
+      "djset5": {
+        "name": "DJ DannyLasagna",
+        "description": "???"
+      },
+      "talk-teleton": {
+        "name": "Charla sobre la Teletón",
+        "description": "DannySmile nos da una charla sobre como Teleton ayuda a cambiar las vidas de muchas personas en Chile."
+      },
+      "talk-medic": {
+        "name": "Charla Medica",
+        "description": "Médicos y kinesiólogos del instituto teleton aysen nos hablan sobre la rehabilitación y el impacto de la teleton en la salud."
+      },
+      "talk-guide": {
+        "name": "Visita Guiada",
+        "description": "DannySmile nos hace una visita guiada al instituto teleton aysen, explicando sus distintas areas y su valor IRL."
+      },
+      "games-coliseo": {
+        "name": "Rol de Coliseo",
+        "description": "Unete al Culto de los Secretos y los Corceles Negros en una experiencia de rol inmersiva."
+      },
+      "games-zumbaton": {
+        "name": "Zumbaton",
+        "description": "Clase de zumba y baile para todos los asistentes, impartida por el equipo de host en colaboración con profesores del instituto."
+      },
+      "games-triatlon": {
+        "name": "Triatlón Virtual",
+        "description": "Participa en una serie de juegos y competencias y gana trofeos para el mapa!"
+      },
+      "games-race": {
+        "name": "Carrera de Sillas de Rueda",
+        "description": "¿Quien dice que no se puede competir en sillas de ruedas? ¡Demuestra tu habilidad y velocidad!"
+      },
+      "show-singer1": {
+        "name": "Cantante en Vivo",
+        "description": "Primera sesión de espectáculos y presentaciones artísticas de la comunidad."
+      },
+      "show-singer2": {
+        "name": "Show en vivo de Gianma",
+        "description": "Cantante en vivo de Salsa y música latina."
+      },
+      "show-singer3": {
+        "name": "Cantante en Vivo",
+        "description": "Segunda sesión de espectáculos y presentaciones artísticas de la comunidad."
+      },
+      "rifa": {
+        "name": "Rifa",
+        "description": "Sorteo de premios y regalos entre los asistentes al evento para fomentar la participación y el entusiasmo."
+      },
+      "closing_ceremony": {
+        "name": "Ceremonia de Clausura",
+        "description": "Cierre oficial del evento con agradecimientos, resultados finales de recaudación y próximos pasos."
+      },
+      "maid_cafe": {
+        "name": "Maid Café",
+        "description": "El Mononita cafe nos abre sus puertas en un espacio temático de Maid Café para que todos los asistentes puedan disfrutar de deliciosas bebidas y postres en un ambiente acogedor y divertido."
+      },
+      "after_party": {
+        "name": "After Party",
+        "description": "Fiesta posterior al evento principal con música, baile y socialización para todos los asistentes."
+      }
+    },
+    "loading": "Cargando itinerario..."
+  }
+}

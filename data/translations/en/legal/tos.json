@@ -1,0 +1,52 @@
+{
+  "tos": {
+    "title": "VRTon 2025 Terms and Conditions",
+    "subtitle": "Event Rules and Policies",
+    "sections": {
+      "scope": {
+        "title": "📜 VRTon 2025 Terms and Conditions",
+        "subtitle": "1. Scope",
+        "content": "These Terms and Conditions apply to the use of all spaces and activities related to VRTon, including the main event, Discord server, VRChat group, official website, and social media. They apply before, during, and after the event."
+      },
+      "compliance": {
+        "title": "2. Compliance with External Standards",
+        "intro": "All participants must respect the Terms of Service and Community Guidelines of the platforms used:",
+        "vrchat": {
+          "tos": "Terms of Service",
+          "guidelines": "Community Guidelines"
+        },
+        "discord": {
+          "tos": "Terms of Service",
+          "guidelines": "Community Guidelines"
+        }
+      },
+      "access": {
+        "title": "3. Access and Eligibility",
+        "age": "Access to the event is restricted to people over 18 years of age, except in cases expressly pre-approved by the management team and with authorization from a legal guardian.",
+        "free": "Entry to the event is free.",
+        "geographic": "There are no geographical restrictions to participate.",
+        "vr": "Access to the event in VRChat does not require a virtual reality headset, although the platform may impose its own technical or access restrictions."
+      },
+      "intellectual": {
+        "title": "4. Intellectual Property and Volunteering",
+        "ownership": "All official VRTon material (logos, designs, texts, worlds, assets, presentations, graphics, etc.) is the exclusive property of VRTon and cannot be used without express authorization.",
+        "volunteer": "Virtual volunteer positions at VRTon are free participation and have no economic compensation. Those who wish to join these activities can do so according to their availability and will. Other paid work roles, if they exist, will be governed by specific contracts and conditions agreed upon by the organization.",
+        "resources": "All resources created for VRTon can be used without restriction in current and future events, even if the original creator leaves the team."
+      },
+      "enforcement": {
+        "title": "5. Rule Enforcement and Sanctions",
+        "discretion": "The determination of what content falls into the category of suitable or unsuitable for events is solely at the discretion of the VRTon moderation team.",
+        "immediate": "The moderation team can act immediately in case of non-compliance.",
+        "explanation": "VRTon is not obligated to provide explanations about applied sanctions."
+      },
+      "liability": {
+        "title": "6. Limitation of Liability",
+        "technical": "VRTon is not responsible for technical problems, server crashes, VRChat or Discord interruptions, or software or hardware failures of participants.",
+        "conduct": "VRTon is not responsible for user conduct within or outside official spaces.",
+        "asis": "All content and services are delivered \"as is\", without guarantee of operation or future support.",
+        "acceptance": "Participation implies acceptance of these conditions and moderation decisions.",
+        "donations": "All VRTon 2025 donations are made through official donation channels provided by Teletón Chile. VRTon is not responsible for any transaction made through unofficial means."
+      }
+    }
+  }
+}

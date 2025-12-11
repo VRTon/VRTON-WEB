@@ -1,0 +1,53 @@
+{
+  "name": "VRTon - Realidad Virtual para Causas Solidarias",
+  "short_name": "VRTon",
+  "description": "Organización sin ánimo de lucro que utiliza realidad virtual para crear impacto social positivo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f7f9",
+  "theme_color": "#e30613",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "/assets/icons/icon-192x192.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "/assets/icons/icon-512x512.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    },
+    {
+      "src": "/assets/icons/icon-maskable-192x192.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/icons/icon-maskable-512x512.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["social", "education", "nonprofit"],
+  "shortcuts": [
+    {
+      "name": "Colaboradores",
+      "short_name": "Equipo",
+      "description": "Ver nuestro equipo de colaboradores",
+      "url": "/colaboradores.html",
+      "icons": [{ "src": "/assets/icon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Contacto",
+      "short_name": "Discord",
+      "description": "Únete a nuestra comunidad en Discord",
+      "url": "/#contacto",
+      "icons": [{ "src": "/assets/discord-icon-96x96.png", "sizes": "96x96" }]
+    }
+  ]
+}

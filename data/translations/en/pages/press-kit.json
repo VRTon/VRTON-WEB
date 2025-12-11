@@ -1,0 +1,63 @@
+{
+  "pressKit": {
+    "title": "VRTon Press Kit",
+    "description": "Official promotional materials, world posters, social media assets, stickers, and emojis for VRTon community use.",
+    "download": "Download",
+    "copyLink": "Copy Link",
+    "loading": "Loading assets...",
+    "noPosters": "No posters available yet",
+    "brand": {
+      "title": "Brand Assets",
+      "description": "Official VRTon logos and brand elements in various formats and sizes."
+    },
+    "posters": {
+      "title": "World Posters",
+      "description": "Promotional posters for VRTon worlds and events."
+    },
+    "stickers": {
+      "title": "Stickers & Emojis",
+      "description": "Fun stickers and emojis for Discord, Telegram, and other platforms."
+    },
+    "filter": {
+      "all": "All",
+      "stickers": "Stickers",
+      "emojis": "Emojis",
+      "vrchat-sticker": "VRChat Stickers",
+      "vrchat-emoji": "VRChat Emojis",
+      "discord-sticker": "Discord Stickers",
+      "discord-emoji": "Discord Emojis"
+    },
+    "guidelines": {
+      "title": "Usage Guidelines",
+      "allowed": {
+        "title": "Allowed Uses",
+        "list": [
+          "Community content and fan art",
+          "Social media posts about VRTon",
+          "Event promotion and community activities",
+          "Educational content about VRChat"
+        ]
+      },
+      "prohibited": {
+        "title": "Prohibited Uses",
+        "list": [
+          "Commercial use without permission",
+          "Modification of official logos",
+          "Use in inappropriate or harmful content",
+          "Impersonation of official VRTon accounts"
+        ]
+      },
+      "contact": {
+        "title": "Questions?",
+        "text": "If you have questions about using these materials or need additional assets, please contact us through our official Discord server."
+      }
+    },
+    "bulk": {
+      "title": "Download All Assets",
+      "description": "Get the complete VRTon press kit in a single ZIP file containing all logos, posters, social media assets, and stickers.",
+      "size": "~25 MB",
+      "formats": "Multiple formats included",
+      "download": "Download Complete Kit"
+    }
+  }
+}

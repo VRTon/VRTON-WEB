@@ -1,0 +1,115 @@
+{
+  "schedule": {
+    "title": "Event Schedule",
+    "description": "Check out the complete VRTon activities program. Discover workshops, virtual reality demonstrations, technical talks, and special events for Teletón Chile.",
+    "current_time": "Current Time",
+    "main_activity": "Main Activity",
+    "second_activity": "Secondary Activity",
+    "time": "Time",
+    "section": "Section",
+    "no_activities": "No scheduled activities",
+    "special_event": "Special Event",
+    "duration": "Duration: {{minutes}} minutes",
+    "filters": {
+      "section": "Section",
+      "all_sections": "All sections",
+      "view_mode": "View mode",
+      "view_full": "Full",
+      "view_main": "Main",
+      "view_secondary": "Secondary"
+    },
+    "sections": {
+      "day1": "Day 1 - Thursday, November 28",
+      "day2": "Day 2 - Friday, November 29",
+      "opening": "Opening",
+      "djs": "DJs",
+      "spain": "Spain",
+      "latam": "Latam",
+      "closing": "Closing",
+      "after": "After"
+    },
+    "activities": {
+      "opening": {
+        "name": "Opening Ceremony",
+        "description": "Official welcome to the VRTon event with organizer presentations and program overview."
+      },
+      "djset1": {
+        "name": "DJ O'Leafer",
+        "description": "???"
+      },
+      "djset2": {
+        "name": "DJ Ramses0418",
+        "description": "???"
+      },
+      "djset3": {
+        "name": "DJ JamirDG",
+        "description": "???"
+      },
+      "djset4": {
+        "name": "DJ Alvarozzzzz",
+        "description": "???"
+      },
+      "djset5": {
+        "name": "DJ DannyLasagna",
+        "description": "???"
+      },
+      "talk-teleton": {
+        "name": "Talk about Teletón",
+        "description": "DannySmile gives us a talk about how Teletón helps change the lives of many people in Chile."
+      },
+      "talk-medic": {
+        "name": "Medical Talk",
+        "description": "Doctors and physiotherapists from the Teletón Aysén Institute talk to us about rehabilitation and the impact of Teletón on health."
+      },
+      "talk-guide": {
+        "name": "Guided Tour",
+        "description": "DannySmile gives us a guided tour of the Teletón Aysén Institute, explaining its different areas and its IRL value."
+      },
+      "games-coliseo": {
+        "name": "Coliseum Roleplay",
+        "description": "Join the Cult of Secrets and the Black Steeds in an immersive roleplay experience."
+      },
+      "games-zumbaton": {
+        "name": "Zumbaton",
+        "description": "Zumba and dance class for all attendees, led by the host team in collaboration with institute instructors."
+      },
+      "games-triatlon": {
+        "name": "Virtual Triathlon",
+        "description": "Participate in a series of games and competitions and win trophies for the map!"
+      },
+      "games-race": {
+        "name": "Wheelchair Race",
+        "description": "Who says you can't compete in wheelchairs? Show your skill and speed!"
+      },
+      "show-singer1": {
+        "name": "Live Singer",
+        "description": "First session of shows and artistic performances from the community."
+      },
+      "show-singer2": {
+        "name": "Gianma Live Show",
+        "description": "Live Salsa and Latin music singer."
+      },
+      "show-singer3": {
+        "name": "Live Singer",
+        "description": "Second session of shows and artistic performances from the community."
+      },
+      "rifa": {
+        "name": "Raffle",
+        "description": "Raffle of prizes and gifts among event attendees to encourage participation and enthusiasm."
+      },
+      "closing_ceremony": {
+        "name": "Closing Ceremony",
+        "description": "Official event closing with acknowledgments, final fundraising results, and next steps."
+      },
+      "maid_cafe": {
+        "name": "Maid Café",
+        "description": "The Mononita cafe opens its doors in a Maid Café themed space so all attendees can enjoy delicious drinks and desserts in a cozy and fun atmosphere."
+      },
+      "after_party": {
+        "name": "After Party",
+        "description": "Post-event party with music, dancing, and socializing for all attendees."
+      }
+    },
+    "loading": "Loading schedule..."
+  }
+}

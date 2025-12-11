@@ -1,0 +1,52 @@
+{
+    "assets": {
+        "title": "VRTon Assets Collection",
+        "guide": {
+            "title": "Installation and Requirements",
+            "step1": "Add the VRTon Assets repository to your VCC and import it into your project",
+            "step2": "Use the built in GUI on VRTon/Assets to import your assets, or download the .unitypackage file manually down below",
+            "step3": "You will find the asset on Assets/!VRTon2025/[asset_name], follow the instructions",
+            "note": "All assets were tested using Unity 2022.3.22f1 and sdk 3.8.2!",
+            "note2": "The assets require both poyomi toon and vrcfury, these should be automatically installed when importing the package."
+        },
+        "vpm": {
+            "title": "VCC Package Listing",
+            "description": "Add our repository to your VRChat Creator Companion to easily install and manage VRTon assets.",
+            "copy": "Copy",
+            "addToVcc": "Add to VCC"
+        },
+        "catalog": {
+            "title": "VRTon Assets",
+            "description": "Browse and download individual VRTon assets for your VRChat projects"
+        },
+        "filter": {
+            "all": "All",
+            "clothing": "Clothing",
+            "toys": "Toys",
+            "objects": "Objects"
+        },
+        "help": {
+            "title": "How to add this listing to your VCC",
+            "intro": "To add this listing to your VCC (VRChat Creator Companion), do the following:",
+            "step1": "Open your VCC and go to Settings",
+            "step2": "Click the \"Packages\" tab",
+            "step3": "Click \"Add Repository\"",
+            "step4": "In the field that appears - paste the url displayed above",
+            "step5": "Click \"Add\"",
+            "step6": "Check the repository info and click \"I Understand\"",
+            "step7": "Go to any of your projects to see the packages from the newly added listing"
+        },
+        "errors": {
+            "loadFailed": "Failed to load asset catalog",
+            "helpMessage": "Please try refreshing the page or contact support if the problem persists."
+        },
+        "download": {
+            "button": "Download",
+            "tracking": "Download started"
+        },
+        "noAssets": {
+            "message": "No assets found in this category.",
+            "allCategories": "No assets available at this time."
+        }
+    }
+}

@@ -1,0 +1,86 @@
+{
+  "teams": {
+    "direccion": {
+      "name": "Dirección",
+      "description": "Equipo encargado de la toma de decisiones estratégicas, planificación y supervisión general de las operaciones de VRTon."
+    },
+    "desarrollo": {
+      "name": "Desarrollo",
+      "description": "Encargados de la creación de webs, aplicaciones, bots y demás herramientas utilizadas por VRTon."
+    },
+    "audiovisuales": {
+      "name": "Audiovisuales",
+      "description": "El equipo creativo utiliza diseño audiovisual para crear contenido multimedia que comunique efectivamente nuestra misión social."
+    },
+    "2d": {
+      "name": "Diseño 2D",
+      "description": "Nuestro equipo creativo utiliza diseño 2D para crear interfaces, personajes, ambientes y elementos visuales que comunican efectivamente nuestra misión social."
+    },
+    "3d": {
+      "name": "Diseño 3D",
+      "description": "Nuestro equipo creativo utiliza diseño 3D para crear modelos, personajes y ambientes que comunican efectivamente nuestra misión social."
+    },
+    "marketing": {
+      "name": "Marketing y Comunicación",
+      "description": "El equipo encargado de difundir nuestra misión, gestionar nuestras redes sociales y crear estrategias de comunicación que amplifiquen el impacto de nuestros proyectos sociales."
+    },
+    "mapmaking": {
+      "name": "Map Making",
+      "description": "Los creadores de nuestros mundos virtuales. Este equipo se encarga de diseñar y construir mapas y ambientes en plataformas VR, creando experiencias inmersivas para nuestras causas sociales."
+    },
+    "eventos": {
+      "name": "Host y Actividades",
+      "description": "Los arquitectos de nuestras experiencias virtuales. Este equipo diseña, organiza y ejecuta eventos, shows y experiencias interactivas que conectan a nuestra comunidad."
+    },
+    "dj": {
+      "name": "DJs y Shows",
+      "description": "Los artistas que llevan música y espectáculo a nuestras experiencias virtuales. Este equipo se encarga de crear eventos musicales y shows en vivo que entretienen y conectan a nuestra comunidad."
+    },
+    "moderacion": {
+      "name": "Moderación",
+      "description": "Los guardianes de nuestros espacios virtuales. Este equipo mantiene un ambiente seguro y positivo en nuestras plataformas, asegurando que todos puedan participar cómodamente en nuestras actividades benéficas."
+    },
+    "translation": {
+      "name": "Traducción",
+      "description": "El equipo encargado de traducir y adaptar nuestros contenidos a diferentes idiomas y culturas, asegurando que nuestro mensaje llegue a una audiencia global."
+    }
+  },
+  "roles": {
+    "director": "Director",
+    "lead_developer": "Lider de Desarrollo",
+    "fullstack_dev": "Desarrollador Fullstack",
+    "frontend_dev": "Desarrollador Frontend",
+    "backend_dev": "Desarrollador Backend",
+    "developer": "Desarrollador",
+    "lead_audiovisual": "Coordinador Audiovisual",
+    "audiovisual_producer": "Productor Audiovisual",
+    "stream_director": "Director de Streaming",
+    "video_editor": "Editor de Video",
+    "photographer": "Fotógrafo",
+    "videographer": "Videógrafo",
+    "camera_operator": "Operador de Cámara",
+    "lead_2d_designer": "Lider de Diseño 2D",
+    "2d_artist": "Artista 2D",
+    "graphic_designer": "Diseñador Gráfico",
+    "community_manager": "Community Manager",
+    "social_media_manager": "Gestor de Redes Sociales",
+    "outreach_coordinator": "Coordinador de Alcance Comunitario",
+    "lead_world_designer": "Lider Diseñador de Mundos",
+    "lead_world_technician": "Lider Técnico de Mundos",
+    "lead_host": "Lider de Animadores y Personal",
+    "host": "Animador",
+    "staff": "Personal",
+    "lead_show": "Productor de Shows",
+    "dj": "DJ",
+    "singer": "Cantante",
+    "lead_3d_assets": "Lider Creador de Assets",
+    "asset_creator": "Creador de Assets",
+    "lead_3d_avatars": "Lider Creador de Avatares",
+    "avatar_creator": "Creador de Avatares",
+    "english_translator": "Traductor de Inglés",
+    "lead_moderation": "Lider de Moderación",
+    "ingame_moderator": "Moderador InGame",
+    "discord_moderator": "Moderador de Discord",
+    "twitch_moderator": "Moderador de Twitch"
+  }
+}

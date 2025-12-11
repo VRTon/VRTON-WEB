@@ -1,0 +1,20 @@
+{
+  "loading": {
+    "title": "Loading VRTon",
+    "preparing": "Preparing immersive experience...",
+    "translations": "Loading translations...",
+    "components": "Loading components...",
+    "countdown": "Starting countdown...",
+    "video": "Preparing video...",
+    "finalizing": "Finalizing load...",
+    "loadingTeam": "Loading Team",
+    "preparingTeam": "Preparing team information...",
+    "teams": "Loading team information..."
+  },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds"
+  }
+}

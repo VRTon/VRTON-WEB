@@ -1,0 +1,105 @@
+{
+  "translationSystem": {
+    "version": "2.0",
+    "defaultLanguage": "es",
+    "supportedLanguages": ["es", "en", "pt"],
+    "fallbackLanguage": "es",
+    "structure": {
+      "common": "Elementos comunes como navegación, footer, contacto",
+      "pages": "Traducciones específicas por página",
+      "legal": "Documentos legales como términos y reglas",
+      "components": "Componentes reutilizables como loading, teams"
+    },
+    "modules": {
+      "common": {
+        "description": "Navegación, footer, contacto, mantenimiento, elementos legales básicos",
+        "required": true,
+        "loadOnAllPages": true
+      },
+      "pages/home": {
+        "description": "Página principal - hero, causa, descripción",
+        "path": "/index.html",
+        "aliases": ["/", "/home"]
+      },
+      "pages/colaboradores": {
+        "description": "Página de colaboradores - equipo, meta información",
+        "path": "/colaboradores.html"
+      },
+      "pages/faqs": {
+        "description": "Preguntas frecuentes",
+        "path": "/faqs.html"
+      },
+      "pages/links": {
+        "description": "Página de enlaces",
+        "path": "/links.html"
+      },
+      "pages/assets": {
+        "description": "Página de recursos y assets de VRTon",
+        "path": "/resources/assets/",
+        "aliases": ["/assets/", "/resources/assets/index.html"]
+      },
+      "pages/avatars": {
+        "description": "Página de colección de avatares VRTon",
+        "path": "/resources/avatars/",
+        "aliases": ["/avatars/", "/resources/avatars/index.html"]
+      },
+      "components/loading": {
+        "description": "Pantalla de carga y contador",
+        "loadWhen": "loading screen detected"
+      },
+      "components/teams": {
+        "description": "Información de equipos y roles",
+        "loadWhen": "team components detected"
+      },
+      "legal/terms-volunteer": {
+        "description": "Términos y condiciones de voluntariado",
+        "path": "/terminos-voluntariado.html"
+      },
+      "legal/tos": {
+        "description": "Términos y condiciones generales",
+        "path": "/terminos.html"
+      },
+      "legal/coc": {
+        "description": "Código de conducta del evento",
+        "path": "/codigo-conducta.html"
+      }
+    },
+    "autoDetection": {
+      "enabled": true,
+      "rules": {
+        "path-based": "Detect modules based on URL path",
+        "element-based": "Detect modules based on DOM elements",
+        "data-attribute": "Use data-translation-modules attribute"
+      }
+    },
+    "performance": {
+      "caching": true,
+      "preloadCommon": true,
+      "lazyLoadComponents": true
+    },
+    "development": {
+      "logLevel": "info",
+      "showMissingKeys": true,
+      "fallbackWarnings": true
+    }
+  },
+  "migration": {
+    "legacySupport": true,
+    "oldFileBackup": "deleted - no longer needed",
+    "migrationDate": "2025-01-15",
+    "cleanupDate": "2025-09-15"
+  },
+  "usage": {
+    "examples": {
+      "loadPageTranslations": "await loadPageTranslations('home')",
+      "loadLegalTranslations": "await loadLegalTranslations('terms-volunteer')",
+      "getTranslation": "await t('nav.inicio', ['common'])",
+      "setLanguage": "window.ModularTranslations.setLanguage('en')"
+    },
+    "dataAttributes": {
+      "translation": "data-i18n=\"key.path\"",
+      "html": "data-i18n-html (for HTML content)",
+      "modules": "data-translation-modules=\"common,pages/home\""
+    }
+  }
+}

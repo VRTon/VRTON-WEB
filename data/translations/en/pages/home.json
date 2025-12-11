@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "title": "VRTon",
+    "subtitle": "Using virtual reality <br> to improve lives ",
+    "description": "We are a non-profit organization dedicated to using virtual reality technology to create a positive impact on society.",
+    "countdown": "Next VRTon event on 28th & 29th November 2025, time remaining:",
+    "button": "Learn more"
+  },
+  "causa": {
+    "title": "About us",
+    "description1": "At VRTon, we believe that virtual reality technology has the potential to transform the way we address social challenges. We work to develop immersive experiences that educate, inspire, and generate empathy.",
+    "description2": "In addition to developing these experiences, we organize charitable events and activities that seek to raise funds and make a real impact on various social causes, bringing innovation to serve those who need it most.",
+    "projects": []
+  },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds"
+  },
+  "event_completed": {
+    "message": "The event has ended and collected $3.255,29 USD!",
+    "description": "Access our Social Media:"
+  }
+}

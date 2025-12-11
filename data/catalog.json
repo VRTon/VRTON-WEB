@@ -1,0 +1,92 @@
+{
+  "assets": [
+    {
+      "name": "Lapizera",
+      "description": "Una lapizera para dibujar.",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.lapicera/releases/download/1.1.1/Lapiz.VRTON.unitypackage",
+      "imageUrl": "https://raw.githubusercontent.com/VRTon/org.vrton.lapicera/refs/heads/main/Lapicera%20Jef.png",
+      "category": "Juguetes"
+    },
+    {
+      "name": "Cadena",
+      "description": "Cadena promocional de VRTon",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.chain/releases/download/2.0.0/VRTonChain.unitypackage",
+      "imageUrl": "https://raw.githubusercontent.com/VRTon/org.vrton.chain/refs/heads/main/VRTonChain.png",
+      "category": "Ropa"
+    },
+    {
+      "name": "Pulsera",
+      "description": "Pulsera promocional de VRTon con efecto de particulas al chocarla.",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.pulsera/releases/download/1.0.2/PulseraVRTON.unitypackage",
+      "imageUrl": "https://raw.githubusercontent.com/VRTon/org.vrton.pulsera/refs/heads/main/Pulsera%20VRTon.png",
+      "category": "Ropa"
+    },
+    {
+      "name": "Banderin",
+      "description": "Banderin promocional de VRTon con efecto de particulas al chocarla.",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.banderin/releases/download/1.0.1/BanderinVRTON.unitypackage",
+      "imageUrl": "https://raw.githubusercontent.com/VRTon/org.vrton.banderin/refs/heads/main/banderin%20Variant.png",
+      "category": "Juguetes"
+    },
+    {
+      "name": "Chocker",
+      "description": "Chocker promocional de VRTon con efecto de particulas al chocarla.",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.chocker/releases/download/1.0.2/ChokerVrton.unitypackage",
+      "imageUrl": "https://raw.githubusercontent.com/VRTon/org.vrton.chocker/refs/heads/main/Choker.png",
+      "category": "Ropa"
+    },
+    {
+      "name": "Diadema",
+      "description": "Diadema promocional de VRTon con efecto de particulas al chocarla.",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.diadema/releases/download/1.0.1/DiademaVRTON.unitypackage",
+      "imageUrl": "https://raw.githubusercontent.com/VRTon/org.vrton.diadema/refs/heads/main/Diadema.png",
+      "category": "Ropa"
+    },
+    {
+      "name": "Mesa VRTON2025",
+      "description": "Mesa promocional de VRTon usada para exponer articulos",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.MesaVrton2025/releases/download/1.0.1/mesa.VRTON.unitypackage",
+      "imageUrl": "https://raw.githubusercontent.com/VRTon/org.vrton.MesaVrton2025/refs/heads/main/mesa.png",
+      "category": "Objetos"
+    },
+    {
+      "name": "Taza con cafe",
+      "description": "Taza promocional de la VRTon 2025, con sistema de liquidos",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.Taza/releases/download/1.0.1/TazaVRTON.unitypackage",
+      "imageUrl": "https://raw.githubusercontent.com/VRTon/org.vrton.Taza/refs/heads/main/taza.png",
+      "category": "Objetos"
+    },
+    {
+      "name": "Cartel de mano",
+      "description": "Cartel promocional de VRTon",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.CartelVrton/releases/download/1.0.1/VRTON.cartel.unitypackage",
+      "imageUrl": "https://raw.githubusercontent.com/VRTon/org.vrton.CartelVrton/refs/heads/main/cartel.png",
+      "category": "Objetos"
+    },
+    {
+      "name": "Gorra de teleton",
+      "description": "Gorra promocional de VRTon",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.hat/releases/download/1.0.1/GorraVRTON.unitypackage",
+      "imageUrl": "https://raw.githubusercontent.com/VRTon/org.vrton.hat/refs/heads/main/gorra.png",
+      "category": "Objetos"
+    },
+    {
+      "name": "LLavero corazon teleton",
+      "description": "LLavero promocional en forma de corazon <3",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/VRTon/org.vrton.CorazonLLaero/releases/download/1.0.0/Corazon.Teleton.llavero.unitypackage",
+      "imageUrl": "https://github.com/VRTon/org.vrton.CorazonLLaero/blob/main/image.png",
+      "category": "Objetos"
+    }
+  ]
+}

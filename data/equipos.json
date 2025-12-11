@@ -1,0 +1,393 @@
+{
+  "colaboradores": {
+    "valenvrc": {
+      "nombre": "ValenVRC",
+      "foto": "valenvrc.webp",
+      "social": {
+        "twitter": "https://x.com/ValenVRC943",
+        "instagram": "https://www.instagram.com/valenn.vrc/"
+      }
+    },
+    "ramses0418": {
+      "nombre": "Ramses0418",
+      "foto": "ramses0418.webp",
+      "social": {
+        "vrchat": "https://vrchat.com/home/user/usr_a623f860-4a18-4e36-91f2-ee6e6a7cf773"
+      }
+    },
+    "maximohfoxy": {
+      "nombre": "MaximohFoxy",
+      "foto": "maximohfoxy.webp",
+      "social": {
+        "discord": "https://discordapp.com/users/299845802426105857",
+        "telegram": "https://t.me/maximoh",
+        "vrchat": "https://vrchat.com/home/user/usr_adaa2bcd-dcb5-499b-ac7a-fc9ad1412a59"
+      }
+    },
+    "dantalion": {
+      "nombre": "Dantalion",
+      "foto": "dantalion.webp",
+      "social": {}
+    },
+    "3dmaster": {
+      "nombre": "3D Master",
+      "foto": "master.webp",
+      "social": {
+        "instagram": "https://www.instagram.com/3dmasterreal/"
+      }
+    },
+    "foxyctg21": {
+      "nombre": "FoxyCTG21",
+      "foto": "foxyctg21.webp",
+      "social": {
+        "twitter": "https://x.com/FoxyCTG",
+        "instagram": "https://www.instagram.com/foxyctg21"
+      }
+    },
+    "pichujeff": {
+      "nombre": "PichuJeff",
+      "foto": "pichujef.webp",
+      "social": {
+        "github": "https://github.com/TheBroElectronic"
+      }
+    },
+    "lianro": {
+      "nombre": "Lian Ro",
+      "foto": "lian.webp",
+      "social": {
+        "instagram": "https://www.instagram.com/lian.vr/"
+      }
+    },
+    "jeffrythekiller": {
+      "nombre": "JeffryTheKiller",
+      "foto": "jeffrythekiller.webp",
+      "social": {}
+    },
+    "dannylasagna": {
+      "nombre": "DannyLasagna",
+      "foto": "danny-lasagna.webp",
+      "social": {
+        "instagram": "https://www.instagram.com/danny.lasagna/"
+      }
+    },
+    "bonnieck": {
+      "nombre": "BonnieCk",
+      "foto": "bonieck.webp",
+      "social": {
+        "twitter": "https://x.com/BonnieCk?t=T0528AgmHLX-qq7RqkQH0w&s=09",
+        "instagram": "https://www.instagram.com/_bonnieck_?igsh=MWU4OXloMGowcDY3dw=="
+      }
+    },
+    "nantrop": {
+      "nombre": "Nantrop",
+      "foto": "nantrop.webp",
+      "social": {
+        "instagram": "https://www.instagram.com/nantrop_onjy/"
+      }
+    },
+    "lexter": {
+      "nombre": "Lexter",
+      "foto": "lexter.webp",
+      "social": {}
+    },
+    "slime": {
+      "nombre": "slime",
+      "foto": "slime.webp",
+      "social": {}
+    },
+    "jamirdg": {
+      "nombre": "JamirDG",
+      "foto": "jamirdg.webp",
+      "social": {
+        "instagram": "https://www.instagram.com/jamirdg96/"
+      }
+    },
+    "zulay": {
+      "nombre": "Zulay",
+      "foto": "zulay.webp",
+      "social": {
+        "instagram": "https://www.instagram.com/zulay.vr/"
+      }
+    },
+    "ryuaotsuki": {
+      "nombre": "Ryu Aotsuki",
+      "foto": "ryu-aotsuki.webp",
+      "social": {}
+    },
+    "iza42": {
+      "nombre": "Iza42",
+      "foto": "iza42.webp",
+      "social": {}
+    },
+    "zorrocl": {
+      "nombre": "ZorroCL",
+      "foto": "zorrocl.webp",
+      "social": {}
+    },
+    "velasquezpai": {
+      "nombre": "VelasquezPai",
+      "foto": "velasquezpai.webp",
+      "social": {}
+    },
+    "abstered": {
+      "nombre": "Abstered",
+      "foto": "abstered.webp",
+      "social": {
+        "other": "https://www.artstation.com/abstered"
+      }
+    },
+    "miggi": {
+      "nombre": "Miggi",
+      "foto": "miggi.webp",
+      "social": {}
+    },
+    "gianma": {
+      "nombre": "Gianma",
+      "foto": "gianma.webp",
+      "social": {}
+    },
+    "zaykran": {
+      "nombre": "Zaykran",
+      "foto": "zaykran.webp",
+      "social": {}
+    },
+    "trout": {
+      "nombre": "Trout",
+      "foto": "trout.webp",
+      "social": {}
+    },
+    "loquito": {
+      "nombre": "Loquito",
+      "foto": "loquito.webp",
+      "social": {}
+    },
+    "haze": {
+      "nombre": "Haze",
+      "foto": "haze.webp",
+      "social": {}
+    },
+    "nilein": {
+      "nombre": "Nilein",
+      "foto": "nilein.webp",
+      "social": {}
+    },
+    "juliothanos" : {
+      "nombre": "JulioThanos",
+      "foto": "juliothanos.webp",
+      "social": {}
+    },
+    "javi2633" : {
+      "nombre": "Javi2633",
+      "foto": "javi2633.webp",
+      "social": {}
+    },
+    "joaco22" : {
+      "nombre": "Joaco22",
+      "foto": "joaco22.webp",
+      "social": {}
+    },
+    "clandestino" : {
+      "nombre": "Clandestino",
+      "foto": "clandestino.webp",
+      "social": {}
+    },
+    "madkodin" : {
+      "nombre": "MadKodin",
+      "foto": "madkodin.webp",
+      "social": {}
+    },
+    "gohan" : {
+      "nombre": "GohanBeatbox",
+      "foto": "gohan.webp",
+      "social": {}
+    },
+    "bellastrange" : {
+      "nombre": "BellaStrange",
+      "foto": "bellastrange.webp",
+      "social": {}
+    },
+    "kunniin"  : {
+      "nombre": "Kunniin",
+      "foto": "kunniin.webp",
+      "social": {}
+    },
+    "draksuki"  : {
+      "nombre": "DraksukiWolfy",
+      "foto": "draksuki.webp",
+      "social": {}
+    },
+    "blaky"  : {
+      "nombre": "Blaky",
+      "foto": "blaky.webp",
+      "social": {}
+    },
+    "andrac"  : {
+      "nombre": "Andrac",
+      "foto": "andrac.webp",
+      "social": {}
+    },
+    "vittallirycsvt"  : {
+      "nombre": "VittalLirycsVT",
+      "foto": "vittallirycsvt.webp",
+      "social": {}
+    },
+    "kemono"  : {
+      "nombre": "Kemono",
+      "foto": "kemono.webp",
+      "social": {}
+    }
+  },
+  "equipos": [
+    {
+      "id": "direccion",
+      "nombre": "Dirección",
+      "descripcion": "Equipo encargado de la toma de decisiones estratégicas, planificación y supervisión general de las operaciones de VRTon.",
+      "lideres": [],
+      "miembros": [
+        { "id": "dantalion", "rol_key": "director" },
+        { "id": "valenvrc", "rol_key": "director" },
+        { "id": "3dmaster", "rol_key": "director" }
+      ]
+    },
+    {
+      "id": "desarrollo",
+      "nombre": "Desarrollo",
+      "descripcion": "Encargados de la creación de webs, aplicaciones bots y demás herramientas utilizadas por VRTon.",
+      "lideres": [
+        { "id": "maximohfoxy", "rol_key": "lead_developer" }
+      ],
+      "miembros": [
+        { "id": "valenvrc", "rol_key": "backend_dev" },
+        { "id": "pichujeff", "rol_key": "fullstack_dev" },
+        { "id": "blaky", "rol_key": "fullstack_dev" },
+        { "id": "andrac", "rol_key": "frontend_dev" }
+      ]
+    },
+    {
+      "id": "audiovisuales",
+      "nombre": "AudioVisuales",
+      "descripcion": "Fotografos, Videografos y creadores de contenido que dan vida a nuestras visiones mediante efectos visuales, audio espacial y producciones multimedia.",
+      "lideres": [
+        { "id": "foxyctg21", "rol_key": "lead_audiovisual" }
+      ],
+      "miembros": [
+        { "id": "jamirdg", "rol_key": "stream_director" },
+        { "id": "iza42", "rol_key": "video_editor" },
+        { "id": "dantalion", "rol_key": "video_editor" },
+        { "id": "lianro", "rol_key": "photographer" },
+        { "id": "miggi", "rol_key": "photographer" }
+      ]
+    },
+    {
+      "id": "2d",
+      "nombre": "Diseño 2D",
+      "descripcion": "Nuestro equipo creativo utiliza diseño 2D para crear interfaces, personajes, entornos y elementos visuales que comunican efectivamente nuestra misión social.",
+      "lideres": [],
+      "miembros": [
+        { "id": "jeffrythekiller", "rol_key": "2d_artist" },
+        { "id": "dannylasagna", "rol_key": "graphic_designer" },
+        { "id": "bonnieck", "rol_key": "graphic_designer" },
+        { "id": "joaco22", "rol_key": "graphic_designer" },
+        { "id": "trout", "rol_key": "graphic_designer" },
+        { "id": "draksuki", "rol_key": "graphic_designer" },
+        { "id": "kunniin", "rol_key": "graphic_designer" },
+        { "id": "vittallirycsvt", "rol_key": "graphic_designer" }
+      ]
+    },
+    {
+      "id": "3d",
+      "nombre": "Diseño 3D",
+      "descripcion": "Nuestro equipo creativo utiliza diseño 3D para crear modelos, personajes y entornos que comunican efectivamente nuestra misión social.",
+      "lideres": [
+        { "id": "pichujeff", "rol_key": "lead_3d_assets" }
+      ],
+      "miembros": [
+        { "id": "zulay", "rol_key": "avatar_creator" },
+        { "id": "jeffrythekiller", "rol_key": "avatar_creator" },
+        { "id": "nantrop", "rol_key": "avatar_creator" },
+        { "id": "slime", "rol_key": "asset_creator" },
+        { "id": "abstered", "rol_key": "asset_creator" },
+        { "id": "bellastrange", "rol_key": "asset_creator" }
+      ]
+    },
+    {
+      "id": "marketing",
+      "nombre": "Marketing y Comunicación",
+      "descripcion": "El equipo encargado de difundir nuestra misión, gestionar nuestras redes sociales y crear estrategias de comunicación que amplíen el impacto de nuestros proyectos sociales.",
+      "lideres": [
+        { "id": "lianro", "rol_key": "community_manager" }
+      ],
+      "miembros": [
+        { "id": "zulay", "rol_key": "outreach_coordinator" },
+        { "id": "gohan", "rol_key": "outreach_coordinator" }
+      ]
+    },
+    {
+      "id": "mapmaking",
+      "nombre": "Map Making",
+      "descripcion": "Los creadores de nuestros mundos virtuales. Este equipo se encarga de diseñar y construir mapas y entornos en plataformas VR, creando experiencias inmersivas para nuestras causas sociales.",
+      "lideres": [
+        { "id": "3dmaster", "rol_key": "lead_world_designer" },
+        { "id": "valenvrc", "rol_key": "lead_world_technician" }
+      ],
+      "miembros": []
+    },
+    {
+      "id": "eventos",
+      "nombre": "Host y Actividades",
+      "descripcion": "Los arquitectos de nuestras experiencias virtuales. Este equipo diseña, organiza y ejecuta eventos, shows y experiencias interactivas que conectan a nuestra comunidad.",
+      "lideres": [
+        { "id": "zulay", "rol_key": "lead_host" }
+      ],
+      "miembros": [
+        { "id": "dantalion", "rol_key": "host" },
+        { "id": "dannylasagna", "rol_key": "host" },
+        { "id": "lexter", "rol_key": "host" },
+        { "id": "ryuaotsuki", "rol_key": "host" },
+        { "id": "velasquezpai", "rol_key": "host" },
+        { "id": "zaykran", "rol_key": "host" },
+        { "id": "loquito", "rol_key": "host" },
+        { "id": "nilein", "rol_key": "host" },
+        { "id": "juliothanos", "rol_key": "host" },
+        { "id": "javi2633", "rol_key": "host" },
+        { "id": "madkodin", "rol_key": "host" },
+        { "id": "draksuki", "rol_key": "host" }
+      ]
+    },
+    {
+      "id": "dj",
+      "nombre": "DJs y Shows",
+      "descripcion": "Los artistas que traen la música y el espectáculo a nuestras experiencias virtuales. Este equipo se encarga de crear eventos musicales y shows en vivo que entretienen y conectan a nuestra comunidad.",
+      "lideres": [],
+      "miembros": [
+        { "id": "dannylasagna", "rol_key": "dj" },
+        { "id": "jamirdg", "rol_key": "dj" },
+        { "id": "ramses0418", "rol_key": "dj" },
+        { "id": "gianma", "rol_key": "singer" }
+      ]
+    },
+    {
+      "id": "moderacion",
+      "nombre": "Moderación",
+      "descripcion": "Nuestro equipo de moderación se encarga de mantener un ambiente seguro, inclusivo y respetuoso en todas nuestras plataformas y experiencias VR. Son los guardianes de nuestra comunidad.",
+      "lideres": [
+        { "id": "valenvrc", "rol_key": "lead_moderation, ingame_moderator" }
+      ],
+      "miembros": [
+        { "id": "zorrocl", "rol_key": "ingame_moderator" },
+        { "id": "clandestino", "rol_key": "ingame_moderator" },
+        { "id": "vittallirycsvt", "rol_key": "ingame_moderator" },
+        { "id": "kemono", "rol_key": "ingame_moderator" }
+      ]
+    },
+    {
+      "id": "translation",
+      "nombre": "Traducción",
+      "descripcion": "El equipo encargado de traducir y adaptar nuestros contenidos a diferentes idiomas y culturas, asegurando que nuestro mensaje llegue a una audiencia global.",
+      "lideres": [],
+      "miembros": [
+        { "id": "haze", "rol_key": "english_translator" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "maintenance": {
+    "title": "Estamos en Mantenimiento",
+    "description": "Estamos trabajando para mejorar tu experiencia. Nuestro sitio web estará disponible nuevamente muy pronto.",
+    "status": "Actualizando sistemas",
+    "estimated": "Tiempo estimado: 30 minutos",
+    "contact": {
+      "text": "¿Necesitas ayuda urgente? Contáctanos:"
+    },
+    "loading": "Cargando..."
+  }
+}

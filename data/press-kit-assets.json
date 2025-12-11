@@ -1,0 +1,95 @@
+{
+    "brandAssets": [
+        {
+            "id": 1,
+            "title": "Oficial Logo",
+            "image": "/assets/press-kit/logos/Logo.png",
+            "downloadUrl": "/assets/press-kit/logos/Logo.png",
+            "dimensions": "1024x1024",
+            "format": "PNG"
+        },
+        {
+            "id": 2,
+            "title": "Monochrome Logo",
+            "image": "/assets/press-kit/logos/LogoMonochrome.png",
+            "downloadUrl": "/assets/press-kit/logos/LogoMonochrome.png",
+            "dimensions": "1024x1024",
+            "format": "PNG"
+        },
+        {
+            "id": 3,
+            "title": "Logo Con Fondo",
+            "image": "/assets/press-kit/logos/LogoBG.png",
+            "downloadUrl": "/assets/press-kit/logos/LogoBG.png",
+            "dimensions": "1024x1024",
+            "format": "PNG"
+        },
+        {
+            "id": 4,
+            "title": "Logo Con Fondo Alternativo",
+            "image": "/assets/press-kit/logos/LogoBGAlt.png",
+            "downloadUrl": "/assets/press-kit/logos/LogoBGAlt.png",
+            "dimensions": "1024x1024",
+            "format": "PNG"
+        }
+    ],
+    "worldPosters": [
+        {
+            "id": 1,
+            "title": "Horizontal Poster",
+            "image": "/assets/press-kit/posters/horizontal.png",
+            "downloadUrl": "/assets/press-kit/posters/horizontal.png",
+            "dimensions": "2048x1024",
+            "format": "PNG"
+        },
+        {
+            "id": 2,
+            "title": "Vertical Poster",
+            "image": "/assets/press-kit/posters/vertical.png",
+            "downloadUrl": "/assets/press-kit/posters/vertical.png",
+            "dimensions": "1024x2048",
+            "format": "PNG"
+        },
+        {
+            "id": 3,
+            "title": "Square Poster",
+            "image": "/assets/press-kit/posters/square.png",
+            "downloadUrl": "/assets/press-kit/posters/square.png",
+            "dimensions": "1024x1024",
+            "format": "PNG"
+        },
+        {
+            "id": 4,
+            "title": "Square Poster 2",
+            "image": "/assets/press-kit/posters/VrtonCuadrado.png",
+            "downloadUrl": "/assets/press-kit/posters/VrtonCuadrado.png",
+            "dimensions": "1024x1024",
+            "format": "PNG"
+        },
+        {
+            "id": 5,
+            "title": "Horizontal Poster 2",
+            "image": "/assets/press-kit/posters/VrtonHorizontal.png",
+            "downloadUrl": "/assets/press-kit/posters/VrtonHorizontal.png",
+            "dimensions": "2048x1024",
+            "format": "PNG"
+        },
+        {
+            "id": 6,
+            "title": "Vertical Poster 2",
+            "image": "/assets/press-kit/posters/VrtonVertical.png",
+            "downloadUrl": "/assets/press-kit/posters/VrtonVertical.png",
+            "dimensions": "1024x2048",
+            "format": "PNG"
+        }
+    ],
+    "stickers": [],
+    "bulkDownload": {
+        "title": "Complete VRTon Press Kit",
+        "description": "Get the complete VRTon press kit in a single ZIP file containing all logos, posters, and stickers.",
+        "size": "~25 MB",
+        "formats": "Multiple formats included",
+        "downloadUrl": "/assets/press-kit/vrton-complete-press-kit.zip",
+        "lastUpdated": "2025-10-02"
+    }
+}

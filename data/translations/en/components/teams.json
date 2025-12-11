@@ -1,0 +1,87 @@
+{
+  "teams": {
+    "direccion": {
+      "name": "Management",
+      "description": "Team responsible for strategic decision-making, planning, and general oversight of VRTon operations."
+    },
+    "desarrollo": {
+      "name": "Development",
+      "description": "Responsible for creating websites, applications, bots, and other tools used by VRTon."
+    },
+    "audiovisuales": {
+      "name": "Audiovisuals",
+      "description": "The creative team uses audiovisual design to create multimedia content that effectively communicates our social mission."
+    },
+    "2d": {
+      "name": "2D Design",
+      "description": "Our creative team uses 2D design to create interfaces, characters, environments, and visual elements that effectively communicate our social mission."
+    },
+    "3d": {
+      "name": "3D Design",
+      "description": "Our creative team uses 3D design to create models, characters, and environments that effectively communicate our social mission."
+    },
+    "marketing": {
+      "name": "Marketing & Communication",
+      "description": "The team responsible for spreading our mission, managing our social networks, and creating communication strategies that amplify the impact of our social projects."
+    },
+    "mapmaking": {
+      "name": "Map Making",
+      "description": "The creators of our virtual worlds. This team is responsible for designing and building maps and environments on VR platforms, creating immersive experiences for our social causes."
+    },
+    "eventos": {
+      "name": "Host & Activities",
+      "description": "The architects of our virtual experiences. This team designs, organizes, and executes events, shows, and interactive experiences that connect our community."
+    },
+    "dj": {
+      "name": "DJs & Shows",
+      "description": "The artists who bring music and spectacle to our virtual experiences. This team is responsible for creating musical events and live shows that entertain and connect our community."
+    },
+    "moderacion": {
+      "name": "Moderation",
+      "description": "The guardians of our virtual spaces. This team maintains a safe and positive environment on our platforms, ensuring everyone can participate comfortably in our charitable activities."
+    },
+    "translation": {
+      "name": "Translation",
+      "description": "The team responsible for translating and adapting our content to different languages and cultures, ensuring our message reaches a global audience."
+    }
+  },
+  "roles": {
+    "director": "Director",
+    "lead_developer": "Lead Developer",
+    "fullstack_dev": "Fullstack Developer",
+    "frontend_dev": "Frontend Developer",
+    "backend_dev": "Backend Developer",
+    "developer": "Developer",
+    "lead_audiovisual": "Lead Audiovisual",
+    "audiovisual_producer": "Audiovisual Producer",
+    "stream_director": "Streaming Director",
+    "video_editor": "Video Editor",
+    "photographer": "Photographer",
+    "videographer": "Videographer",
+    "camera_operator": "Camera Operator",
+    "lead_2d_designer": "Lead 2D Designer",
+    "2d_artist": "2D Artist",
+    "graphic_designer": "Graphic Designer",
+    "community_manager": "Community Manager",
+    "social_media_manager": "Social Media Manager",
+    "outreach_coordinator": "Outreach Coordinator",
+    "lead_world_designer": "Lead World Designer",
+    "lead_world_technician": "Lead World Technician",
+    "lead_host": "Lead Host Logistician",
+    "host": "Host",
+    "staff": "Staff",
+    "lead_show": "Lead Show Producer",
+    "dj": "DJ",
+    "singer": "Singer",
+    "networking_logistics": "Networking Logistics",
+    "lead_3d_assets": "Lead Asset Creator",
+    "asset_creator": "Asset Creator",
+    "lead_3d_avatars": "Lead Avatar Creator",
+    "avatar_creator": "Avatar Creator",
+    "english_translator": "English Translator",
+    "lead_moderation": "Lead Moderator",
+    "ingame_moderator": "InGame Moderator",
+    "discord_moderator": "Discord Moderator",
+    "twitch_moderator": "Twitch Moderator"
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "avatars": {
+        "title": "Colección de Avatares VRTon",
+        "description": "Descubre nuestra colección de avatares públicos para VRChat creados por la comunidad VRTon. Haz clic en cualquier avatar para visitar su página en VRChat.",
+        "loading": "Cargando avatares...",
+        "card": {
+            "createdBy": "por",
+            "assetsUsed": "Assets Utilizados:",
+            "viewInVRChat": "Ver en VRChat",
+            "publicStatus": "Público",
+            "privateStatus": "Privado"
+        },
+        "error": {
+            "title": "Error al Cargar Avatares",
+            "message": "Lo sentimos, no pudimos cargar la colección de avatares. Por favor intenta refrescar la página.",
+            "refresh": "Refrescar Página"
+        }
+    }
+}

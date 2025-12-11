@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "inicio": "Inicio",
+    "about": "Sobre Nosotros",
+    "faqs": "Preguntas Frecuentes",
+    "contacto": "Contacto",
+    "colaboradores": "Colaboradores",
+    "schedule": "Itinerario",
+    "recursos": "Recursos",
+    "assets": "Assets",
+    "avatars": "Avatares",
+    "presskit": "Kit de Prensa"
+  },
+  "footer": {
+    "description": "Transformando la realidad virtual en cambio social. Organización sin ánimo de lucro.",
+    "quickLinks": "Enlaces Rápidos",
+    "follow": "Síguenos",
+    "copyright": "© 2025 VRTon - Todos los derechos reservados",
+    "terms": "Términos y Condiciones",
+    "rules": "Código de Conducta",
+    "volunteer": "Voluntariado"
+  },
+  "contacto": {
+    "title": "Contacto",
+    "community": "Únete a nuestra comunidad",
+    "description": "Interesado en participar, colaborar o simplemente saber más sobre VRTon? Únete a nuestro Discord y forma parte de nuestra comunidad.",
+    "button": "Unirse a Discord",
+    "business": {
+      "title": "Colabora con Nosotros",
+      "description": "Si representas una empresa o marca y te gustaría apoyar nuestra causa, escríbenos, nos encantaría conocerte!",
+      "button": "ESCRÍBENOS"
+    }
+  },
+  "maintenance": {
+    "logo_title": "VRTon",
+    "title": "Página en Construcción",
+    "text1": "Estamos trabajando arduamente para crear una experiencia increíble.",
+    "text2": "¡Gracias por tu paciencia! Regresa pronto para descubrir cómo estamos transformando vidas a través de la tecnología."
+  },
+  "legal": {
+    "lastUpdated": "Última actualización:",
+    "tableOfContents": "Tabla de Contenidos",
+    "backToTop": "Volver arriba",
+    "print": "Imprimir documento",
+    "share": "Compartir"
+  }
+}

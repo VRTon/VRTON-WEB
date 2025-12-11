@@ -1,0 +1,63 @@
+{
+  "pressKit": {
+    "title": "Kit de Prensa VRTon",
+    "description": "Material promocional oficial, pósters de mundos, assets para redes sociales, stickers y emojis para uso de la comunidad VRTon.",
+    "download": "Descargar",
+    "copyLink": "Copiar Enlace",
+    "loading": "Cargando recursos...",
+    "noPosters": "Aún no hay pósters disponibles",
+    "brand": {
+      "title": "Assets de Marca",
+      "description": "Logos oficiales de VRTon y elementos de marca en varios formatos y tamaños."
+    },
+    "posters": {
+      "title": "Pósters de Mundos",
+      "description": "Pósters promocionales para mundos y eventos de VRTon."
+    },
+    "stickers": {
+      "title": "Stickers y Emojis",
+      "description": "Stickers divertidos y emojis para Discord, Telegram y otras plataformas."
+    },
+    "filter": {
+      "all": "Todos",
+      "stickers": "Stickers",
+      "emojis": "Emojis",
+      "vrchat-sticker": "Stickers VRChat",
+      "vrchat-emoji": "Emojis VRChat",
+      "discord-sticker": "Stickers Discord",
+      "discord-emoji": "Emojis Discord"
+    },
+    "guidelines": {
+      "title": "Guías de Uso",
+      "allowed": {
+        "title": "Usos Permitidos",
+        "list": [
+          "Contenido comunitario y fan art",
+          "Posts en redes sociales sobre VRTon",
+          "Promoción de eventos y actividades comunitarias",
+          "Contenido educativo sobre VRChat"
+        ]
+      },
+      "prohibited": {
+        "title": "Usos Prohibidos",
+        "list": [
+          "Uso comercial sin permisos",
+          "Modificación de logos oficiales",
+          "Uso en contenido inapropiado o dañino",
+          "Suplantación de cuentas oficiales de VRTon"
+        ]
+      },
+      "contact": {
+        "title": "¿Preguntas?",
+        "text": "Si tienes preguntas sobre el uso de estos materiales o necesitas assets adicionales, contáctanos a través de nuestro servidor oficial de Discord."
+      }
+    },
+    "bulk": {
+      "title": "Descargar Todos los Assets",
+      "description": "Obtén el kit de prensa completo de VRTon en un solo archivo ZIP que contiene todos los logos, pósters, assets para redes sociales y stickers.",
+      "size": "~25 MB",
+      "formats": "Múltiples formatos incluidos",
+      "download": "Descargar Kit Completo"
+    }
+  }
+}

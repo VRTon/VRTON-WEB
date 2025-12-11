@@ -1,0 +1,23 @@
+{
+  "legal": {
+    "lastUpdated": "Last updated:",
+    "tableOfContents": "Table of Contents",
+    "backToTop": "Back to top",
+    "print": "Print document",
+    "download": "Download PDF",
+    "contact": "Contact",
+    "questions": "Have questions?",
+    "support": "Contact us for more information",
+    "acceptance": {
+      "title": "Terms Acceptance",
+      "required": "Acceptance of these terms is mandatory to continue",
+      "checkbox": "I have read and accept the established terms",
+      "button": "Accept terms"
+    },
+    "navigation": {
+      "previous": "Previous",
+      "next": "Next",
+      "sections": "Sections"
+    }
+  }
+}
