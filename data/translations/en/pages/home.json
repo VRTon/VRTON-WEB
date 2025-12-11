@@ -19,7 +19,7 @@
     "seconds": "Seconds"
   },
   "event_completed": {
-    "message": "The event has started!",
-    "description": "Access our live channels and the world:"
+    "message": "The event has ended and collected $3.255,29 USD!",
+    "description": "Access our Social Media:"
   }
 }
